@@ -1,0 +1,74 @@
+{
+  "original_size": 868,
+  "augmented_size": 459,
+  "combined_size": 1327,
+  "roman_urdu_augmented": 459,
+  "best_model": "D_combined_svm",
+  "threshold": 0.47,
+  "cv": {
+    "cv_acc_mean": 0.9781195462478186,
+    "cv_acc_std": 0.012050627900230908,
+    "train_acc_mean": 1.0,
+    "cv_f1_mean": 0.9798933914748575,
+    "cv_f1_std": 0.011145363487252596,
+    "train_f1_mean": 1.0,
+    "cv_recall_mean": 0.9771428571428572,
+    "cv_recall_std": 0.01766403522951564,
+    "train_recall_mean": 1.0,
+    "cv_precision_mean": 0.9828540025645722,
+    "cv_precision_std": 0.011175018514184594,
+    "train_precision_mean": 1.0
+  },
+  "test": {
+    "accuracy": 0.9797979797979798,
+    "f1": 0.9813084112149533,
+    "recall": 0.9722222222222222,
+    "precision": 0.9905660377358491,
+    "roc_auc": 0.9982510288065845
+  },
+  "confusion_matrix": {
+    "TP": 105,
+    "FP": 1,
+    "FN": 3,
+    "TN": 89
+  },
+  "language_results": {
+    "Urdu": {
+      "n": 29,
+      "accuracy": 0.896551724137931,
+      "precision": 1.0,
+      "recall": 0.8235294117647058,
+      "f1": 0.9032258064516129
+    },
+    "Mixed": {
+      "n": 40,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Roman Urdu": {
+      "n": 88,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "English": {
+      "n": 41,
+      "accuracy": 0.975609756097561,
+      "precision": 0.9411764705882353,
+      "recall": 1.0,
+      "f1": 0.9696969696969697
+    }
+  },
+  "overfitting": {
+    "train_cv_gap": 0.020106608525142455,
+    "cv_test_gap": -0.0014150197400957243
+  },
+  "errors": {
+    "FN": 3,
+    "FP": 1
+  },
+  "elapsed_seconds": 59.2
+}

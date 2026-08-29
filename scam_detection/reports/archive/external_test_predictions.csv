@@ -1,0 +1,1001 @@
+﻿ID,Message,Language,Actual_Label,Predicted_Label,Scam_Probability,Correct
+1,"Mubarak ho! Inaam Ghar main apka 50,000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.",Roman Urdu,Scam,Scam,0.5526540861611259,True
+2,"Your SadaPay OTP for online transaction is 48161966. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.2998953173721229,True
+3,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 79762047.,English,Safe,Safe,0.2042494351252267,True
+4,Mubarak ho! BISP main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.39903471672746066,False
+5,"Your JazzCash OTP for online transaction is 88503646. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+6,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 97681448.,English,Safe,Safe,0.2042494351252267,True
+7,Apka Meezan Bank ka account tax jama na krwane ki waja se block ho gaya hai. Abhi call karein 0385011336 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.664773330878627,True
+8,"Aap ka MCB debit card ATM par use hua hai. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.5155124079997505,False
+9,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 62771042.,English,Safe,Safe,0.2042494351252267,True
+10,"Salary of 50,000 PKR has been credited to your Meezan Bank acount. Thank you.",English,Safe,Safe,0.4273230839187142,True
+11,"Your Meezan Bank OTP for online transaction is 11670787. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+12,"Your JazzCash OTP for online transaction is 92492657. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+13,"Your SadaPay OTP for online transaction is 85413236. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.2998953173721229,True
+14,Apka MCB ka account system error ki waja se block ho gaya hai. Abhi pin code dain 0388847639 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6209390312971761,True
+15,Mubarak ho! Inaam Ghar main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.40535645286624566,False
+16,"Dear Consumer, apka is mahine ka IESCO ka bill 350 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.3334742924840595,True
+17,Aap k Easypaisa account se 5000 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3324055011548063,True
+18,"Dear Consumer, apka is mahine ka PTCL ka bill 1 Lakh PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.35746179196501393,True
+19,Apka NayaPay ka acount tax jama na krwane ki waja se block ho gaya ha. Abhi pin code dain 0362062776 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6025934162791807,True
+20,Mubarak ho! Ehsaas Program main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.3868608207915018,False
+21,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 64843406.",English,Safe,Safe,0.2716968617812111,True
+22,Mubarak ho! Jeeto Pakistan main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.46847995067365855,False
+23,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 92441144.,English,Safe,Safe,0.2042494351252267,True
+24,"Moaziz sarif, apka BISP ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0362242481 par pin code dain.",Roman Urdu,Scam,Safe,0.3407214671753731,False
+25,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0320855993 par details send krain.",Roman Urdu,Scam,Scam,0.5160791501275597,True
+26,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 20084028.,English,Safe,Safe,0.2042494351252267,True
+27,Aap ka SadaPay debit card ATM par use hua hai. Amount: 350 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.45888294780584765,True
+28,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 79333380.,English,Safe,Safe,0.2665586695181604,True
+29,Apka State Bank ka account system error ki waja se block ho gaya hai. Abhi sms karin 0331281484 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6182397388612075,True
+30,Mubarak ho! Benazir Income Support main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.44744724930997964,False
+31,Mubarak ho! Jeeto Pakistan main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.46847995067365855,False
+32,"Dear Consumer, apka is mahine ka WASA ka bill 1 Lakh PKR h. Due date guzarne se pehle ada kren.",Roman Urdu,Safe,Safe,0.31797975072895096,True
+33,Apka Easypaisa ka account suspicious activity ki waja se block ho gaya hai. Abhi details send krain 0379610008 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6680839178165842,True
+34,"Your HBL OTP for online transaction is 12600159. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+35,"Aap k MCB account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5247499804577956,False
+36,"Aap ka Allied Bank debit card ATM par use hua hai. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.5226775816409088,False
+37,Aap ka HBL debit card ATM par use hua ha. Amount: 350 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.4546596824962956,True
+38,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 50,000 PKR ka inaam nikla hai. Taseeq k liye 0323410115 par rabta krein.",Roman Urdu,Scam,Scam,0.5566231613825365,True
+39,"Aap k MCB acount se 50,000 PKR ki deduction hui ha tax ki madd mein.",Roman Urdu,Safe,Scam,0.4876784979389111,False
+40,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 52989155.,English,Safe,Safe,0.24716070201118231,True
+41,Apka Meezan Bank ka acount verification na hone ki waja se block ho gaya h. Abhi rabta krein 0336910188 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7102178682461825,True
+42,Apka JazzCash account hack hone ka khatra hai. Apna password change krne k lie abhi is number par rabta krein.,Roman Urdu,Scam,Scam,0.6477875993298754,True
+43,FBR ki taraf se apka JazzCash acc freeze kr dia gya ha. Unblock krwane k lie abhi OTP call kren.,Roman Urdu,Scam,Scam,0.5017696704758144,True
+44,FBR ki taraf se apka Easypaisa acc freeze kr dia gya h. Unblock krwane k lie abhi OTP call kren.,Roman Urdu,Scam,Scam,0.5061796083026076,True
+45,Apka JazzCash ka account suspicious activity ki waja se block ho gaya hai. Abhi details send krain 0328020776 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6675193456022664,True
+46,Mubarak ho! Jeeto Pakistan main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.,Roman Urdu,Scam,Scam,0.6039567829692485,True
+47,"Your Meezan Bank OTP for online transaction is 90976056. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+48,Apka HBL ka acc suspicious activity ki waja se block ho gaya h. Abhi pin code dain 0328526695 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5717405399205246,True
+49,Mubarak ho! Jeeto Pakistan main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna SadaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.44231625598228846,False
+50,Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 5000 PKR. Akhri tareekh se pehle PSCA app k zariye pay krn.,Roman Urdu,Safe,Safe,0.24314104964853062,True
+51,"Moaziz sarif, apka BISP ki taraf se 50,000 PKR ka inaam nikla ha. Taseeq k liye 0343755158 par rabta krein.",Roman Urdu,Scam,Scam,0.5279110104705029,True
+52,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 44563457.,English,Safe,Safe,0.2042494351252267,True
+53,Mubarak ho! Ehsaas Program main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna Meezan Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.38493360622964323,False
+54,"Dear Customer, Apke Meezan Bank account me 50,000 PKR deposit hue hain. Available Balance: 50,000 PKR.",English,Safe,Safe,0.40968294705607217,True
+55,"Aap k HBL acount se 50,000 PKR ki deduction hui ha tax ki madd mein.",Roman Urdu,Safe,Scam,0.48319303222361804,False
+56,Traffic Police: Apki gari ka E-Challan generate ho gaya h. Amount 1 Lakh PKR. Akhri tareekh se pehle PSCA app k zariye pay krn.,Roman Urdu,Safe,Safe,0.3493053542861555,True
+57,Mubarak ho! Inaam Ghar main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.,Roman Urdu,Scam,Safe,0.40448234908360525,False
+58,Apka Meezan Bank ka acc KYC update na hone ki waja se block ho gaya h. Abhi pin code dain 0366211836 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5834009039752283,True
+59,Apka Easypaisa ka account KYC update na hone ki waja se block ho gaya hai. Abhi details send krain 0330025211 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6772141899299885,True
+60,Apka State Bank ka account KYC update na hone ki waja se block ho gaya hai. Abhi call karein 0310151539 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6513572561025968,True
+61,Mubarak ho! Ehsaas Program main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.3726258401341187,False
+62,"Aap k HBL acount se 75,000 PKR ki deduction hui h tax ki madd mein.",Roman Urdu,Safe,Scam,0.4807447863518015,False
+63,"Dear Customer, Apke MCB account me 12500 PKR deposit hue hain. Available Balance: 12500 PKR.",English,Safe,Safe,0.21914716451095234,True
+64,Mubarak ho! Benazir Income Support main apka 350 ka inam lga ha. Apna inam hasil krne k lie apna Meezan Bank pin is number par send krin.,Roman Urdu,Scam,Scam,0.5595005482283433,True
+65,Traffic Police: Apki gari ka E-Challan generate ho gaya h. Amount 1 Lakh PKR. Akhri tareekh se pehle PSCA app k zariye pay kren.,Roman Urdu,Safe,Safe,0.3536124182953494,True
+66,Salary of 10000 PKR has been credited to your NayaPay acount. Thank you.,English,Safe,Safe,0.26439248497203655,True
+67,"Your Easypaisa OTP for online transaction is 65734968. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.30423781522790905,True
+68,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 24168869.,English,Safe,Safe,0.2042494351252267,True
+69,Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 350 PKR. Akhri tareekh se pehle PSCA app k zariye pay karin.,Roman Urdu,Safe,Safe,0.34213420344438117,True
+70,FBR ki taraf se apka State Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP OTP bataen.,Roman Urdu,Scam,Scam,0.5883436093489187,True
+71,"Dear Consumer, apka is mahine ka LESCO ka bill 10000 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.22145431515574932,True
+72,Mubarak ho! Benazir Income Support main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.,Roman Urdu,Scam,Safe,0.45001194168763203,False
+73,"Your Meezan Bank OTP for online transaction is 56194000. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+74,FBR ki taraf se apka HBL acc freeze kr dia gya ha. Unblock krwane k lie abhi OTP sms karin.,Roman Urdu,Scam,Scam,0.5691495130368971,True
+75,"Dear Consumer, apka is mahine ka PTCL ka bill 2500 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.2220719779294805,True
+76,"Mubarak ho! BISP main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna Meezan Bank pin is number par send krin.",Roman Urdu,Scam,Scam,0.5720774472381563,True
+77,"Dear Consumer, apka is mahine ka IESCO ka bill 1 Lakh PKR h. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.30568472995467777,True
+78,"Moaziz sarif, apka BISP ki taraf se 1 Lakh PKR ka inaam nikla h. Taseeq k liye 0386566571 par details send krain.",Roman Urdu,Scam,Scam,0.6201034217939583,True
+79,"Moaziz sarif, apka Benazir Income Support ki taraf se 10000 PKR ka inaam nikla ha. Taseeq k liye 0318245575 par call krn.",Roman Urdu,Scam,Safe,0.37906941335751904,False
+80,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 74684176.,English,Safe,Safe,0.2665586695181604,True
+81,"Mubarak ho! Inaam Ghar main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.",Roman Urdu,Scam,Scam,0.5498374242392543,True
+82,"Bhai apke number par ghalti se mere 5000 rs aa gaye hain easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Safe,0.45051771644695277,False
+83,Mubarak ho! Inaam Ghar main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Scam,0.535097988692247,True
+84,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 77657667.,English,Safe,Safe,0.2042494351252267,True
+85,"Your NayaPay OTP for online transaction is 53319372. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+86,"Your MCB OTP for online transaction is 44756397. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31269928482415504,True
+87,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 31752276.",English,Safe,Safe,0.2716968617812111,True
+88,FBR ki taraf se apka MCB account freeze kr dia gya hai. Unblock krwane k lie abhi OTP sms karin.,Roman Urdu,Scam,Scam,0.6068130752359173,True
+89,"Moaziz sarif, apka Benazir Income Support ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0353081886 par call karein.",Roman Urdu,Scam,Safe,0.4218662251389913,False
+90,Apka JazzCash ka account suspicious activity ki waja se block ho gaya hai. Abhi OTP bataen 0313269989 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6244870218109475,True
+91,Aap ka NayaPay debit card ATM par use hua hai. Amount: 5000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.38015785486369313,True
+92,FBR ki taraf se apka SadaPay account freeze kr dia gya hai. Unblock krwane k lie abhi OTP OTP bataen.,Roman Urdu,Scam,Scam,0.5726421213318872,True
+93,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 80486996.,English,Safe,Safe,0.2042494351252267,True
+94,"Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 75,000 PKR. Akhri tareekh se pehle PSCA app k zariye pay krn.",Roman Urdu,Safe,Safe,0.3548863767405411,True
+95,IESCO Alert: Apka pichla bill clear ho chuka hai. Current balance is 0 PKR.,English,Safe,Safe,0.3588625938472248,True
+96,"Your NayaPay OTP for online transaction is 66426679. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+97,Apka Easypaisa ka acount tax jama na krwane ki waja se block ho gaya h. Abhi pin code dain 0371070089 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5784548464504581,True
+98,Apka Allied Bank ka acount suspicious activity ki waja se block ho gaya ha. Abhi pin code dain 0362093015 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5987052125983816,True
+99,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 79184644.,English,Safe,Safe,0.2042494351252267,True
+100,Mubarak ho! Inaam Ghar main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.,Roman Urdu,Scam,Safe,0.40448234908360525,False
+101,Aap k MCB account se 12500 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.34473726034434654,True
+102,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 98104896.,English,Safe,Safe,0.2042494351252267,True
+103,FBR ki taraf se apka Meezan Bank acc freeze kr dia gya ha. Unblock krwane k lie abhi OTP call kren.,Roman Urdu,Scam,Scam,0.5337363871389086,True
+104,"Moaziz sarif, apka BISP ki taraf se 1 Lakh PKR ka inaam nikla hai. Taseeq k liye 0316513314 par sms karin.",Roman Urdu,Scam,Scam,0.5114224500409799,True
+105,"Your UBL OTP for online transaction is 30715676. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+106,"Your Easypaisa OTP for online transaction is 15127502. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.30423781522790905,True
+107,"Moaziz sarif, apka BISP ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0370292625 par call karein.",Roman Urdu,Scam,Safe,0.3805453760977596,False
+108,"Dear Consumer, apka is mahine ka PTCL ka bill 5000 PKR h. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.1785635811054406,True
+109,Mubarak ho! Jeeto Pakistan main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.,Roman Urdu,Scam,Scam,0.47042378176732225,True
+110,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0343252849 par call karein.",Roman Urdu,Scam,Safe,0.4395200489828273,False
+111,Apka MCB ka account verification na hone ki waja se block ho gaya hai. Abhi details send krain 0386093497 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7755731818113493,True
+112,Aap k Easypaisa acc se 5000 PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.27478756363959994,True
+113,"Mubarak ho! Ehsaas Program main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.",Roman Urdu,Scam,Scam,0.5131822725535486,True
+114,"Moaziz sarif, apka Ehsaas Program ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0381137674 par sms karin.",Roman Urdu,Scam,Safe,0.3272404977393511,False
+115,"Moaziz sarif, apka Ehsaas Program ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0389910179 par OTP bataen.",Roman Urdu,Scam,Safe,0.351740539847939,False
+116,"Your NayaPay OTP for online transaction is 99453515. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+117,Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 1 Lakh PKR. Akhri tareekh se pehle PSCA app k zariye pay karin.,Roman Urdu,Safe,Safe,0.3594381274868767,True
+118,Apka MCB ka acc KYC update na hone ki waja se block ho gaya ha. Abhi OTP bataen 0392494467 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6232535281215831,True
+119,Apka MCB ka account suspicious activity ki waja se block ho gaya hai. Abhi rabta krein 0345380989 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6301339719806813,True
+120,"Your HBL OTP for online transaction is 96268683. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+121,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 33262541.,English,Safe,Safe,0.2042494351252267,True
+122,Aap ka NayaPay debit card ATM par use hua h. Amount: 12500 PKR. Agar yeh aap ne nahi kiya toh helpline par call krn.,Roman Urdu,Safe,Safe,0.34048146489018477,True
+123,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 35478986.,English,Safe,Safe,0.2042494351252267,True
+124,Aap k UBL account se 350 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Scam,0.48720347324343394,False
+125,FBR ki taraf se apka UBL account freeze kr dia gya hai. Unblock krwane k lie abhi OTP OTP bataen.,Roman Urdu,Scam,Scam,0.612023752994673,True
+126,"Moaziz sarif, apka Benazir Income Support ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0320253105 par OTP bataen.",Roman Urdu,Scam,Safe,0.43027500041220107,False
+127,Apka UBL ka acc tax jama na krwane ki waja se block ho gaya ha. Abhi details send krain 0354989757 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6692429664386481,True
+128,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 41284269.,English,Safe,Safe,0.2042494351252267,True
+129,"Moaziz sarif, apka Inaam Ghar ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0370477172 par call karein.",Roman Urdu,Scam,Safe,0.36954138226895356,False
+130,"Your HBL OTP for online transaction is 45704619. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+131,"Your HBL OTP for online transaction is 30507391. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+132,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 75,000 PKR ka inaam nikla ha. Taseeq k liye 0356258133 par rabta krein.",Roman Urdu,Scam,Scam,0.5682250979578041,True
+133,Salary of 2500 PKR has been credited to your UBL account. Thank you.,English,Safe,Safe,0.29240739320552944,True
+134,Apka MCB ka account suspicious activity ki waja se block ho gaya hai. Abhi details send krain 0387473941 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.690092661802436,True
+135,Salary of 350 PKR has been credited to your SadaPay acount. Thank you.,English,Safe,Safe,0.35838474183239666,True
+136,Traffic Police: Apki gari ka E-Challan generate ho gaya hai. Amount 1 Lakh PKR. Akhri tareekh se pehle PSCA app k zariye pay karein.,Roman Urdu,Safe,Safe,0.38771697151820816,True
+137,Mubarak ho! Inaam Ghar main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Scam,0.5360304732126,True
+138,Aap k Meezan Bank acc se 1 Lakh PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.45066160734561933,True
+139,"Moaziz sarif, apka Ehsaas Program ki taraf se 75,000 PKR ka inaam nikla h. Taseeq k liye 0326846996 par sms karin.",Roman Urdu,Scam,Scam,0.4719747387215222,True
+140,Apka Allied Bank ka account verification na hone ki waja se block ho gaya hai. Abhi OTP bataen 0347569364 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7471378995307895,True
+141,"Bh apke number par ghalti se mere 350 rs aa gaye hn easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Scam,0.5545685781806466,True
+142,Aap ka SadaPay debit card ATM par use hua hai. Amount: 2500 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.35929390584748866,True
+143,"Dear Customer, Apke Allied Bank acc me 5000 PKR deposit hue hn. Available Balance: 5000 PKR.",English,Safe,Safe,0.19475870948335633,True
+144,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 35047253.,English,Safe,Safe,0.24716070201118231,True
+145,"Your UBL OTP for online transaction is 88834620. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+146,Salary of 5000 PKR has been credited to your UBL acount. Thank you.,English,Safe,Safe,0.25865722167686994,True
+147,Mubarak ho! Inaam Ghar main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Scam,0.5103556900013911,True
+148,Aap k Easypaisa acc se 2500 PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.27478756363959994,True
+149,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 46243476.,English,Safe,Safe,0.2042494351252267,True
+150,Apka UBL ka account suspicious activity ki waja se block ho gaya hai. Abhi rabta krein 0367352191 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6279169332174631,True
+151,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 49962534.,English,Safe,Safe,0.24716070201118231,True
+152,Mubarak ho! Ehsaas Program main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.,Roman Urdu,Scam,Safe,0.3743541798571886,False
+153,"Moaziz sarif, apka Ehsaas Program ki taraf se 1 Lakh PKR ka inaam nikla hai. Taseeq k liye 0365684090 par details send krain.",Roman Urdu,Scam,Scam,0.534681184334408,True
+154,"Moaziz sarif, apka Benazir Income Support ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0392373608 par sms karin.",Roman Urdu,Scam,Safe,0.4037401889818961,False
+155,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 1 Lakh PKR ka inaam nikla h. Taseeq k liye 0357935065 par pin code dain.",Roman Urdu,Scam,Scam,0.5492409065829226,True
+156,Aap k JazzCash account se 350 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.45574949341307136,True
+157,"Moaziz sarif, apka Benazir Income Support ki taraf se 75,000 PKR ka inaam nikla hai. Taseeq k liye 0329855365 par call karein.",Roman Urdu,Scam,Scam,0.557488911260937,True
+158,Salary of 5000 PKR has been credited to your NayaPay acount. Thank you.,English,Safe,Safe,0.26439248497203655,True
+159,Salary of 2500 PKR has been credited to your Meezan Bank acc. Thank you.,English,Safe,Safe,0.26346448375509324,True
+160,"Aap ka SadaPay debit card ATM par use hua hai. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.4812862527046725,False
+161,Mubarak ho! Benazir Income Support main apka 350 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Scam,0.5390780910555786,True
+162,"Dear Customer, Apke JazzCash acount me 1 Lakh PKR deposit hue hn. Available Balance: 1 Lakh PKR.",English,Safe,Safe,0.34320664563651565,True
+163,"Mubarak ho! Jeeto Pakistan main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.",Roman Urdu,Scam,Scam,0.6073261938533064,True
+164,"Dear Customer, Apke Meezan Bank account me 1 Lakh PKR deposit hue hain. Available Balance: 1 Lakh PKR.",English,Safe,Safe,0.3920257020216739,True
+165,"Your Meezan Bank OTP for online transaction is 70735056. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+166,Aap k JazzCash acc se 10000 PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.2690120910524446,True
+167,"Moaziz sarif, apka BISP ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0359521680 par details send krain.",Roman Urdu,Scam,Scam,0.4702774529302984,True
+168,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 51596630.,English,Safe,Safe,0.2665586695181604,True
+169,"Moaziz sarif, apka Benazir Income Support ki taraf se 50,000 PKR ka inaam nikla hai. Taseeq k liye 0387649836 par details send krain.",Roman Urdu,Scam,Scam,0.6203082147173702,True
+170,Aap k MCB account se 10000 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.34473726034434654,True
+171,"Dear Customer, Apke Meezan Bank acount me 5000 PKR deposit hue hn. Available Balance: 5000 PKR.",English,Safe,Safe,0.21192049986866704,True
+172,"Your HBL OTP for online transaction is 64728257. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+173,Aap ka State Bank debit card ATM par use hua hai. Amount: 10000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.367698480376748,True
+174,"Dear Customer, Apke NayaPay acount me 1 Lakh PKR deposit hue hn. Available Balance: 1 Lakh PKR.",English,Safe,Safe,0.3593783240536039,True
+175,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hn. Trx ID: 61128789.,English,Safe,Safe,0.20209417884015102,True
+176,"Your Meezan Bank OTP for online transaction is 80277814. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+177,"Aap ka HBL debit card ATM par use hua hai. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.5122896101135908,False
+178,"Your Allied Bank OTP for online transaction is 93038670. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3246566538148109,True
+179,Apka HBL account hack hone ka khatra hai. Apna password change krne k lie abhi is number par rabta krein.,Roman Urdu,Scam,Scam,0.6758553070571122,True
+180,"Moaziz sarif, apka BISP ki taraf se 5000 PKR ka inaam nikla h. Taseeq k liye 0345653091 par call kren.",Roman Urdu,Scam,Safe,0.3383842645563239,False
+181,"Moaziz sarif, apka Ehsaas Program ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0397488855 par pin code dain.",Roman Urdu,Scam,Safe,0.31141764743107025,False
+182,"Moaziz sarif, apka Ehsaas Program ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0325310311 par call karein.",Roman Urdu,Scam,Safe,0.3435477519105514,False
+183,"Your JazzCash OTP for online transaction is 56394566. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+184,Aap k HBL acc se 12500 PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.27696995207401665,True
+185,"Moaziz sarif, apka Ehsaas Program ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0398877344 par details send krain.",Roman Urdu,Scam,Safe,0.41858994424475005,False
+186,FBR ki taraf se apka Allied Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP OTP bataen.,Roman Urdu,Scam,Scam,0.6209462739269815,True
+187,Aap k JazzCash acc se 350 PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.39343035520965586,True
+188,Mubarak ho! Inaam Ghar main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.4179366723906878,False
+189,"Moaziz sarif, apka Inaam Ghar ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0378296035 par OTP bataen.",Roman Urdu,Scam,Scam,0.5049969508783957,True
+190,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 25220947.,English,Safe,Safe,0.2042494351252267,True
+191,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 45894984.",English,Safe,Safe,0.2716968617812111,True
+192,"Dear Customer, Apke NayaPay account me 12500 PKR deposit hue hain. Available Balance: 12500 PKR.",English,Safe,Safe,0.22193304774987357,True
+193,Apka NayaPay ka account verification na hone ki waja se block ho gaya hai. Abhi call karein 0335235527 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7483718484973666,True
+194,"Aap k State Bank account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4975501264063706,False
+195,"Your JazzCash OTP for online transaction is 18484912. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+196,"Your NayaPay OTP for online transaction is 31147168. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+197,"Your MCB OTP for online transaction is 35189665. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31269928482415504,True
+198,"Mubarak ho! Ehsaas Program main apka 50,000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.",Roman Urdu,Scam,Scam,0.5054197545979631,True
+199,Apka Easypaisa ka account system error ki waja se block ho gaya hai. Abhi rabta krein 0322118454 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6080588303129634,True
+200,Aap ka SadaPay debit card ATM par use hua h. Amount: 1 Lakh PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.4457136411820425,True
+201,Mubarak ho! Jeeto Pakistan main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.4678697525844029,False
+202,"Salary of 50,000 PKR has been credited to your UBL acount. Thank you.",English,Safe,Safe,0.4162752662290393,True
+203,"Your State Bank OTP for online transaction is 43974715. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+204,"Your Allied Bank OTP for online transaction is 18025000. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3246566538148109,True
+205,Apka NayaPay ka account KYC update na hone ki waja se block ho gaya hai. Abhi sms karin 0348164984 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6444143080259914,True
+206,"Dear Customer, Apke NayaPay acc me 350 PKR deposit hue hn. Available Balance: 350 PKR.",English,Safe,Safe,0.3082188447894113,True
+207,"Moaziz sarif, apka Ehsaas Program ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0391463803 par rabta krein.",Roman Urdu,Scam,Safe,0.3104180621984159,False
+208,Apka Allied Bank account hack hone ka khatra hai. Apna password change krne k lie abhi is number par OTP bataen.,Roman Urdu,Scam,Scam,0.7129461540258399,True
+209,Mubarak ho! Ehsaas Program main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.,Roman Urdu,Scam,Safe,0.35807960494359564,False
+210,FBR ki taraf se apka Easypaisa acc freeze kr dia gya ha. Unblock krwane k lie abhi OTP pin code dain.,Roman Urdu,Scam,Scam,0.516037568446095,True
+211,Apka JazzCash account hack hone ka khatra hai. Apna password change krne k lie abhi is number par sms karin.,Roman Urdu,Scam,Scam,0.6572677487347832,True
+212,FBR ki taraf se apka Meezan Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP pin code dain.,Roman Urdu,Scam,Scam,0.5792784803291567,True
+213,"Salary of 75,000 PKR has been credited to your Meezan Bank acount. Thank you.",English,Safe,Safe,0.423612876187595,True
+214,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 82585720.",English,Safe,Safe,0.2716968617812111,True
+215,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 98042715.,English,Safe,Safe,0.24716070201118231,True
+216,"Moaziz sarif, apka Inaam Ghar ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0394642740 par pin code dain.",Roman Urdu,Scam,Safe,0.3315630480384782,False
+217,FBR ki taraf se apka State Bank acount freeze kr dia gya ha. Unblock krwane k lie abhi OTP sms karin.,Roman Urdu,Scam,Scam,0.5650605037471655,True
+218,"Your HBL OTP for online transaction is 22762664. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+219,Aap k JazzCash account se 2500 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3278328368325191,True
+220,"Moaziz sarif, apka Ehsaas Program ki taraf se 75,000 PKR ka inaam nikla hai. Taseeq k liye 0363005754 par details send krain.",Roman Urdu,Scam,Scam,0.5456665566167398,True
+221,"Moaziz sarif, apka Benazir Income Support ki taraf se 75,000 PKR ka inaam nikla hai. Taseeq k liye 0319513143 par sms karin.",Roman Urdu,Scam,Scam,0.5394842589837934,True
+222,Mubarak ho! Benazir Income Support main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.4500314479283157,False
+223,"Mubarak ho! Ehsaas Program main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.",Roman Urdu,Scam,Scam,0.4856473487163321,True
+224,Apka SadaPay ka account tax jama na krwane ki waja se block ho gaya hai. Abhi pin code dain 0398309117 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5913730987327196,True
+225,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye hn. Trx ID: 91483749.",English,Safe,Safe,0.273732627875592,True
+226,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 63428041.,English,Safe,Safe,0.24716070201118231,True
+227,"Your HBL OTP for online transaction is 63905646. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+228,Aap ka SadaPay debit card ATM par use hua hai. Amount: 5000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.35929390584748866,True
+229,Salary of 1 Lakh PKR has been credited to your UBL acount. Thank you.,English,Safe,Safe,0.40054186716263096,True
+230,Apka Allied Bank ka account KYC update na hone ki waja se block ho gaya hai. Abhi sms karin 0363711336 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6513857720855641,True
+231,Aap k NayaPay acc se 350 PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.4222122883521776,True
+232,Salary of 12500 PKR has been credited to your HBL account. Thank you.,English,Safe,Safe,0.2926512758296171,True
+233,"Dear Customer, Apke Allied Bank account me 10000 PKR deposit hue hain. Available Balance: 10000 PKR.",English,Safe,Safe,0.23147018751449533,True
+234,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 62211710.,English,Safe,Safe,0.2042494351252267,True
+235,Salary of 5000 PKR has been credited to your Meezan Bank acount. Thank you.,English,Safe,Safe,0.28213758637981795,True
+236,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye hain. Trx ID: 13478298.",English,Safe,Safe,0.2750750891017386,True
+237,"Dear Customer, Apke Meezan Bank acount me 350 PKR deposit hue han. Available Balance: 350 PKR.",English,Safe,Safe,0.34415322775972795,True
+238,"Your HBL OTP for online transaction is 26131906. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+239,"Dear Customer, apka ATM card suspend kar dia gya hai. Apni details update krne k liye is link www.hbl-update-kyc.com pr click krain.",English,Scam,Scam,0.5777128622006634,True
+240,"Mubarak ho! Jeeto Pakistan main apka 50,000 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.",Roman Urdu,Scam,Scam,0.6188410090349171,True
+241,Apka State Bank ka account suspicious activity ki waja se block ho gaya hai. Abhi call karein 0390987702 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6371313666906117,True
+242,"Your State Bank OTP for online transaction is 95014136. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+243,"Moaziz sarif, apka Ehsaas Program ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0314612161 par details send krain.",Roman Urdu,Scam,Safe,0.41858994424475005,False
+244,Apka SadaPay ka acount suspicious activity ki waja se block ho gaya h. Abhi call krn 0314704454 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5551309493366982,True
+245,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 22425565.,English,Safe,Safe,0.2042494351252267,True
+246,Apka JazzCash acc hack hone ka khatra h. Apna password change krne k lie abhi is number par sms karin.,Roman Urdu,Scam,Scam,0.6354615045697446,True
+247,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 25920968.",English,Safe,Safe,0.2716968617812111,True
+248,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 16836870.",English,Safe,Safe,0.2716968617812111,True
+249,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 51264355.,English,Safe,Safe,0.2042494351252267,True
+250,FBR ki taraf se apka NayaPay account freeze kr dia gya hai. Unblock krwane k lie abhi OTP call karein.,Roman Urdu,Scam,Scam,0.6203007964026731,True
+251,"Your Meezan Bank OTP for online transaction is 93293688. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+252,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0381951627 par rabta krein.",Roman Urdu,Scam,Safe,0.4040418065708733,False
+253,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 12206402.",English,Safe,Safe,0.2716968617812111,True
+254,FBR ki taraf se apka HBL account freeze kr dia gya hai. Unblock krwane k lie abhi OTP details send krain.,Roman Urdu,Scam,Scam,0.6748820875576745,True
+255,"Your State Bank OTP for online transaction is 47811795. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+256,"Dear Customer, Apke UBL account me 50,000 PKR deposit hue hain. Available Balance: 50,000 PKR.",English,Safe,Safe,0.3995233261134165,True
+257,Apka HBL ka acount KYC update na hone ki waja se block ho gaya ha. Abhi sms karin 0352969378 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6222281055114105,True
+258,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 76440393.,English,Safe,Safe,0.24716070201118231,True
+259,Apka MCB ka account suspicious activity ki waja se block ho gaya hai. Abhi sms karin 0327380584 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6332141773845107,True
+260,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 86153183.,English,Safe,Safe,0.24716070201118231,True
+261,"Dear Customer, Apke MCB account me 350 PKR deposit hue hain. Available Balance: 350 PKR.",English,Safe,Safe,0.35389697817154014,True
+262,"Dear Customer, Apke UBL account me 10000 PKR deposit hue hain. Available Balance: 10000 PKR.",English,Safe,Safe,0.2183588782613722,True
+263,"Mubarak ho! BISP main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.",Roman Urdu,Scam,Scam,0.5412367032571994,True
+264,"Your SadaPay OTP for online transaction is 70936440. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.2998953173721229,True
+265,"Your JazzCash OTP for online transaction is 20572907. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+266,"Moaziz sarif, apka Inaam Ghar ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0368222657 par details send krain.",Roman Urdu,Scam,Safe,0.45106063012836045,False
+267,"Dear Consumer, apka is mahine ka K-Electric ka bill 50,000 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.3784576400069308,True
+268,"Dear Customer, Apke State Bank acc me 12500 PKR deposit hue hn. Available Balance: 12500 PKR.",English,Safe,Safe,0.1827573378435516,True
+269,Aap ka MCB debit card ATM par use hua h. Amount: 350 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.460229936778348,True
+270,Apka JazzCash acc hack hone ka khatra h. Apna password change krne k lie abhi is number par OTP bataen.,Roman Urdu,Scam,Scam,0.6589647705030999,True
+271,"Moaziz sarif, apka BISP ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0321714544 par call karein.",Roman Urdu,Scam,Safe,0.38274477999860945,False
+272,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye han. Trx ID: 18726919.,English,Safe,Safe,0.20845446312045762,True
+273,"Moaziz sarif, apka Inaam Ghar ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0359026104 par rabta krein.",Roman Urdu,Scam,Safe,0.3307490327664031,False
+274,Apka HBL ka account suspicious activity ki waja se block ho gaya hai. Abhi sms karin 0370358554 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6302054843669733,True
+275,Mubarak ho! Jeeto Pakistan main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.44880338648518314,False
+276,"Your HBL OTP for online transaction is 87241214. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+277,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0320946626 par sms karin.",Roman Urdu,Scam,Scam,0.5456652554536605,True
+278,Apka Easypaisa ka acc verification na hone ki waja se block ho gaya ha. Abhi pin code dain 0321297952 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6529284638703342,True
+279,Apka NayaPay ka account system error ki waja se block ho gaya hai. Abhi pin code dain 0360730905 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6209331740145266,True
+280,"Bhai apke number par ghalti se mere 12500 rs aa gaye hain easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Safe,0.45051771644695277,False
+281,"Your Meezan Bank OTP for online transaction is 69372257. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+282,"Dear Customer, Apke JazzCash account me 5000 PKR deposit hue hain. Available Balance: 5000 PKR.",English,Safe,Safe,0.21382058590336203,True
+283,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 42803410.,English,Safe,Safe,0.2042494351252267,True
+284,"Mubarak ho! Benazir Income Support main apka 50,000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.",Roman Urdu,Scam,Scam,0.5553155239244678,True
+285,Easypaisa: Aap ne successfully 350 PKR transfer kar diye han. Trx ID: 19934957.,English,Safe,Safe,0.2522035850401818,True
+286,Apka SadaPay account hack hone ka khatra hai. Apna password change krne k lie abhi is number par call karein.,Roman Urdu,Scam,Scam,0.6626858438575387,True
+287,"Dear Customer, Apke SadaPay acount me 12500 PKR deposit hue han. Available Balance: 12500 PKR.",English,Safe,Safe,0.19847515937531757,True
+288,Salary of 2500 PKR has been credited to your NayaPay account. Thank you.,English,Safe,Safe,0.2975181546237938,True
+289,"Dear Customer, Apke Easypaisa account me 350 PKR deposit hue hain. Available Balance: 350 PKR.",English,Safe,Safe,0.34179445754997645,True
+290,"Your Meezan Bank OTP for online transaction is 71813729. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+291,Mubarak ho! Inaam Ghar main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.3909132033903058,False
+292,Apka Allied Bank ka account system error ki waja se block ho gaya hai. Abhi rabta krein 0368856799 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6445346919920423,True
+293,"Bha apke number par ghalti se mere 12500 rs aa gaye han easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Safe,0.4366750660301885,False
+294,Salary of 2500 PKR has been credited to your State Bank account. Thank you.,English,Safe,Safe,0.2878499536622985,True
+295,"Dear Customer, Apke NayaPay acount me 10000 PKR deposit hue han. Available Balance: 10000 PKR.",English,Safe,Safe,0.20483952906955297,True
+296,Mubarak ho! Jeeto Pakistan main apka 350 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Scam,0.5869260861898574,True
+297,"Mubarak ho! Inaam Ghar main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.",Roman Urdu,Scam,Scam,0.5606988238202082,True
+298,"Moaziz sarif, apka Ehsaas Program ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0383368602 par details send krain.",Roman Urdu,Scam,Safe,0.41858994424475005,False
+299,"Your JazzCash OTP for online transaction is 39830294. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+300,"Dear Customer, Apke HBL acc me 10000 PKR deposit hue hn. Available Balance: 10000 PKR.",English,Safe,Safe,0.18200342810313683,True
+301,Apka State Bank acount hack hone ka khatra h. Apna password change krne k lie abhi is number par sms karin.,Roman Urdu,Scam,Scam,0.6563698814111819,True
+302,"Your JazzCash OTP for online transaction is 51572063. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+303,"Your Meezan Bank OTP for online transaction is 14410100. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+304,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hn. Trx ID: 99458459.,English,Safe,Safe,0.20209417884015102,True
+305,Apka Meezan Bank ka account system error ki waja se block ho gaya hai. Abhi details send krain 0332686424 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6947324590811919,True
+306,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 63100724.,English,Safe,Safe,0.24716070201118231,True
+307,Salary of 1 Lakh PKR has been credited to your JazzCash account. Thank you.,English,Safe,Safe,0.4125655387162904,True
+308,"Your NayaPay OTP for online transaction is 87289845. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+309,"Your Meezan Bank OTP for online transaction is 97274472. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+310,"Moaziz sarif, apka BISP ki taraf se 50,000 PKR ka inaam nikla hai. Taseeq k liye 0331987804 par rabta krein.",Roman Urdu,Scam,Scam,0.5140033759119813,True
+311,Apka Allied Bank ka account KYC update na hone ki waja se block ho gaya hai. Abhi details send krain 0386085264 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7081402825660509,True
+312,Apka NayaPay ka account verification na hone ki waja se block ho gaya hai. Abhi call karein 0324501003 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7479073659777222,True
+313,Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 1 Lakh PKR. Akhri tareekh se pehle PSCA app k zariye pay krn.,Roman Urdu,Safe,Safe,0.34790505080288775,True
+314,"Your Meezan Bank OTP for online transaction is 90444059. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+315,Apka HBL ka account suspicious activity ki waja se block ho gaya hai. Abhi pin code dain 0370160036 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6139507308220875,True
+316,Aap k JazzCash acc se 2500 PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.26885393264218954,True
+317,Mubarak ho! BISP main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.4323583314667182,False
+318,Salary of 10000 PKR has been credited to your Easypaisa acc. Thank you.,English,Safe,Safe,0.23944006182704428,True
+319,"Moaziz sarif, apka BISP ki taraf se 75,000 PKR ka inaam nikla hai. Taseeq k liye 0351958294 par details send krain.",Roman Urdu,Scam,Scam,0.6194799490193609,True
+320,Apka UBL ka acc suspicious activity ki waja se block ho gaya h. Abhi OTP bataen 0382200518 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6084656079237116,True
+321,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye hain. Trx ID: 40536069.",English,Safe,Safe,0.2750750891017386,True
+322,Aap k HBL acc se 1 Lakh PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.4403084956894063,True
+323,Aap k NayaPay account se 1 Lakh PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Scam,0.5034140689561113,False
+324,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 38651913.,English,Safe,Safe,0.2665586695181604,True
+325,"Your State Bank OTP for online transaction is 92489429. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+326,Apka State Bank ka account verification na hone ki waja se block ho gaya hai. Abhi sms karin 0368654699 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7091733690055905,True
+327,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 90680167.,English,Safe,Safe,0.2042494351252267,True
+328,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 92724168.,English,Safe,Safe,0.2042494351252267,True
+329,Apka JazzCash ka acount verification na hone ki waja se block ho gaya ha. Abhi rabta krein 0345190307 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6870513781827335,True
+330,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 19491364.,English,Safe,Safe,0.2042494351252267,True
+331,"Your NayaPay OTP for online transaction is 22941997. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+332,Traffic Police: Apki gari ka E-Challan generate ho gaya h. Amount 12500 PKR. Akhri tareekh se pehle PSCA app k zariye pay krn.,Roman Urdu,Safe,Safe,0.2434445744451525,True
+333,"Dear Customer, Apke SadaPay acc me 1 Lakh PKR deposit hue hn. Available Balance: 1 Lakh PKR.",English,Safe,Safe,0.3252512211247276,True
+334,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 32760719.",English,Safe,Safe,0.2716968617812111,True
+335,"Aap k UBL acc se 50,000 PKR ki deduction hui ha tax ki madd mein.",Roman Urdu,Safe,Safe,0.458797331280917,True
+336,FBR ki taraf se apka HBL account freeze kr dia gya hai. Unblock krwane k lie abhi OTP sms karin.,Roman Urdu,Scam,Scam,0.6024272326861043,True
+337,Apka NayaPay ka account KYC update na hone ki waja se block ho gaya hai. Abhi rabta krein 0385912107 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6416869396907602,True
+338,"Aap k JazzCash account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4848930270776382,False
+339,Salary of 12500 PKR has been credited to your Allied Bank acc. Thank you.,English,Safe,Safe,0.2582880310243508,True
+340,Aap ka MCB debit card ATM par use hua h. Amount: 1 Lakh PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Scam,0.47375495076001445,False
+341,"Your UBL OTP for online transaction is 34522640. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+342,"Your NayaPay OTP for online transaction is 60166897. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+343,"Dear Consumer, apka is mahine ka Sui Gas ka bill 5000 PKR ha. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.171882196718886,True
+344,"Dear Consumer, apka is mahine ka WASA ka bill 2500 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.22808890183814937,True
+345,"Moaziz sarif, apka BISP ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0390404075 par sms karin.",Roman Urdu,Scam,Safe,0.3609264055374522,False
+346,Mubarak ho! Benazir Income Support main apka 350 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.,Roman Urdu,Scam,Scam,0.5579827505041064,True
+347,FBR ki taraf se apka UBL account freeze kr dia gya hai. Unblock krwane k lie abhi OTP call karein.,Roman Urdu,Scam,Scam,0.6208241404583195,True
+348,"Dear Consumer, apka is mahine ka IESCO ka bill 50,000 PKR ha. Due date guzarne se pehle ada kren.",Roman Urdu,Safe,Safe,0.32407435338022966,True
+349,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 50,000 PKR ka inaam nikla hai. Taseeq k liye 0341818913 par details send krain.",Roman Urdu,Scam,Scam,0.6500861462661401,True
+350,Mubarak ho! Inaam Ghar main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.4023713743111472,False
+351,Apka JazzCash ka acc verification na hone ki waja se block ho gaya ha. Abhi sms karin 0381255876 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6718387110712566,True
+352,"Aap k NayaPay acc se 50,000 PKR ki deduction hui ha tax ki madd mein.",Roman Urdu,Safe,Safe,0.4613878220526043,True
+353,Apka State Bank ka account tax jama na krwane ki waja se block ho gaya hai. Abhi pin code dain 0329062809 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6059893459122826,True
+354,Apka NayaPay ka account tax jama na krwane ki waja se block ho gaya hai. Abhi call karein 0312966973 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6681509652568354,True
+355,Apka Meezan Bank ka account tax jama na krwane ki waja se block ho gaya hai. Abhi details send krain 0333429418 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6981039877419686,True
+356,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye han. Trx ID: 82020569.,English,Safe,Safe,0.20845446312045762,True
+357,Mubarak ho! Jeeto Pakistan main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.45423268047709014,False
+358,FBR ki taraf se apka Meezan Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP OTP bataen.,Roman Urdu,Scam,Scam,0.6087276325187494,True
+359,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 72922819.,English,Safe,Safe,0.2042494351252267,True
+360,"Dear Consumer, apka is mahine ka WASA ka bill 2500 PKR ha. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.1858248372307034,True
+361,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 69342829.,English,Safe,Safe,0.2042494351252267,True
+362,FBR ki taraf se apka Allied Bank acc freeze kr dia gya h. Unblock krwane k lie abhi OTP rabta krein.,Roman Urdu,Scam,Scam,0.5715639326804062,True
+363,"Your State Bank OTP for online transaction is 80952666. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+364,Apka State Bank account hack hone ka khatra hai. Apna password change krne k lie abhi is number par sms karin.,Roman Urdu,Scam,Scam,0.6641057651804465,True
+365,Salary of 10000 PKR has been credited to your Meezan Bank account. Thank you.,English,Safe,Safe,0.31281996612965496,True
+366,Mubarak ho! Ehsaas Program main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.36380548074637126,False
+367,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 16973071.,English,Safe,Safe,0.24716070201118231,True
+368,"Your Easypaisa OTP for online transaction is 43388253. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.30423781522790905,True
+369,FBR ki taraf se apka Meezan Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP sms karin.,Roman Urdu,Scam,Scam,0.6010651176229564,True
+370,"Dear Consumer, apka is mahine ka LESCO ka bill 75,000 PKR ha. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.31136783817280284,True
+371,Mubarak ho! Benazir Income Support main apka 350 ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.,Roman Urdu,Scam,Scam,0.5320251757565059,True
+372,"Your UBL OTP for online transaction is 35198480. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+373,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 89621647.,English,Safe,Safe,0.2665586695181604,True
+374,"Your Easypaisa OTP for online transaction is 53478314. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.30423781522790905,True
+375,"Your State Bank OTP for online transaction is 71000863. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+376,Aap ka HBL debit card ATM par use hua hai. Amount: 12500 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.3767299992863233,True
+377,"Dear Customer, apka ATM card suspend kar dia gya ha. Apni details update krne k liye is link www.hbl-update-kyc.com pr click krain.",English,Scam,Scam,0.587755987902451,True
+378,"Mubarak ho! Inaam Ghar main apka 50,000 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.",Roman Urdu,Scam,Scam,0.5634162562786408,True
+379,"Moaziz sarif, apka Ehsaas Program ki taraf se 12500 PKR ka inaam nikla ha. Taseeq k liye 0320978909 par pin code dain.",Roman Urdu,Scam,Safe,0.3219090816942123,False
+380,FBR ki taraf se apka JazzCash acc freeze kr dia gya h. Unblock krwane k lie abhi OTP pin code dain.,Roman Urdu,Scam,Scam,0.5186389699055566,True
+381,Aap ka Meezan Bank debit card ATM par use hua hai. Amount: 2500 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.3895012382179449,True
+382,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 97659383.,English,Safe,Safe,0.2042494351252267,True
+383,"Dear Customer, Apke UBL acount me 12500 PKR deposit hue han. Available Balance: 12500 PKR.",English,Safe,Safe,0.20118180361638682,True
+384,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye han. Trx ID: 65814990.",English,Safe,Safe,0.2767815352169301,True
+385,Traffic Police: Apki gari ka E-Challan generate ho gaya hai. Amount 12500 PKR. Akhri tareekh se pehle PSCA app k zariye pay karein.,Roman Urdu,Safe,Safe,0.2783910381650997,True
+386,"Your MCB OTP for online transaction is 30971242. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31269928482415504,True
+387,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 20563909.,English,Safe,Safe,0.2665586695181604,True
+388,Salary of 5000 PKR has been credited to your Allied Bank account. Thank you.,English,Safe,Safe,0.3106335373322516,True
+389,FBR ki taraf se apka HBL account freeze kr dia gya hai. Unblock krwane k lie abhi OTP rabta krein.,Roman Urdu,Scam,Scam,0.5890490309363653,True
+390,"Dear Customer, Apke State Bank acount me 5000 PKR deposit hue han. Available Balance: 5000 PKR.",English,Safe,Safe,0.20120593409261495,True
+391,FBR ki taraf se apka Easypaisa account freeze kr dia gya hai. Unblock krwane k lie abhi OTP rabta krein.,Roman Urdu,Scam,Scam,0.558301346401986,True
+392,"Mubarak ho! BISP main apka 50,000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.",Roman Urdu,Scam,Scam,0.5751870968933586,True
+393,"Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 75,000 PKR. Akhri tareekh se pehle PSCA app k zariye pay kren.",Roman Urdu,Safe,Safe,0.3592405395904169,True
+394,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye han. Trx ID: 11954111.,English,Safe,Safe,0.20845446312045762,True
+395,Mubarak ho! Inaam Ghar main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna SadaPay pin is number par send krin.,Roman Urdu,Scam,Scam,0.5030945921135792,True
+396,Apka Allied Bank acc hack hone ka khatra h. Apna password change krne k lie abhi is number par details send krain.,Roman Urdu,Scam,Scam,0.7294649179928048,True
+397,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0368743055 par details send krain.",Roman Urdu,Scam,Scam,0.5160791501275597,True
+398,"Mubarak ho! BISP main apka 50,000 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.",Roman Urdu,Scam,Scam,0.5750443818104818,True
+399,"Your JazzCash OTP for online transaction is 71732855. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+400,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 57029082.,English,Safe,Safe,0.2042494351252267,True
+401,Traffic Police: Apki gari ka E-Challan generate ho gaya h. Amount 2500 PKR. Akhri tareekh se pehle PSCA app k zariye pay kren.,Roman Urdu,Safe,Safe,0.24828220511044138,True
+402,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 83575737.,English,Safe,Safe,0.2665586695181604,True
+403,"Dear Customer, Apke Meezan Bank acount me 5000 PKR deposit hue han. Available Balance: 5000 PKR.",English,Safe,Safe,0.21716735554348535,True
+404,FBR ki taraf se apka Allied Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP rabta krein.,Roman Urdu,Scam,Scam,0.6005916140412119,True
+405,"Aap k UBL account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5212538965023661,False
+406,Aap ka SadaPay debit card ATM par use hua h. Amount: 1 Lakh PKR. Agar yeh aap ne nahi kiya toh helpline par call kren.,Roman Urdu,Safe,Safe,0.4372069040823401,True
+407,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 97546499.,English,Safe,Safe,0.24716070201118231,True
+408,Apka NayaPay ka account KYC update na hone ki waja se block ho gaya hai. Abhi OTP bataen 0357607213 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6610706678138202,True
+409,"Moaziz sarif, apka Inaam Ghar ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0335786873 par rabta krein.",Roman Urdu,Scam,Safe,0.45519602121977804,False
+410,Aap k NayaPay acc se 2500 PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.28298445053279647,True
+411,"Moaziz sarif, apka BISP ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0340444149 par details send krain.",Roman Urdu,Scam,Scam,0.4702774529302984,True
+412,Aap k Easypaisa account se 12500 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3324055011548063,True
+413,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye hain. Trx ID: 75479413.",English,Safe,Safe,0.2750750891017386,True
+414,Mubarak ho! Jeeto Pakistan main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.44880338648518314,False
+415,FBR ki taraf se apka Easypaisa account freeze kr dia gya hai. Unblock krwane k lie abhi OTP pin code dain.,Roman Urdu,Scam,Scam,0.5499415052465789,True
+416,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye hain. Trx ID: 16744748.",English,Safe,Safe,0.2750750891017386,True
+417,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 56723233.,English,Safe,Safe,0.2042494351252267,True
+418,"Dear Consumer, apka is mahine ka PTCL ka bill 10000 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.2220719779294805,True
+419,FBR ki taraf se apka UBL account freeze kr dia gya hai. Unblock krwane k lie abhi OTP rabta krein.,Roman Urdu,Scam,Scam,0.5903312469043093,True
+420,Aap ka Easypaisa debit card ATM par use hua hai. Amount: 350 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.4655631074496063,True
+421,"Dear Consumer, apka is mahine ka LESCO ka bill 10000 PKR ha. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.17910627928570524,True
+422,Mubarak ho! Inaam Ghar main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.,Roman Urdu,Scam,Scam,0.509325568886253,True
+423,"Your MCB OTP for online transaction is 40263565. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31269928482415504,True
+424,"Your MCB OTP for online transaction is 44793714. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31269928482415504,True
+425,"Aap k Meezan Bank account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5203313265843679,False
+426,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 91582688.,English,Safe,Safe,0.2042494351252267,True
+427,Aap ka State Bank debit card ATM par use hua hai. Amount: 350 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Scam,0.4709119577635074,False
+428,"Moaziz sarif, apka BISP ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0366511511 par sms karin.",Roman Urdu,Scam,Safe,0.35972398486190194,False
+429,"Dear Customer, Apke Meezan Bank account me 12500 PKR deposit hue hain. Available Balance: 12500 PKR.",English,Safe,Safe,0.23388029612676106,True
+430,"Bhai apke number par ghalti se mere 75,000 rs aa gaye hain easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Scam,0.5873499832926118,True
+431,"Dear Customer, Apke JazzCash acc me 10000 PKR deposit hue han. Available Balance: 10000 PKR.",English,Safe,Safe,0.18485642893956156,True
+432,"Dear Customer, Apke MCB account me 10000 PKR deposit hue hain. Available Balance: 10000 PKR.",English,Safe,Safe,0.21914716451095234,True
+433,"Aap ka NayaPay debit card ATM par use hua hai. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.5143507981472987,False
+434,"Your NayaPay OTP for online transaction is 63665500. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+435,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 73039491.,English,Safe,Safe,0.2665586695181604,True
+436,"Moaziz sarif, apka Inaam Ghar ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0314355085 par sms karin.",Roman Urdu,Scam,Safe,0.349795587306389,False
+437,"Mubarak ho! Inaam Ghar main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.",Roman Urdu,Scam,Scam,0.5210233919591608,True
+438,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 68124786.,English,Safe,Safe,0.2042494351252267,True
+439,Apka Easypaisa ka account verification na hone ki waja se block ho gaya hai. Abhi details send krain 0349217195 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7503088697778605,True
+440,"Your Allied Bank OTP for online transaction is 48663995. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3246566538148109,True
+441,Mubarak ho! Jeeto Pakistan main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.,Roman Urdu,Scam,Scam,0.47042378176732225,True
+442,Apka State Bank ka account tax jama na krwane ki waja se block ho gaya hai. Abhi call karein 0338090309 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6484487330452452,True
+443,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 62067738.,English,Safe,Safe,0.24716070201118231,True
+444,Aap ka Allied Bank debit card ATM par use hua ha. Amount: 2500 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.3640364599637809,True
+445,Aap ka HBL debit card ATM par use hua hai. Amount: 10000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.3767299992863233,True
+446,Apka Allied Bank ka account suspicious activity ki waja se block ho gaya hai. Abhi OTP bataen 0326241620 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6491577275185577,True
+447,Aap k HBL acount se 12500 PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.302950809975325,True
+448,Salary of 2500 PKR has been credited to your JazzCash acc. Thank you.,English,Safe,Safe,0.233716067659208,True
+449,Mubarak ho! Benazir Income Support main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna SadaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.4250795878687831,False
+450,"Moaziz sarif, apka Benazir Income Support ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0352041565 par pin code dain.",Roman Urdu,Scam,Safe,0.3865005311879354,False
+451,"Dear Customer, Apke HBL account me 75,000 PKR deposit hue hain. Available Balance: 75,000 PKR.",English,Safe,Safe,0.39396264754649746,True
+452,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 49602591.,English,Safe,Safe,0.2042494351252267,True
+453,Mubarak ho! Jeeto Pakistan main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Scam,0.5933761825807781,True
+454,Apka UBL acount hack hone ka khatra h. Apna password change krne k lie abhi is number par call karin.,Roman Urdu,Scam,Scam,0.6571478881021964,True
+455,Aap ka Allied Bank debit card ATM par use hua hai. Amount: 2500 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.39225961094886774,True
+456,Mubarak ho! Benazir Income Support main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna Meezan Bank pin is number par send krin.,Roman Urdu,Scam,Scam,0.5680552955250129,True
+457,Aap ka SadaPay debit card ATM par use hua ha. Amount: 5000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.3332516930474858,True
+458,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye han. Trx ID: 17427276.",English,Safe,Safe,0.28015702000629483,True
+459,Apka UBL ka account KYC update na hone ki waja se block ho gaya hai. Abhi details send krain 0348633963 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7034031192457518,True
+460,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hn. Trx ID: 13128933.,English,Safe,Safe,0.20209417884015102,True
+461,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 14313170.,English,Safe,Safe,0.2665586695181604,True
+462,"Your MCB OTP for online transaction is 52930136. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31269928482415504,True
+463,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 38242705.,English,Safe,Safe,0.2042494351252267,True
+464,Apka Easypaisa ka account verification na hone ki waja se block ho gaya hai. Abhi rabta krein 0352133456 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.701536796138441,True
+465,Salary of 1 Lakh PKR has been credited to your NayaPay account. Thank you.,English,Safe,Safe,0.4382975235247968,True
+466,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 71505775.",English,Safe,Safe,0.2716968617812111,True
+467,"Your HBL OTP for online transaction is 72524468. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+468,"Your JazzCash OTP for online transaction is 71277611. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+469,Mubarak ho! BISP main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna Meezan Bank pin is number par send krin.,Roman Urdu,Scam,Scam,0.5589780072694626,True
+470,"Moaziz sarif, apka Ehsaas Program ki taraf se 75,000 PKR ka inaam nikla ha. Taseeq k liye 0339776122 par call krn.",Roman Urdu,Scam,Safe,0.4323999306947259,False
+471,Apka Allied Bank ka account system error ki waja se block ho gaya hai. Abhi sms karin 0387220430 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6460618471689842,True
+472,Apka MCB account hack hone ka khatra hai. Apna password change krne k lie abhi is number par details send krain.,Roman Urdu,Scam,Scam,0.7423446756809098,True
+473,Apka Allied Bank ka account verification na hone ki waja se block ho gaya hai. Abhi rabta krein 0367724757 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7323048808918604,True
+474,Aap ka State Bank debit card ATM par use hua h. Amount: 5000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.34204390399688717,True
+475,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0334483423 par sms karin.",Roman Urdu,Scam,Safe,0.42117123437162873,False
+476,"Dear Customer, Apke SadaPay account me 50,000 PKR deposit hue hain. Available Balance: 50,000 PKR.",English,Safe,Safe,0.3808164734676716,True
+477,Apka Allied Bank ka account system error ki waja se block ho gaya hai. Abhi OTP bataen 0312302853 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6648754742681146,True
+478,FBR ki taraf se apka SadaPay account freeze kr dia gya hai. Unblock krwane k lie abhi OTP pin code dain.,Roman Urdu,Scam,Scam,0.5421418774222561,True
+479,"Dear Customer, Apke Allied Bank account me 2500 PKR deposit hue hain. Available Balance: 2500 PKR.",English,Safe,Safe,0.23147018751449533,True
+480,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0316735339 par sms karin.",Roman Urdu,Scam,Safe,0.42117123437162873,False
+481,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 71570421.,English,Safe,Safe,0.2042494351252267,True
+482,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 11147975.,English,Safe,Safe,0.2665586695181604,True
+483,"Mubarak ho! Benazir Income Support main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.",Roman Urdu,Scam,Scam,0.5523966218168666,True
+484,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 71918905.,English,Safe,Safe,0.2042494351252267,True
+485,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0397838423 par pin code dain.",Roman Urdu,Scam,Scam,0.5229571151710583,True
+486,Aap k JazzCash acount se 12500 PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.2919795050085727,True
+487,Salary of 350 PKR has been credited to your UBL account. Thank you.,English,Safe,Safe,0.41682573585868254,True
+488,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 10000 PKR ka inaam nikla ha. Taseeq k liye 0340255178 par rabta krein.",Roman Urdu,Scam,Safe,0.41646890052353863,False
+489,"Mubarak ho! Inaam Ghar main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.",Roman Urdu,Scam,Scam,0.5491388393169857,True
+490,"Dear Consumer, apka is mahine ka PTCL ka bill 75,000 PKR h. Due date guzarne se pehle ada kren.",Roman Urdu,Safe,Safe,0.32005733990139257,True
+491,Mubarak ho! Benazir Income Support main apka 350 ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Scam,0.5563846461796988,True
+492,"Your Meezan Bank OTP for online transaction is 19274671. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+493,Apka Meezan Bank ka acount system error ki waja se block ho gaya h. Abhi OTP bataen 0363903534 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6361974289242848,True
+494,"Moaziz sarif, apka Benazir Income Support ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0358441339 par call karein.",Roman Urdu,Scam,Safe,0.4218662251389913,False
+495,"Moaziz sarif, apka Benazir Income Support ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0333852516 par rabta krein.",Roman Urdu,Scam,Safe,0.38773051507560696,False
+496,"Aap k MCB acc se 75,000 PKR ki deduction hui ha tax ki madd mein.",Roman Urdu,Safe,Safe,0.4577448752190472,True
+497,"Moaziz sarif, apka BISP ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0320634956 par sms karin.",Roman Urdu,Scam,Scam,0.49799306904448987,True
+498,Apka MCB ka account tax jama na krwane ki waja se block ho gaya hai. Abhi sms karin 0319371783 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6458641466423838,True
+499,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 95341644.,English,Safe,Safe,0.2042494351252267,True
+500,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye han. Trx ID: 69137769.,English,Safe,Safe,0.2714896654192861,True
+501,"Your HBL OTP for online transaction is 87998851. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+502,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 34853853.,English,Safe,Safe,0.24716070201118231,True
+503,"Dear Customer, Apke SadaPay account me 75,000 PKR deposit hue hain. Available Balance: 75,000 PKR.",English,Safe,Safe,0.3757992083418384,True
+504,Aap k HBL account se 5000 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3427254943159771,True
+505,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye han. Trx ID: 58907551.,English,Safe,Safe,0.20845446312045762,True
+506,"Dear Consumer, apka is mahine ka PTCL ka bill 5000 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.2220719779294805,True
+507,Aap k MCB acc se 350 PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.42279393418520056,True
+508,Apka Allied Bank ka account system error ki waja se block ho gaya hai. Abhi sms karin 0332643978 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6470520405473529,True
+509,"Your JazzCash OTP for online transaction is 30187726. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+510,Aap ka State Bank debit card ATM par use hua ha. Amount: 1 Lakh PKR. Agar yeh aap ne nahi kiya toh helpline par call krn.,Roman Urdu,Safe,Safe,0.4425894794713101,True
+511,"Dear Customer, Apke NayaPay account me 10000 PKR deposit hue hain. Available Balance: 10000 PKR.",English,Safe,Safe,0.22193304774987357,True
+512,"Dear Customer, Apke NayaPay acount me 12500 PKR deposit hue hn. Available Balance: 12500 PKR.",English,Safe,Safe,0.1992100589675456,True
+513,"Dear Customer, Apke Easypaisa account me 2500 PKR deposit hue hain. Available Balance: 2500 PKR.",English,Safe,Safe,0.21731885876395998,True
+514,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hn. Trx ID: 94025826.,English,Safe,Safe,0.20209417884015102,True
+515,"Your NayaPay OTP for online transaction is 70450110. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+516,"Your HBL OTP for online transaction is 95228664. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+517,"Your NayaPay OTP for online transaction is 67680668. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+518,"Moaziz sarif, apka Ehsaas Program ki taraf se 1 Lakh PKR ka inaam nikla hai. Taseeq k liye 0356649009 par details send krain.",Roman Urdu,Scam,Scam,0.534681184334408,True
+519,"Your SadaPay OTP for online transaction is 27983565. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.2998953173721229,True
+520,Mubarak ho! Inaam Ghar main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.4179366723906878,False
+521,Aap ka MCB debit card ATM par use hua h. Amount: 12500 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.3514565842884007,True
+522,"Mubarak ho! Jeeto Pakistan main apka 50,000 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.",Roman Urdu,Scam,Scam,0.6097858017560599,True
+523,Apka SadaPay ka account verification na hone ki waja se block ho gaya hai. Abhi rabta krein 0333302962 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6953343187197152,True
+524,Aap ka SadaPay debit card ATM par use hua h. Amount: 10000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.334466433811962,True
+525,"Dear Consumer, apka is mahine ka PTCL ka bill 12500 PKR ha. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.1797282981165658,True
+526,"Dear Customer, Apke UBL account me 1 Lakh PKR deposit hue hain. Available Balance: 1 Lakh PKR.",English,Safe,Safe,0.3814388379205952,True
+527,FBR ki taraf se apka MCB acc freeze kr dia gya ha. Unblock krwane k lie abhi OTP pin code dain.,Roman Urdu,Scam,Scam,0.5483184962657573,True
+528,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 60463822.,English,Safe,Safe,0.24716070201118231,True
+529,"Dear Customer, Apke Easypaisa acount me 12500 PKR deposit hue hn. Available Balance: 12500 PKR.",English,Safe,Safe,0.19609564690522435,True
+530,Aap k Allied Bank account se 350 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Scam,0.5036558023507886,False
+531,FBR ki taraf se apka State Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP pin code dain.,Roman Urdu,Scam,Scam,0.5576405135053608,True
+532,Aap k JazzCash account se 10000 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3278328368325191,True
+533,Apka MCB acc hack hone ka khatra h. Apna password change krne k lie abhi is number par sms karin.,Roman Urdu,Scam,Scam,0.6682051188788058,True
+534,"Your Allied Bank OTP for online transaction is 30315154. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3246566538148109,True
+535,"Dear Consumer, apka is mahine ka WASA ka bill 5000 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.22808890183814937,True
+536,"Aap ka JazzCash debit card ATM par use hua ha. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.",Roman Urdu,Safe,Safe,0.46046923670369505,True
+537,Apka UBL account hack hone ka khatra hai. Apna password change krne k lie abhi is number par sms karin.,Roman Urdu,Scam,Scam,0.6857531822983557,True
+538,"Dear Customer, Apke HBL acc me 350 PKR deposit hue han. Available Balance: 350 PKR.",English,Safe,Safe,0.31033669719128176,True
+539,Apka JazzCash ka account tax jama na krwane ki waja se block ho gaya hai. Abhi call karein 0362558223 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6445857204450445,True
+540,"Salary of 50,000 PKR has been credited to your NayaPay acount. Thank you.",English,Safe,Safe,0.4196174251538831,True
+541,"Your UBL OTP for online transaction is 21082359. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+542,Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 2500 PKR. Akhri tareekh se pehle PSCA app k zariye pay krn.,Roman Urdu,Safe,Safe,0.24314104964853062,True
+543,"Moaziz sarif, apka BISP ki taraf se 1 Lakh PKR ka inaam nikla hai. Taseeq k liye 0362582792 par sms karin.",Roman Urdu,Scam,Scam,0.5114224500409799,True
+544,"Your UBL OTP for online transaction is 60478272. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+545,"Your NayaPay OTP for online transaction is 96776218. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+546,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye hain. Trx ID: 28722369.",English,Safe,Safe,0.2750750891017386,True
+547,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 59354959.,English,Safe,Safe,0.2042494351252267,True
+548,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 89933112.,English,Safe,Safe,0.2665586695181604,True
+549,Salary of 5000 PKR has been credited to your HBL acc. Thank you.,English,Safe,Safe,0.23833199627958856,True
+550,FBR ki taraf se apka Allied Bank acc freeze kr dia gya ha. Unblock krwane k lie abhi OTP call kren.,Roman Urdu,Scam,Scam,0.5440885229897918,True
+551,Apka UBL ka acc suspicious activity ki waja se block ho gaya ha. Abhi call kren 0326022960 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5529131262258467,True
+552,"Your UBL OTP for online transaction is 87460017. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+553,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hn. Trx ID: 88597868.,English,Safe,Safe,0.20209417884015102,True
+554,FBR ki taraf se apka MCB account freeze kr dia gya hai. Unblock krwane k lie abhi OTP rabta krein.,Roman Urdu,Scam,Scam,0.5935361520388619,True
+555,"Your Easypaisa OTP for online transaction is 65529819. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.30423781522790905,True
+556,"Your UBL OTP for online transaction is 99696008. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+557,FBR ki taraf se apka Allied Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP call karein.,Roman Urdu,Scam,Scam,0.6298586440945493,True
+558,Salary of 350 PKR has been credited to your MCB acount. Thank you.,English,Safe,Safe,0.3813473492221604,True
+559,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 82719077.,English,Safe,Safe,0.2665586695181604,True
+560,"Moaziz sarif, apka Ehsaas Program ki taraf se 2500 PKR ka inaam nikla ha. Taseeq k liye 0364141938 par details send krain.",Roman Urdu,Scam,Safe,0.42898810246603014,False
+561,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 62396922.,English,Safe,Safe,0.24716070201118231,True
+562,Aap k HBL account se 12500 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3427254943159771,True
+563,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0360249209 par details send krain.",Roman Urdu,Scam,Scam,0.6299661026682971,True
+564,Aap ka MCB debit card ATM par use hua hai. Amount: 2500 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.37876304318247545,True
+565,"Your HBL OTP for online transaction is 29473773. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+566,Traffic Police: Apki gari ka E-Challan generate ho gaya h. Amount 10000 PKR. Akhri tareekh se pehle PSCA app k zariye pay krn.,Roman Urdu,Safe,Safe,0.2434445744451525,True
+567,Aap k MCB acc se 12500 PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.2778587116201808,True
+568,Apka JazzCash ka account verification na hone ki waja se block ho gaya hai. Abhi rabta krein 0381737561 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7033657471387976,True
+569,FBR ki taraf se apka Allied Bank acc freeze kr dia gya ha. Unblock krwane k lie abhi OTP details send krain.,Roman Urdu,Scam,Scam,0.658085534933888,True
+570,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 59855907.,English,Safe,Safe,0.2042494351252267,True
+571,Salary of 1 Lakh PKR has been credited to your Easypaisa account. Thank you.,English,Safe,Safe,0.41539078418060116,True
+572,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 19544434.,English,Safe,Safe,0.2042494351252267,True
+573,Apka MCB ka account KYC update na hone ki waja se block ho gaya hai. Abhi OTP bataen 0312954958 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6640837745055578,True
+574,Apka State Bank ka acount verification na hone ki waja se block ho gaya ha. Abhi sms karin 0391538432 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.693413953100827,True
+575,"Moaziz sarif, apka Benazir Income Support ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0360376337 par details send krain.",Roman Urdu,Scam,Scam,0.4932140160242439,True
+576,"Aap ka State Bank debit card ATM par use hua hai. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.4964617757617938,False
+577,"Your HBL OTP for online transaction is 70845784. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+578,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye han. Trx ID: 82145008.,English,Safe,Safe,0.20845446312045762,True
+579,"Dear Consumer, apka is mahine ka Sui Gas ka bill 50,000 PKR h. Due date guzarne se pehle ada kren.",Roman Urdu,Safe,Safe,0.305411559451162,True
+580,"Moaziz sarif, apka BISP ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0346424790 par OTP bataen.",Roman Urdu,Scam,Scam,0.5341515106771287,True
+581,"Your JazzCash OTP for online transaction is 21846997. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+582,Apka HBL account hack hone ka khatra hai. Apna password change krne k lie abhi is number par OTP bataen.,Roman Urdu,Scam,Scam,0.7065560033672927,True
+583,"Dear Customer, Apke NayaPay acount me 1 Lakh PKR deposit hue han. Available Balance: 1 Lakh PKR.",English,Safe,Safe,0.36372600133229244,True
+584,FBR ki taraf se apka State Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP sms karin.,Roman Urdu,Scam,Scam,0.5801641591286413,True
+585,"Dear Consumer, apka is mahine ka IESCO ka bill 50,000 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.3726585481496803,True
+586,Mubarak ho! Inaam Ghar main apka 350 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Scam,0.5250900508696424,True
+587,Mubarak ho! Ehsaas Program main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.36094624164724604,False
+588,FBR ki taraf se apka Meezan Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP rabta krein.,Roman Urdu,Scam,Scam,0.5883082439542788,True
+589,Aap k UBL acount se 2500 PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.30265048166099545,True
+590,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 72367361.,English,Safe,Safe,0.24716070201118231,True
+591,Apka SadaPay ka acc KYC update na hone ki waja se block ho gaya ha. Abhi call karin 0380909208 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5440589239055195,True
+592,PTCL Alert: Apka pichla bill clear ho chuka hai. Current balance is 0 PKR.,English,Safe,Safe,0.3580849356796809,True
+593,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye han. Trx ID: 31631143.,English,Safe,Safe,0.2714896654192861,True
+594,"Moaziz sarif, apka BISP ki taraf se 350 PKR ka inaam nikla h. Taseeq k liye 0358572400 par call krn.",Roman Urdu,Scam,Scam,0.4748768644305243,True
+595,"Moaziz sarif, apka Benazir Income Support ki taraf se 350 PKR ka inaam nikla h. Taseeq k liye 0359044057 par sms karin.",Roman Urdu,Scam,Scam,0.531376736465255,True
+596,Easypaisa: Aap ne successfully 350 PKR transfer kar diye han. Trx ID: 91109146.,English,Safe,Safe,0.2522035850401818,True
+597,Salary of 12500 PKR has been credited to your HBL acount. Thank you.,English,Safe,Safe,0.2591150377809739,True
+598,Apka SadaPay ka acount verification na hone ki waja se block ho gaya ha. Abhi rabta krein 0314466970 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6784840230375813,True
+599,Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 2500 PKR. Akhri tareekh se pehle PSCA app k zariye pay kren.,Roman Urdu,Safe,Safe,0.24791853186327079,True
+600,"Your JazzCash OTP for online transaction is 62039134. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+601,"Your Allied Bank OTP for online transaction is 96321500. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3246566538148109,True
+602,"Your State Bank OTP for online transaction is 41930063. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+603,"Moaziz sarif, apka BISP ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0364220705 par rabta krein.",Roman Urdu,Scam,Safe,0.339885245890135,False
+604,"Aap k Meezan Bank account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5236036223255419,False
+605,Aap k HBL account se 10000 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3427254943159771,True
+606,"Dear Consumer, apka is mahine ka IESCO ka bill 10000 PKR h. Due date guzarne se pehle ada kren.",Roman Urdu,Safe,Safe,0.1856588282369872,True
+607,"Your HBL OTP for online transaction is 79906449. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+608,Aap k MCB account se 1 Lakh PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Scam,0.5052240182136872,False
+609,"Aap ka Allied Bank debit card ATM par use hua h. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call krn.",Roman Urdu,Safe,Scam,0.48356558361222735,False
+610,"Dear Consumer, apka is mahine ka WASA ka bill 12500 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.22808890183814937,True
+611,"Aap k SadaPay account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.48121790061364733,False
+612,Salary of 12500 PKR has been credited to your NayaPay acount. Thank you.,English,Safe,Safe,0.26439248497203655,True
+613,Salary of 10000 PKR has been credited to your Meezan Bank acount. Thank you.,English,Safe,Safe,0.28213758637981795,True
+614,"Dear Consumer, apka is mahine ka LESCO ka bill 75,000 PKR h. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.3122805468587323,True
+615,Apka UBL ka account tax jama na krwane ki waja se block ho gaya hai. Abhi details send krain 0380251778 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7026494620353493,True
+616,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 65193040.,English,Safe,Safe,0.2042494351252267,True
+617,Aap k HBL acount se 1 Lakh PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.4654621131135162,True
+618,"Dear Consumer, apka is mahine ka WASA ka bill 350 PKR h. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.28386613557288576,True
+619,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 20169965.,English,Safe,Safe,0.24716070201118231,True
+620,Aap k JazzCash acc se 12500 PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.26885393264218954,True
+621,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 21744792.,English,Safe,Safe,0.2042494351252267,True
+622,Salary of 10000 PKR has been credited to your UBL account. Thank you.,English,Safe,Safe,0.29240739320552944,True
+623,Traffic Police: Apki gari ka E-Challan generate ho gaya h. Amount 1 Lakh PKR. Akhri tareekh se pehle PSCA app k zariye pay karin.,Roman Urdu,Safe,Safe,0.36094545547046186,True
+624,"Your State Bank OTP for online transaction is 89359727. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+625,"Moaziz sarif, apka Ehsaas Program ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0355233806 par pin code dain.",Roman Urdu,Scam,Safe,0.4117742424457696,False
+626,"Your Allied Bank OTP for online transaction is 89752332. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3246566538148109,True
+627,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 72801921.,English,Safe,Safe,0.2042494351252267,True
+628,"Your Meezan Bank OTP for online transaction is 77427720. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+629,Apka Meezan Bank ka account tax jama na krwane ki waja se block ho gaya hai. Abhi details send krain 0378105319 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6981039877419686,True
+630,"Your Easypaisa OTP for online transaction is 92981730. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.30423781522790905,True
+631,"Moaziz sarif, apka Benazir Income Support ki taraf se 50,000 PKR ka inaam nikla hai. Taseeq k liye 0311116742 par sms karin.",Roman Urdu,Scam,Scam,0.5403816819145356,True
+632,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 91908704.,English,Safe,Safe,0.2042494351252267,True
+633,"Your NayaPay OTP for online transaction is 77153536. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+634,Apka SadaPay ka account KYC update na hone ki waja se block ho gaya hai. Abhi OTP bataen 0372043825 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6261896168798073,True
+635,Mubarak ho! Benazir Income Support main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.43527531253914303,False
+636,"Dear Consumer, apka is mahine ka WASA ka bill 1 Lakh PKR h. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.31132444483081856,True
+637,"Dear Consumer, apka is mahine ka WASA ka bill 350 PKR h. Due date guzarne se pehle ada karin.",Roman Urdu,Safe,Safe,0.3020377586834892,True
+638,Apka NayaPay ka acc system error ki waja se block ho gaya h. Abhi details send krain 0398264956 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6708577864146609,True
+639,"Moaziz sarif, apka Ehsaas Program ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0374047194 par details send krain.",Roman Urdu,Scam,Scam,0.5245177380765442,True
+640,IESCO Alert: Apka pichla bill clear ho chuka h. Current balance is 0 PKR.,English,Safe,Safe,0.37631959832624995,True
+641,Apka State Bank ka account tax jama na krwane ki waja se block ho gaya hai. Abhi rabta krein 0355307670 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6201071942249841,True
+642,Aap ka JazzCash debit card ATM par use hua ha. Amount: 2500 PKR. Agar yeh aap ne nahi kiya toh helpline par call krn.,Roman Urdu,Safe,Safe,0.3229721005683232,True
+643,"Dear Consumer, apka is mahine ka IESCO ka bill 75,000 PKR h. Due date guzarne se pehle ada kren.",Roman Urdu,Safe,Safe,0.3205279232684587,True
+644,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 37893128.",English,Safe,Safe,0.2716968617812111,True
+645,Aap ka Easypaisa debit card ATM par use hua h. Amount: 2500 PKR. Agar yeh aap ne nahi kiya toh helpline par call krn.,Roman Urdu,Safe,Safe,0.3275114751293595,True
+646,Apka HBL ka account tax jama na krwane ki waja se block ho gaya hai. Abhi details send krain 0386005702 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7016657524445176,True
+647,"Salary of 50,000 PKR has been credited to your NayaPay account. Thank you.",English,Safe,Safe,0.45433644693941905,True
+648,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye han. Trx ID: 40437287.,English,Safe,Safe,0.20845446312045762,True
+649,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hn. Trx ID: 38556108.,English,Safe,Safe,0.2651378090104783,True
+650,"Dear Consumer, apka is mahine ka PTCL ka bill 350 PKR ha. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.27674778450175574,True
+651,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 82917439.,English,Safe,Safe,0.24716070201118231,True
+652,"Aap k JazzCash account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4884480737882388,False
+653,"Dear Customer, Apke Meezan Bank account me 5000 PKR deposit hue hain. Available Balance: 5000 PKR.",English,Safe,Safe,0.23388029612676106,True
+654,"Your UBL OTP for online transaction is 58028603. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+655,"Dear Customer, Apke UBL account me 75,000 PKR deposit hue hain. Available Balance: 75,000 PKR.",English,Safe,Safe,0.3942495218665166,True
+656,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye hain. Trx ID: 10526773.",English,Safe,Safe,0.2750750891017386,True
+657,Apka JazzCash ka account verification na hone ki waja se block ho gaya hai. Abhi sms karin 0394454544 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7048008387466371,True
+658,Aap ka Easypaisa debit card ATM par use hua hai. Amount: 5000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.36470209908807083,True
+659,Aap ka Allied Bank debit card ATM par use hua hai. Amount: 12500 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.39225961094886774,True
+660,"Your MCB OTP for online transaction is 84280481. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31269928482415504,True
+661,Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 350 PKR. Akhri tareekh se pehle PSCA app k zariye pay kren.,Roman Urdu,Safe,Safe,0.33462361921580186,True
+662,"Moaziz sarif, apka Benazir Income Support ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0357764311 par rabta krein.",Roman Urdu,Scam,Safe,0.38649504066354795,False
+663,Aap ka MCB debit card ATM par use hua hai. Amount: 10000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.37876304318247545,True
+664,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 92616266.,English,Safe,Safe,0.2042494351252267,True
+665,"Mubarak ho! Jeeto Pakistan main apka 50,000 ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.",Roman Urdu,Scam,Scam,0.5811157317637615,True
+666,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 15207740.,English,Safe,Safe,0.2665586695181604,True
+667,"Moaziz sarif, apka BISP ki taraf se 75,000 PKR ka inaam nikla hai. Taseeq k liye 0338921129 par rabta krein.",Roman Urdu,Scam,Scam,0.510421556811803,True
+668,"Your JazzCash OTP for online transaction is 92227618. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+669,Apka State Bank account hack hone ka khatra hai. Apna password change krne k lie abhi is number par OTP bataen.,Roman Urdu,Scam,Scam,0.6856539184194207,True
+670,Apka Allied Bank ka account suspicious activity ki waja se block ho gaya hai. Abhi call karein 0321738213 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6609301850986335,True
+671,Apka Allied Bank acount hack hone ka khatra ha. Apna password change krne k lie abhi is number par details send krain.,Roman Urdu,Scam,Scam,0.7362496657283595,True
+672,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hn. Trx ID: 26281240.,English,Safe,Safe,0.20209417884015102,True
+673,"Your NayaPay OTP for online transaction is 52402548. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+674,Aap ka Allied Bank debit card ATM par use hua hai. Amount: 1 Lakh PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Scam,0.5115993722254406,False
+675,"Dear Customer, Apke JazzCash acc me 1 Lakh PKR deposit hue han. Available Balance: 1 Lakh PKR.",English,Safe,Safe,0.3315295513677133,True
+676,Salary of 12500 PKR has been credited to your State Bank account. Thank you.,English,Safe,Safe,0.2878499536622985,True
+677,"Your Meezan Bank OTP for online transaction is 77745765. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+678,"Your JazzCash OTP for online transaction is 25775734. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+679,Apka Meezan Bank ka account suspicious activity ki waja se block ho gaya hai. Abhi call karein 0319001208 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6525613202631871,True
+680,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 35102506.,English,Safe,Safe,0.2042494351252267,True
+681,Apka Meezan Bank ka account verification na hone ki waja se block ho gaya hai. Abhi pin code dain 0370514501 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7086658255168481,True
+682,"Aap k HBL account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5164660801698512,False
+683,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye han. Trx ID: 86230892.,English,Safe,Safe,0.20845446312045762,True
+684,Mubarak ho! Jeeto Pakistan main apka 350 ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.,Roman Urdu,Scam,Scam,0.5898067700299606,True
+685,"Moaziz sarif, apka Benazir Income Support ki taraf se 1 Lakh PKR ka inaam nikla hai. Taseeq k liye 0382809319 par call karein.",Roman Urdu,Scam,Scam,0.5454775469472268,True
+686,FBR ki taraf se apka JazzCash account freeze kr dia gya hai. Unblock krwane k lie abhi OTP details send krain.,Roman Urdu,Scam,Scam,0.646536331754659,True
+687,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 47529236.,English,Safe,Safe,0.2042494351252267,True
+688,Apka State Bank ka account tax jama na krwane ki waja se block ho gaya hai. Abhi details send krain 0351453743 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6837427130618101,True
+689,"Your State Bank OTP for online transaction is 74188941. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+690,Mubarak ho! BISP main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.403232587529009,False
+691,Apka State Bank ka account KYC update na hone ki waja se block ho gaya hai. Abhi OTP bataen 0344037735 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6430496099109873,True
+692,Aap k State Bank account se 12500 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3347708765501997,True
+693,Traffic Police: Apki gari ka E-Challan generate ho gaya hai. Amount 350 PKR. Akhri tareekh se pehle PSCA app k zariye pay karein.,Roman Urdu,Safe,Safe,0.37135008215923104,True
+694,FBR ki taraf se apka NayaPay account freeze kr dia gya hai. Unblock krwane k lie abhi OTP sms karin.,Roman Urdu,Scam,Scam,0.6034226113335817,True
+695,"Traffic Police: Apki gari ka E-Challan generate ho gaya h. Amount 75,000 PKR. Akhri tareekh se pehle PSCA app k zariye pay kren.",Roman Urdu,Safe,Safe,0.36077402682801846,True
+696,Mubarak ho! Ehsaas Program main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.3724153357062086,False
+697,Mubarak ho! Ehsaas Program main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.36094624164724604,False
+698,"Salary of 75,000 PKR has been credited to your MCB acount. Thank you.",English,Safe,Safe,0.4146916254547978,True
+699,"Traffic Police: Apki gari ka E-Challan generate ho gaya hai. Amount 75,000 PKR. Akhri tareekh se pehle PSCA app k zariye pay karein.",Roman Urdu,Safe,Safe,0.39596941440193556,True
+700,Aap ka UBL debit card ATM par use hua h. Amount: 350 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.45788597609517934,True
+701,"Your HBL OTP for online transaction is 37316888. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+702,Mubarak ho! Ehsaas Program main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Scam,0.4898670152901965,True
+703,"Mubarak ho! Jeeto Pakistan main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.",Roman Urdu,Scam,Scam,0.5786550623865493,True
+704,"Your NayaPay OTP for online transaction is 74164028. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+705,"Dear Consumer, apka is mahine ka K-Electric ka bill 5000 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.23991992052332115,True
+706,"Your Meezan Bank OTP for online transaction is 73356747. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+707,"Moaziz sarif, apka BISP ki taraf se 75,000 PKR ka inaam nikla hai. Taseeq k liye 0385657256 par call karein.",Roman Urdu,Scam,Scam,0.5484753766505416,True
+708,Salary of 1 Lakh PKR has been credited to your Meezan Bank account. Thank you.,English,Safe,Safe,0.44427490031940897,True
+709,"Bha apke number par ghalti se mere 5000 rs aa gaye han easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Safe,0.4366750660301885,False
+710,Mubarak ho! BISP main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.41620801436392824,False
+711,Mubarak ho! BISP main apka 350 ka inam lga ha. Apna inam hasil krne k lie apna SadaPay pin is number par send krin.,Roman Urdu,Scam,Scam,0.5094241230909429,True
+712,"Your UBL OTP for online transaction is 55151462. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+713,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 27879920.,English,Safe,Safe,0.2665586695181604,True
+714,Apka HBL ka account KYC update na hone ki waja se block ho gaya hai. Abhi pin code dain 0357883454 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6261433736556334,True
+715,Mubarak ho! Jeeto Pakistan main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.44880338648518314,False
+716,Apka UBL ka account KYC update na hone ki waja se block ho gaya hai. Abhi rabta krein 0374852629 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6420276793556743,True
+717,Apka Easypaisa account hack hone ka khatra hai. Apna password change krne k lie abhi is number par OTP bataen.,Roman Urdu,Scam,Scam,0.678009806232242,True
+718,Apka MCB ka account system error ki waja se block ho gaya hai. Abhi details send krain 0394903100 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7064324431631281,True
+719,Apka HBL ka acount KYC update na hone ki waja se block ho gaya h. Abhi pin code dain 0383056475 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6061943327890938,True
+720,Salary of 12500 PKR has been credited to your State Bank acount. Thank you.,English,Safe,Safe,0.2573341077379887,True
+721,Apka Allied Bank ka acc verification na hone ki waja se block ho gaya ha. Abhi OTP bataen 0368150904 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7205989428994355,True
+722,"Your UBL OTP for online transaction is 17256908. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+723,Salary of 2500 PKR has been credited to your JazzCash acount. Thank you.,English,Safe,Safe,0.2523669189785725,True
+724,"Your SadaPay OTP for online transaction is 48377313. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.2998953173721229,True
+725,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hn. Trx ID: 73262500.,English,Safe,Safe,0.24518242660500833,True
+726,"Your Easypaisa OTP for online transaction is 18149483. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.30423781522790905,True
+727,Apka NayaPay ka account KYC update na hone ki waja se block ho gaya hai. Abhi rabta krein 0318376169 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6416869396907602,True
+728,Apka JazzCash ka account system error ki waja se block ho gaya hai. Abhi details send krain 0344250131 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6772074694176794,True
+729,Apka State Bank ka acc suspicious activity ki waja se block ho gaya ha. Abhi rabta krein 0348454773 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5661047202293088,True
+730,"Dear Customer, Apke JazzCash acc me 10000 PKR deposit hue hn. Available Balance: 10000 PKR.",English,Safe,Safe,0.1794881936004715,True
+731,Mubarak ho! Inaam Ghar main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Meezan Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.4145905948791522,False
+732,"Moaziz sarif, apka Ehsaas Program ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0321966419 par sms karin.",Roman Urdu,Scam,Safe,0.43283055121509767,False
+733,Mubarak ho! BISP main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.,Roman Urdu,Scam,Safe,0.3961060047879743,False
+734,Apka HBL account hack hone ka khatra hai. Apna password change krne k lie abhi is number par pin code dain.,Roman Urdu,Scam,Scam,0.6663228274088239,True
+735,"Moaziz sarif, apka BISP ki taraf se 10000 PKR ka inaam nikla ha. Taseeq k liye 0398793936 par sms karin.",Roman Urdu,Scam,Safe,0.374389286541333,False
+736,"Moaziz sarif, apka Inaam Ghar ki taraf se 10000 PKR ka inaam nikla h. Taseeq k liye 0353620508 par pin code dain.",Roman Urdu,Scam,Safe,0.3450147482005897,False
+737,Apka JazzCash ka account system error ki waja se block ho gaya hai. Abhi rabta krein 0345022588 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6093638046172781,True
+738,Aap k HBL account se 2500 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3427254943159771,True
+739,"Moaziz sarif, apka BISP ki taraf se 2500 PKR ka inaam nikla ha. Taseeq k liye 0362782181 par OTP bataen.",Roman Urdu,Scam,Safe,0.40604107888354474,False
+740,Mubarak ho! Jeeto Pakistan main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.,Roman Urdu,Scam,Safe,0.44685725794939074,False
+741,Apka SadaPay acount hack hone ka khatra h. Apna password change krne k lie abhi is number par rabta krein.,Roman Urdu,Scam,Scam,0.6311801891084935,True
+742,Salary of 350 PKR has been credited to your SadaPay account. Thank you.,English,Safe,Safe,0.39161330862856325,True
+743,"Your SadaPay OTP for online transaction is 60322528. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.2998953173721229,True
+744,"Your State Bank OTP for online transaction is 25144399. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+745,"Dear Customer, Apke JazzCash account me 12500 PKR deposit hue hain. Available Balance: 12500 PKR.",English,Safe,Safe,0.21382058590336203,True
+746,"Your JazzCash OTP for online transaction is 69137755. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+747,"Dear Consumer, apka is mahine ka K-Electric ka bill 1 Lakh PKR h. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.31826730962217004,True
+748,"Dear Consumer, apka is mahine ka LESCO ka bill 75,000 PKR h. Due date guzarne se pehle ada karin.",Roman Urdu,Safe,Safe,0.33003883306679216,True
+749,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 11611508.,English,Safe,Safe,0.2042494351252267,True
+750,Apka Meezan Bank account hack hone ka khatra hai. Apna password change krne k lie abhi is number par call karein.,Roman Urdu,Scam,Scam,0.6932627082000233,True
+751,"Dear Consumer, apka is mahine ka Sui Gas ka bill 2500 PKR ha. Due date guzarne se pehle ada krn.",Roman Urdu,Safe,Safe,0.171882196718886,True
+752,Salary of 1 Lakh PKR has been credited to your MCB account. Thank you.,English,Safe,Safe,0.43812615835457946,True
+753,"Your NayaPay OTP for online transaction is 54952331. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+754,Apka State Bank ka account suspicious activity ki waja se block ho gaya hai. Abhi pin code dain 0310305459 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5979788501796488,True
+755,"Moaziz sarif, apka Benazir Income Support ki taraf se 75,000 PKR ka inaam nikla hai. Taseeq k liye 0334199647 par details send krain.",Roman Urdu,Scam,Scam,0.618162340076177,True
+756,Apka UBL acount hack hone ka khatra ha. Apna password change krne k lie abhi is number par sms karin.,Roman Urdu,Scam,Scam,0.6748441429791443,True
+757,Salary of 350 PKR has been credited to your Allied Bank account. Thank you.,English,Safe,Safe,0.43205568736365974,True
+758,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 86355295.,English,Safe,Safe,0.2042494351252267,True
+759,"Moaziz sarif, apka Ehsaas Program ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0390726737 par call karein.",Roman Urdu,Scam,Safe,0.45203218565961095,False
+760,K-Electric Alert: Apka pichla bill clear ho chuka h. Current balance is 0 PKR.,English,Safe,Safe,0.38224824149258474,True
+761,Apka NayaPay ka acount system error ki waja se block ho gaya h. Abhi rabta krein 0325387961 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6175189430077412,True
+762,"Dear Customer, Apke HBL account me 50,000 PKR deposit hue hain. Available Balance: 50,000 PKR.",English,Safe,Safe,0.3992201609856521,True
+763,"Moaziz sarif, apka Benazir Income Support ki taraf se 50,000 PKR ka inaam nikla hai. Taseeq k liye 0381873579 par details send krain.",Roman Urdu,Scam,Scam,0.6203082147173702,True
+764,"Aap k Easypaisa acount se 50,000 PKR ki deduction hui h tax ki madd mein.",Roman Urdu,Safe,Safe,0.45667547640878076,True
+765,"Your Easypaisa OTP for online transaction is 36855129. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.30423781522790905,True
+766,FBR ki taraf se apka State Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP rabta krein.,Roman Urdu,Scam,Scam,0.5664679628870438,True
+767,"Mubarak ho! Inaam Ghar main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna SadaPay pin is number par send krin.",Roman Urdu,Scam,Scam,0.5143618615150356,True
+768,"Moaziz sarif, apka Benazir Income Support ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0330396491 par sms karin.",Roman Urdu,Scam,Scam,0.5167497863971555,True
+769,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hn. Trx ID: 92250664.,English,Safe,Safe,0.20209417884015102,True
+770,Aap k Allied Bank account se 5000 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3630748043143309,True
+771,Salary of 350 PKR has been credited to your Meezan Bank acc. Thank you.,English,Safe,Safe,0.37442310684349406,True
+772,"Your State Bank OTP for online transaction is 55352589. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+773,"Your Allied Bank OTP for online transaction is 29025237. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3246566538148109,True
+774,Salary of 5000 PKR has been credited to your UBL account. Thank you.,English,Safe,Safe,0.29240739320552944,True
+775,"Your Allied Bank OTP for online transaction is 87422370. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3246566538148109,True
+776,Easypaisa: Aap ne successfully 12500 PKR transfer kar diye hain. Trx ID: 77825635.,English,Safe,Safe,0.2042494351252267,True
+777,Aap k SadaPay acc se 12500 PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.2696277764716681,True
+778,Aap k Allied Bank acc se 12500 PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.2999753687075812,True
+779,Apka HBL ka account system error ki waja se block ho gaya hai. Abhi call karein 0395035323 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6661809973996188,True
+780,"Dear Customer, apka ATM card suspend kar dia gya ha. Apni details update krne k liye is link www.reward-claim.info pr click krain.",English,Scam,Scam,0.6493309115673092,True
+781,"Moaziz sarif, apka Inaam Ghar ki taraf se 350 PKR ka inaam nikla ha. Taseeq k liye 0394408235 par pin code dain.",Roman Urdu,Scam,Safe,0.4615986415627265,False
+782,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 78683487.,English,Safe,Safe,0.2042494351252267,True
+783,Aap k Easypaisa account se 10000 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3324055011548063,True
+784,"Your Meezan Bank OTP for online transaction is 68118011. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+785,Salary of 350 PKR has been credited to your NayaPay account. Thank you.,English,Safe,Safe,0.4201956783736587,True
+786,Aap ka State Bank debit card ATM par use hua h. Amount: 1 Lakh PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.4569780677364796,True
+787,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 83718087.",English,Safe,Safe,0.2716968617812111,True
+788,Salary of 350 PKR has been credited to your JazzCash account. Thank you.,English,Safe,Safe,0.39426995462618813,True
+789,Apka HBL ka acount suspicious activity ki waja se block ho gaya ha. Abhi sms karin 0329312391 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.608964311653457,True
+790,Apka Allied Bank acc hack hone ka khatra ha. Apna password change krne k lie abhi is number par details send krain.,Roman Urdu,Scam,Scam,0.7260015329239006,True
+791,"Aap ka Allied Bank debit card ATM par use hua h. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call kren.",Roman Urdu,Safe,Scam,0.48946761418556334,False
+792,Apka NayaPay ka account system error ki waja se block ho gaya hai. Abhi call karein 0354654833 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6666718741826496,True
+793,"Aap k Allied Bank account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5354970825306777,False
+794,Mubarak ho! Ehsaas Program main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Scam,0.4757833657783958,True
+795,"Bh apke number par ghalti se mere 1 Lakh rs aa gaye hn easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Scam,0.5638062431175136,True
+796,Mubarak ho! Jeeto Pakistan main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna SadaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.44231625598228846,False
+797,Apka JazzCash ka account verification na hone ki waja se block ho gaya hai. Abhi pin code dain 0390252950 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6898205325670349,True
+798,"Aap k Allied Bank account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5321530762953038,False
+799,"Your NayaPay OTP for online transaction is 20081651. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+800,Apka UBL ka acount tax jama na krwane ki waja se block ho gaya h. Abhi sms karin 0357340466 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6248359885233317,True
+801,"Moaziz sarif, apka Inaam Ghar ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0315455905 par details send krain.",Roman Urdu,Scam,Safe,0.45106063012836045,False
+802,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hn. Trx ID: 65355655.,English,Safe,Safe,0.20209417884015102,True
+803,Salary of 12500 PKR has been credited to your SadaPay account. Thank you.,English,Safe,Safe,0.2837509677252584,True
+804,"Moaziz sarif, apka Benazir Income Support ki taraf se 10000 PKR ka inaam nikla ha. Taseeq k liye 0363932819 par sms karin.",Roman Urdu,Scam,Safe,0.4148349005420175,False
+805,FBR ki taraf se apka NayaPay acount freeze kr dia gya ha. Unblock krwane k lie abhi OTP pin code dain.,Roman Urdu,Scam,Scam,0.5645756122622384,True
+806,"Dear Customer, Apke HBL account me 5000 PKR deposit hue hain. Available Balance: 5000 PKR.",English,Safe,Safe,0.2186163560159617,True
+807,Aap ka HBL debit card ATM par use hua ha. Amount: 5000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.34825630683044967,True
+808,"Your SadaPay OTP for online transaction is 93504309. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.2998953173721229,True
+809,Apka MCB ka acc tax jama na krwane ki waja se block ho gaya h. Abhi call karin 0315835400 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.5845368235113569,True
+810,"Moaziz sarif, apka BISP ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0363373939 par call karein.",Roman Urdu,Scam,Safe,0.38274477999860945,False
+811,"Mubarak ho! Ehsaas Program main apka 75,000 ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.",Roman Urdu,Scam,Scam,0.503501906994323,True
+812,"Your Allied Bank OTP for online transaction is 85353169. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3246566538148109,True
+813,"Moaziz sarif, apka BISP ki taraf se 1 Lakh PKR ka inaam nikla hai. Taseeq k liye 0354503080 par sms karin.",Roman Urdu,Scam,Scam,0.5114224500409799,True
+814,Mubarak ho! Benazir Income Support main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.4500314479283157,False
+815,"Dear Customer, Apke JazzCash account me 1 Lakh PKR deposit hue hain. Available Balance: 1 Lakh PKR.",English,Safe,Safe,0.367093705815615,True
+816,Aap k MCB account se 5000 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.34473726034434654,True
+817,Apka HBL ka account suspicious activity ki waja se block ho gaya hai. Abhi OTP bataen 0349287760 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6437283326181655,True
+818,"Aap k State Bank account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4940314927450909,False
+819,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 34889996.,English,Safe,Safe,0.24716070201118231,True
+820,"Your JazzCash OTP for online transaction is 93264552. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+821,Apka MCB ka account tax jama na krwane ki waja se block ho gaya hai. Abhi rabta krein 0397184576 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6432286052273711,True
+822,Aap ka State Bank debit card ATM par use hua ha. Amount: 10000 PKR. Agar yeh aap ne nahi kiya toh helpline par call kren.,Roman Urdu,Safe,Safe,0.33281519583971125,True
+823,"Your State Bank OTP for online transaction is 67239815. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+824,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 20985696.,English,Safe,Safe,0.24716070201118231,True
+825,"Dear Consumer, apka is mahine ka K-Electric ka bill 75,000 PKR ha. Due date guzarne se pehle ada karin.",Roman Urdu,Safe,Safe,0.34013595572972954,True
+826,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 50,000 PKR ka inaam nikla h. Taseeq k liye 0397411978 par rabta krein.",Roman Urdu,Scam,Scam,0.5752033008440397,True
+827,Apka NayaPay ka account suspicious activity ki waja se block ho gaya hai. Abhi details send krain 0337085373 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6878844543377555,True
+828,Apka JazzCash ka account suspicious activity ki waja se block ho gaya hai. Abhi rabta krein 0317430440 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6057657124536978,True
+829,Salary of 350 PKR has been credited to your HBL account. Thank you.,English,Safe,Safe,0.4163249034103226,True
+830,"Moaziz sarif, apka BISP ki taraf se 75,000 PKR ka inaam nikla ha. Taseeq k liye 0349459414 par sms karin.",Roman Urdu,Scam,Scam,0.539526370038012,True
+831,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 80187387.,English,Safe,Safe,0.2042494351252267,True
+832,Apka Meezan Bank ka account verification na hone ki waja se block ho gaya hai. Abhi sms karin 0337864529 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7229539844257139,True
+833,"Salary of 50,000 PKR has been credited to your Easypaisa acount. Thank you.",English,Safe,Safe,0.3973284236600258,True
+834,"Your MCB OTP for online transaction is 50434339. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31269928482415504,True
+835,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 85199060.,English,Safe,Safe,0.2042494351252267,True
+836,"Dear Consumer, apka is mahine ka K-Electric ka bill 10000 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.23991992052332115,True
+837,"Aap k Easypaisa account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4898197677692349,False
+838,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye han. Trx ID: 21822044.",English,Safe,Safe,0.28015702000629483,True
+839,Aap k Easypaisa acount se 10000 PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.29743027405258526,True
+840,Apka Meezan Bank ka account suspicious activity ki waja se block ho gaya hai. Abhi call karein 0352779931 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6525613202631871,True
+841,"Your JazzCash OTP for online transaction is 55284003. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+842,Apka NayaPay acc hack hone ka khatra ha. Apna password change krne k lie abhi is number par pin code dain.,Roman Urdu,Scam,Scam,0.6413110786006011,True
+843,"Dear Consumer, apka is mahine ka WASA ka bill 10000 PKR ha. Due date guzarne se pehle ada kren.",Roman Urdu,Safe,Safe,0.19298359449509558,True
+844,Aap ka JazzCash debit card ATM par use hua hai. Amount: 10000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.3617678875733165,True
+845,"Aap ka Meezan Bank debit card ATM par use hua hai. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.5152199233048521,False
+846,"Bha apke number par ghalti se mere 50,000 rs aa gaye han easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Scam,0.5801270430998006,True
+847,"Salary of 50,000 PKR has been credited to your NayaPay acc. Thank you.",English,Safe,Safe,0.3989929509032161,True
+848,Apka State Bank acount hack hone ka khatra ha. Apna password change krne k lie abhi is number par OTP bataen.,Roman Urdu,Scam,Scam,0.6750851331125282,True
+849,Apka SadaPay ka account system error ki waja se block ho gaya hai. Abhi rabta krein 0321735389 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6008115287690549,True
+850,"Your UBL OTP for online transaction is 82635788. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+851,Apka HBL ka account verification na hone ki waja se block ho gaya hai. Abhi rabta krein 0327313930 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7264310579955665,True
+852,Mubarak ho! Inaam Ghar main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.,Roman Urdu,Scam,Scam,0.538783465445276,True
+853,"Your HBL OTP for online transaction is 45338421. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+854,Aap ka MCB debit card ATM par use hua hai. Amount: 5000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.37876304318247545,True
+855,"Your HBL OTP for online transaction is 49145541. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+856,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 54428887.,English,Safe,Safe,0.2042494351252267,True
+857,Salary of 12500 PKR has been credited to your Allied Bank account. Thank you.,English,Safe,Safe,0.3106335373322516,True
+858,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 62513105.,English,Safe,Safe,0.2665586695181604,True
+859,Traffic Police: Apki gari ka E-Challan generate ho gaya h. Amount 12500 PKR. Akhri tareekh se pehle PSCA app k zariye pay kren.,Roman Urdu,Safe,Safe,0.24828220511044138,True
+860,Apka NayaPay ka acc verification na hone ki waja se block ho gaya h. Abhi call krn 0348268204 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6744817423923127,True
+861,"Moaziz sarif, apka Ehsaas Program ki taraf se 12500 PKR ka inaam nikla h. Taseeq k liye 0365779737 par rabta krein.",Roman Urdu,Scam,Safe,0.32235768709617196,False
+862,Apka HBL ka account KYC update na hone ki waja se block ho gaya hai. Abhi pin code dain 0366010324 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6238068182022145,True
+863,Apka Meezan Bank ka account suspicious activity ki waja se block ho gaya hai. Abhi call karein 0393149744 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6525613202631871,True
+864,Apka Allied Bank ka account KYC update na hone ki waja se block ho gaya hai. Abhi details send krain 0334742845 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7063701302333649,True
+865,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 18777741.,English,Safe,Safe,0.2042494351252267,True
+866,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 50,000 PKR ka inaam nikla hai. Taseeq k liye 0383070028 par pin code dain.",Roman Urdu,Scam,Scam,0.5501114358459325,True
+867,Mubarak ho! BISP main apka 1 Lakh ka inam lga ha. Apna inam hasil krne k lie apna SadaPay pin is number par send krin.,Roman Urdu,Scam,Scam,0.5209549078983694,True
+868,FBR ki taraf se apka Easypaisa acount freeze kr dia gya h. Unblock krwane k lie abhi OTP call karin.,Roman Urdu,Scam,Scam,0.5352843300542954,True
+869,FBR ki taraf se apka HBL acount freeze kr dia gya ha. Unblock krwane k lie abhi OTP OTP bataen.,Roman Urdu,Scam,Scam,0.596135702317482,True
+870,Apka NayaPay acc hack hone ka khatra ha. Apna password change krne k lie abhi is number par sms karin.,Roman Urdu,Scam,Scam,0.6606267166297752,True
+871,"Your MCB OTP for online transaction is 38902838. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31269928482415504,True
+872,Salary of 10000 PKR has been credited to your Easypaisa account. Thank you.,English,Safe,Safe,0.28758025035065027,True
+873,"Dear Consumer, apka is mahine ka LESCO ka bill 350 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.332274093695799,True
+874,Sui Gas Alert: Apka pichla bill clear ho chuka hai. Current balance is 0 PKR.,English,Safe,Safe,0.3358448266894844,True
+875,"Your State Bank OTP for online transaction is 64211227. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+876,Aap k SadaPay acount se 12500 PKR ki deduction hui h tax ki madd mein.,Roman Urdu,Safe,Safe,0.2918384187536913,True
+877,Easypaisa: Aap ne successfully 2500 PKR transfer kar diye hain. Trx ID: 60742478.,English,Safe,Safe,0.2042494351252267,True
+878,"Dear Customer, Apke SadaPay account me 2500 PKR deposit hue hain. Available Balance: 2500 PKR.",English,Safe,Safe,0.21426783530673885,True
+879,Apka MCB account hack hone ka khatra hai. Apna password change krne k lie abhi is number par rabta krein.,Roman Urdu,Scam,Scam,0.6798431229712854,True
+880,Salary of 10000 PKR has been credited to your SadaPay account. Thank you.,English,Safe,Safe,0.2837509677252584,True
+881,"Salary of 75,000 PKR has been credited to your MCB acc. Thank you.",English,Safe,Safe,0.3931335015356193,True
+882,Apka SadaPay ka account tax jama na krwane ki waja se block ho gaya hai. Abhi sms karin 0339873256 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6106654520065937,True
+883,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hain. Trx ID: 71546273.",English,Safe,Safe,0.2716968617812111,True
+884,"Moaziz sarif, apka Benazir Income Support ki taraf se 1 Lakh PKR ka inaam nikla hai. Taseeq k liye 0351687418 par details send krain.",Roman Urdu,Scam,Scam,0.6066338404801017,True
+885,"Your NayaPay OTP for online transaction is 47501609. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+886,Apka HBL ka account system error ki waja se block ho gaya hai. Abhi call karein 0368868861 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6661809973996188,True
+887,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hn. Trx ID: 24105871.,English,Safe,Safe,0.2651378090104783,True
+888,"Dear Consumer, apka is mahine ka LESCO ka bill 1 Lakh PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.3569149471615784,True
+889,"Moaziz sarif, apka Inaam Ghar ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0330164624 par OTP bataen.",Roman Urdu,Scam,Safe,0.37641001536426144,False
+890,"Bha apke number par ghalti se mere 350 rs aa gaye han easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Scam,0.5555723798496888,True
+891,Mubarak ho! BISP main apka 350 ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Scam,0.546777608279926,True
+892,Apka MCB account hack hone ka khatra hai. Apna password change krne k lie abhi is number par OTP bataen.,Roman Urdu,Scam,Scam,0.7104210155585934,True
+893,"Moaziz sarif, apka Ehsaas Program ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0312611596 par call karein.",Roman Urdu,Scam,Safe,0.34449476860551187,False
+894,"Aap ka Allied Bank debit card ATM par use hua ha. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.",Roman Urdu,Safe,Scam,0.49286294364615624,False
+895,Apka Allied Bank ka account KYC update na hone ki waja se block ho gaya hai. Abhi pin code dain 0381468805 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6343718552816576,True
+896,"Dear Customer, Apke NayaPay account me 50,000 PKR deposit hue hain. Available Balance: 50,000 PKR.",English,Safe,Safe,0.40210341894079765,True
+897,FBR ki taraf se apka Allied Bank acc freeze kr dia gya ha. Unblock krwane k lie abhi OTP pin code dain.,Roman Urdu,Scam,Scam,0.5573939558416986,True
+898,"Your NayaPay OTP for online transaction is 29843168. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+899,"Bhai apke number par ghalti se mere 50,000 rs aa gaye hain easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Scam,0.589815654667363,True
+900,"Dear Consumer, apka is mahine ka K-Electric ka bill 2500 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.23991992052332115,True
+901,"Your Meezan Bank OTP for online transaction is 59759760. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+902,Apka UBL ka account KYC update na hone ki waja se block ho gaya hai. Abhi sms karin 0360910717 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.644720995596022,True
+903,Apka MCB ka account suspicious activity ki waja se block ho gaya hai. Abhi call karein 0350478617 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6567009305114923,True
+904,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 35123250.,English,Safe,Safe,0.24716070201118231,True
+905,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye hain. Trx ID: 48928087.",English,Safe,Safe,0.2750750891017386,True
+906,Aap ka State Bank debit card ATM par use hua ha. Amount: 350 PKR. Agar yeh aap ne nahi kiya toh helpline par call krn.,Roman Urdu,Safe,Safe,0.4284756197086445,True
+907,"Your JazzCash OTP for online transaction is 65222418. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+908,"Dear Consumer, apka is mahine ka Sui Gas ka bill 10000 PKR ha. Due date guzarne se pehle ada kren.",Roman Urdu,Safe,Safe,0.1786440423587861,True
+909,Apka Allied Bank account hack hone ka khatra hai. Apna password change krne k lie abhi is number par sms karin.,Roman Urdu,Scam,Scam,0.6919914151348495,True
+910,Mubarak ho! Ehsaas Program main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.36094624164724604,False
+911,"Moaziz sarif, apka Inaam Ghar ki taraf se 5000 PKR ka inaam nikla h. Taseeq k liye 0340651247 par call kren.",Roman Urdu,Scam,Safe,0.32943615231663875,False
+912,FBR ki taraf se apka JazzCash account freeze kr dia gya hai. Unblock krwane k lie abhi OTP call karein.,Roman Urdu,Scam,Scam,0.5889766296760808,True
+913,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 97018977.,English,Safe,Safe,0.24716070201118231,True
+914,"Your NayaPay OTP for online transaction is 93465083. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+915,Salary of 5000 PKR has been credited to your JazzCash account. Thank you.,English,Safe,Safe,0.28276712378603003,True
+916,"Moaziz sarif, apka Ehsaas Program ki taraf se 1 Lakh PKR ka inaam nikla hai. Taseeq k liye 0372860792 par call karein.",Roman Urdu,Scam,Safe,0.4658678453051125,False
+917,"Dear Consumer, apka is mahine ka IESCO ka bill 1 Lakh PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.35820895512244383,True
+918,Easypaisa: Aap ne successfully 10000 PKR transfer kar diye hain. Trx ID: 49833247.,English,Safe,Safe,0.2042494351252267,True
+919,Apka Easypaisa ka account system error ki waja se block ho gaya hai. Abhi details send krain 0342221883 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6755819906931202,True
+920,Aap k Meezan Bank acount se 5000 PKR ki deduction hui ha tax ki madd mein.,Roman Urdu,Safe,Safe,0.32584161991834465,True
+921,Apka Meezan Bank ka acc verification na hone ki waja se block ho gaya h. Abhi sms karin 0351693108 par warna acc hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6960489624137013,True
+922,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 75,000 PKR ka inaam nikla hai. Taseeq k liye 0369837647 par call karein.",Roman Urdu,Scam,Scam,0.587959436481951,True
+923,"Dear Consumer, apka is mahine ka K-Electric ka bill 350 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.34403041306517324,True
+924,"Aap ka JazzCash debit card ATM par use hua h. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call kren.",Roman Urdu,Safe,Safe,0.4540769339181678,True
+925,"Moaziz sarif, apka Benazir Income Support ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0393068106 par sms karin.",Roman Urdu,Scam,Scam,0.5167497863971555,True
+926,"Your HBL OTP for online transaction is 86614958. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+927,"Moaziz sarif, apka BISP ki taraf se 1 Lakh PKR ka inaam nikla hai. Taseeq k liye 0345978347 par pin code dain.",Roman Urdu,Scam,Scam,0.48678388975684667,True
+928,Salary of 5000 PKR has been credited to your UBL acc. Thank you.,English,Safe,Safe,0.23772062591052426,True
+929,"Your Easypaisa OTP for online transaction is 88859936. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.30423781522790905,True
+930,Apka SadaPay ka account system error ki waja se block ho gaya hai. Abhi details send krain 0397835803 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6692304106123812,True
+931,"Aap ka NayaPay debit card ATM par use hua ha. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.",Roman Urdu,Safe,Scam,0.4812752266186937,False
+932,Aap k UBL account se 2500 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.34273322766221903,True
+933,Apka MCB ka account verification na hone ki waja se block ho gaya hai. Abhi pin code dain 0343664262 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7166348847618149,True
+934,Apka NayaPay ka acount tax jama na krwane ki waja se block ho gaya ha. Abhi sms karin 0328391062 par warna acount hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6215397170828817,True
+935,"Easypaisa: Aap ne successfully 50,000 PKR transfer kar diye hain. Trx ID: 75168771.",English,Safe,Safe,0.2750750891017386,True
+936,Aap ka MCB debit card ATM par use hua h. Amount: 2500 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.3514565842884007,True
+937,Aap k Allied Bank account se 12500 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Safe,0.3630748043143309,True
+938,Apka UBL ka account suspicious activity ki waja se block ho gaya hai. Abhi OTP bataen 0310217016 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6465476591464239,True
+939,Apka State Bank ka account tax jama na krwane ki waja se block ho gaya hai. Abhi rabta krein 0328278456 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.6201071942249841,True
+940,"Your Allied Bank OTP for online transaction is 94049906. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3246566538148109,True
+941,"Moaziz sarif, apka Benazir Income Support ki taraf se 1 Lakh PKR ka inaam nikla h. Taseeq k liye 0382912813 par pin code dain.",Roman Urdu,Scam,Scam,0.5216002201546943,True
+942,Easypaisa: Aap ne successfully 5000 PKR transfer kar diye hain. Trx ID: 55284237.,English,Safe,Safe,0.2042494351252267,True
+943,"Your MCB OTP for online transaction is 30635972. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31269928482415504,True
+944,"Moaziz sarif, apka Inaam Ghar ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0394519600 par call karein.",Roman Urdu,Scam,Safe,0.3740482676728356,False
+945,"Your HBL OTP for online transaction is 78890732. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True
+946,"Bha apke number par ghalti se mere 1 Lakh rs aa gaye han easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Scam,0.5647170554823314,True
+947,FBR ki taraf se apka MCB account freeze kr dia gya hai. Unblock krwane k lie abhi OTP call karein.,Roman Urdu,Scam,Scam,0.6239289951425945,True
+948,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 40492688.,English,Safe,Safe,0.2665586695181604,True
+949,Salary of 5000 PKR has been credited to your Easypaisa account. Thank you.,English,Safe,Safe,0.28758025035065027,True
+950,Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 350 PKR. Akhri tareekh se pehle PSCA app k zariye pay krn.,Roman Urdu,Safe,Safe,0.32993999197389073,True
+951,Apka UBL account hack hone ka khatra hai. Apna password change krne k lie abhi is number par details send krain.,Roman Urdu,Scam,Scam,0.7400421906210032,True
+952,"Dear Consumer, apka is mahine ka WASA ka bill 10000 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.22808890183814937,True
+953,"Dear Customer, Apke SadaPay acc me 12500 PKR deposit hue han. Available Balance: 12500 PKR.",English,Safe,Safe,0.18585762006277678,True
+954,"Moaziz sarif, apka Inaam Ghar ki taraf se 75,000 PKR ka inaam nikla hai. Taseeq k liye 0389286366 par pin code dain.",Roman Urdu,Scam,Scam,0.4738882423898044,True
+955,"Your UBL OTP for online transaction is 89222781. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+956,"Dear Customer, Apke Meezan Bank acount me 350 PKR deposit hue hn. Available Balance: 350 PKR.",English,Safe,Safe,0.33915165096215566,True
+957,"Your JazzCash OTP for online transaction is 43463971. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3010463849371398,True
+958,"Dear Customer, Apke Allied Bank account me 50,000 PKR deposit hue hain. Available Balance: 50,000 PKR.",English,Safe,Safe,0.4129912400050642,True
+959,"Dear Consumer, apka is mahine ka IESCO ka bill 2500 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.2218890478638583,True
+960,"Easypaisa: Aap ne successfully 75,000 PKR transfer kar diye hn. Trx ID: 67639135.",English,Safe,Safe,0.2702748099715799,True
+961,Mubarak ho! Benazir Income Support main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.43101089714658763,False
+962,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye han. Trx ID: 48250903.,English,Safe,Safe,0.2714896654192861,True
+963,FBR ki taraf se apka NayaPay acc freeze kr dia gya h. Unblock krwane k lie abhi OTP call karin.,Roman Urdu,Scam,Scam,0.5472208640375262,True
+964,Aap ka Meezan Bank debit card ATM par use hua h. Amount: 350 PKR. Agar yeh aap ne nahi kiya toh helpline par call krn.,Roman Urdu,Safe,Safe,0.45399141282347755,True
+965,Aap ka SadaPay debit card ATM par use hua h. Amount: 2500 PKR. Agar yeh aap ne nahi kiya toh helpline par call kren.,Roman Urdu,Safe,Safe,0.3267477054746254,True
+966,"Dear Customer, apka ATM card suspend kar dia gya hai. Apni details update krne k liye is link http://bit.ly/update-acc pr click krain.",English,Scam,Scam,0.6597541438885356,True
+967,"Dear Consumer, apka is mahine ka Sui Gas ka bill 10000 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.21097478428500135,True
+968,Mubarak ho! BISP main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Meezan Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.4281565110709238,False
+969,Aap ka JazzCash debit card ATM par use hua hai. Amount: 2500 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Safe,0.3617678875733165,True
+970,"Dear Customer, Apke JazzCash account me 350 PKR deposit hue hain. Available Balance: 350 PKR.",English,Safe,Safe,0.3385582172103252,True
+971,"Moaziz sarif, apka BISP ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0335550911 par OTP bataen.",Roman Urdu,Scam,Safe,0.39083928804087636,False
+972,Salary of 10000 PKR has been credited to your State Bank acc. Thank you.,English,Safe,Safe,0.23863335138281985,True
+973,"Dear Customer, Apke JazzCash account me 10000 PKR deposit hue hain. Available Balance: 10000 PKR.",English,Safe,Safe,0.21382058590336203,True
+974,"Moaziz sarif, apka BISP ki taraf se 75,000 PKR ka inaam nikla hai. Taseeq k liye 0319865898 par rabta krein.",Roman Urdu,Scam,Scam,0.510421556811803,True
+975,"Salary of 50,000 PKR has been credited to your MCB acount. Thank you.",English,Safe,Safe,0.4189076254466045,True
+976,Easypaisa: Aap ne successfully 350 PKR transfer kar diye hain. Trx ID: 56801335.,English,Safe,Safe,0.24716070201118231,True
+977,FBR ki taraf se apka Meezan Bank account freeze kr dia gya hai. Unblock krwane k lie abhi OTP call karein.,Roman Urdu,Scam,Scam,0.617081018210703,True
+978,"Salary of 75,000 PKR has been credited to your HBL acount. Thank you.",English,Safe,Safe,0.4116077452780176,True
+979,"Moaziz sarif, apka Ehsaas Program ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0365733196 par pin code dain.",Roman Urdu,Scam,Safe,0.31141764743107025,False
+980,"Dear Customer, Apke JazzCash account me 50,000 PKR deposit hue hain. Available Balance: 50,000 PKR.",English,Safe,Safe,0.38367774663282295,True
+981,"Aap k Easypaisa account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4863453026356735,False
+982,Salary of 12500 PKR has been credited to your UBL acount. Thank you.,English,Safe,Safe,0.25865722167686994,True
+983,Apka NayaPay account hack hone ka khatra hai. Apna password change krne k lie abhi is number par details send krain.,Roman Urdu,Scam,Scam,0.7388616992826037,True
+984,Apka HBL ka account verification na hone ki waja se block ho gaya hai. Abhi sms karin 0354160912 par warna account hamesha k liye band ho jaye ga.,Roman Urdu,Scam,Scam,0.7281392885123303,True
+985,"Dear Customer, Apke JazzCash acc me 50,000 PKR deposit hue han. Available Balance: 50,000 PKR.",English,Safe,Safe,0.3465689449098035,True
+986,Traffic Police: Apki gari ka E-Challan generate ho gaya ha. Amount 10000 PKR. Akhri tareekh se pehle PSCA app k zariye pay krn.,Roman Urdu,Safe,Safe,0.24314104964853062,True
+987,"Your UBL OTP for online transaction is 86038460. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+988,"Your State Bank OTP for online transaction is 46031040. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.308695367395217,True
+989,"Your UBL OTP for online transaction is 86635255. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113631410371485,True
+990,Easypaisa: Aap ne successfully 1 Lakh PKR transfer kar diye hain. Trx ID: 94868058.,English,Safe,Safe,0.2665586695181604,True
+991,"Dear Customer, Apke Allied Bank acc me 2500 PKR deposit hue han. Available Balance: 2500 PKR.",English,Safe,Safe,0.20039376006626441,True
+992,"Your NayaPay OTP for online transaction is 69145668. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.31464042977553947,True
+993,"Mubarak ho! BISP main apka 50,000 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.",Roman Urdu,Scam,Scam,0.5519467505094273,True
+994,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0350143882 par details send krain.",Roman Urdu,Scam,Scam,0.5160791501275597,True
+995,Salary of 10000 PKR has been credited to your MCB acount. Thank you.,English,Safe,Safe,0.2598340712602643,True
+996,Aap ka UBL debit card ATM par use hua h. Amount: 5000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Safe,0.3497942442143953,True
+997,"Dear Consumer, apka is mahine ka Sui Gas ka bill 2500 PKR hai. Due date guzarne se pehle ada karein.",Roman Urdu,Safe,Safe,0.21097478428500135,True
+998,"Your Meezan Bank OTP for online transaction is 88635824. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.32472651572413364,True
+999,Salary of 12500 PKR has been credited to your Easypaisa account. Thank you.,English,Safe,Safe,0.28758025035065027,True
+1000,"Your HBL OTP for online transaction is 76577681. Do not share this OTP with anyone, not even bank staff.",English,Safe,Safe,0.3113594342734477,True

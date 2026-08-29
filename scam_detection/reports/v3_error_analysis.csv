@@ -1,0 +1,6 @@
+message,true_label,predicted_label,language,probability,error_type
+Training session for new software will be held next Monday. All team members are required to attend.,Safe,Scam,,0.5647600617140158,FP-safe-flagged
+"Your debit card annual fee of Rs. 1,500 has been charged. For queries, call UBL helpline 021-111-825-888.",Safe,Scam,,0.5083518022108138,FP-safe-flagged
+کشمیر زلزلہ ریلیف فنڈ: فراخدلانہ عطیات دیں۔ ایزی پیسہ نمبر: 03XX-XXXXXXX۔,Scam,Safe,,0.4002728039776371,FN-missed-scam
+JazzCash Cashback: Earn Rs. 500 cashback on your next bill payment. Activate by dialing *786# and entering promo code SAVE500.,Scam,Safe,Generated,0.46747430694682707,FN-missed-scam
+"بیٹا، میں امی ہوں۔ نئے فون سے میسج کر رہی ہوں۔ Rs. 12,000 بھیج دو، دوا لینی ہے۔",Scam,Safe,,0.40758871900438914,FN-missed-scam

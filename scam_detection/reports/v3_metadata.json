@@ -1,0 +1,59 @@
+{
+  "best_model_name": "B_combined_C5",
+  "version": "V3",
+  "model_type": "simple_pipeline",
+  "threshold": 0.49,
+  "use_ensemble": false,
+  "random_seed": 42,
+  "n_folds": 5,
+  "dataset": {
+    "original": 868,
+    "augmented": 255,
+    "combined": 1123,
+    "train": 795,
+    "val": 141,
+    "test": 187
+  },
+  "cv_results": {
+    "cv_acc_mean": 0.9421383647798741,
+    "cv_acc_std": 0.014560801135585187,
+    "train_acc_mean": 1.0,
+    "cv_f1_mean": 0.9474033101745031,
+    "cv_f1_std": 0.013943852625103559,
+    "train_f1_mean": 1.0,
+    "cv_recall_mean": 0.9563218390804596,
+    "cv_recall_std": 0.028527985393082447,
+    "train_recall_mean": 1.0,
+    "cv_precision_mean": 0.9390917518236066,
+    "cv_precision_std": 0.00465805834458373,
+    "train_precision_mean": 1.0,
+    "cv_f2_mean": 0.952679118252662,
+    "cv_f2_std": 0.022575337195307264,
+    "train_f2_mean": 1.0
+  },
+  "test_metrics": {
+    "accuracy": 0.9732620320855615,
+    "f1": 0.975609756097561,
+    "f2": 0.9727626459143969,
+    "recall": 0.970873786407767,
+    "precision": 0.9803921568627451,
+    "roc_auc": 0.9959546925566343,
+    "TP": 100,
+    "FP": 2,
+    "FN": 3,
+    "TN": 82
+  },
+  "language_results": {
+    "Generated": {
+      "n": 42.0,
+      "accuracy": 0.9761904761904762,
+      "precision": 1.0,
+      "recall": 0.9615384615384616,
+      "f1": 0.9803921568627451
+    }
+  },
+  "overfitting_check": {
+    "train_cv_gap": 0.05259668982549692,
+    "cv_test_gap": -0.028206445923057877
+  }
+}

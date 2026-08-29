@@ -1,0 +1,6 @@
+model,description,cv_f1_mean,cv_f1_std,val_accuracy,val_f1,val_recall,val_precision,val_auc,test_accuracy,test_f1,test_recall,test_precision,test_auc,test_TP,test_FP,test_FN,test_TN
+A_tfidf_word_lr,"TF-IDF word (1,2)-grams + Logistic Regression",0.9161,0.0260,0.8333,0.8679,0.9200,0.8214,0.9082,0.8841,0.8974,0.8537,0.9459,0.9730,35,2,6,26
+B_tfidf_word_svm,"TF-IDF word (1,2)-grams + Linear SVM",0.9312,0.0316,0.8571,0.8846,0.9200,0.8519,0.9247,0.9130,0.9231,0.8780,0.9730,0.9808,36,1,5,27
+C_tfidf_char_lr,TF-IDF char (3-6)-grams + Logistic Regression,0.9160,0.0233,0.8333,0.8627,0.8800,0.8462,0.8871,0.8986,0.9136,0.9024,0.9250,0.9556,37,3,4,25
+D_combined_tfidf_lr,Combined word+char TF-IDF + Logistic Regression,0.9231,0.0204,0.8810,0.9020,0.9200,0.8846,0.9247,0.8986,0.9114,0.8780,0.9474,0.9739,36,2,5,26
+E_engineered_gb,TF-IDF + engineered features + GradientBoosting,0.9157,0.0217,0.8810,0.9057,0.9600,0.8571,0.9553,0.8696,0.8941,0.9268,0.8636,0.9695,38,6,3,22

@@ -1,0 +1,139 @@
+EXTERNAL VALIDATION REPORT
+======================================================================
+Date: 2026-08-27 00:39:33
+Dataset: phishing_dataset_1000.xlsx (1000 messages)
+Model: full_pipeline.joblib (NO modification)
+Threshold: 0.47
+
+DATASET INSPECTION
+----------------------------------------
+Total messages: 1000
+Duplicates: 0
+Label distribution: {0: np.int64(595), 1: np.int64(405)}
+Language distribution: {'Roman Urdu': np.int64(589), 'English': np.int64(411)}
+
+PERFORMANCE METRICS
+----------------------------------------
+Accuracy:        0.8650 (86.50%)
+Precision:       0.8971 (89.71%)
+Scam Recall:     0.7531 (75.31%)
+F1-Score:        0.8188
+ROC-AUC:         0.9586
+True Positives:  305
+True Negatives:  560
+False Positives: 35
+False Negatives: 100
+
+CONFUSION MATRIX
+----------------------------------------
+              Predicted Safe  Predicted Scam
+Actual Safe              560              35
+Actual Scam              100             305
+
+PER-LANGUAGE PERFORMANCE
+----------------------------------------
+[English] n=411 Acc=1.0000 F1=1.0000 AUC=1.0000 FP=0 FN=0
+[Roman Urdu] n=589 Acc=0.7708 F1=0.8168 AUC=0.9004 FP=35 FN=100
+
+FALSE POSITIVES (sample)
+----------------------------------------
+  ID=8 P=0.5155 Lang=Roman Urdu
+  "Aap ka MCB debit card ATM par use hua hai. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya t"
+
+  ID=35 P=0.5247 Lang=Roman Urdu
+  "Aap k MCB account se 50,000 PKR ki deduction hui hai tax ki madd mein."
+
+  ID=36 P=0.5227 Lang=Roman Urdu
+  "Aap ka Allied Bank debit card ATM par use hua hai. Amount: 75,000 PKR. Agar yeh aap ne nah"
+
+  ID=39 P=0.4877 Lang=Roman Urdu
+  "Aap k MCB acount se 50,000 PKR ki deduction hui ha tax ki madd mein."
+
+  ID=55 P=0.4832 Lang=Roman Urdu
+  "Aap k HBL acount se 50,000 PKR ki deduction hui ha tax ki madd mein."
+
+  ID=62 P=0.4807 Lang=Roman Urdu
+  "Aap k HBL acount se 75,000 PKR ki deduction hui h tax ki madd mein."
+
+  ID=124 P=0.4872 Lang=Roman Urdu
+  "Aap k UBL account se 350 PKR ki deduction hui hai tax ki madd mein."
+
+  ID=160 P=0.4813 Lang=Roman Urdu
+  "Aap ka SadaPay debit card ATM par use hua hai. Amount: 75,000 PKR. Agar yeh aap ne nahi ki"
+
+  ID=177 P=0.5123 Lang=Roman Urdu
+  "Aap ka HBL debit card ATM par use hua hai. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya t"
+
+  ID=194 P=0.4976 Lang=Roman Urdu
+  "Aap k State Bank account se 50,000 PKR ki deduction hui hai tax ki madd mein."
+
+  ID=323 P=0.5034 Lang=Roman Urdu
+  "Aap k NayaPay account se 1 Lakh PKR ki deduction hui hai tax ki madd mein."
+
+  ID=338 P=0.4849 Lang=Roman Urdu
+  "Aap k JazzCash account se 75,000 PKR ki deduction hui hai tax ki madd mein."
+
+  ID=340 P=0.4738 Lang=Roman Urdu
+  "Aap ka MCB debit card ATM par use hua h. Amount: 1 Lakh PKR. Agar yeh aap ne nahi kiya toh"
+
+  ID=405 P=0.5213 Lang=Roman Urdu
+  "Aap k UBL account se 50,000 PKR ki deduction hui hai tax ki madd mein."
+
+  ID=425 P=0.5203 Lang=Roman Urdu
+  "Aap k Meezan Bank account se 75,000 PKR ki deduction hui hai tax ki madd mein."
+
+FALSE NEGATIVES (sample)
+----------------------------------------
+  ID=4 P=0.3990 Lang=Roman Urdu
+  "Mubarak ho! BISP main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa"
+
+  ID=15 P=0.4054 Lang=Roman Urdu
+  "Mubarak ho! Inaam Ghar main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Nay"
+
+  ID=20 P=0.3869 Lang=Roman Urdu
+  "Mubarak ho! Ehsaas Program main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna"
+
+  ID=22 P=0.4685 Lang=Roman Urdu
+  "Mubarak ho! Jeeto Pakistan main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna "
+
+  ID=24 P=0.3407 Lang=Roman Urdu
+  "Moaziz sarif, apka BISP ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0362242481"
+
+  ID=30 P=0.4474 Lang=Roman Urdu
+  "Mubarak ho! Benazir Income Support main apka 10000 ka inam lga ha. Apna inam hasil krne k "
+
+  ID=31 P=0.4685 Lang=Roman Urdu
+  "Mubarak ho! Jeeto Pakistan main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna"
+
+  ID=49 P=0.4423 Lang=Roman Urdu
+  "Mubarak ho! Jeeto Pakistan main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna "
+
+  ID=53 P=0.3849 Lang=Roman Urdu
+  "Mubarak ho! Ehsaas Program main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna "
+
+  ID=57 P=0.4045 Lang=Roman Urdu
+  "Mubarak ho! Inaam Ghar main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna MCB"
+
+  ID=61 P=0.3726 Lang=Roman Urdu
+  "Mubarak ho! Ehsaas Program main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna"
+
+  ID=72 P=0.4500 Lang=Roman Urdu
+  "Mubarak ho! Benazir Income Support main apka 2500 ka inam lga ha. Apna inam hasil krne k l"
+
+  ID=79 P=0.3791 Lang=Roman Urdu
+  "Moaziz sarif, apka Benazir Income Support ki taraf se 10000 PKR ka inaam nikla ha. Taseeq "
+
+  ID=82 P=0.4505 Lang=Roman Urdu
+  "Bhai apke number par ghalti se mere 5000 rs aa gaye hain easypaisa me, please wapis bhej d"
+
+  ID=89 P=0.4219 Lang=Roman Urdu
+  "Moaziz sarif, apka Benazir Income Support ki taraf se 5000 PKR ka inaam nikla hai. Taseeq "
+
+COMPARISON WITH INTERNAL HOLDOUT
+----------------------------------------
+Internal Accuracy: 0.9697  External: 0.8650  Gap: -0.1047
+Internal Recall:   0.9821  External: 0.7531  Gap: -0.2290
+Internal F1:       0.9706  External: 0.8188  Gap: -0.1518
+Internal AUC:      0.9965  External: 0.9586  Gap: -0.0379
+
+Verdict: POOR — significant degradation (> 10% gap)

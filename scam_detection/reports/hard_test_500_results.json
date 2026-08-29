@@ -1,0 +1,33 @@
+{
+  "total": 505,
+  "n_scam": 255,
+  "n_safe": 250,
+  "accuracy": 99.6,
+  "precision": 99.61,
+  "recall": 99.61,
+  "specificity": 99.6,
+  "f1": 99.6078,
+  "f2": 99.6078,
+  "fpr": 0.4,
+  "fnr": 0.39,
+  "tp": 254,
+  "fp": 1,
+  "tn": 249,
+  "fn": 1,
+  "threshold": 0.6300000000000004,
+  "model_version": "V4_adversarial_505",
+  "fp_messages": [
+    [
+      "Tricky Safe",
+      "Loan approved: Rs. 500,000 personal loan. EMI Rs. 12,500/month for 5 years.",
+      0.83
+    ]
+  ],
+  "fn_messages": [
+    [
+      "Bank",
+      "Faysal Bank: Aap ki loan reject ho gayi hai. Re-apply fee Rs. 3000.",
+      0.2349
+    ]
+  ]
+}

@@ -1,0 +1,5 @@
+message,true_label,predicted_label,language,category,probability,error_type
+"آپ کی خالہ: بیٹے کا ایکسیڈنٹ ہو گیا ہے۔ Rs. 50,000 ہسپتال میں جمع کرانے ہیں۔ جلدی بھیجیں۔",Scam,Safe,Urdu,Impersonation,0.41347763984729613,FN-missed-scam
+"آپ کا پڑوسی عمران: گھر میں ایمرجنسی ہے، بیوی کو ہسپتال لے جانا ہے۔ Rs. 10,000 ادھار چاہیے۔",Scam,Safe,Urdu,Impersonation,0.3487734562218678,FN-missed-scam
+"بیٹا، میں امی ہوں۔ نئے فون سے میسج کر رہی ہوں۔ Rs. 12,000 بھیج دو، دوا لینی ہے۔",Scam,Safe,Urdu,Impersonation,0.4197383408529408,FN-missed-scam
+Training session for new software will be held next Monday. All team members are required to attend.,Safe,Scam,English,Job,0.5145978173292273,FP-safe-flagged

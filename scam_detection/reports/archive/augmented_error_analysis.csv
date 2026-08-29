@@ -1,0 +1,11 @@
+message,true_label,predicted,language,category,probability,error_type
+"Remittance received: Rs. 1,50,000 from UAE via Western Union credited to your MCB account.",Safe,Scam,English,Bank,0.4909564428676757,FP-safe-flagged
+"آپ کے میزان بینک اکاؤنٹ کا منافع Rs. 4,200 جمع ہو گیا ہے۔ موجودہ بیلنس Rs. 2,15,000۔",Safe,Scam,Urdu,Bank,0.5400084852725902,FP-safe-flagged
+"احساس پروگرام: آپ کی درخواست منظور ہو گئی ہے۔ Rs. 14,000 ہر مہینے آپ کے اکاؤنٹ میں آئیں گے۔",Safe,Scam,Urdu,Prize,0.4800649536237055,FP-safe-flagged
+"Aap ne Indus Hospital ko Rs. 10,000 donate kiye. Tax exemption certificate 30 din mein email hoga.",Safe,Scam,Roman Urdu,Fake Charity,0.5791484826709035,FP-safe-flagged
+"Your JazzCash has been upgraded to premium. Annual charges Rs. 2,500 will apply. Cancel by visiting http://jazzcash-premium.com",Scam,Safe,English,Bank,0.4579281283451956,FN-missed-scam
+"BISP: Aap ki quarterly payment Rs. 14,000 aap ke account mein credit ho gayi hai. JazzCash se check karein.",Safe,Scam,Mixed,Prize,0.4888169174215084,FP-safe-flagged
+"BISP: Aap ki quarterly payment Rs. 9,000 ready hai. Nazdeeki BISP center se CNIC ke saath collect karein.",Safe,Scam,Roman Urdu,Prize,0.5177341588079285,FP-safe-flagged
+"Dear Telenor subscriber, your SIM will be deactivated due to non-verification. Reply with CNIC to keep it active.",Scam,Safe,English,SIM Block,0.3951964638679014,FN-missed-scam
+HBL Mobile se call: Sir aap ka mobile banking activate karne ke liye OTP chahiye jo aap ko SMS se aaya hai.,Scam,Safe,Mixed,OTP,0.46477442314856876,FN-missed-scam
+Aap ki Sehat Card registration confirm ho gayi hai. Hospital mein free treatment milega.,Safe,Scam,Roman Urdu,Prize,0.55783584663688,FP-safe-flagged

@@ -1,0 +1,11 @@
+{
+  "pakistan_original": 868,
+  "uci_original": 5572,
+  "combined_before_dedup": 6440,
+  "exact_duplicates_removed": 414,
+  "combined_after_dedup": 6026,
+  "pakistan_duplicates": 0,
+  "uci_duplicates": 414,
+  "near_duplicate_pairs_90pct": 0,
+  "conflicting_label_pairs": 0
+}

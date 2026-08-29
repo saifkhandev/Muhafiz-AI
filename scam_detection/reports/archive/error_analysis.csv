@@ -1,0 +1,7 @@
+message,true_label,predicted_label,language,category,probability,msg_length,error_type
+Careem: Your ride from Gulberg to DHA has been completed. Fare: Rs. 450. Rate your driver on the app.,Safe,Scam,English,Prize,0.4498174053685351,101,False Positive (safe flagged)
+Zong: Aap ka 4G device offer activate ho gaya hai. 5GB extra data 7 din ke liye. Enjoy karein!,Safe,Scam,Roman Urdu,SIM Block,0.4613627607560915,94,False Positive (safe flagged)
+"Bhai, Saudi Arabia mein electrician ki 50 posts hain. Salary 3000 SAR. Registration Rs. 10,000. Limited seats!",Scam,Safe,Roman Urdu,Job,0.37596813689345776,110,False Negative (missed scam)
+Careem: Your ride verification code is 4829. Share this with your driver to start the trip.,Safe,Scam,English,OTP,0.43473040123119994,91,False Positive (safe flagged)
+آپ کا ہیلتھ انشورنس کلیم منظور ہو گیا ہے۔ رقم 5 کاروباری دنوں میں اکاؤنٹ میں آ جائے گی۔,Safe,Scam,Urdu,Prize,0.44681594625288334,87,False Positive (safe flagged)
+"Baji, mehndi ki shopping kal karein ge. Main list bana leti hoon aaj raat tak.",Safe,Scam,Roman Urdu,Impersonation,0.5088226245027476,78,False Positive (safe flagged)

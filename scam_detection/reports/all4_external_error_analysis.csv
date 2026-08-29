@@ -1,0 +1,9 @@
+ID,message,language,true_label,predicted_label,probability,error_type
+22,Ehsaas Programme: Your family has been approved for Rs. 14000 monthly stipend. Complete registration by paying Rs. 800 fee.,English,Scam,Safe,0.43427424960320576,FN-missed-scam
+160,Zaroori ittila: Aap k HBL account se 50000 Rs ki unauthorized transaction hui ha. Abhi tasdeeq kren.,Roman Urdu,Scam,Safe,0.4825027943518913,FN-missed-scam
+181,Sarkari naukri: Aap ki application shortlist ho gayi ha. 5000 Rs interview fee jama karwaen.,Roman Urdu,Scam,Safe,0.41899399046668107,FN-missed-scam
+184,Forex Academy: Ghar bethe rozana 500 dollar kmaen. Dakhla fees sirf 5000 Rs.,Roman Urdu,Scam,Safe,0.4701881839347079,FN-missed-scam
+192,Telenor: Aap ka number iPhone 15 ka winner ha. 5000 Rs recharge kr k inaam hasil kren.,Roman Urdu,Scam,Safe,0.4697853875979541,FN-missed-scam
+268,Your Netflix subscription 1-Sep-2026 ko renew hoga. Amount: Rs. 1500. Payment method: Visa card.,Mixed,Safe,Scam,0.5427747721644783,FP-safe-flagged
+283,آپ کا پے پال اکاؤنٹ محدود ہو گیا ہے۔ بینک کارڈ کی تفصیلات سے دوبارہ بحال کریں۔,Urdu,Scam,Safe,0.4529021957743524,FN-missed-scam
+311,آپ کی آن لائن شاپنگ کی ادائیگی ناکام ہو گئی۔ دوبارہ کوشش کے لیے اپنے کارڈ کی تفصیلات درج کریں۔,Urdu,Scam,Safe,0.36547784498996466,FN-missed-scam

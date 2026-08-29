@@ -1,0 +1,49 @@
+{
+  "test": "V4_holdout_100",
+  "total": 100,
+  "accuracy": 94.0,
+  "precision": 97.83,
+  "recall": 90.0,
+  "specificity": 98.0,
+  "fpr": 2.0,
+  "tp": 45,
+  "fp": 1,
+  "tn": 49,
+  "fn": 5,
+  "threshold": 0.63,
+  "model_version": "V4_adversarial_505",
+  "fp_messages": [
+    [
+      "R38",
+      "Meezan Gold Fund: Aap ki investment Rs. 200,000 ab Rs. 235,000 ki ho gayi hai. NAV: Rs. 117.50/unit.",
+      0.636
+    ]
+  ],
+  "fn_messages": [
+    [
+      "S25",
+      "Daraz Pro Seller: Aap ka store 48 hours mein close ho jaye ga. Verify bank details: daraz-seller-portal.pk/verify-8872",
+      0.4471
+    ],
+    [
+      "S31",
+      "Norton Antivirus: Aap ka subscription expire ho gaya hai. Rs. 4,500 renew kren warna computer unprotected hai. Call: 0800-NORTON1.",
+      0.402
+    ],
+    [
+      "S34",
+      "Bahria Enclave: 5 marla plot on installments. Monthly Rs. 35,000. Down payment Rs. 500,000. Visit bahriaenclave-book.com",
+      0.0797
+    ],
+    [
+      "S35",
+      "Flood Relief Fund 2026: Donate Rs. 5,000 to help Sindhi families. JazzCash: 0300-FLOOD26. Government-approved NGO.",
+      0.4324
+    ],
+    [
+      "S40",
+      "Dear Customer, aap ki HBL debit card cloned ho gayi hai overseas mein. Rs. 35,000 unauthorized transaction. Call 0300-HBL-HELP for refund processing.",
+      0.4299
+    ]
+  ]
+}

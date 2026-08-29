@@ -1,0 +1,2527 @@
+[
+  {
+    "message": "Bhen apka ehsas ka paisa aa gaya ha. 15000 rs. Easypaisa se nikalwaen. Code bhejen 0321876543.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Bhai BISP wale hain. Aap ka 12000 payment ready hai. CNIC or account number bhejen.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Aap ka BISP cash Rs. 12000 teyar hai. Processing fee Rs. 300 pehle jama kren 0312-555443.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas Program mein registration ka aakhri moqa. Rs. 500 fee ada kren warna naam kat jaye ga.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP: Rs.25000 milenge! 8989 pe SMS bhejen abhi.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas scheme k tehat aap k liye 18000 rupay manzor ho gaye hain. Verification fee 250 rs JazzCash pe bhejen.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Benazir income support program: Aap ki quarterly qist Rs. 9000 teyar hai. OTP code share kren.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP payment update: Aap ka account mein Rs. 14000 credit hone wale hain. 200 rs processing fee bhejen.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas kafalat: Rs. 7000 mil rahe hain. Registration k liye apna CNIC aur mobile OTP bhejen.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP se aap ka payment ready hai. CNIC number bhej kr collect kren. Helpline: 0300-1234567.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "احساس کفالت: آپ کو 18000 روپے مل رہے ہیں۔ رجسٹریشن کے لیے CNIC اور OTP بھیجیں۔",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "بینظیر انکم سپورٹ پروگرام: آپ کی امداد تیار ہے۔ 500 روپے بھیج کر حاصل کریں۔",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP: Your quarterly payment of Rs. 9,000 is ready. Pay Rs. 500 processing fee to collect.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas Programme: Rs. 25,000 emergency relief approved. Send CNIC and bank details. Contact: 0312-9988776.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP Notification: Rs. 12,500 cash grant pending. Transfer Rs. 300 verification fee to JazzCash 0345-778899.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Moaziz sarif, BISP ki taraf se 8000 PKR ka inaam nikla hai. Taseeq k liye 0399123456 par call kren.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas program: Rs. 3000 monthly wazifa approved. Registration fee Rs. 150 pay kren.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP wale bol rahe hain k aap eligible hain. Rs. 20000 milenge. Account details bhejen.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas cash program: Aap ki family ko Rs. 10000 milenge. Pehle Rs. 400 fee ada kren.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP: Aap ki payment reject ho rahi hai. Rs. 250 bhej kr reactivate kren warna band ho jaye ga.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas update: Aap ka naam list mein aa gaya hai. Rs. 15000 collect krne k liye OTP bhejen.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP agent: Main BISP se bol raha hun. Aap ko Rs. 25000 dene hain. Bank PIN share kren.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas Nigehban: Senior citizens ko Rs. 8000 extra milenge. Form bharne k liye fee Rs. 200.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP helpline: Aap ki qist delay ho rahi hai. Rs. 500 bhej kr fast-track kren.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas survey: Aap selected hain. Rs. 5000 inaam. WhatsApp pe CNIC photo bhejen.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP emergency fund: Rs. 50000 approved for flood victims. Processing fee Rs. 1000.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas education: Bacho ki taleem k liye Rs. 12000. Registration k liye call kren 0333-111222.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP mobile unit: Aap k ilaqe mein aa rahi hai. Rs. 250 advance bhej kr appointment len.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Ehsaas health card: Rs. 3000 ka health insurance. Rs. 100 activation fee JazzCash pe.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "BISP: Aap ki beti ki shadi k liye Rs. 50000 grant. Documents k saath Rs. 500 fee bhejen.",
+    "label": "Scam",
+    "category": "BISP/Ehsaas"
+  },
+  {
+    "message": "Your TCS parcel #8834521 is held at customs. Pay Rs. 1500 duty to release. Link: tcs-express.pk/customs",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Leopards Courier: Your package requires address verification. Click leopards-verify.pk/update",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Pakistan Post: Shipment #PK9923847 returned. Re-ship fee Rs. 500. Pay at post-track.pk/resend",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Daraz order #7734521 delivery failed. Update address: daraz-verify.pk/address",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "FedEx: Your parcel from UAE is stuck. Customs duty Rs. 3500. Pay via JazzCash to 0312-9988776.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "DHL Express: International shipment held. Pay Rs. 5000 clearance fee at dhl-pak-clearance.com",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Your Amazon package is ready. Pay Rs. 299 delivery charge first. UPI: amazon-delivery@pay",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Courier alert: Your parcel contains prohibited items. Pay Rs. 2000 fine or police action.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "BlueEx: Delivery attempted 3 times. Storage fee Rs. 150/day. Pay now or parcel returned.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Your AliExpress order cleared customs. Additional duty Rs. 800. Pay at aliexpress-pak-duty.com",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Post office: Registered letter from NADRA waiting. Collection fee Rs. 100. Pay online.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Your Foodpanda order was cancelled. Refund processing. Share bank details for Rs. 2500 refund.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Careem package: Driver found Rs. 5000 in your bag. Send Rs. 500 to claim. JazzCash: 0345-111222.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "InDrive delivery: Your parcel is with driver. Tip Rs. 200 for priority delivery.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Swiggy: Your order is delayed. Compensation Rs. 500. Share UPI PIN to receive.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "TCS: Aap ka parcel China se aa gaya hai. Customs duty Rs. 2500 bhejen warna wapis.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Courier: Aap k naam parcel aaya hai. Rs. 800 delivery charge pehle bhejen.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "ڈی ایچ ایل: آپ کا پارسل کسٹم میں رک گیا۔ 3000 روپے ڈیوٹی ادا کریں۔",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Leopards: Aap ka parcel damage ho gaya hai. Insurance claim Rs. 5000. Processing fee Rs. 300.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Post office: Aap k liye registered parcel aaya hai USA se. Rs. 1500 customs duty bhejen.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Your parcel tracking #PK998234 shows delivery failed. Re-delivery fee Rs. 250.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Pakistan Post: International parcel arrived. Pay Rs. 2000 duty at post-clearance.pk",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "Daraz return: Rs. 3500 refund approved. Share JazzCash account number and PIN.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "TCS Express: Your parcel is overweight. Extra charge Rs. 1200. Pay at tcs-extra.pk",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "BlueEx delivery: Your address is wrong. Correction fee Rs. 500 or parcel returned to sender.",
+    "label": "Scam",
+    "category": "Delivery"
+  },
+  {
+    "message": "URGENT HIRING: Data entry operator needed. Salary Rs. 80,000/month. Security deposit Rs. 5000.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Work from home: Earn Rs. 5000/day liking YouTube videos. Registration fee Rs. 1500.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "PTCL hiring customer service. Salary Rs. 45,000. Interview fee Rs. 2000. Apply: ptcl-jobs.pk",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Jazz is hiring 500 agents. Monthly salary Rs. 60,000. Processing fee Rs. 3000 via easypaisa.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Remote job: Typing work. Rs. 3000/page. Joining fee Rs. 2500. WhatsApp: 0312-555777.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Overseas job in Dubai: Salary AED 8000. Visa processing fee Rs. 50,000. Limited seats!",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Amazon product reviewer needed. Earn Rs. 2000/review. Security deposit Rs. 3000.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Government job: NADRA clerk position. Salary Rs. 55,000. Application fee Rs. 5000.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Freelance opportunity: Rs. 100,000/month guaranteed. Training fee Rs. 10,000. Limited slots.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Uber driver partner: Earn Rs. 8000/day. Vehicle registration fee Rs. 15,000.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Teaching job: O/A Level tutor needed. Rs. 70,000/month. Joining fee Rs. 5000.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Call center hiring: Night shift agents. Rs. 40,000/month. Uniform fee Rs. 2000.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "YouTube earning: Rs. 50,000/month. Course fee Rs. 8000. Guaranteed income.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Crypto trading job: Rs. 200,000/month. Initial investment Rs. 25,000 required.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Nokri chahiye? Ghar beth kr Rs. 3000 rozana kamaen. Registration Rs. 1500 JazzCash pe bhejen.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Job offer: Rs. 75,000 salary. Pehle Rs. 4000 training fee bhejen.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "نوکری: گھر بیٹھے 50000 روپے ماہانہ۔ رجسٹریشن فیس 3000 روپے۔",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "OLX job: Rs. 45,000/month data entry. Security deposit Rs. 2500.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Fiverr earning course: Rs. 100,000/month guaranteed. Course fee Rs. 15,000.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Saudi Arabia job: Rs. 150,000/month. Agent fee Rs. 75,000. Visa guaranteed.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Part-time: 2 hours/day, Rs. 3000/hour. Joining fee Rs. 5000. WhatsApp for details.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Bank job: HBL cashier position. Rs. 50,000/month. Application fee Rs. 8000.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Freelance writing: Rs. 500/article. Membership fee Rs. 2000 to access assignments.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Delivery rider: Rs. 60,000/month. Bike deposit Rs. 10,000. Apply now.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Import/Export business: Rs. 500,000/month profit. Investment Rs. 50,000 to start.",
+    "label": "Scam",
+    "category": "Job"
+  },
+  {
+    "message": "Mubarak ho! Aap ne Jeeto Pakistan mein Rs. 500,000 jeete hain. Claim fee Rs. 5000 bhejen.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Congratulations! You won Rs. 1,000,000 in the PTA lucky draw. Tax Rs. 50,000 required.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Coca-Cola reward: Aap ne Rs. 250,000 jeeta hai. Processing fee Rs. 3000 bhejen.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Nestle promotion: Rs. 100,000 prize confirmed. Delivery charge Rs. 2500.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "LUX Style Awards: You've been nominated. Voting fee Rs. 1500. Vote now!",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Jazz Jackpot: Rs. 500,000 ka inaam! Rs. 2000 SMS fee bhejen.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Zong Lucky Draw: Aap ka number Rs. 250,000 k liye select hua hai. Rs. 1500 bhejen.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "PTV Sports: Cricket prediction winner! Rs. 75,000 prize. Claim fee Rs. 3000.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Pepsi cap prize: Rs. 50,000 confirmed. Courier charge Rs. 2000.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Telenor reward: Rs. 200,000 inaam nikla hai. Rs. 5000 tax ada kren.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Ufone lucky subscriber: Rs. 150,000 prize. Verification fee Rs. 2500.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Samsung promotion: Free Galaxy S24 Ultra. Shipping fee Rs. 3000.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Apple iPhone giveaway: You're selected! Customs duty Rs. 5000 for delivery.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Inaam Ghar: Rs. 75,000 jeet gaye! Processing fee Rs. 2000 bhejen.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "مبارک ہو! آپ نے 500000 روپے کا انعام جیتا ہے۔ 5000 روپے فیس بھیجیں۔",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Lucky draw winner! Rs. 300,000 prize. Transfer Rs. 5000 to claim.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "NayaPay reward: Rs. 25,000 cashback approved. Processing fee Rs. 500.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "JazzCash lucky user: Rs. 100,000 inaam! Rs. 2000 verification fee.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Easypaisa jackpot: Rs. 500,000 winner! Tax Rs. 10,000 pay kren.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "State Bond winner: Rs. 1,000,000 prize. Government fee Rs. 25,000.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Ramadan lucky draw: Rs. 200,000 prize. Claim within 24 hours. Fee Rs. 5000.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Eid Mubarak prize: Rs. 50,000 confirmed. Delivery fee Rs. 1500.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Independence Day lottery: Rs. 750,000 winner! Tax Rs. 15,000.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "New Year lucky number: Rs. 400,000 prize. Processing fee Rs. 8000.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "Surprise gift: Rs. 150,000 prize from unknown sender. Courier fee Rs. 3000.",
+    "label": "Scam",
+    "category": "Prize"
+  },
+  {
+    "message": "JazzCash: Your account is blocked. Send Rs. 500 to unblock via 0312-9988776.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Easypaisa alert: Suspicious activity detected. Verify by sending Rs. 100 to helpline.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Your Binance wallet shows unusual login. Reset password at binance-secure.pk",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Crypto investment: Rs. 10,000 mein Rs. 100,000 banayen. Join WhatsApp group.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Bitcoin earning: Rs. 50,000 invest kren, Rs. 500,000 kamayen. 100% guaranteed!",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Your SadaPay account needs verification. Share OTP sent to your number.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "NayaPay: Rs. 5000 cashback approved. Share account PIN to receive.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Crypto trading signal: Buy now, 500% profit in 24 hours. Join VIP group Rs. 10,000.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Easypaisa merchant: Payment of Rs. 25,000 received. Share PIN to withdraw.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "JazzCash loan: Rs. 50,000 instant loan approved. Processing fee Rs. 2500.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Your PayPal account is restricted. Verify at paypal-verify.pk to restore.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Forex trading: Rs. 20,000 se Rs. 200,000 daily. Join now! Limited slots.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Binance P2P: Buyer sent Rs. 50,000. Release crypto or account suspended.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Easypaisa: Aap ka account freeze ho gaya hai. Rs. 1000 bhej kr unfreeze kren.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "JazzCash: Rs. 15,000 cashback offer. Pehle Rs. 500 verification fee bhejen.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Your crypto wallet has been compromised. Transfer funds to safe address immediately.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Ethereum mining: Rs. 30,000 invest kren. Rs. 300,000/month passive income.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "SadaPay: Rs. 10,000 bonus mile. Card details share kren to claim.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "NayaPay security: Unauthorized transaction of Rs. 8000. Call 0312-555888 to reverse.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "JazzCash: Aap ko Rs. 20,000 milne wale hain. OTP share kren.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Binance airdrop: Free BNB tokens worth Rs. 5000. Connect wallet to claim.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Crypto pump signal: Next 100x coin. Entry fee Rs. 5000 for insider group.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Easypaisa refund: Rs. 3500 overpayment detected. Share CNIC to process refund.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "JazzCash: Account upgrade to Gold. Fee Rs. 2000. Higher limits.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "Your wallet balance of Rs. 45,000 will expire. Transfer to bank within 1 hour.",
+    "label": "Scam",
+    "category": "Wallet/Crypto"
+  },
+  {
+    "message": "HBL Alert: Your debit card is blocked. Unblock by sharing last 4 digits and CVV.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Meezan Bank: Suspicious transaction of Rs. 45,000. Call 0312-888999 to verify.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "UBL: Your account will be frozen in 24 hours. Update KYC at ubl-update.pk",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Allied Bank: Loan pre-approved Rs. 500,000. Processing fee Rs. 5000.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Bank Alfalah: Credit card limit enhanced to Rs. 500,000. Activation fee Rs. 3000.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "MCB: Your cheque of Rs. 250,000 is bounced. Penalty Rs. 5000. Pay immediately.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Faysal Bank: Fixed deposit matured. Rs. 1,000,000 ready. Tax Rs. 50,000 required.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Standard Chartered: Premium banking offer. Rs. 10,000 joining fee for 5% interest.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Askari Bank: Your account has been credited with Rs. 75,000. Share OTP to confirm.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Bank Habib: Home loan approved Rs. 5,000,000. Documentation fee Rs. 25,000.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Sindh Bank: Government subsidy Rs. 50,000 credited. Processing fee Rs. 2500.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Your credit card has been charged Rs. 15,000 for annual fee. Call to dispute.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "HBL mobile banking: Password expired. Reset at hbl-mobile-reset.pk",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Meezan Islamic: Profit rate increased to 18%. Transfer funds to new account.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "UBL: Aap k account se Rs. 35,000 kat gaye hain. Reverse krne k liye call kren.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Bank account verification: Share CNIC, account number, and PIN for annual verification.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Your fixed deposit of Rs. 2,000,000 matured. Penalty Rs. 10,000 if not renewed.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "MCB: International transaction of $500 detected. Block card by sharing CVV.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Allied Bank: Your ATM card is ready. Delivery fee Rs. 500. Pay via easypaisa.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Faysal Bank: Aap ki loan reject ho gayi hai. Re-apply fee Rs. 3000.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "بینک الفلاح: آپ کے اکاؤنٹ سے غیر مجاز منتقلی۔ فوری طور پر کال کریں۔",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "HBL: Your credit score dropped. Improvement service Rs. 5000. Guaranteed fix.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Meezan: Zakat deduction of Rs. 8000. Claim exemption by sharing account details.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "UBL: Wire transfer of Rs. 500,000 pending. SWIFT fee Rs. 5000 required.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "Standard Chartered: Your account is flagged for AML review. Share all documents.",
+    "label": "Scam",
+    "category": "Bank"
+  },
+  {
+    "message": "NADRA: Your CNIC is expiring. Renewal fee Rs. 1500. Apply at nadra-renewal.pk",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "FBR: Tax refund of Rs. 45,000 approved. Processing fee Rs. 2500 to receive.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Passport Office: Your passport is ready. Courier fee Rs. 800. Pay online.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "SECP: Company registration approved. Annual fee Rs. 10,000. Pay at secp-annual.pk",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Punjab Police: FIR filed against you. Bail fee Rs. 25,000. Pay to avoid arrest.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Sindh Revenue Board: Property tax overdue Rs. 15,000. Pay at srb-tax.pk",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Excise Department: Vehicle token tax due. Pay Rs. 3000 at excise-token.pk",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "PEMRA: Your TV channel license suspended. Renewal fee Rs. 50,000.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "PTA: Your phone is not registered. Registration fee Rs. 5000. Pay at pta-register.pk",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Election Commission: Voter registration fee Rs. 500. Pay at ecp-voter.pk",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "CDA: Property possession letter ready. Stamp duty Rs. 25,000.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "KDA: Plot allotment confirmed. Development charges Rs. 100,000.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "LDA: Housing scheme registration. Booking fee Rs. 50,000. Limited plots!",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "NADRA: Aap ka CNIC block ho gaya hai. Rs. 2000 bhej kr unblock kren.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "FBR: Tax notice issued. Penalty Rs. 10,000 if not paid within 7 days.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "نیب: آپ کے خلاف کرپشن کیس درج ہے۔ 50000 روپے جرمانہ ادا کریں۔",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Punjab Government: Kissan card approved. Rs. 500 processing fee.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Sindh Government: Health insurance card ready. Activation fee Rs. 300.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Ministry of Education: Scholarship approved Rs. 100,000. Processing fee Rs. 5000.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "HEC: PhD scholarship Rs. 500,000. Application fee Rs. 10,000.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "NADRA family tree: Verification fee Rs. 3000 for inheritance claim.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "FBR audit: Your tax return selected for audit. Settlement fee Rs. 25,000.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Passport: Urgent processing Rs. 5000 for 24-hour delivery.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Civil Secretariat: Government job confirmation. Medical fee Rs. 8000.",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Revenue Department: Land mutation fee Rs. 15,000. Pay at revenue-mutation.pk",
+    "label": "Scam",
+    "category": "Government"
+  },
+  {
+    "message": "Jazz: Aap ne Rs. 5000 ka package subscribe kia hai. Cancel krne k liye Rs. 500 bhejen.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Zong: Free 100GB data offer! Activation fee Rs. 200. Valid today only!",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Telenor: SIM upgrade to 5G. Fee Rs. 1500. Otherwise SIM deactivated.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Ufone: International roaming activated. Deposit Rs. 10,000 required.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "JazzCash: Rs. 10,000 loan approved on your number. Processing fee Rs. 500.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Zong 4G: Free device offer. Delivery fee Rs. 3000. Limited stock!",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Telenor: Your number will be disconnected. Recharge Rs. 500 to keep active.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Jazz: Aap ko 50GB free data mil raha hai. Rs. 100 activation fee bhejen.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "PTCL: Broadband bill overdue Rs. 5000. Pay now or connection terminated.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Nayatel: Fiber optic upgrade. Installation fee Rs. 8000. Special discount!",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "StormFiber: Rs. 3000 monthly plan. Activation fee Rs. 2000. Free router!",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Jazz: Rs. 1000 ka balance expire ho raha hai. Rs. 200 bhej kr save kren.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Zong: Super card activated. Rs. 5000/month. Cancel krne k liye call kren.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Telenor: Your postpaid bill is Rs. 15,000. Pay now or legal action.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Ufone: Free iPhone offer. Pay Rs. 5000 shipping and handling.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Jazz: SIM block hone wali hai. Rs. 300 bhej kr activate rakhain.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Telecom authority: Your number is not verified. Fine Rs. 5000 if not done today.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "5G tower installation: Rs. 50,000/month rent for your rooftop. Registration Rs. 10,000.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Jazz: Unlimited calling package Rs. 999. Activation fee Rs. 200.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Zong: International call package. Rs. 2000/month. Security deposit Rs. 5000.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "PTCL: Smart TV package. Rs. 1500/month. Installation Rs. 3000.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Telenor microfinance: Rs. 100,000 loan. Processing fee Rs. 5000.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Jazz: Aap ka number lucky draw mein select hua. Rs. 500 bhej kr claim kren.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Mobile network: Your number is blacklisted. Removal fee Rs. 3000.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "SIM registration: Biometric verification failed. Re-verify fee Rs. 500.",
+    "label": "Scam",
+    "category": "Telecom"
+  },
+  {
+    "message": "Your Facebook account will be deleted. Verify at facebook-verify.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Instagram: Someone tried to login. Secure account at insta-secure.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Gmail security alert: Unusual sign-in from Russia. Reset at gmail-reset.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "WhatsApp: Your account is being hacked. Forward this to 10 contacts to protect.",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Netflix: Payment failed. Update card at netflix-update.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Amazon: Order #99887766 shipped. Track at amazon-track.pk (fake)",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Your Daraz account was hacked. Reset password at daraz-reset.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "LinkedIn: 5 recruiters viewed your profile. Premium offer Rs. 5000/month.",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Snapchat: Your account is locked. Verify at snapchat-verify.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Twitter/X: Your account is suspended. Appeal at twitter-appeal.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Google Pay: Rs. 5000 sent to wrong person. Refund at gpay-refund.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "YouTube: Your channel will be terminated. Verify at youtube-verify.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "TikTok: Your account violated guidelines. Appeal at tiktok-appeal.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "OLX: Your listing reported. Verify at olx-verify.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Careem: Driver reported you. Account suspended. Verify at careem-verify.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Foodpanda: Restaurant reported you. Ban pending. Verify at foodpanda-safe.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Spotify: Payment failed. Update at spotify-update.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Zoom: Your meeting was compromised. Security update at zoom-secure.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Microsoft: Your Office 365 license expired. Renew at microsoft-renew.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Apple ID: Your account is locked. Unlock at apple-unlock.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Samsung: Your warranty is expiring. Extend at samsung-warranty.pk for Rs. 5000.",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "HP: Your laptop warranty expired. Renew at hp-renew.pk for Rs. 8000.",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Adobe: Your subscription is overdue. Pay at adobe-pay.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Dropbox: Storage full. Upgrade at dropbox-upgrade.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "WhatsApp Business: Your number is banned. Appeal at wa-appeal.pk",
+    "label": "Scam",
+    "category": "Phishing"
+  },
+  {
+    "message": "Forex signal: Rs. 10,000 invest kren. Rs. 100,000 profit in 1 week. Guaranteed!",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Gold trading: Rs. 50,000 se Rs. 500,000 monthly. Join VIP group.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Mutual fund: 25% monthly return guaranteed. Minimum investment Rs. 25,000.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Real estate: DHA plot booking Rs. 100,000. 200% return in 6 months.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Stock market tips: Rs. 5000/month for insider information. 100% accurate.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Binary options: Rs. 5000 trade, Rs. 50,000 profit. Demo available.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Property investment: Bahria Town plot Rs. 500,000. Double in 1 year.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Diamond investment: Rs. 100,000 buy, Rs. 300,000 sell in 3 months.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Forex robot: Auto-trading software Rs. 15,000. Rs. 50,000/day profit.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Crypto staking: 15% daily return. Minimum Rs. 10,000. Withdraw anytime.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "MLM business: Rs. 5000 join kren. Rs. 50,000/month earn kren. 3 logon ko add kren.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Commodity trading: Oil, gold, silver. Rs. 20,000 investment. 300% return.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Ponzi scheme disguised: Rs. 10,000 invest. Rs. 15,000 back in 7 days. Refer friends.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "NSE trading: Rs. 5000 account. Rs. 50,000/month. SECP registered (fake).",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Forex account management: Give us Rs. 100,000. We trade for you. 50% profit share.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Islamic investment: Halal profit 20% monthly. Shariah compliant (fake).",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "فاریکس: 10000 روپے لگائیں، 100000 روپے کمائیں۔",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Agricultural investment: Rs. 50,000 in farm. Rs. 200,000 harvest profit.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Solar panel business: Rs. 100,000 invest. Rs. 30,000/month passive income.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Car flipping: Rs. 200,000 buy, Rs. 350,000 sell. Guaranteed buyer.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Import business: Rs. 50,000 for Chinese goods. 300% markup.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Dropshipping course: Rs. 10,000. Rs. 100,000/month guaranteed.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "Freelance agency: Rs. 25,000 franchise fee. Rs. 200,000/month revenue.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "NFT investment: Rs. 5000 buy. Rs. 500,000 sell. Next big thing!",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "AI trading bot: Rs. 20,000 license. Rs. 50,000/day automated profit.",
+    "label": "Scam",
+    "category": "Forex/Investment"
+  },
+  {
+    "message": "HBL: Rs. 5,000 debit from your account at Imtiaz Store on 28-Aug-2026. Balance: Rs. 45,000.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Meezan Bank: Your monthly statement is ready. Download from Meezan mobile app.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "UBL: Your salary of Rs. 85,000 has been credited on 01-Sep-2026.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Allied Bank: ATM withdrawal of Rs. 10,000 at Clifton Branch. Balance: Rs. 32,500.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "MCB: Your cheque #445521 of Rs. 25,000 has been cleared successfully.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Bank Alfalah: Your credit card bill of Rs. 15,000 is due on 15-Sep-2026.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Faysal Bank: Fixed deposit of Rs. 500,000 matured. Visit branch for renewal.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Standard Chartered: Your account statement for August 2026 is available online.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Askari Bank: Your debit card has been dispatched. Collect from nearest branch.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "HBL: Rs. 2,500 received from Muhammad Ali via HBL mobile transfer.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Meezan: Zakat deduction of Rs. 2,500 applied on 1-Ramadan-2026 as per SBP rules.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "UBL: Your car loan EMI of Rs. 35,000 deducted on 05-Sep-2026. Next due: 05-Oct.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "بینک الفلاح: آپ کے اکاؤنٹ سے Rs. 15,000 کی منتقلی کامیابی سے مکمل ہو گئی ہے۔",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Bank Habib: Your foreign remittance of $500 from UAE credited. Rate: 278.50.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Sindh Bank: Your Kissan card has been activated. Visit branch for PIN.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "MCB: Annual report 2025-26 available at mcb.com.pk/investors",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Allied Bank: Branch timing update — Clifton branch now opens at 9 AM.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "HBL mobile: App update available. Version 4.2.1 with new security features.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Faysal Bank: Your account maintenance fee of Rs. 250 deducted for Q3-2026.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "UBL: Your term deposit profit of Rs. 12,500 credited. Tax deducted: Rs. 1,875.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Standard Chartered: Quarterly newsletter — Sep 2026 edition now available.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Askari Bank: Your home insurance premium of Rs. 8,000 auto-deducted.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Meezan Islamic: Your Mudarabah profit for August: Rs. 3,200.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "Bank Alfalah: Credit card reward points balance: 15,000 points.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "HBL: Naya Pakistan certificate purchased Rs. 100,000. Maturity: 3 years.",
+    "label": "Safe",
+    "category": "Bank (Legit)"
+  },
+  {
+    "message": "TCS: Your parcel #8834521 is out for delivery. Track at tcs.com.pk",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Daraz: Order #7734521 delivered successfully. Rate your experience.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Leopards: Shipment #LP9923847 picked up from Lahore. ETA: 2 days.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Your Foodpanda order from KFC is on the way. ETA: 25 minutes.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Careem: Your ride to DHA Phase 5 is confirmed. Driver: Ahmed, Corolla AXG-1234.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "InDrive: Ride accepted. Fare Rs. 450. Driver arriving in 5 minutes.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Swiggy: Your order from Pizza Hut has been prepared. Rider assigned.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Daraz: Your return for order #5566778 has been picked up. Refund in 3-5 days.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "PostEx: COD payment of Rs. 3,500 collected from customer. Transfer in 24 hours.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Your Trax shipment #TX998877 has arrived at Karachi hub.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "MnP Courier: Document parcel delivered to receiver at 2:30 PM today.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Daraz Flash Sale: Up to 70% off on electronics. Shop now at daraz.pk",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Foodpanda: Your order has been delivered. Enjoy your meal!",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Careem Food: Order from Al-Baik delivered. Total: Rs. 1,250.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Swiggy: Your subscription renewal of Rs. 299 has been processed.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "TCS: Rate card updated. New rates effective 01-Oct-2026.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Daraz Wallet: Rs. 500 refund credited to your wallet.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Yayvo: Order #4455667 shipped. Tracking: YV-2026-88990011.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "PostEx: Your shipment has been collected from seller. In transit.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Telemart: Your order #889900 confirmed. Delivery in 3-5 business days.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Shophive: Product dispatched. Invoice emailed to your registered address.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Daraz Mall: Authentic product guaranteed. 14-day return policy.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "TCS: Aap ka parcel deliver ho gaya hai. Receiver: Ahmad.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Leopards: Your document delivery to Islamabad completed successfully.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "Post office: Registered letter from HBL delivered to your address today.",
+    "label": "Safe",
+    "category": "Delivery (Legit)"
+  },
+  {
+    "message": "NADRA: Your CNIC renewal application #445521 received. Collection date: 15-Sep-2026.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "FBR: Your income tax return for FY2025-26 has been filed successfully.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "BISP: Aap ki Rs. 12,000 ki quarterly payment 1-Sep-2026 ko disburse ho gayi hai. Qareebi HBL branch se CNIC dikha kr hasil kren. Koi fee nahi.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Ehsaas: Aap ki family ko monthly Rs. 14,000 ka wazifa approve ho gaya hai. Qareebi BISP center se CNIC ke saath tashreef layen. Koi advance payment nahi.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Passport Office: Your passport application is under process. Expected delivery: 10 working days.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "PTA: Your device IMEI 356789012345678 is PTA approved and registered.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "SECP: Your company annual return filed successfully on 28-Aug-2026.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Punjab Land Authority: Your fard request is processed. Collect from Patwari office.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Sindh Revenue Board: Your sales tax return for August filed successfully.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Excise: Your vehicle token tax paid for FY2026-27. Receipt emailed.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "CDA: Sector G-13 development update — road construction completed.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Election Commission: Your voter registration is confirmed. Polling station: Govt School G-9.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "HEC: Your degree attestation application received. Processing time: 5 working days.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "PEMRA: Cable TV license renewal approved for M/s ABC Networks.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "LDA: Housing scheme ballot results published at lda.gov.pk",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "KDA: Plot possession letter for Sector 45-B issued. Collect from KDA office.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "NADRA: Aap ka naya CNIC tayar hai. Nadra center se biometric krwa k collect kren.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "FBR: Active Taxpayer List updated. Verify at fbr.gov.atl",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "نیب: احتیاطی پیغام — جعلی فون کالز سے ہوشیار رہیں۔ نیب کبھی فون نہیں کرتا۔",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Civil Aviation: Flight schedule update — Islamabad to Karachi, PK-305 on time.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Punjab Police: Character certificate application received. Collect after 7 days.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Ministry of Health: Vaccination drive schedule for September 2026 published.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Pakistan Railways: Train ML-1 Awam Express on time. Arrival: 6:30 PM.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "NHA: Motorway M-5 open for traffic. Speed limit 120 km/h.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "State Bank: Policy rate maintained at 22%. Next review: October 2026.",
+    "label": "Safe",
+    "category": "Government (Legit)"
+  },
+  {
+    "message": "Assalam o Alaikum! Kal sham ko dinner pe aao. Ghar pe biryani bana rahi hun.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Bhai, Rs. 5000 bhej diye hain easypaisa se. Check karo.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Ammi, main office se nikal gaya hun. 30 min mein ghar aaunga.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Yaar kal cricket match dekhne chalein? Pakistan vs India T20.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Baji, bacho ko school se le lena. Main late aaunga aaj.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Abbu ne kaha hai weekend pe Naran chalte hain. Sab ready ho jao.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Bhai meri salary aa gayi hai. Kal Rs. 10,000 wapis bhej dunga.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Aapi, shopping mall chalain? Eid ki shopping krni hai.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Dost, assignment complete kr li? Kal submit krni hai.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Bhai ghar ka lock change krwa diya. Naya chabi kal de dunga.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Assalam o Alaikum bhai, kaise hain? Bohat din ho gaye baat kiye.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Phuppo ki tabiat kharab hai. Hospital le jana parega.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Bhai Rs. 3000 ka bill pay kr diya. Receipt WhatsApp kr rahi hun.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Yaar office mein meeting hai. Late ho jayega aaj.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Beta, dawai le li? Doctor ne kaha tha time pe leni hai.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Bhai, WiFi bill Rs. 3500 pay kr dena. Due date kal hai.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Ammi ne kaha hai aaj jaldi aana. Mehman aa rahe hain.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Bhai car ki servicing krwa li. Bill Rs. 8000 hua.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Dost, naya restaurant try kren? Clifton mein khula hai.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Baji, bacho ki school fees Rs. 15,000 kal jama krwa dena.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Assalam o Alaikum. Kal Eidi kitni mili? Mujhe Rs. 5000 mili.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Bhai mobile charger le aana. Mera kharab ho gaya.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Yaar cricket ground book kr diya. Kal sham 5 baje khelte hain.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Aapi, aap ki dress tailor se aa gayi. Rs. 2500 bill hua.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Bhai, ghar ka electricity bill Rs. 12,000 aaya hai. Bohat zyada hai.",
+    "label": "Safe",
+    "category": "Personal"
+  },
+  {
+    "message": "Meeting reminder: Quarterly review tomorrow at 10 AM. Conference Room B.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "HR: Your leave application for 5-Sep to 8-Sep approved.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Payroll: Your salary slip for August 2026 emailed. Check inbox.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "IT Department: System maintenance scheduled for Sunday 2 AM to 6 AM.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Project update: Phase 2 deliverables submitted on time. Client satisfied.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Vendor payment of Rs. 150,000 processed. Expected credit in 2 business days.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Invoice #2026-089 sent to client. Amount: Rs. 75,000. Due: 15-Sep-2026.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Office announcement: Annual dinner on 20-Sep at Marriott Hotel.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Team meeting rescheduled to 3 PM today. Please confirm attendance.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Procurement: Purchase order #PO-2026-445 approved. Vendor notified.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Expense report of Rs. 12,500 approved. Reimbursement in next payroll.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Client feedback: Project delivery rated 4.5/5. Great work team!",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Office Wi-Fi password updated: Company2026!@. Connect to CorpNetwork.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "HR: Annual increment letters distributed. Check your email.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Audit team visiting next week. Please prepare Q2 financial documents.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "New employee joining: Muhammad Hassan, Software Engineer, starting Monday.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Board meeting minutes for August 2026 circulated. Review before Friday.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Company picnic scheduled for October 15 at Lakeview Park. Families welcome.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Quarterly sales target achieved: 115%. Bonus processing in September.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Office renovation: Floor 3 closed for 2 weeks. Work from Floor 2.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Compliance training mandatory for all staff. Deadline: 30-Sep-2026.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Server migration completed. All systems operational.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Performance reviews scheduled for October. Self-assessment due 15-Sep.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Budget proposal for FY2026-27 due by 30-Sep. Department heads submit.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "Internship program: 10 interns joining from LUMS and NUST in October.",
+    "label": "Safe",
+    "category": "Business"
+  },
+  {
+    "message": "LUMS: Your admission to MBA program confirmed. Orientation on 15-Sep-2026.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "NUST: Semester registration fee of Rs. 85,000 due by 10-Sep-2026.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "IBA: Mid-term exam schedule published. Check student portal.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "FAST University: Your GPA for Spring 2026 is 3.65. Dean's List.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "School notification: Parent-teacher meeting scheduled for Saturday 10 AM.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "University fee receipt: Rs. 45,000 paid for Fall 2026 semester.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Board exams result: Your roll number 889900 scored 92% — 1st position.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "School bus route changed: Pickup time now 7:15 AM from Monday.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Library book return reminder: 3 books due by 5-Sep-2026.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Scholarship application deadline extended to 30-Sep-2026.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Course registration: CS-401 Artificial Intelligence — Section A full.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "University: Convocation ceremony on 20-Oct-2026. Register by 30-Sep.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "School fees: Q2 installment of Rs. 25,000 due on 01-Oct-2026.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Exam hall ticket downloaded. Roll No: 2026-MBA-0445.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Research paper accepted: IEEE International Conference on AI 2026.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Campus placement: 15 companies visiting next week. Register for interviews.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "University hostel: Room allotment published. Check student portal.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Online course: Machine Learning specialization completed. Certificate issued.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "School annual day: 25-Nov-2026. Students to prepare performances.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Tuition fee receipt: Rs. 12,000 paid for August 2026.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "University email: Password expires in 7 days. Reset at portal.university.edu.pk",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Lab equipment: Microscope #12 repaired. Available for use.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Sports day: Athletics competition on 15-Oct. Register by 01-Oct.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Alumni meet: Annual gathering on 05-Nov. RSVP by 15-Oct.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "PhD defense: Thesis submitted. Viva voce scheduled for 20-Oct-2026.",
+    "label": "Safe",
+    "category": "Education"
+  },
+  {
+    "message": "Aga Khan Hospital: Your appointment with Dr. Ahmed is confirmed for 5-Sep at 3 PM.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Shaukat Khanum: Lab report ready. Collect from reception or download online.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Pharmacy: Your prescription is ready. Total: Rs. 2,500. Collect from store.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Health insurance: Claim #445521 approved. Rs. 45,000 settled.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Vaccination reminder: Your child's MMR vaccine due on 10-Sep-2026.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Dentist appointment: Teeth cleaning scheduled for 8-Sep at 11 AM.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Hospital: Your MRI scan report is ready. Collect from radiology dept.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Clinic: Follow-up visit reminder. Dr. Sara — 12-Sep at 2 PM.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Medicine reminder: Take Metformin 500mg twice daily after meals.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Blood test report: All values within normal range. Cholesterol: 180.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Hospital bill: Rs. 15,000 for consultation and lab tests. Receipt attached.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Eye checkup: Your prescription updated. New glasses ready at Optics store.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Physiotherapy session #5 completed. Next appointment: 10-Sep at 4 PM.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Medical store: Medicine order of Rs. 3,500 delivered.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Hospital: Your discharge summary is ready. Collect from records department.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Health checkup package: Rs. 5,000 comprehensive screening. Book online.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Pediatrician: Baby's weight 8.5 kg. Growth on track. Next visit: 1 month.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Surgery scheduled: Appendectomy on 15-Sep at 8 AM. Fasting from midnight.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Psychologist session: Appointment confirmed for 11-Sep at 5 PM.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "X-ray report: No fracture detected. Soft tissue injury. Rest advised.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Dental clinic: Root canal treatment completed. Crown appointment: 20-Sep.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Lab: Your thyroid panel results — TSH 2.5, T3 normal, T4 normal.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Hospital: Health card activated. Coverage: Rs. 500,000/year.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Pharmacy delivery: Insulin pens delivered. Store at 2-8°C.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "Emergency: Ambulance dispatched. ETA 12 minutes. Stay calm.",
+    "label": "Safe",
+    "category": "Healthcare"
+  },
+  {
+    "message": "K-Electric: Your electricity bill for August is Rs. 12,500. Due date: 15-Sep.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "SNGPL: Gas bill Rs. 3,500 for August 2026. Pay at any bank branch.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "PTCL: Your broadband bill of Rs. 3,000 is due on 10-Sep-2026.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Water bill: Rs. 1,200 for August. Pay at WASP office or online.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Sui Southern: Gas meter reading recorded. Bill will be generated in 3 days.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Jazz postpaid: Bill of Rs. 2,500 for August. Due date: 20-Sep-2026.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "StormFiber: Monthly bill Rs. 3,500. Auto-payment processed successfully.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Nayatel: Bill of Rs. 4,000 paid. Next billing cycle starts 01-Oct.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "K-Electric: Payment of Rs. 12,500 received. Thank you.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "PTCL: Your landline bill Rs. 800 is due on 15-Sep. Pay online at ptcl.com.pk",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "SNGPL: Gas connection restoration scheduled for 5-Sep. Technician will visit.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Water & Sanitation: Tanker delivered 5000 gallons. Charges: Rs. 2,000.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Electricity: Load shedding schedule for your area — 2 PM to 4 PM daily.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Sui Northern: Annual meter inspection on 10-Sep. Please ensure access.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "PTCL: Broadband speed upgraded to 50 Mbps. No change in monthly charges.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "K-Electric: Solar net-metering application approved. Installation next week.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Gas bill: Rs. 5,200 for winter months. Pay by 20-Sep to avoid surcharge.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Water bill: Arrears notice — Rs. 3,600 outstanding. Pay within 7 days.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "StormFiber: Service interruption on 8-Sep from 2 AM to 6 AM for maintenance.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Nayatel: Speed test results — Download: 48 Mbps, Upload: 24 Mbps.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Electricity: New transformer installed in your area. Power restored.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "SNGPL: Gas pressure low in your area. Maintenance in progress.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "PTCL: Fiber upgrade completed. New router installed.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "K-Electric: Complaint #88990011 resolved. Power restored to your area.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Sui gas: Pipeline repair completed. Normal supply resumed.",
+    "label": "Safe",
+    "category": "Utility"
+  },
+  {
+    "message": "Facebook: Ahmad sent you a friend request.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Instagram: 5 people liked your photo.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "LinkedIn: Your profile was viewed 12 times this week.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Twitter: @techpakistan mentioned you in a tweet.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "YouTube: New video from your subscription — Tech Review Pakistan.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "WhatsApp: 3 new messages in 'Family' group.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "TikTok: Your video got 1,500 views in 24 hours.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Snapchat: Ali sent you a snap.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Reddit: Your post in r/Pakistan got 45 upvotes.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Pinterest: 10 new pins in your 'Recipes' board.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Discord: 5 new messages in 'Gaming Squad' server.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Telegram: Channel 'Crypto News' posted 3 new updates.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Zoom: Meeting with 'Project Team' starts in 15 minutes.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Slack: 8 unread messages in #general channel.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "GitHub: Pull request #45 merged successfully.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Stack Overflow: Your answer received 12 upvotes.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Medium: New article from author you follow: 'AI in Pakistan'.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Spotify: Your weekly playlist is ready. 30 new songs.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Netflix: New season of your favorite show is available.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Amazon Prime: Your subscription renews on 15-Sep for Rs. 499.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Google Photos: 50 new memories from 2 years ago.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Dropbox: File 'report.pdf' shared with you by Ahmed.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "OneDrive: Storage usage 8 GB of 15 GB.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Clubhouse: Room starting: 'Tech Startups in Pakistan' — 50 listeners.",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "Threads: Your post got 200 likes. Keep posting!",
+    "label": "Safe",
+    "category": "Social Media"
+  },
+  {
+    "message": "OLX: Aap ki listing 'Honda Civic 2019' ko 47 logon ne dekha. 3 messages aaye hain.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Zameen.com: Property alert — Gulshan-e-Iqbal mein 3 naye 2-bed apartments listed.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Daraz: Aap ki wishlist mein Samsung Galaxy S24 Ultra ki price Rs. 15,000 kam ho gayi hai.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "LinkedIn: Muhammad Hassan viewed your profile 3 times this week. 5 new connections.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "NEPRA: Bijli ke rates mein tabdeeli ka notification. September 2026 se Rs. 2.50/unit kami.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "State Life: Insurance policy #445521 matured. Rs. 500,000 claim approved. Visit branch with CNIC.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "EFU Insurance: Motor insurance renewal premium Rs. 8,500. Pay at efu.com.pk",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Jubilee Life: Pension fund statement — August 2026. Current value Rs. 2,500,000.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "PSX: KSE-100 index closed at 78,500 (+450 points). Your portfolio value: Rs. 1,200,000.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Mutual fund: Your Meezan Islamic Fund units — NAV Rs. 125.50. Total value Rs. 500,000.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Bank: Your fixed deposit Rs. 1,000,000 matured. Principal + profit Rs. 1,125,000 credited.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "NADRA: Aap ka CNIC 15-Oct-2026 ko expire ho raha hai. Nadra center ja kr renew kren.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Tax consultant: Aap ka FBR return file ho gaya hai. Rs. 15,000 refund expected.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Property dealer: Plot Rs. 5,000,000 mein bik gaya hai. Transfer documents ready.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Insurance claim: Car accident case #77889. Approved amount Rs. 150,000.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Salary increment: Your package revised to Rs. 120,000/month effective October 2026.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Bonus: Annual performance bonus of Rs. 50,000 will be paid in September payroll.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Commission: Your sales commission of Rs. 25,000 credited to your account.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Rental income: Tenant paid Rs. 45,000 for September rent. Receipt generated.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Investment: Your portfolio returned 18% this year. Current value Rs. 850,000.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Freelance payment: Client transferred Rs. 75,000 via Payoneer. Available in 2 days.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Business profit: Monthly profit share Rs. 35,000 credited to your account.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Loan approved: Rs. 500,000 personal loan. EMI Rs. 12,500/month for 5 years.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Credit card: Limit enhanced to Rs. 300,000. No additional charges.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  },
+  {
+    "message": "Remittance: Rs. 250,000 received from brother in Dubai via Western Union.",
+    "label": "Safe",
+    "category": "Tricky Safe"
+  }
+]

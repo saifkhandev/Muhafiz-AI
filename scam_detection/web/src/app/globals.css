@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0B0F14;
+  --background-light: #F7F8FA;
+  --surface: #141A21;
+  --surface-light: #FFFFFF;
+  --border: #2A323C;
+  --accent: #2DD4BF;
+  --danger: #E5484D;
+  --safe: #3DD68C;
+  --warning: #E8A93D;
+  --text-primary: #EDEFF2;
+  --text-secondary: #8A94A3;
+  --foreground: #EDEFF2;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-light: var(--background-light);
+  --color-surface: var(--surface);
+  --color-surface-light: var(--surface-light);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-danger: var(--danger);
+  --color-safe: var(--safe);
+  --color-warning: var(--warning);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-space-grotesk);
+  --font-urdu: var(--font-noto-nastaliq);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Shield pulse animation for mobile fallback */
+@keyframes shield-pulse-scam {
+  0%, 100% { box-shadow: 0 0 20px rgba(229, 72, 77, 0.4); }
+  50% { box-shadow: 0 0 60px rgba(229, 72, 77, 0.8); }
+}
+
+@keyframes shield-pulse-safe {
+  0%, 100% { box-shadow: 0 0 20px rgba(61, 214, 140, 0.4); }
+  50% { box-shadow: 0 0 60px rgba(61, 214, 140, 0.8); }
+}
+
+@keyframes shield-pulse-idle {
+  0%, 100% { box-shadow: 0 0 20px rgba(45, 212, 191, 0.25); }
+  50% { box-shadow: 0 0 40px rgba(45, 212, 191, 0.5); }
+}
+
+.shield-pulse-scam {
+  animation: shield-pulse-scam 0.6s ease-out;
+}
+
+.shield-pulse-safe {
+  animation: shield-pulse-safe 0.6s ease-out;
+}
+
+.shield-pulse-idle {
+  animation: shield-pulse-idle 3s ease-in-out infinite;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Urdu text */
+.urdu-text {
+  font-family: var(--font-noto-nastaliq), "Noto Nastaliq Urdu", serif;
+  direction: rtl;
+  line-height: 2.1;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #EDEFF2 0%, #2DD4BF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

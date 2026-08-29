@@ -1,0 +1,41 @@
+{
+  "version": "V3",
+  "original_size": 868,
+  "augmented_size": 255,
+  "combined_size": 1123,
+  "best_model": "B_combined_C5",
+  "threshold": 0.49,
+  "use_ensemble": false,
+  "test": {
+    "accuracy": 0.9732620320855615,
+    "f1": 0.975609756097561,
+    "f2": 0.9727626459143969,
+    "recall": 0.970873786407767,
+    "precision": 0.9803921568627451,
+    "roc_auc": 0.9959546925566343
+  },
+  "confusion_matrix": {
+    "TP": 100,
+    "FP": 2,
+    "FN": 3,
+    "TN": 82
+  },
+  "language_results": {
+    "Generated": {
+      "n": 42,
+      "accuracy": 0.9761904761904762,
+      "precision": 1.0,
+      "recall": 0.9615384615384616,
+      "f1": 0.9803921568627451
+    }
+  },
+  "overfitting": {
+    "train_cv_gap": 0.05259668982549692,
+    "cv_test_gap": -0.028206445923057877
+  },
+  "errors": {
+    "FN": 3,
+    "FP": 2
+  },
+  "elapsed_seconds": 23.9
+}

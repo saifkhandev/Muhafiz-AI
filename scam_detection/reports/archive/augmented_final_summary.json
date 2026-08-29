@@ -1,0 +1,66 @@
+{
+  "pakistan_original": 868,
+  "uci_original": 5572,
+  "combined_clean": 6026,
+  "duplicates_removed": 414,
+  "near_duplicate_pairs": 0,
+  "conflicting_labels": 0,
+  "pk_holdout_size": 330,
+  "best_experiment": "Exp1",
+  "best_model": "C_char_svm_C2",
+  "best_threshold": 0.47,
+  "previous_baseline": {
+    "accuracy": 0.913,
+    "recall": 0.9756,
+    "f1": 0.9302
+  },
+  "new_pakistan_holdout": {
+    "accuracy": 0.9696969696969697,
+    "precision": 0.9593023255813954,
+    "recall": 0.9821428571428571,
+    "f1": 0.9705882352941176,
+    "roc_auc": 0.9964726631393298,
+    "TP": 165,
+    "FP": 7,
+    "FN": 3,
+    "TN": 155
+  },
+  "improved_accuracy": true,
+  "improved_recall": true,
+  "all_holdout_results": {
+    "Exp1": {
+      "accuracy": 0.9696969696969697,
+      "precision": 0.9593023255813954,
+      "recall": 0.9821428571428571,
+      "f1": 0.9705882352941176,
+      "roc_auc": 0.9964726631393298,
+      "TP": 165,
+      "FP": 7,
+      "FN": 3,
+      "TN": 155
+    },
+    "Exp2": {
+      "accuracy": 0.4727272727272727,
+      "precision": 0.4625,
+      "recall": 0.22023809523809523,
+      "f1": 0.29838709677419356,
+      "roc_auc": 0.5394804526748971,
+      "TP": 37,
+      "FP": 43,
+      "FN": 131,
+      "TN": 119
+    },
+    "Exp3": {
+      "accuracy": 0.9303030303030303,
+      "precision": 0.8961748633879781,
+      "recall": 0.9761904761904762,
+      "f1": 0.9344729344729344,
+      "roc_auc": 0.9855232216343327,
+      "TP": 164,
+      "FP": 19,
+      "FN": 4,
+      "TN": 143
+    }
+  },
+  "elapsed_seconds": 122.6
+}

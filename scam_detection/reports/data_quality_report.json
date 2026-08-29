@@ -1,0 +1,82 @@
+{
+  "audit": {
+    "rows": 343,
+    "columns": [
+      "Message Content",
+      "Language Type",
+      "Scam Category",
+      "Label"
+    ],
+    "dtypes": {
+      "Message Content": "str",
+      "Language Type": "str",
+      "Scam Category": "str",
+      "Label": "str"
+    },
+    "missing_values": {
+      "Message Content": 0,
+      "Language Type": 0,
+      "Scam Category": 0,
+      "Label": 0
+    },
+    "exact_duplicate_rows": 0,
+    "duplicate_message_count": 0,
+    "duplicate_messages": [],
+    "conflicting_duplicates": [],
+    "label_distribution": {
+      "Scam": 202,
+      "Safe": 141
+    },
+    "language_distribution": {
+      "English": 119,
+      "Roman Urdu": 96,
+      "Urdu": 70,
+      "Mixed": 58
+    },
+    "category_distribution": {
+      "Bank": 48,
+      "Job": 46,
+      "Prize": 43,
+      "SIM Block": 38,
+      "OTP": 37,
+      "Investment": 36,
+      "Impersonation": 29,
+      "Lottery": 25,
+      "Loan": 21,
+      "Fake Charity": 20
+    },
+    "label_by_language": {
+      "English": {
+        "Safe": 70,
+        "Scam": 49
+      },
+      "Mixed": {
+        "Safe": 5,
+        "Scam": 53
+      },
+      "Roman Urdu": {
+        "Safe": 38,
+        "Scam": 58
+      },
+      "Urdu": {
+        "Safe": 28,
+        "Scam": 42
+      }
+    },
+    "message_length_stats": {
+      "mean": 99.97,
+      "median": 102.0,
+      "std": 14.91,
+      "min": 60,
+      "max": 136,
+      "q25": 91,
+      "q75": 110
+    },
+    "very_short_messages": 0,
+    "empty_messages": 0,
+    "messages_with_control_chars": 0,
+    "messages_with_urls": 15,
+    "messages_with_currency": 183
+  },
+  "near_duplicates": []
+}

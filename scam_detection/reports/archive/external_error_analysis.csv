@@ -1,0 +1,136 @@
+﻿ID,Message,Language,Actual_Label,Predicted_Label,Scam_Probability,Correct
+4,Mubarak ho! BISP main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.39903471672746066,False
+8,"Aap ka MCB debit card ATM par use hua hai. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.5155124079997505,False
+15,Mubarak ho! Inaam Ghar main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.40535645286624566,False
+20,Mubarak ho! Ehsaas Program main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.3868608207915018,False
+22,Mubarak ho! Jeeto Pakistan main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.46847995067365855,False
+24,"Moaziz sarif, apka BISP ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0362242481 par pin code dain.",Roman Urdu,Scam,Safe,0.3407214671753731,False
+30,Mubarak ho! Benazir Income Support main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.44744724930997964,False
+31,Mubarak ho! Jeeto Pakistan main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.46847995067365855,False
+35,"Aap k MCB account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5247499804577956,False
+36,"Aap ka Allied Bank debit card ATM par use hua hai. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.5226775816409088,False
+39,"Aap k MCB acount se 50,000 PKR ki deduction hui ha tax ki madd mein.",Roman Urdu,Safe,Scam,0.4876784979389111,False
+49,Mubarak ho! Jeeto Pakistan main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna SadaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.44231625598228846,False
+53,Mubarak ho! Ehsaas Program main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna Meezan Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.38493360622964323,False
+55,"Aap k HBL acount se 50,000 PKR ki deduction hui ha tax ki madd mein.",Roman Urdu,Safe,Scam,0.48319303222361804,False
+57,Mubarak ho! Inaam Ghar main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.,Roman Urdu,Scam,Safe,0.40448234908360525,False
+61,Mubarak ho! Ehsaas Program main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.3726258401341187,False
+62,"Aap k HBL acount se 75,000 PKR ki deduction hui h tax ki madd mein.",Roman Urdu,Safe,Scam,0.4807447863518015,False
+72,Mubarak ho! Benazir Income Support main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.,Roman Urdu,Scam,Safe,0.45001194168763203,False
+79,"Moaziz sarif, apka Benazir Income Support ki taraf se 10000 PKR ka inaam nikla ha. Taseeq k liye 0318245575 par call krn.",Roman Urdu,Scam,Safe,0.37906941335751904,False
+82,"Bhai apke number par ghalti se mere 5000 rs aa gaye hain easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Safe,0.45051771644695277,False
+89,"Moaziz sarif, apka Benazir Income Support ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0353081886 par call karein.",Roman Urdu,Scam,Safe,0.4218662251389913,False
+100,Mubarak ho! Inaam Ghar main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.,Roman Urdu,Scam,Safe,0.40448234908360525,False
+107,"Moaziz sarif, apka BISP ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0370292625 par call karein.",Roman Urdu,Scam,Safe,0.3805453760977596,False
+110,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0343252849 par call karein.",Roman Urdu,Scam,Safe,0.4395200489828273,False
+114,"Moaziz sarif, apka Ehsaas Program ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0381137674 par sms karin.",Roman Urdu,Scam,Safe,0.3272404977393511,False
+115,"Moaziz sarif, apka Ehsaas Program ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0389910179 par OTP bataen.",Roman Urdu,Scam,Safe,0.351740539847939,False
+124,Aap k UBL account se 350 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Scam,0.48720347324343394,False
+126,"Moaziz sarif, apka Benazir Income Support ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0320253105 par OTP bataen.",Roman Urdu,Scam,Safe,0.43027500041220107,False
+129,"Moaziz sarif, apka Inaam Ghar ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0370477172 par call karein.",Roman Urdu,Scam,Safe,0.36954138226895356,False
+152,Mubarak ho! Ehsaas Program main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna MCB pin is number par send krin.,Roman Urdu,Scam,Safe,0.3743541798571886,False
+154,"Moaziz sarif, apka Benazir Income Support ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0392373608 par sms karin.",Roman Urdu,Scam,Safe,0.4037401889818961,False
+160,"Aap ka SadaPay debit card ATM par use hua hai. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.4812862527046725,False
+177,"Aap ka HBL debit card ATM par use hua hai. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.5122896101135908,False
+180,"Moaziz sarif, apka BISP ki taraf se 5000 PKR ka inaam nikla h. Taseeq k liye 0345653091 par call kren.",Roman Urdu,Scam,Safe,0.3383842645563239,False
+181,"Moaziz sarif, apka Ehsaas Program ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0397488855 par pin code dain.",Roman Urdu,Scam,Safe,0.31141764743107025,False
+182,"Moaziz sarif, apka Ehsaas Program ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0325310311 par call karein.",Roman Urdu,Scam,Safe,0.3435477519105514,False
+185,"Moaziz sarif, apka Ehsaas Program ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0398877344 par details send krain.",Roman Urdu,Scam,Safe,0.41858994424475005,False
+188,Mubarak ho! Inaam Ghar main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.4179366723906878,False
+194,"Aap k State Bank account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4975501264063706,False
+201,Mubarak ho! Jeeto Pakistan main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.4678697525844029,False
+207,"Moaziz sarif, apka Ehsaas Program ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0391463803 par rabta krein.",Roman Urdu,Scam,Safe,0.3104180621984159,False
+209,Mubarak ho! Ehsaas Program main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.,Roman Urdu,Scam,Safe,0.35807960494359564,False
+216,"Moaziz sarif, apka Inaam Ghar ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0394642740 par pin code dain.",Roman Urdu,Scam,Safe,0.3315630480384782,False
+222,Mubarak ho! Benazir Income Support main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.4500314479283157,False
+243,"Moaziz sarif, apka Ehsaas Program ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0314612161 par details send krain.",Roman Urdu,Scam,Safe,0.41858994424475005,False
+252,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0381951627 par rabta krein.",Roman Urdu,Scam,Safe,0.4040418065708733,False
+266,"Moaziz sarif, apka Inaam Ghar ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0368222657 par details send krain.",Roman Urdu,Scam,Safe,0.45106063012836045,False
+271,"Moaziz sarif, apka BISP ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0321714544 par call karein.",Roman Urdu,Scam,Safe,0.38274477999860945,False
+273,"Moaziz sarif, apka Inaam Ghar ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0359026104 par rabta krein.",Roman Urdu,Scam,Safe,0.3307490327664031,False
+275,Mubarak ho! Jeeto Pakistan main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.44880338648518314,False
+280,"Bhai apke number par ghalti se mere 12500 rs aa gaye hain easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Safe,0.45051771644695277,False
+291,Mubarak ho! Inaam Ghar main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.3909132033903058,False
+293,"Bha apke number par ghalti se mere 12500 rs aa gaye han easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Safe,0.4366750660301885,False
+298,"Moaziz sarif, apka Ehsaas Program ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0383368602 par details send krain.",Roman Urdu,Scam,Safe,0.41858994424475005,False
+317,Mubarak ho! BISP main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.4323583314667182,False
+323,Aap k NayaPay account se 1 Lakh PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Scam,0.5034140689561113,False
+338,"Aap k JazzCash account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4848930270776382,False
+340,Aap ka MCB debit card ATM par use hua h. Amount: 1 Lakh PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.,Roman Urdu,Safe,Scam,0.47375495076001445,False
+345,"Moaziz sarif, apka BISP ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0390404075 par sms karin.",Roman Urdu,Scam,Safe,0.3609264055374522,False
+350,Mubarak ho! Inaam Ghar main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.4023713743111472,False
+357,Mubarak ho! Jeeto Pakistan main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.45423268047709014,False
+366,Mubarak ho! Ehsaas Program main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.36380548074637126,False
+379,"Moaziz sarif, apka Ehsaas Program ki taraf se 12500 PKR ka inaam nikla ha. Taseeq k liye 0320978909 par pin code dain.",Roman Urdu,Scam,Safe,0.3219090816942123,False
+405,"Aap k UBL account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5212538965023661,False
+409,"Moaziz sarif, apka Inaam Ghar ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0335786873 par rabta krein.",Roman Urdu,Scam,Safe,0.45519602121977804,False
+414,Mubarak ho! Jeeto Pakistan main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.44880338648518314,False
+425,"Aap k Meezan Bank account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5203313265843679,False
+427,Aap ka State Bank debit card ATM par use hua hai. Amount: 350 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Scam,0.4709119577635074,False
+428,"Moaziz sarif, apka BISP ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0366511511 par sms karin.",Roman Urdu,Scam,Safe,0.35972398486190194,False
+433,"Aap ka NayaPay debit card ATM par use hua hai. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.5143507981472987,False
+436,"Moaziz sarif, apka Inaam Ghar ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0314355085 par sms karin.",Roman Urdu,Scam,Safe,0.349795587306389,False
+449,Mubarak ho! Benazir Income Support main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna SadaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.4250795878687831,False
+450,"Moaziz sarif, apka Benazir Income Support ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0352041565 par pin code dain.",Roman Urdu,Scam,Safe,0.3865005311879354,False
+470,"Moaziz sarif, apka Ehsaas Program ki taraf se 75,000 PKR ka inaam nikla ha. Taseeq k liye 0339776122 par call krn.",Roman Urdu,Scam,Safe,0.4323999306947259,False
+475,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0334483423 par sms karin.",Roman Urdu,Scam,Safe,0.42117123437162873,False
+480,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0316735339 par sms karin.",Roman Urdu,Scam,Safe,0.42117123437162873,False
+488,"Moaziz sarif, apka Jeeto Pakistan ki taraf se 10000 PKR ka inaam nikla ha. Taseeq k liye 0340255178 par rabta krein.",Roman Urdu,Scam,Safe,0.41646890052353863,False
+494,"Moaziz sarif, apka Benazir Income Support ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0358441339 par call karein.",Roman Urdu,Scam,Safe,0.4218662251389913,False
+495,"Moaziz sarif, apka Benazir Income Support ki taraf se 2500 PKR ka inaam nikla hai. Taseeq k liye 0333852516 par rabta krein.",Roman Urdu,Scam,Safe,0.38773051507560696,False
+520,Mubarak ho! Inaam Ghar main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna Allied Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.4179366723906878,False
+530,Aap k Allied Bank account se 350 PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Scam,0.5036558023507886,False
+560,"Moaziz sarif, apka Ehsaas Program ki taraf se 2500 PKR ka inaam nikla ha. Taseeq k liye 0364141938 par details send krain.",Roman Urdu,Scam,Safe,0.42898810246603014,False
+576,"Aap ka State Bank debit card ATM par use hua hai. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.4964617757617938,False
+587,Mubarak ho! Ehsaas Program main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.36094624164724604,False
+603,"Moaziz sarif, apka BISP ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0364220705 par rabta krein.",Roman Urdu,Scam,Safe,0.339885245890135,False
+604,"Aap k Meezan Bank account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5236036223255419,False
+608,Aap k MCB account se 1 Lakh PKR ki deduction hui hai tax ki madd mein.,Roman Urdu,Safe,Scam,0.5052240182136872,False
+609,"Aap ka Allied Bank debit card ATM par use hua h. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call krn.",Roman Urdu,Safe,Scam,0.48356558361222735,False
+611,"Aap k SadaPay account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.48121790061364733,False
+625,"Moaziz sarif, apka Ehsaas Program ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0355233806 par pin code dain.",Roman Urdu,Scam,Safe,0.4117742424457696,False
+635,Mubarak ho! Benazir Income Support main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.43527531253914303,False
+652,"Aap k JazzCash account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4884480737882388,False
+662,"Moaziz sarif, apka Benazir Income Support ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0357764311 par rabta krein.",Roman Urdu,Scam,Safe,0.38649504066354795,False
+674,Aap ka Allied Bank debit card ATM par use hua hai. Amount: 1 Lakh PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.,Roman Urdu,Safe,Scam,0.5115993722254406,False
+682,"Aap k HBL account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5164660801698512,False
+690,Mubarak ho! BISP main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna State Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.403232587529009,False
+696,Mubarak ho! Ehsaas Program main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna HBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.3724153357062086,False
+697,Mubarak ho! Ehsaas Program main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.36094624164724604,False
+709,"Bha apke number par ghalti se mere 5000 rs aa gaye han easypaisa me, please wapis bhej dain shukar guzar hunga.",Roman Urdu,Scam,Safe,0.4366750660301885,False
+710,Mubarak ho! BISP main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna UBL pin is number par send krin.,Roman Urdu,Scam,Safe,0.41620801436392824,False
+715,Mubarak ho! Jeeto Pakistan main apka 2500 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.44880338648518314,False
+731,Mubarak ho! Inaam Ghar main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Meezan Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.4145905948791522,False
+732,"Moaziz sarif, apka Ehsaas Program ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0321966419 par sms karin.",Roman Urdu,Scam,Safe,0.43283055121509767,False
+733,Mubarak ho! BISP main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.,Roman Urdu,Scam,Safe,0.3961060047879743,False
+735,"Moaziz sarif, apka BISP ki taraf se 10000 PKR ka inaam nikla ha. Taseeq k liye 0398793936 par sms karin.",Roman Urdu,Scam,Safe,0.374389286541333,False
+736,"Moaziz sarif, apka Inaam Ghar ki taraf se 10000 PKR ka inaam nikla h. Taseeq k liye 0353620508 par pin code dain.",Roman Urdu,Scam,Safe,0.3450147482005897,False
+739,"Moaziz sarif, apka BISP ki taraf se 2500 PKR ka inaam nikla ha. Taseeq k liye 0362782181 par OTP bataen.",Roman Urdu,Scam,Safe,0.40604107888354474,False
+740,Mubarak ho! Jeeto Pakistan main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna JazzCash pin is number par send krin.,Roman Urdu,Scam,Safe,0.44685725794939074,False
+759,"Moaziz sarif, apka Ehsaas Program ki taraf se 350 PKR ka inaam nikla hai. Taseeq k liye 0390726737 par call karein.",Roman Urdu,Scam,Safe,0.45203218565961095,False
+781,"Moaziz sarif, apka Inaam Ghar ki taraf se 350 PKR ka inaam nikla ha. Taseeq k liye 0394408235 par pin code dain.",Roman Urdu,Scam,Safe,0.4615986415627265,False
+791,"Aap ka Allied Bank debit card ATM par use hua h. Amount: 50,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call kren.",Roman Urdu,Safe,Scam,0.48946761418556334,False
+793,"Aap k Allied Bank account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5354970825306777,False
+796,Mubarak ho! Jeeto Pakistan main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna SadaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.44231625598228846,False
+798,"Aap k Allied Bank account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.5321530762953038,False
+801,"Moaziz sarif, apka Inaam Ghar ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0315455905 par details send krain.",Roman Urdu,Scam,Safe,0.45106063012836045,False
+804,"Moaziz sarif, apka Benazir Income Support ki taraf se 10000 PKR ka inaam nikla ha. Taseeq k liye 0363932819 par sms karin.",Roman Urdu,Scam,Safe,0.4148349005420175,False
+810,"Moaziz sarif, apka BISP ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0363373939 par call karein.",Roman Urdu,Scam,Safe,0.38274477999860945,False
+814,Mubarak ho! Benazir Income Support main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna NayaPay pin is number par send krin.,Roman Urdu,Scam,Safe,0.4500314479283157,False
+818,"Aap k State Bank account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4940314927450909,False
+837,"Aap k Easypaisa account se 50,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4898197677692349,False
+845,"Aap ka Meezan Bank debit card ATM par use hua hai. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karein.",Roman Urdu,Safe,Scam,0.5152199233048521,False
+861,"Moaziz sarif, apka Ehsaas Program ki taraf se 12500 PKR ka inaam nikla h. Taseeq k liye 0365779737 par rabta krein.",Roman Urdu,Scam,Safe,0.32235768709617196,False
+889,"Moaziz sarif, apka Inaam Ghar ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0330164624 par OTP bataen.",Roman Urdu,Scam,Safe,0.37641001536426144,False
+893,"Moaziz sarif, apka Ehsaas Program ki taraf se 12500 PKR ka inaam nikla hai. Taseeq k liye 0312611596 par call karein.",Roman Urdu,Scam,Safe,0.34449476860551187,False
+894,"Aap ka Allied Bank debit card ATM par use hua ha. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.",Roman Urdu,Safe,Scam,0.49286294364615624,False
+910,Mubarak ho! Ehsaas Program main apka 10000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.36094624164724604,False
+911,"Moaziz sarif, apka Inaam Ghar ki taraf se 5000 PKR ka inaam nikla h. Taseeq k liye 0340651247 par call kren.",Roman Urdu,Scam,Safe,0.32943615231663875,False
+916,"Moaziz sarif, apka Ehsaas Program ki taraf se 1 Lakh PKR ka inaam nikla hai. Taseeq k liye 0372860792 par call karein.",Roman Urdu,Scam,Safe,0.4658678453051125,False
+931,"Aap ka NayaPay debit card ATM par use hua ha. Amount: 75,000 PKR. Agar yeh aap ne nahi kiya toh helpline par call karin.",Roman Urdu,Safe,Scam,0.4812752266186937,False
+944,"Moaziz sarif, apka Inaam Ghar ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0394519600 par call karein.",Roman Urdu,Scam,Safe,0.3740482676728356,False
+961,Mubarak ho! Benazir Income Support main apka 5000 ka inam lga ha. Apna inam hasil krne k lie apna Easypaisa pin is number par send krin.,Roman Urdu,Scam,Safe,0.43101089714658763,False
+968,Mubarak ho! BISP main apka 12500 ka inam lga ha. Apna inam hasil krne k lie apna Meezan Bank pin is number par send krin.,Roman Urdu,Scam,Safe,0.4281565110709238,False
+971,"Moaziz sarif, apka BISP ki taraf se 5000 PKR ka inaam nikla hai. Taseeq k liye 0335550911 par OTP bataen.",Roman Urdu,Scam,Safe,0.39083928804087636,False
+979,"Moaziz sarif, apka Ehsaas Program ki taraf se 10000 PKR ka inaam nikla hai. Taseeq k liye 0365733196 par pin code dain.",Roman Urdu,Scam,Safe,0.31141764743107025,False
+981,"Aap k Easypaisa account se 75,000 PKR ki deduction hui hai tax ki madd mein.",Roman Urdu,Safe,Scam,0.4863453026356735,False

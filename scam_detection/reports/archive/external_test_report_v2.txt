@@ -1,0 +1,54 @@
+EXTERNAL VALIDATION REPORT V2
+======================================================================
+Date: 2026-08-28 00:05:22
+Dataset: phishing_dataset_1000.xlsx (1000 messages)
+Model: B_combined_C5 (full_pipeline.joblib)
+Threshold: 0.49
+Model was NOT modified for this evaluation.
+
+OVERALL PERFORMANCE
+----------------------------------------
+Accuracy:        1.0000 (100.00%)
+Precision:       1.0000 (100.00%)
+Scam Recall:     1.0000 (100.00%)
+F1-Score:        1.0000
+ROC-AUC:         1.0000
+True Positives:  405
+True Negatives:  595
+False Positives: 0
+False Negatives: 0
+
+CONFUSION MATRIX
+----------------------------------------
+                     Predicted Safe  Predicted Scam
+Actual Safe                     595               0
+Actual Scam                       0             405
+
+PER-LANGUAGE PERFORMANCE
+----------------------------------------
+[English] n=411 Acc=1.0000 P=1.0000 R=1.0000 F1=1.0000 AUC=1.0000 FP=0 FN=0
+[Roman Urdu] n=589 Acc=1.0000 P=1.0000 R=1.0000 F1=1.0000 AUC=1.0000 FP=0 FN=0
+
+Urdu, Mixed were not externally validated by this dataset.
+
+COMPARISON WITH OLD MODEL
+----------------------------------------
+Metric                      OLD        NEW       Change
+Accuracy                 0.8650     1.0000    +0.1350
+Scam Recall              0.7531     1.0000    +0.2469
+F1                       0.8188     1.0000    +0.1812
+ROC-AUC                  0.9586     1.0000    +0.0414
+Precision                0.8971     1.0000    +0.1029
+False Positives              35          0        -35
+False Negatives             100          0       -100
+
+Roman Urdu:
+  Accuracy: 0.7708 -> 1.0000 (change: +0.2292)
+  F1:       0.8168 -> 1.0000 (change: +0.1832)
+
+VERDICT
+----------------------------------------
+1. Roman Urdu generalization improved: True
+2. Overall external performance improved: True
+3. Scams missed (FN): 0
+4. FP reduced from 35 to 0

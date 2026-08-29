@@ -1,0 +1,40 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+*.pyc
+
+# ── Node / Next.js ──────────────────────────────────────────────────────────
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Large model binaries (download separately, see scam_detection/models/README.md) ──
+scam_detection/models/whisper-medium/
+scam_detection/models/backup_v31/
+
+# ── Scratch / temp dirs ─────────────────────────────────────────────────────
+temp_audio/
+.scannerwork/
+
+# ── Test screenshots at repo root (build artifacts, not source) ─────────────
+/*.png
+
+# ── OS junk ─────────────────────────────────────────────────────────────────
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# ── Environment / secrets ───────────────────────────────────────────────────
+.env
+.env.local
+.env*.local
+
+# ── Logs ────────────────────────────────────────────────────────────────────
+*.log

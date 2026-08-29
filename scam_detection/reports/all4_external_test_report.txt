@@ -1,0 +1,98 @@
+ALL-4-LANGUAGE BLIND VALIDATION REPORT
+======================================================================
+Date: 2026-08-28 00:05:16
+Test Set: 318 fresh messages (not from training or benchmarks)
+Model: B_combined_C5 (full_pipeline.joblib)
+Threshold: 0.49
+Model was NOT modified for this evaluation.
+
+OVERALL PERFORMANCE
+----------------------------------------
+Accuracy:        0.9748 (97.48%)
+Precision:       0.9949 (99.49%)
+Scam Recall:     0.9652 (96.52%)
+F1-Score:        0.9798
+ROC-AUC:         0.9968
+True Positives:  194
+True Negatives:  116
+False Positives: 1
+False Negatives: 7
+
+CONFUSION MATRIX
+----------------------------------------
+                     Pred Safe  Pred Scam
+Actual Safe                 116           1
+Actual Scam                   7         194
+
+PER-LANGUAGE PERFORMANCE
+----------------------------------------
+
+[English] n=117 (Scam=58, Safe=59)
+  Accuracy:  0.9915 (99.15%)
+  Precision: 1.0000
+  Recall:    0.9828
+  F1:        0.9913
+  AUC:       0.9982
+  FP=0  FN=1
+
+[Urdu] n=66 (Scam=47, Safe=19)
+  Accuracy:  0.9697 (96.97%)
+  Precision: 1.0000
+  Recall:    0.9574
+  F1:        0.9783
+  AUC:       0.9966
+  FP=0  FN=2
+
+[Roman Urdu] n=67 (Scam=48, Safe=19)
+  Accuracy:  0.9403 (94.03%)
+  Precision: 1.0000
+  Recall:    0.9167
+  F1:        0.9565
+  AUC:       0.9989
+  FP=0  FN=4
+
+[Mixed] n=68 (Scam=48, Safe=20)
+  Accuracy:  0.9853 (98.53%)
+  Precision: 0.9796
+  Recall:    1.0000
+  F1:        0.9897
+  AUC:       1.0000
+  FP=1  FN=0
+
+ERROR ANALYSIS
+----------------------------------------
+Total errors: 8
+False Negatives (missed scams): 7
+False Positives (safe flagged): 1
+
+False Negatives (detail):
+  ID=22 Lang=English P=0.4343
+    "Ehsaas Programme: Your family has been approved for Rs. 14000 monthly stipend. Complete registration by paying Rs. 800 f"
+  ID=160 Lang=Roman Urdu P=0.4825
+    "Zaroori ittila: Aap k HBL account se 50000 Rs ki unauthorized transaction hui ha. Abhi tasdeeq kren."
+  ID=181 Lang=Roman Urdu P=0.4190
+    "Sarkari naukri: Aap ki application shortlist ho gayi ha. 5000 Rs interview fee jama karwaen."
+  ID=184 Lang=Roman Urdu P=0.4702
+    "Forex Academy: Ghar bethe rozana 500 dollar kmaen. Dakhla fees sirf 5000 Rs."
+  ID=192 Lang=Roman Urdu P=0.4698
+    "Telenor: Aap ka number iPhone 15 ka winner ha. 5000 Rs recharge kr k inaam hasil kren."
+  ID=283 Lang=Urdu P=0.4529
+    "آپ کا پے پال اکاؤنٹ محدود ہو گیا ہے۔ بینک کارڈ کی تفصیلات سے دوبارہ بحال کریں۔"
+  ID=311 Lang=Urdu P=0.3655
+    "آپ کی آن لائن شاپنگ کی ادائیگی ناکام ہو گئی۔ دوبارہ کوشش کے لیے اپنے کارڈ کی تفصیلات درج کریں۔"
+
+False Positives (detail):
+  ID=268 Lang=Mixed P=0.5428
+    "Your Netflix subscription 1-Sep-2026 ko renew hoga. Amount: Rs. 1500. Payment method: Visa card."
+
+KEY QUESTIONS
+----------------------------------------
+1. Overall performance: 97.48% accuracy, 0.9798 F1, 96.52% recall
+2. English: 99.15% accuracy, 0.9913 F1, FP=0, FN=1
+3. Urdu: 96.97% accuracy, 0.9783 F1, FP=0, FN=2
+4. Roman Urdu: 94.03% accuracy, 0.9565 F1, FP=0, FN=4
+5. Mixed: 98.53% accuracy, 0.9897 F1, FP=1, FN=0
+6. Weakest language: Roman Urdu (94.03%)
+7. Scams missed (FN): 7
+8. Safe falsely flagged (FP): 1
+9. Ready for AI integration: NEEDS REVIEW
