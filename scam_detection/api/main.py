@@ -152,11 +152,24 @@ async def lifespan(app: FastAPI):
     _app_state["metadata"] = metadata
     print(f"[BACKEND] Model loaded: {metadata.get('version', 'unknown')}, threshold={threshold}")
 
-    print("[BACKEND] Loading STT model (medium Whisper)...")
-    stt_model, stt_backend = load_stt_model()
-    _app_state["stt_model"] = stt_model
-    _app_state["stt_backend"] = stt_backend
-    print(f"[BACKEND] STT loaded: {stt_backend}")
+    # Audio/STT is optional: set ENABLE_AUDIO=false on small hosting tiers.
+    # The Whisper medium model needs a ~1.5GB download and ~1.5GB RAM at runtime.
+    enable_audio = os.environ.get("ENABLE_AUDIO", "true").lower() in ("1", "true", "yes")
+    if not enable_audio:
+        _app_state["stt_model"] = None
+        _app_state["stt_backend"] = None
+        print("[BACKEND] STT skipped (ENABLE_AUDIO=false) - audio endpoint disabled, text analysis active")
+    else:
+        print("[BACKEND] Loading STT model (medium Whisper)...")
+        try:
+            stt_model, stt_backend = load_stt_model()
+            _app_state["stt_model"] = stt_model
+            _app_state["stt_backend"] = stt_backend
+            print(f"[BACKEND] STT loaded: {stt_backend}")
+        except Exception as e:
+            _app_state["stt_model"] = None
+            _app_state["stt_backend"] = None
+            print(f"[BACKEND] STT load failed ({e}) - audio endpoint disabled, text analysis active")
 
     yield
 
@@ -191,7 +204,8 @@ async def health():
         "status": "ok",
         "model": _app_state["metadata"].get("version", "unknown") if _app_state["metadata"] else "unknown",
         "threshold": _app_state["threshold"],
-        "stt": _app_state["stt_backend"],
+        "stt": _app_state["stt_backend"] or "disabled",
+        "audioEnabled": _app_state["stt_model"] is not None,
     }
 
 
@@ -234,6 +248,11 @@ async def analyze_text(req: TextRequest):
 
 @app.post("/api/analyze-audio", response_model=AudioResponse)
 async def analyze_audio(audio: UploadFile = File(...)):
+    if _app_state["stt_model"] is None:
+        raise HTTPException(
+            status_code=503,
+            detail="Audio analysis is unavailable on this server (speech model not loaded). Text analysis is fully available.",
+        )
     if not audio.content_type or not audio.content_type.startswith("audio/"):
         raise HTTPException(status_code=400, detail="Uploaded file must be an audio file")
 
