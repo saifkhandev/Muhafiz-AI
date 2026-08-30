@@ -35,6 +35,16 @@ from src.preprocessing import (
     OTP_KEYWORDS,
 )
 
+# ── Load model version from report ──────────────────────────────────────────
+def _load_model_version() -> str:
+    """Safely read model_version from the results JSON."""
+    report_path = os.path.join(PROJECT_ROOT, "reports", "hard_test_500_results.json")
+    try:
+        with open(report_path, "r", encoding="utf-8") as f:
+            return json.load(f).get("model_version", "4.0")
+    except (FileNotFoundError, json.JSONDecodeError, KeyError):
+        return "4.0"
+
 # ── Shared state loaded once at startup ─────────────────────────────────────
 _app_state = {
     "artifacts": None,
@@ -179,20 +189,25 @@ async def lifespan(app: FastAPI):
 # ── App ─────────────────────────────────────────────────────────────────────
 app = FastAPI(
     title="Muhafiz AI API",
-    version=open(os.path.join(PROJECT_ROOT, "reports", "hard_test_500_results.json"))
-    .read()
-    .split('"model_version": "')[1]
-    .split('"')[0]
-    if os.path.exists(os.path.join(PROJECT_ROOT, "reports", "hard_test_500_results.json"))
-    else "4.0",
+    version=_load_model_version(),
     lifespan=lifespan,
 )
 
+# Allowed origins: set CORS_ORIGINS env var in production (comma-separated).
+# Falls back to common dev origins locally.
+_allowed_origins = [
+    o.strip()
+    for o in os.environ.get(
+        "CORS_ORIGINS",
+        "http://localhost:3000,http://localhost:8080",
+    ).split(",")
+    if o.strip()
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Dev only; restrict in production
+    allow_origins=_allowed_origins,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
 
@@ -294,7 +309,7 @@ async def analyze_audio(audio: UploadFile = File(...)):
             stt_backend=_app_state["stt_backend"],
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Audio analysis failed: {str(e)}")
+        raise HTTPException(status_code=500, detail="Audio analysis failed. Please try again with a different file.")
     finally:
         shutil.rmtree(temp_dir, ignore_errors=True)
 
