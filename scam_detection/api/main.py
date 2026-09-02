@@ -194,12 +194,12 @@ app = FastAPI(
 )
 
 # Allowed origins: set CORS_ORIGINS env var in production (comma-separated).
-# Falls back to common dev origins locally.
+# Falls back to Vercel + common dev origins.
 _allowed_origins = [
     o.strip()
     for o in os.environ.get(
         "CORS_ORIGINS",
-        "http://localhost:3000,http://localhost:8080",
+        "https://muhafiz-ai-six.vercel.app,https://muhafiz-ai.vercel.app,http://localhost:3000,http://localhost:3001,http://localhost:8080",
     ).split(",")
     if o.strip()
 ]
@@ -207,12 +207,18 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=_allowed_origins,
     allow_credentials=True,
-    allow_methods=["GET", "POST"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
 )
 
 
 # ── Endpoints ───────────────────────────────────────────────────────────────
+@app.options("/{rest_of_path:path}")
+async def preflight_handler(rest_of_path: str):
+    """Handle CORS preflight requests explicitly for all routes."""
+    return {}
+
+
 @app.get("/api/health")
 async def health():
     return {
