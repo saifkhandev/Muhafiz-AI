@@ -16,6 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.config import MODEL_DIR, LABEL_SCAM, FULL_PIPELINE_FILENAME, LABEL_ENCODER_FILENAME, THRESHOLD_FILENAME, METADATA_FILENAME
 from src.train import MODEL_CONFIGS
+from src.guardrails import apply_guardrails
 
 
 def load_model():
@@ -105,6 +106,16 @@ def predict_message(message: str, artifacts=None, le=None, threshold=None, metad
     scam_prob = float(proba) if proba is not None else None
     confidence = max(proba, 1 - proba) if proba is not None else None
 
+    # Apply targeted post-processing guardrails for known failure modes
+    guardrail_proba, guardrail_label, guardrail_rule = apply_guardrails(
+        message, scam_prob, label
+    )
+    if guardrail_rule is not None:
+        scam_prob = guardrail_proba
+        label = guardrail_label
+        pred_label_idx = le.transform([label])[0]
+        confidence = max(scam_prob, 1 - scam_prob) if scam_prob is not None else None
+
     return {
         "label": label,
         "scam_probability": round(scam_prob, 4) if scam_prob is not None else None,
@@ -112,6 +123,7 @@ def predict_message(message: str, artifacts=None, le=None, threshold=None, metad
         "threshold_used": threshold,
         "model_name": model_name,
         "model_description": metadata.get("model_description", ""),
+        "guardrail": guardrail_rule,
     }
 
 
