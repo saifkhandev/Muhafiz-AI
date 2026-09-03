@@ -6,6 +6,8 @@ echo ============================================
 echo.
 
 echo [1/2] Starting backend (loads model + Whisper, needs ~60 seconds)...
+set OMP_NUM_THREADS=1
+set MKL_NUM_THREADS=1
 start "Muhafiz Backend :8000" /D "%~dp0scam_detection" cmd /k ""C:\Users\Hp\AppData\Local\Python\bin\python3.exe" -m uvicorn api.main:app --host 0.0.0.0 --port 8000"
 
 timeout /t 5 /nobreak >nul
