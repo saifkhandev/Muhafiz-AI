@@ -6,7 +6,7 @@
   --surface: #141A21;
   --surface-light: #FFFFFF;
   --border: #2A323C;
-  --accent: #2DD4BF;
+  --accent: #818CF8;
   --danger: #E5484D;
   --safe: #3DD68C;
   --warning: #E8A93D;
@@ -73,8 +73,8 @@ body {
 }
 
 @keyframes shield-pulse-idle {
-  0%, 100% { box-shadow: 0 0 20px rgba(45, 212, 191, 0.25); }
-  50% { box-shadow: 0 0 40px rgba(45, 212, 191, 0.5); }
+  0%, 100% { box-shadow: 0 0 20px rgba(129, 140, 248, 0.25); }
+  50% { box-shadow: 0 0 40px rgba(129, 140, 248, 0.5); }
 }
 
 .shield-pulse-scam {
@@ -110,7 +110,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #EDEFF2 0%, #2DD4BF 100%);
+  background: linear-gradient(90deg, #818CF8 0%, #67E8F9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

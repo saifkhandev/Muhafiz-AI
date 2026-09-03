@@ -48,9 +48,14 @@ scam_detection/
         raw/uci_sms_spam/             # UCI SMS Spam Collection
     web/                             # Next.js frontend
         src/
-            app/                     # Pages
+            app/                     # Pages (analyze, examples, how-it-works, roadmap)
             components/              # UI, analyzer, shield, sections
-            lib/                     # API client, types, shield context
+                ui/                  # Header, footer, scroll-to-top, language switcher/banner
+                analyzer/            # Text & audio analysis components
+                sections/            # Hero, how-it-works, examples, roadmap sections
+                shield/              # SVG shield visualization
+            lib/                     # API client, types, shield context, i18n
+                i18n/                # English/Urdu translations & language context
     models/
         full_pipeline.joblib         # Trained V4 model (B_combined_C5)
         label_encoder.joblib         # Label encoder (Safe=0, Scam=1)
@@ -139,11 +144,14 @@ npm run dev
 ```
 
 Features:
+- **Bilingual support (English/Urdu)** — full i18n system with RTL layout; users can switch via a language button in the navbar or a first-visit banner.
 - **Text analysis** — paste any message and get a real Scam/Safe verdict, risk score, detected language, and rule-based signals.
 - **Audio analysis** — upload or record a call; the backend transcribes with Whisper medium and classifies each segment.
-- **3D shield** — interactive Three.js visualization on desktop; static SVG fallback on mobile.
-- **GSAP scroll animations** — scroll-driven reveals and an animated pipeline diagram.
+- **SVG shield visualization** — responsive shield graphic that adapts to screen size.
+- **Framer Motion animations** — smooth scroll-driven reveals and animated transitions.
+- **Scroll-to-top button** — appears on scroll with smooth animation.
 - **Real model only** — no mocked or hardcoded classification results.
+- **Responsive design** — fully optimized for mobile, tablet, and desktop.
 
 ### Programmatic Usage
 
@@ -277,9 +285,11 @@ See `src/call_predict.py` for `predict_call()` and `src/transcribe.py` for STT i
 | Binary Scam/Safe classification | ✅ Implemented |
 | Audio call analysis (STT → text classifier) | ✅ Implemented |
 | Multilingual support (EN + RU + Urdu + Mixed) | ✅ Implemented |
+| REST API deployment (Vercel) | ✅ Implemented |
+| Bilingual UI (English/Urdu with RTL) | ✅ Implemented |
+| Responsive mobile-first design | ✅ Implemented |
 | Multi-category scam classifier (bank, job, BISP, etc.) | 🚧 Roadmap — needs dedicated category-labeled dataset |
 | Transformer comparison (mBERT/XLM-R) | 🚧 Roadmap — deprioritized for regional round |
-| REST API deployment | 🚧 Roadmap |
 | Continuous learning from user reports | 🚧 Roadmap |
 
 ## Requirements

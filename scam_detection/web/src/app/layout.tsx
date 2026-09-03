@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk, Noto_Nastaliq_Urdu } from "next/font/google";
 import "./globals.css";
 import { ShieldProvider } from "@/lib/shield-context";
+import { LanguageProvider } from "@/lib/i18n/context";
+import { LanguageBanner } from "@/components/ui/language-banner";
+import { ScrollToTop } from "@/components/ui/scroll-to-top";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,7 +23,7 @@ const notoNastaliqUrdu = Noto_Nastaliq_Urdu({
 });
 
 export const metadata: Metadata = {
-  title: "Muhafiz AI — Scam Detection for Pakistan",
+  title: "Muhafiz AI - Scam Detection for Pakistan",
   description:
     "AI-powered scam detection for text messages and call recordings in English, Urdu, Roman Urdu, and Mixed languages.",
 };
@@ -32,7 +35,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${spaceGrotesk.variable} ${notoNastaliqUrdu.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-text-primary">
-        <ShieldProvider>{children}</ShieldProvider>
+        <LanguageProvider>
+          <ShieldProvider>
+            <LanguageBanner />
+            {children}
+            <ScrollToTop />
+          </ShieldProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

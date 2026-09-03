@@ -1,38 +1,19 @@
-"use client";
+﻿"use client";
 
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MessageSquare, Headphones, Cpu, FileSearch, Gauge } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/lib/i18n/context";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const textSteps = [
-  { icon: MessageSquare, label: "Paste message", desc: "SMS, WhatsApp, or transcript" },
-  { icon: FileSearch, label: "Preprocess", desc: "Tokenize & detect language" },
-  { icon: Cpu, label: "V4 model", desc: "TF-IDF + calibrated LinearSVC" },
-  { icon: Gauge, label: "Verdict", desc: "Scam/Safe with probability" },
-];
-
-const audioSteps = [
-  { icon: Headphones, label: "Upload call", desc: "mp3, wav, m4a, webm" },
-  { icon: Cpu, label: "Whisper STT", desc: "faster-whisper medium" },
-  { icon: FileSearch, label: "Segment scoring", desc: "Each chunk classified" },
-  { icon: Gauge, label: "Call risk", desc: "Aggregated High/Medium/Low" },
-];
-
-const metrics = [
-  { label: "Adversarial test (505 messages)", value: "99.60%", detail: "accuracy" },
-  { label: "Fresh holdout (100 unseen)", value: "94.0%", detail: "accuracy" },
-  { label: "Text inference", value: "<10ms", detail: "per message" },
-  { label: "Audio inference", value: "23–35s", detail: "per call" },
-];
-
-function Pipeline({ steps, title }: { steps: typeof textSteps; title: string }) {
+function Pipeline({ steps, title }: { steps: Array<{ icon: any; label: string; desc: string }>; title: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { t } = useLanguage();
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -87,7 +68,7 @@ function Pipeline({ steps, title }: { steps: typeof textSteps; title: string }) 
           <path
             className="pipeline-line"
             d="M0 8 H100%"
-            stroke="#2DD4BF"
+            stroke="#818CF8"
             strokeWidth="2"
             fill="none"
             vectorEffect="non-scaling-stroke"
@@ -112,6 +93,21 @@ function Pipeline({ steps, title }: { steps: typeof textSteps; title: string }) 
 
 export function HowItWorksSection() {
   const sectionRef = useRef<HTMLElement>(null);
+  const { t } = useLanguage();
+
+  const textSteps = [
+    { icon: MessageSquare, label: t("howItWorks.textSteps.paste"), desc: t("howItWorks.textSteps.pasteDesc") },
+    { icon: FileSearch, label: t("howItWorks.textSteps.preprocess"), desc: t("howItWorks.textSteps.preprocessDesc") },
+    { icon: Cpu, label: t("howItWorks.textSteps.model"), desc: t("howItWorks.textSteps.modelDesc") },
+    { icon: Gauge, label: t("howItWorks.textSteps.verdict"), desc: t("howItWorks.textSteps.verdictDesc") },
+  ];
+
+  const audioSteps = [
+    { icon: Headphones, label: t("howItWorks.audioSteps.upload"), desc: t("howItWorks.audioSteps.uploadDesc") },
+    { icon: Cpu, label: t("howItWorks.audioSteps.stt"), desc: t("howItWorks.audioSteps.sttDesc") },
+    { icon: FileSearch, label: t("howItWorks.audioSteps.segment"), desc: t("howItWorks.audioSteps.segmentDesc") },
+    { icon: Gauge, label: t("howItWorks.audioSteps.risk"), desc: t("howItWorks.audioSteps.riskDesc") },
+  ];
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -148,31 +144,18 @@ export function HowItWorksSection() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 text-center">
           <h2 className="font-heading text-3xl font-bold text-text-primary sm:text-4xl">
-            How It Works
+            {t("howItWorks.title")}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-text-secondary">
-            Two real pipelines — text and audio — both powered by the same calibrated V4 model.
+            {t("howItWorks.subtitle")}
           </p>
         </div>
 
         <div className="space-y-12 rounded-2xl border border-border bg-surface/50 p-6 sm:p-10">
-          <Pipeline steps={textSteps} title="Text Message Analysis" />
-          <Pipeline steps={audioSteps} title="Call Audio Analysis" />
+          <Pipeline steps={textSteps} title={t("howItWorks.textPipeline")} />
+          <Pipeline steps={audioSteps} title={t("howItWorks.audioPipeline")} />
         </div>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {metrics.map((m) => (
-            <motion.div
-              key={m.label}
-              whileHover={{ y: -4 }}
-              className="rounded-xl border border-border bg-surface p-5 text-center"
-            >
-              <p className="font-heading text-3xl font-bold text-accent">{m.value}</p>
-              <p className="mt-1 text-sm font-medium text-text-primary">{m.label}</p>
-              <p className="text-xs text-text-secondary">{m.detail}</p>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </section>
   );

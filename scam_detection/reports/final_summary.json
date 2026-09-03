@@ -1,0 +1,78 @@
+{
+  "dataset_size": 890,
+  "train_size": 605,
+  "val_size": 107,
+  "test_size": 178,
+  "best_model": "C_tfidf_char_lr",
+  "model_description": "TF-IDF char (3-6)-grams + Logistic Regression",
+  "optimized_threshold": 0.55,
+  "cv_metrics": {
+    "cv_accuracy_mean": 0.9355371900826446,
+    "cv_accuracy_std": 0.006184557664089138,
+    "train_accuracy_mean": 0.9913223140495868,
+    "cv_f1_mean": 0.9364410525110219,
+    "cv_f1_std": 0.0072307847301899325,
+    "train_f1_mean": 0.9914573814763432,
+    "cv_recall_mean": 0.935113696456901,
+    "cv_recall_std": 0.030522440413003483,
+    "train_recall_mean": 0.9902603600934796,
+    "cv_precision_mean": 0.9390055290844321,
+    "cv_precision_std": 0.01819203636135448,
+    "train_precision_mean": 0.9927117515373685,
+    "cv_roc_auc_mean": 0.0,
+    "cv_roc_auc_std": 0.0
+  },
+  "test_metrics": {
+    "accuracy": 0.9662921348314607,
+    "f1": 0.9655172413793104,
+    "recall": 0.9333333333333333,
+    "precision": 1.0,
+    "roc_auc": 0.997979797979798
+  },
+  "language_results": {
+    "Urdu": {
+      "samples": 40,
+      "accuracy": 0.95,
+      "precision": 1.0,
+      "recall": 0.9091,
+      "f1": 0.9524
+    },
+    "Mixed": {
+      "samples": 46,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Roman Urdu": {
+      "samples": 45,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "English": {
+      "samples": 47,
+      "accuracy": 0.9149,
+      "precision": 1.0,
+      "recall": 0.7895,
+      "f1": 0.8824
+    }
+  },
+  "overfitting_check": {
+    "best_model": "C_tfidf_char_lr",
+    "cv_accuracy_mean": 0.9355371900826446,
+    "cv_f1_mean": 0.9364410525110219,
+    "train_accuracy_mean": 0.9913223140495868,
+    "train_f1_mean": 0.9914573814763432,
+    "test_accuracy": 0.9662921348314607,
+    "test_f1": 0.9655172413793104,
+    "accuracy_gap": 0.025,
+    "f1_gap": 0.0259,
+    "overfitting_detected": false
+  },
+  "false_positives": 0,
+  "false_negatives": 6,
+  "is_99_accuracy": false,
+  "elapsed_seconds": 361.5
+}

@@ -1,9 +1,10 @@
-"use client";
+﻿"use client";
 
 import { useState, useRef, useCallback } from "react";
 import { analyzeAudio } from "@/lib/api";
 import { AudioAnalysisResult } from "@/lib/types";
 import { useShield } from "@/lib/shield-context";
+import { useLanguage } from "@/lib/i18n/context";
 import { AudioSegments } from "./audio-segments";
 import { Upload, Mic, Square, Loader2, AlertTriangle, CheckCircle } from "lucide-react";
 
@@ -18,7 +19,7 @@ type AnalysisStage =
 
 const STAGE_MESSAGES: Record<Exclude<AnalysisStage, "idle" | "done" | "error">, string> = {
   uploading: "Uploading audio...",
-  transcribing: "Transcribing speech (this takes about 20–30 seconds)...",
+  transcribing: "Transcribing speech (this takes about 20-30 seconds)...",
   analyzing: "Analyzing transcript segments...",
   calculating: "Calculating call risk...",
 };
@@ -39,6 +40,7 @@ export function AudioAnalyzer() {
   const chunksRef = useRef<Blob[]>([]);
   const recordIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const { triggerPulse } = useShield();
+  const { t } = useLanguage();
 
   const validateFile = (selected: File): string | null => {
     const ext = selected.name.slice(selected.name.lastIndexOf(".")).toLowerCase();
@@ -144,13 +146,13 @@ export function AudioAnalyzer() {
     <div className="space-y-6">
       <div className="rounded-2xl border border-border bg-surface p-6">
         <div className="flex flex-col gap-6 md:flex-row">
-          <label className="flex flex-1 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-border bg-background px-6 py-10 transition-colors hover:border-accent">
-            <Upload className="h-10 w-10 text-text-secondary" />
+          <label className="flex flex-1 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-[#818CF8] bg-background px-6 py-10 transition-all hover:border-border hover:shadow-[0_0_15px_rgba(129,140,248,0.2)]">
+            <Upload className="h-10 w-10 text-[#818CF8]" />
             <span className="mt-3 text-sm font-medium text-text-primary">
-              {file ? file.name : "Drop an audio file or click to browse"}
+              {file ? file.name : t("analyzer.audioAnalyzer.uploadTitle")}
             </span>
             <span className="mt-1 text-xs text-text-secondary">
-              mp3, wav, m4a, webm, aac, ogg, flac
+              {t("analyzer.audioAnalyzer.uploadDesc")}
             </span>
             <input
               type="file"
@@ -161,14 +163,14 @@ export function AudioAnalyzer() {
           </label>
 
           <div className="flex flex-col items-center justify-center gap-3">
-            <span className="text-xs text-text-secondary">or</span>
+            <span className="text-xs text-text-secondary">{t("analyzer.audioAnalyzer.recordDesc")}</span>
             {!isRecording ? (
               <button
                 onClick={startRecording}
-                className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-4 py-2 text-sm font-medium text-text-primary transition-colors hover:border-accent hover:text-accent"
+                className="inline-flex items-center gap-2 rounded-lg border border-[#818CF8] bg-background px-4 py-2 text-sm font-medium text-[#818CF8] transition-all hover:border-border hover:text-text-primary hover:shadow-[0_0_12px_rgba(129,140,248,0.2)]"
               >
                 <Mic className="h-4 w-4" />
-                Record sample
+                {t("analyzer.audioAnalyzer.recordTitle")}
               </button>
             ) : (
               <button
@@ -207,7 +209,8 @@ export function AudioAnalyzer() {
           <button
             onClick={handleAnalyze}
             disabled={isLoading || !file}
-            className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 font-semibold text-background transition-opacity hover:opacity-90 disabled:opacity-60"
+            className="inline-flex items-center gap-2 rounded-lg px-5 py-2.5 font-semibold transition-opacity hover:opacity-90 disabled:opacity-60"
+            style={{ background: 'linear-gradient(90deg, #6366F1 0%, #22D3EE 100%)', color: '#05070A' }}
           >
             {isLoading ? (
               <>
@@ -217,11 +220,11 @@ export function AudioAnalyzer() {
             ) : (
               <>
                 <Upload className="h-4 w-4" />
-                Analyze Audio
+                {t("analyzer.audioAnalyzer.analyzeButton")}
               </>
             )}
           </button>
-          <span className="text-xs text-text-secondary">Takes ~20-30 seconds</span>
+          <span className="text-xs text-text-secondary">{t("analyzer.result.warning")}</span>
         </div>
       </div>
 
@@ -268,10 +271,10 @@ export function AudioAnalyzer() {
                 </div>
               </div>
               <p className="mt-2 text-xs text-text-secondary/70">
-                Transcription: {result.transcriptionModel} · Detected language: {result.languageDetected}
+                {t("analyzer.result.transcription")}: {result.transcriptionModel} · {t("analyzer.result.detectedLanguage")}: {result.languageDetected}
               </p>
               <p className="mt-4 text-xs text-text-secondary/70">
-                Muhafiz AI is a decision-support tool, not a guarantee. When in doubt, verify directly with the official organization.
+                {t("analyzer.result.warning")}
               </p>
             </div>
           </div>
@@ -282,3 +285,4 @@ export function AudioAnalyzer() {
     </div>
   );
 }
+

@@ -1,5 +1,8 @@
+"use client";
+
 import { PageLayout } from "@/components/ui/page-layout";
 import { HowItWorksSection } from "@/components/sections/how-it-works";
+import { useLanguage } from "@/lib/i18n/context";
 import {
   MessageSquare,
   Headphones,
@@ -10,76 +13,76 @@ import {
   AlertTriangle,
 } from "lucide-react";
 
-const faqs = [
-  {
-    question: "Why TF-IDF + SVM instead of BERT or a transformer?",
-    answer:
-      "The V4 model hits 99.60% accuracy on 505 adversarial messages, runs in under 10ms per text message, and requires no GPU. TF-IDF + LinearSVC is fully explainable, fast to deploy, and sufficient for this dataset size. Transformers were deprioritized in favor of adversarial testing, FP reduction, and audio pipeline integration.",
-  },
-  {
-    question: "What about real deployment?",
-    answer:
-      "The system is built as a REST API architecture (FastAPI backend + Next.js frontend) and is cloud-deployable as-is. The backend can be containerized and scaled independently of the frontend.",
-  },
-  {
-    question: "What are the current limitations?",
-    answer:
-      "The model was trained on 1,637 messages. Roman Urdu remains the hardest case. Scam patterns evolve, so periodic retraining is needed. The model is binary Scam/Safe only — it does not classify scam category (bank, job, BISP, etc.).",
-  },
-  {
-    question: "What were the 5 false negatives in the fresh holdout test?",
-    answer:
-      "They were scam messages deliberately disguised as ordinary legitimate notifications: a fake store-closure notice, a fake subscription renewal, a fake real-estate installment reminder, a fake charity confirmation, and a fake card-security alert. This is a genuinely hard, ambiguous category near the decision boundary, not a simple bug.",
-  },
-];
-
-const detailedSteps = [
-  {
-    icon: MessageSquare,
-    title: "Text input",
-    desc: "User pastes an SMS, WhatsApp message, or transcript. Supports English, Urdu, Roman Urdu, and Mixed.",
-  },
-  {
-    icon: FileSearch,
-    title: "Preprocessing",
-    desc: "Text is normalized, tokenized, and vectorized with TF-IDF using word n-grams and character n-grams.",
-  },
-  {
-    icon: Cpu,
-    title: "V4 classifier",
-    desc: "LinearSVC wrapped in CalibratedClassifierCV outputs a genuine probability at threshold 0.63.",
-  },
-  {
-    icon: Gauge,
-    title: "Result",
-    desc: "Verdict (Scam/Safe), risk score 0-100, detected language, rule-based signals, and recommended action.",
-  },
-];
-
-const audioSteps = [
-  {
-    icon: Headphones,
-    title: "Audio upload",
-    desc: "User uploads mp3, wav, m4a, webm, aac, ogg, or flac. Max duration is enforced server-side.",
-  },
-  {
-    icon: Cpu,
-    title: "Whisper transcription",
-    desc: "faster-whisper medium model (INT8, CPU) transcribes the call into timestamped segments.",
-  },
-  {
-    icon: FileSearch,
-    title: "Segment classification",
-    desc: "Each non-silent segment is classified by the same V4 text model.",
-  },
-  {
-    icon: Gauge,
-    title: "Call-level verdict",
-    desc: "Segment scores are aggregated into an overall High / Medium / Low risk verdict.",
-  },
-];
-
 export default function HowItWorksPage() {
+  const { t } = useLanguage();
+
+  const faqs = [
+    {
+      question: t("howItWorksPage.faq.q1"),
+      answer: t("howItWorksPage.faq.a1"),
+    },
+    {
+      question: t("howItWorksPage.faq.q2"),
+      answer: t("howItWorksPage.faq.a2"),
+    },
+    {
+      question: t("howItWorksPage.faq.q3"),
+      answer: t("howItWorksPage.faq.a3"),
+    },
+    {
+      question: t("howItWorksPage.faq.q4"),
+      answer: t("howItWorksPage.faq.a4"),
+    },
+  ];
+
+  const detailedSteps = [
+    {
+      icon: MessageSquare,
+      title: t("howItWorksPage.steps.textInput"),
+      desc: t("howItWorksPage.steps.textInputDesc"),
+    },
+    {
+      icon: FileSearch,
+      title: t("howItWorksPage.steps.preprocessing"),
+      desc: t("howItWorksPage.steps.preprocessingDesc"),
+    },
+    {
+      icon: Cpu,
+      title: t("howItWorksPage.steps.classifier"),
+      desc: t("howItWorksPage.steps.classifierDesc"),
+    },
+    {
+      icon: Gauge,
+      title: t("howItWorksPage.steps.result"),
+      desc: t("howItWorksPage.steps.resultDesc"),
+    },
+  ];
+
+  const audioSteps = [
+    {
+      icon: Headphones,
+      title: t("howItWorksPage.steps.audioUpload"),
+      desc: t("howItWorksPage.steps.audioUploadDesc"),
+    },
+    {
+      icon: Cpu,
+      title: t("howItWorksPage.steps.whisper"),
+      desc: t("howItWorksPage.steps.whisperDesc"),
+    },
+    {
+      icon: FileSearch,
+      title: t("howItWorksPage.steps.segment"),
+      desc: t("howItWorksPage.steps.segmentDesc"),
+    },
+    {
+      icon: Gauge,
+      title: t("howItWorksPage.steps.verdict"),
+      desc: t("howItWorksPage.steps.verdictDesc"),
+    },
+  ];
+
+  const limitations = t("howItWorksPage.limitations");
+
   return (
     <PageLayout>
       <HowItWorksSection />
@@ -88,7 +91,7 @@ export default function HowItWorksPage() {
         <div className="mx-auto max-w-5xl space-y-16">
           <div>
             <h2 className="mb-8 text-center font-heading text-2xl font-bold text-text-primary sm:text-3xl">
-              Text Pipeline
+              {t("howItWorksPage.textPipelineTitle")}
             </h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {detailedSteps.map((step) => (
@@ -108,7 +111,7 @@ export default function HowItWorksPage() {
 
           <div>
             <h2 className="mb-8 text-center font-heading text-2xl font-bold text-text-primary sm:text-3xl">
-              Audio Pipeline
+              {t("howItWorksPage.audioPipelineTitle")}
             </h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {audioSteps.map((step) => (
@@ -130,33 +133,33 @@ export default function HowItWorksPage() {
             <div className="mb-8 flex items-center gap-3">
               <ShieldCheck className="h-6 w-6 text-accent" />
               <h2 className="font-heading text-2xl font-bold text-text-primary">
-                V4 Model Facts
+                {t("howItWorksPage.factsTitle")}
               </h2>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl bg-background p-4">
-                <p className="text-xs text-text-secondary">Model version</p>
-                <p className="font-semibold text-text-primary">V4_adversarial_505</p>
+                <p className="text-xs text-text-secondary">{t("howItWorksPage.facts.version")}</p>
+                <p className="font-semibold text-text-primary">{t("howItWorksPage.facts.versionValue")}</p>
               </div>
               <div className="rounded-xl bg-background p-4">
-                <p className="text-xs text-text-secondary">Architecture</p>
-                <p className="font-semibold text-text-primary">TF-IDF + LinearSVC (CalibratedClassifierCV)</p>
+                <p className="text-xs text-text-secondary">{t("howItWorksPage.facts.architecture")}</p>
+                <p className="font-semibold text-text-primary">{t("howItWorksPage.facts.architectureValue")}</p>
               </div>
               <div className="rounded-xl bg-background p-4">
-                <p className="text-xs text-text-secondary">Decision threshold</p>
-                <p className="font-semibold text-text-primary">0.63</p>
+                <p className="text-xs text-text-secondary">{t("howItWorksPage.facts.threshold")}</p>
+                <p className="font-semibold text-text-primary">{t("howItWorksPage.facts.thresholdValue")}</p>
               </div>
               <div className="rounded-xl bg-background p-4">
-                <p className="text-xs text-text-secondary">Training data</p>
-                <p className="font-semibold text-text-primary">1,637 messages</p>
+                <p className="text-xs text-text-secondary">{t("howItWorksPage.facts.training")}</p>
+                <p className="font-semibold text-text-primary">{t("howItWorksPage.facts.trainingValue")}</p>
               </div>
               <div className="rounded-xl bg-background p-4">
-                <p className="text-xs text-text-secondary">Adversarial test</p>
-                <p className="font-semibold text-text-primary">99.60% accuracy, 0.4% FPR</p>
+                <p className="text-xs text-text-secondary">{t("howItWorksPage.facts.adversarial")}</p>
+                <p className="font-semibold text-text-primary">{t("howItWorksPage.facts.adversarialValue")}</p>
               </div>
               <div className="rounded-xl bg-background p-4">
-                <p className="text-xs text-text-secondary">Fresh holdout</p>
-                <p className="font-semibold text-text-primary">94.0% accuracy, 98.0% specificity</p>
+                <p className="text-xs text-text-secondary">{t("howItWorksPage.facts.holdout")}</p>
+                <p className="font-semibold text-text-primary">{t("howItWorksPage.facts.holdoutValue")}</p>
               </div>
             </div>
           </div>
@@ -166,14 +169,18 @@ export default function HowItWorksPage() {
               <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-warning" />
               <div>
                 <h3 className="font-heading text-lg font-semibold text-text-primary">
-                  Honest limitations
+                  {t("howItWorksPage.limitationsTitle")}
                 </h3>
                 <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-text-secondary">
-                  <li>1,637 training messages — strong for the hackathon scope but small for production scale.</li>
-                  <li>Roman Urdu remains the hardest language case.</li>
-                  <li>Static patterns need periodic retraining as scammers evolve.</li>
-                  <li>No scam-category classification yet (binary Scam/Safe only).</li>
-                  <li>Five fresh-holdout false negatives were disguised-as-legitimate scams near the 0.63 threshold.</li>
+                  {Array.isArray(limitations) ? (
+                    limitations.map((item: string, i: number) => (
+                      <li key={i}>{item}</li>
+                    ))
+                  ) : (
+                    <>
+                      <li>{t("howItWorksPage.facts.training")} - {t("howItWorksPage.facts.trainingValue")}</li>
+                    </>
+                  )}
                 </ul>
               </div>
             </div>
@@ -181,7 +188,7 @@ export default function HowItWorksPage() {
 
           <div>
             <h2 className="mb-8 text-center font-heading text-2xl font-bold text-text-primary sm:text-3xl">
-              FAQ
+              {t("howItWorksPage.faqTitle")}
             </h2>
             <div className="space-y-4">
               {faqs.map((faq) => (

@@ -1,0 +1,7 @@
+message,true_label,predicted_label,language,category,probability,msg_length,error_type
+آپ کو بھیجا گیا کوڈ ہمیں بتائیں، بینک کی طرف سے تصدیق ضروری ہے۔,Scam,Safe,Urdu,OTP,0.5299305956188045,63,False Negative (missed scam)
+Your Jazz SIM has been flagged for illegal activity. Provide CNIC and fingerprint details to avoid blocking.,Scam,Safe,English,SIM Block,0.5316808470258992,108,False Negative (missed scam)
+Aap ka Amazon order deliver ho gaya hai. Email par aaya OTP bhejen taake delivery verify ho sake.,Scam,Safe,English,Delivery OTP Scam,0.5213743973535705,97,False Negative (missed scam)
+آپ کے اکاؤنٹ کی کے وائی سی (KYC) تصدیق نہیں ہوئی۔ 48 گھنٹے میں اکاؤنٹ منجمد ہو جائے گا۔,Scam,Safe,Urdu,Bank,0.5284142452758251,87,False Negative (missed scam)
+Leopards Courier: Your parcel is at the center. Share the OTP received on your phone to schedule delivery.,Scam,Safe,English,Delivery OTP Scam,0.5443267923587977,106,False Negative (missed scam)
+Courier service: Aap ka parcel aa gaya hai. Rider ko 6-digit OTP batayein confirmation k liye.,Scam,Safe,English,Delivery OTP Scam,0.4671756055538988,94,False Negative (missed scam)

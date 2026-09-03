@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { TextAnalysisResult } from "@/lib/types";
+import { useLanguage } from "@/lib/i18n/context";
 import { AlertTriangle, CheckCircle, Shield } from "lucide-react";
 
 interface ResultCardProps {
@@ -10,6 +11,7 @@ interface ResultCardProps {
 }
 
 export function ResultCard({ result, isLoading }: ResultCardProps) {
+  const { t } = useLanguage();
   if (isLoading) {
     return (
       <div className="rounded-2xl border border-border bg-surface p-6">
@@ -63,7 +65,7 @@ export function ResultCard({ result, isLoading }: ResultCardProps) {
             <div className="flex-1">
               <div className="flex flex-wrap items-center gap-3">
                 <h3 className="font-heading text-2xl font-bold">
-                  {result.verdict === "Scam" ? "Likely Scam" : "Looks Safe"}
+                  {result.verdict === "Scam" ? t("analyzer.result.likelyScam") : t("analyzer.result.looksSafe")}
                 </h3>
                 <span
                   className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${
@@ -81,7 +83,7 @@ export function ResultCard({ result, isLoading }: ResultCardProps) {
               <div className="mt-3 flex items-center gap-4">
                 <div className="flex-1">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-text-secondary">Risk score</span>
+                    <span className="text-text-secondary">{t("analyzer.result.riskScore")}</span>
                     <span className="font-semibold">{result.riskScore.toFixed(1)}%</span>
                   </div>
                   <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-border/60">
@@ -102,17 +104,17 @@ export function ResultCard({ result, isLoading }: ResultCardProps) {
               <div className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
                 <div className="flex items-center gap-2 text-text-secondary">
                   <Shield className="h-4 w-4 text-accent" />
-                  <span>Language: <span className="text-text-primary">{result.detectedLanguage}</span></span>
+                  <span>{t("analyzer.result.language")}: <span className="text-text-primary">{result.detectedLanguage}</span></span>
                 </div>
                 <div className="flex items-center gap-2 text-text-secondary">
                   <Shield className="h-4 w-4 text-accent" />
-                  <span>Model: <span className="text-text-primary">{result.modelName}</span></span>
+                  <span>{t("analyzer.result.model")}: <span className="text-text-primary">{result.modelName}</span></span>
                 </div>
               </div>
 
               <div className="mt-4 rounded-xl border border-border/60 bg-background/50 p-4">
                 <p className="text-sm font-medium text-text-primary">
-                  Recommended action
+                  {t("analyzer.result.recommendedAction")}
                 </p>
                 <p className="mt-1 text-sm text-text-secondary">
                   {result.recommendedAction}
@@ -120,7 +122,7 @@ export function ResultCard({ result, isLoading }: ResultCardProps) {
               </div>
 
               <p className="mt-4 text-xs text-text-secondary/70">
-                Muhafiz AI is a decision-support tool, not a guarantee. When in doubt, verify directly with the official organization.
+                {t("analyzer.result.warning")}
               </p>
             </div>
           </div>

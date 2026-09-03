@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "home": "Home",
+    "analyze": "Analyze",
+    "howItWorks": "How It Works",
+    "examples": "Examples",
+    "roadmap": "Roadmap",
+    "tryItNow": "Try It Now"
+  },
+  "hero": {
+    "badge": "V4 model · 99.6% adversarial accuracy",
+    "title1": "Pakistan's AI shield against",
+    "title2": "scam calls & messages",
+    "description": "Muhafiz AI detects scams in text messages and call recordings across English, Urdu, Roman Urdu, and Mixed languages - no GPU required.",
+    "analyzeNow": "Analyze Now",
+    "howItWorks": "How It Works",
+    "stats": {
+      "trainingMessages": "1,637",
+      "trainingMessagesLabel": "training messages",
+      "textInference": "<10ms",
+      "textInferenceLabel": "per text message",
+      "audioInference": "23-35s",
+      "audioInferenceLabel": "per call"
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Two real pipelines - text and audio - both powered by the same calibrated V4 model.",
+    "textPipeline": "Text Message Analysis",
+    "audioPipeline": "Call Audio Analysis",
+    "textSteps": {
+      "paste": "Paste message",
+      "pasteDesc": "SMS, WhatsApp, or transcript",
+      "preprocess": "Preprocess",
+      "preprocessDesc": "Tokenize & detect language",
+      "model": "V4 model",
+      "modelDesc": "TF-IDF + calibrated LinearSVC",
+      "verdict": "Verdict",
+      "verdictDesc": "Scam/Safe with probability"
+    },
+    "audioSteps": {
+      "upload": "Upload call",
+      "uploadDesc": "mp3, wav, m4a, webm",
+      "stt": "Whisper STT",
+      "sttDesc": "faster-whisper medium",
+      "segment": "Segment scoring",
+      "segmentDesc": "Each chunk classified",
+      "risk": "Call risk",
+      "riskDesc": "Aggregated High/Medium/Low"
+    }
+  },
+  "analyzer": {
+    "messageTab": "Message",
+    "audioTab": "Call Recording",
+    "textAnalyzer": {
+      "placeholder": "Paste a suspicious message here...",
+      "analyzeButton": "Analyze Message",
+      "examples": "Try an example:",
+      "exampleLabels": {
+        "prize": "Prize scam (Roman Urdu)",
+        "bank": "Bank phishing (English)",
+        "job": "Job scam (Mixed)",
+        "legitimate": "Legitimate bank alert"
+      }
+    },
+    "audioAnalyzer": {
+      "uploadTitle": "Upload call recording",
+      "uploadDesc": "mp3, wav, m4a, webm, aac, ogg, flac (max 25MB)",
+      "recordTitle": "Or record live",
+      "recordDesc": "Record directly from your microphone",
+      "analyzeButton": "Analyze Audio",
+      "stages": {
+        "uploading": "Uploading audio...",
+        "transcribing": "Transcribing speech (this takes about 20-30 seconds)...",
+        "analyzing": "Analyzing transcript segments...",
+        "calculating": "Calculating call risk..."
+      }
+    },
+    "signals": {
+      "urgency": "Urgency detected",
+      "suspiciousLink": "Suspicious link",
+      "moneyRequest": "Money request",
+      "personalInfo": "Personal info request",
+      "tooGood": "Too good to be true",
+      "detectedSignals": "Detected signals",
+      "subtitle": "Rule-based keyword indicators, separate from the model's own decision.",
+      "noSignals": "No classic scam keyword patterns detected. The model verdict is based on overall message structure and probability."
+    },
+    "result": {
+      "scam": "Scam",
+      "safe": "Safe",
+      "confidence": "Confidence",
+      "language": "Language",
+      "detectedLanguage": "Detected language",
+      "transcription": "Transcription",
+      "segments": "Segments",
+      "analyzed": "analyzed",
+      "skipped": "skipped",
+      "warning": "Muhafiz AI is a decision-support tool, not a guarantee. When in doubt, verify directly with the official organization.",
+      "likelyScam": "Likely Scam",
+      "looksSafe": "Looks Safe",
+      "riskScore": "Risk score",
+      "model": "Model",
+      "recommendedAction": "Recommended action"
+    }
+  },
+  "examples": {
+    "title": "Example Detections",
+    "subtitle": "One-click examples run through the real V4 model. Results are never mocked.",
+    "categories": {
+      "prize": "Prize / lottery",
+      "bank": "Bank phishing",
+      "job": "Job scam",
+      "legitimate": "Legitimate bank alert",
+      "ordinary": "Ordinary message"
+    },
+    "languages": {
+      "romanUrdu": "Roman Urdu",
+      "english": "English",
+      "mixed": "Mixed"
+    },
+    "runButton": "Run detection"
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "subtitle": "What's shipped and what's next for Muhafiz AI.",
+    "items": {
+      "binary": "Binary Scam/Safe classification",
+      "binaryDetail": "Shipped in V4",
+      "audio": "Audio call analysis (STT → classifier)",
+      "audioDetail": "Shipped with Whisper medium",
+      "multilingual": "Multilingual support",
+      "multilingualDetail": "EN + Urdu + Roman Urdu + Mixed",
+      "category": "Scam-category classification",
+      "categoryDetail": "Bank, job, BISP, lottery, etc.",
+      "sms": "Live SMS / browser interception",
+      "smsDetail": "Requires telecom/browser extension integration",
+      "learning": "Continuous learning pipeline",
+      "learningDetail": "User reports → periodic retraining"
+    },
+    "status": {
+      "done": "Done",
+      "roadmap": "Roadmap"
+    }
+  },
+  "howItWorksPage": {
+    "textPipelineTitle": "Text Pipeline",
+    "audioPipelineTitle": "Audio Pipeline",
+    "factsTitle": "V4 Model Facts",
+    "facts": {
+      "version": "Model version",
+      "versionValue": "V4_adversarial_505",
+      "architecture": "Architecture",
+      "architectureValue": "TF-IDF + LinearSVC (CalibratedClassifierCV)",
+      "threshold": "Decision threshold",
+      "thresholdValue": "0.63",
+      "training": "Training data",
+      "trainingValue": "1,637 messages",
+      "adversarial": "Adversarial test",
+      "adversarialValue": "99.60% accuracy, 0.4% FPR",
+      "holdout": "Fresh holdout",
+      "holdoutValue": "94.0% accuracy, 98.0% specificity"
+    },
+    "limitationsTitle": "Honest limitations",
+    "limitations": [
+      "1,637 training messages - strong for the hackathon scope but small for production scale.",
+      "Roman Urdu remains the hardest language case.",
+      "Static patterns need periodic retraining as scammers evolve.",
+      "No scam-category classification yet (binary Scam/Safe only).",
+      "Five fresh-holdout false negatives were disguised-as-legitimate scams near the 0.63 threshold."
+    ],
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Why TF-IDF + SVM instead of BERT or a transformer?",
+      "a1": "The V4 model hits 99.60% accuracy on 505 adversarial messages, runs in under 10ms per text message, and requires no GPU. TF-IDF + LinearSVC is fully explainable, fast to deploy, and sufficient for this dataset size. Transformers were deprioritized in favor of adversarial testing, FP reduction, and audio pipeline integration.",
+      "q2": "What about real deployment?",
+      "a2": "The system is built as a REST API architecture (FastAPI backend + Next.js frontend) and is cloud-deployable as-is. The backend can be containerized and scaled independently of the frontend.",
+      "q3": "What are the current limitations?",
+      "a3": "The model was trained on 1,637 messages. Roman Urdu remains the hardest case. Scam patterns evolve, so periodic retraining is needed. The model is binary Scam/Safe only - it does not classify scam category (bank, job, BISP, etc.).",
+      "q4": "What were the 5 false negatives in the fresh holdout test?",
+      "a4": "They were scam messages deliberately disguised as ordinary legitimate notifications: a fake store-closure notice, a fake subscription renewal, a fake real-estate installment reminder, a fake charity confirmation, and a fake card-security alert. This is a genuinely hard, ambiguous category near the decision boundary, not a simple bug."
+    },
+    "steps": {
+      "textInput": "Text input",
+      "textInputDesc": "User pastes an SMS, WhatsApp message, or transcript. Supports English, Urdu, Roman Urdu, and Mixed.",
+      "preprocessing": "Preprocessing",
+      "preprocessingDesc": "Text is normalized, tokenized, and vectorized with TF-IDF using word n-grams and character n-grams.",
+      "classifier": "V4 classifier",
+      "classifierDesc": "LinearSVC wrapped in CalibratedClassifierCV outputs a genuine probability at threshold 0.63.",
+      "result": "Result",
+      "resultDesc": "Verdict (Scam/Safe), risk score 0-100, detected language, rule-based signals, and recommended action.",
+      "audioUpload": "Audio upload",
+      "audioUploadDesc": "User uploads mp3, wav, m4a, webm, aac, ogg, or flac. Max duration is enforced server-side.",
+      "whisper": "Whisper transcription",
+      "whisperDesc": "faster-whisper medium model (INT8, CPU) transcribes the call into timestamped segments.",
+      "segment": "Segment classification",
+      "segmentDesc": "Each non-silent segment is classified by the same V4 text model.",
+      "verdict": "Call-level verdict",
+      "verdictDesc": "Segment scores are aggregated into an overall High / Medium / Low risk verdict."
+    }
+  },
+  "analyzePage": {
+    "title": "Analyze",
+    "subtitle": "Paste a message or upload a call recording. Every result comes from the real V4 model - no mock data."
+  },
+  "footer": {
+    "copyright": "© {year} Muhafiz AI. Built for the Alibaba AI Hackathon - Karachi Regional Round."
+  },
+  "roadmapPage": {
+    "mission": "Mission",
+    "missionText": "Reduce financial fraud and social-engineering harm in Pakistan by giving people an accessible, explainable AI tool to check suspicious messages and calls before they act.",
+    "team": "Team",
+    "teamText": "Built for the Alibaba AI Hackathon - Karachi Regional Round. Muhafiz AI combines machine-learning research, FastAPI backend engineering, and Next.js frontend design into a single demo-ready product."
+  },
+  "languageBanner": {
+    "text": "View this site in Urdu",
+    "button": "Switch to Urdu",
+    "dismiss": "Dismiss"
+  }
+}

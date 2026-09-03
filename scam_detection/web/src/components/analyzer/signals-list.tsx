@@ -1,7 +1,8 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Signal } from "@/lib/types";
+import { useLanguage } from "@/lib/i18n/context";
 import {
   Clock,
   Banknote,
@@ -25,11 +26,13 @@ interface SignalsListProps {
 }
 
 export function SignalsList({ signals }: SignalsListProps) {
+  const { t } = useLanguage();
+  
   if (!signals.length) {
     return (
       <div className="rounded-xl border border-border/60 bg-surface p-4">
         <p className="text-sm text-text-secondary">
-          No classic scam keyword patterns detected. The model verdict is based on overall message structure and probability.
+          {t("analyzer.signals.noSignals")}
         </p>
       </div>
     );
@@ -37,9 +40,9 @@ export function SignalsList({ signals }: SignalsListProps) {
 
   return (
     <div className="rounded-xl border border-border/60 bg-surface p-4">
-      <h4 className="text-sm font-semibold text-text-primary">Detected signals</h4>
+      <h4 className="text-sm font-semibold text-text-primary">{t("analyzer.signals.detectedSignals")}</h4>
       <p className="text-xs text-text-secondary/70">
-        Rule-based keyword indicators, separate from the model&apos;s own decision.
+        {t("analyzer.signals.subtitle")}
       </p>
       <div className="mt-3 flex flex-wrap gap-2">
         {signals.map((signal, index) => (
@@ -70,3 +73,4 @@ export function SignalsList({ signals }: SignalsListProps) {
     </div>
   );
 }
+

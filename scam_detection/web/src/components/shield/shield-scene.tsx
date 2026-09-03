@@ -1,8 +1,8 @@
 "use client";
 
-import { useRef, useEffect, useMemo } from "react";
+import { useRef, useEffect, useMemo, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Environment, MeshDistortMaterial, Icosahedron } from "@react-three/drei";
+// Using native Three.js geometry instead of drei wrapper for full material control
 import * as THREE from "three";
 import { useShield } from "@/lib/shield-context";
 
@@ -10,14 +10,18 @@ const PULSE_DURATION = 600;
 
 function ShieldMesh() {
   const meshRef = useRef<THREE.Mesh>(null);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const materialRef = useRef<any>(null);
+  const materialRef = useRef<THREE.MeshBasicMaterial>(null);
   const { lastPulse } = useShield();
   const { viewport } = useThree();
 
   const mouseRef = useRef({ x: 0, y: 0 });
   const targetRotation = useRef({ x: 0, y: 0, z: 0 });
-  const pulseRef = useRef({ intensity: 0, elapsed: 0, active: false, isScam: false });
+  const pulseRef = useRef({
+    intensity: 0,
+    elapsed: 0,
+    active: false,
+    isScam: false,
+  });
 
   const prefersReducedMotion =
     typeof window !== "undefined" &&
@@ -28,12 +32,17 @@ function ShieldMesh() {
       mouseRef.current.x = (e.clientX / window.innerWidth) * 2 - 1;
       mouseRef.current.y = -(e.clientY / window.innerHeight) * 2 + 1;
     };
+
     window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
   }, []);
 
   useEffect(() => {
     if (!lastPulse) return;
+
     pulseRef.current = {
       intensity: 1,
       elapsed: 0,
@@ -42,13 +51,14 @@ function ShieldMesh() {
     };
   }, [lastPulse]);
 
-  const baseColor = useMemo(() => new THREE.Color("#2DD4BF"), []);
+  const baseColor = useMemo(() => new THREE.Color("#818CF8"), []);
   const scamColor = useMemo(() => new THREE.Color("#E5484D"), []);
   const safeColor = useMemo(() => new THREE.Color("#3DD68C"), []);
   const currentColor = useMemo(() => new THREE.Color(), []);
 
   useFrame((state, delta) => {
     if (!meshRef.current || !materialRef.current) return;
+
     const t = state.clock.getElapsedTime();
 
     if (!prefersReducedMotion) {
@@ -64,6 +74,7 @@ function ShieldMesh() {
         targetRotation.current.x,
         0.05
       );
+
       meshRef.current.rotation.z = THREE.MathUtils.lerp(
         meshRef.current.rotation.z,
         targetRotation.current.z,
@@ -71,12 +82,16 @@ function ShieldMesh() {
       );
     }
 
-    // Pulse logic
     if (pulseRef.current.active) {
       pulseRef.current.elapsed += delta * 1000;
-      const progress = Math.min(pulseRef.current.elapsed / PULSE_DURATION, 1);
-      // Ease out
+
+      const progress = Math.min(
+        pulseRef.current.elapsed / PULSE_DURATION,
+        1
+      );
+
       pulseRef.current.intensity = 1 - progress * progress;
+
       if (progress >= 1) {
         pulseRef.current.active = false;
         pulseRef.current.intensity = 0;
@@ -84,26 +99,32 @@ function ShieldMesh() {
     }
 
     const intensity = pulseRef.current.intensity;
-    const pulseColor = pulseRef.current.isScam ? scamColor : safeColor;
-    currentColor.copy(baseColor).lerp(pulseColor, intensity * 0.6);
+    const pulseColor = pulseRef.current.isScam
+      ? scamColor
+      : safeColor;
 
-    materialRef.current.emissive.copy(pulseColor);
-    materialRef.current.emissiveIntensity = intensity * 1.5;
+    currentColor
+      .copy(baseColor)
+      .lerp(pulseColor, intensity * 0.6);
+
     materialRef.current.color.copy(currentColor);
   });
 
-  const scale = viewport.width < 6 ? [1.1, 1.32, 0.35] : [1.4, 1.68, 0.45];
+  const scale =
+    viewport.width < 6
+      ? [1.1, 1.32, 0.35]
+      : [1.4, 1.68, 0.45];
 
   return (
-    <mesh ref={meshRef} scale={scale as [number, number, number]}>
-      <Icosahedron args={[2.2, 2]} />
-      <MeshDistortMaterial
+    <mesh
+      ref={meshRef}
+      scale={scale as [number, number, number]}
+    >
+      <icosahedronGeometry args={[2.2, 1]} />
+
+      <meshBasicMaterial
         ref={materialRef}
-        color="#2DD4BF"
-        distort={0.15}
-        speed={1.5}
-        roughness={0.25}
-        metalness={0.7}
+        color="#818CF8"
         wireframe
         transparent
         opacity={0.85}
@@ -116,31 +137,97 @@ function Lights() {
   return (
     <>
       <ambientLight intensity={0.2} />
-      <directionalLight position={[5, 5, 5]} intensity={0.6} color="#E8F4F8" />
-      <spotLight
-        position={[-5, 5, -5]}
-        intensity={1.2}
-        color="#2DD4BF"
-        angle={0.6}
-        penumbra={0.8}
+
+      <directionalLight
+        position={[5, 5, 5]}
+        intensity={0.6}
+        color="#E8F4F8"
       />
-      <pointLight position={[0, -3, 2]} intensity={0.4} color="#2DD4BF" />
     </>
   );
 }
 
+function WebGLContextHandler({
+  setContextLost,
+}: {
+  setContextLost: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
+  const { gl } = useThree();
+
+  useEffect(() => {
+    const canvas = gl.domElement;
+
+    const handleContextLost = (event: Event) => {
+      event.preventDefault();
+
+      setContextLost(true);
+
+      console.warn("[Muhafiz] WebGL context lost");
+    };
+
+    const handleContextRestored = () => {
+      setContextLost(false);
+
+      console.log("[Muhafiz] WebGL context restored");
+    };
+
+    canvas.addEventListener(
+      "webglcontextlost",
+      handleContextLost
+    );
+
+    canvas.addEventListener(
+      "webglcontextrestored",
+      handleContextRestored
+    );
+
+    return () => {
+      canvas.removeEventListener(
+        "webglcontextlost",
+        handleContextLost
+      );
+
+      canvas.removeEventListener(
+        "webglcontextrestored",
+        handleContextRestored
+      );
+    };
+  }, [gl, setContextLost]);
+
+  return null;
+}
+
 export function ShieldScene() {
+  const [contextLost, setContextLost] = useState(false);
+
   return (
-    <div className="w-full h-full">
+    <div className="relative w-full h-full">
       <Canvas
-        camera={{ position: [0, 0, 7], fov: 45 }}
-        dpr={[1, 1.5]}
-        gl={{ antialias: true, alpha: true }}
+        camera={{
+          position: [0, 0, 7],
+          fov: 45,
+        }}
+        dpr={1}
+        gl={{
+          antialias: false,
+          alpha: true,
+          powerPreference: "low-power",
+        }}
       >
+        <WebGLContextHandler
+          setContextLost={setContextLost}
+        />
+
         <Lights />
+
         <ShieldMesh />
-        <Environment preset="city" />
       </Canvas>
+
+      {contextLost && (
+        <div className="absolute inset-0 flex items-center justify-center text-text-secondary text-xs">
+          Rendering paused
+        </div>
+      )}
     </div>
   );
 }

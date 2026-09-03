@@ -4,18 +4,21 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Shield, Menu, X } from "lucide-react";
 import { useState } from "react";
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/analyze", label: "Analyze" },
-  { href: "/how-it-works", label: "How It Works" },
-  { href: "/examples", label: "Examples" },
-  { href: "/roadmap", label: "Roadmap" },
-];
+import { useLanguage } from "@/lib/i18n/context";
+import { LanguageSwitcher } from "./language-switcher";
 
 export function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { t } = useLanguage();
+
+  const navLinks = [
+    { href: "/", label: t("nav.home") },
+    { href: "/analyze", label: t("nav.analyze") },
+    { href: "/how-it-works", label: t("nav.howItWorks") },
+    { href: "/examples", label: t("nav.examples") },
+    { href: "/roadmap", label: t("nav.roadmap") },
+  ];
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
@@ -27,7 +30,7 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => {
             const active = pathname === link.href;
             return (
@@ -36,7 +39,7 @@ export function Header() {
                 href={link.href}
                 className={`text-sm font-medium transition-colors ${
                   active
-                    ? "text-accent"
+                    ? "text-[#818CF8]"
                     : "text-text-secondary hover:text-text-primary"
                 }`}
               >
@@ -46,20 +49,26 @@ export function Header() {
           })}
         </nav>
 
-        <Link
-          href="/analyze"
-          className="hidden md:inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-background transition-opacity hover:opacity-90"
-        >
-          Try It Now
-        </Link>
+        <div className="hidden md:flex items-center gap-3">
+          <LanguageSwitcher />
+          <Link
+            href="/analyze"
+            className="inline-flex items-center rounded-lg border border-[#818CF8] bg-surface px-4 py-2 text-sm font-semibold text-[#818CF8] transition-all hover:border-border hover:text-text-primary hover:shadow-[0_0_15px_rgba(129,140,248,0.2)]"
+          >
+            {t("nav.tryItNow")}
+          </Link>
+        </div>
 
-        <button
-          className="md:hidden text-text-primary"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
-        >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <LanguageSwitcher />
+          <button
+            className="text-text-primary"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
       </div>
 
       {mobileOpen && (
@@ -71,7 +80,7 @@ export function Header() {
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
                 className={`text-sm font-medium ${
-                  pathname === link.href ? "text-accent" : "text-text-secondary"
+                  pathname === link.href ? "text-[#818CF8]" : "text-text-secondary"
                 }`}
               >
                 {link.label}
@@ -80,9 +89,9 @@ export function Header() {
             <Link
               href="/analyze"
               onClick={() => setMobileOpen(false)}
-              className="mt-2 inline-flex items-center justify-center rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-background"
+              className="mt-2 inline-flex items-center justify-center rounded-lg border border-[#818CF8] bg-surface px-4 py-2 text-sm font-semibold text-[#818CF8] transition-all hover:border-border hover:text-text-primary"
             >
-              Try It Now
+              {t("nav.tryItNow")}
             </Link>
           </nav>
         </div>
