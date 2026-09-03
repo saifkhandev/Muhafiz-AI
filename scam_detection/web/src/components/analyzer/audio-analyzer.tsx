@@ -205,11 +205,11 @@ export function AudioAnalyzer() {
           </div>
         )}
 
-        <div className="mt-6 flex items-center gap-3">
+        <div className="mt-6 flex flex-col gap-2">
           <button
             onClick={handleAnalyze}
             disabled={isLoading || !file}
-            className="inline-flex items-center gap-2 rounded-lg px-5 py-2.5 font-semibold transition-opacity hover:opacity-90 disabled:opacity-60"
+            className="inline-flex w-fit items-center gap-2 rounded-lg px-5 py-2.5 font-semibold transition-opacity hover:opacity-90 disabled:opacity-60"
             style={{ background: 'linear-gradient(90deg, #6366F1 0%, #22D3EE 100%)', color: '#05070A' }}
           >
             {isLoading ? (
