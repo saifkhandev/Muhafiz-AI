@@ -6,9 +6,9 @@
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white&labelColor=20232a)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white&labelColor=20232a)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4?logo=tailwindcss&logoColor=white&labelColor=20232a)
-![Three.js](https://img.shields.io/badge/Three.js-3D-000000?logo=three.js&logoColor=white&labelColor=20232a)
-![GSAP](https://img.shields.io/badge/GSAP-Animations-88CE02?logo=greensock&logoColor=white&labelColor=20232a)
+![SVG Shield](https://img.shields.io/badge/SVG-Shield-6366F1?logo=svg&logoColor=white&labelColor=20232a)
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-13-FF0055?logo=framer&logoColor=white&labelColor=20232a)
+![i18n](https://img.shields.io/badge/i18n-EN%20%7C%20UR-818CF8?labelColor=20232a)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white&labelColor=20232a)
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white&labelColor=20232a)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white&labelColor=20232a)
@@ -95,12 +95,13 @@ The system runs on a real, trained model (**V4_adversarial_505**) — there is *
 - Server-side maximum duration enforcement (5 minutes)
 
 ### Web Experience
-- Interactive **3D wireframe shield** (Three.js) that idles, tilts toward the cursor, and **pulses red or green** in sync with real analysis results
-- **Mobile fallback** — static SVG shield with CSS pulse animation below 768px
-- **GSAP ScrollTrigger** scroll choreography and an animated pipeline diagram
-- **Framer Motion** result animations (scale-in verdict cards, staggered signal chips, sequential segment reveals)
+- **Bilingual UI (English/Urdu)** — full i18n system with RTL layout; users switch via a language button in the navbar or a first-visit banner; preference saved in localStorage
+- Responsive **SVG shield** visualization that adapts to all screen sizes
+- **Framer Motion** animations — scroll-driven reveals, scale-in verdict cards, staggered signal chips, sequential segment reveals, and smooth transitions
+- **Scroll-to-top button** — appears after scrolling with a smooth scroll animation
+- **Social media footer** — GitHub, LinkedIn, and Instagram links
 - Dedicated pages: **Home**, **Analyze**, **How It Works**, **Examples**, **Roadmap**
-- Fully **responsive** design and honors `prefers-reduced-motion`
+- Fully **responsive** design (mobile-first) and honors `prefers-reduced-motion`
 - Honest error states — if the backend is unreachable, you see a retryable error, never a fake verdict
 
 ---
@@ -255,9 +256,8 @@ The V4 adversarial expansion specifically targeted false positives — cutting t
 - **[React 19](https://react.dev/)** — UI library
 - **[TypeScript 5](https://www.typescriptlang.org/)** — type safety
 - **[Tailwind CSS 4](https://tailwindcss.com/)** — design system (dark theme, exact brand palette)
-- **[Three.js](https://threejs.org/)** + **@react-three/fiber** + **@react-three/drei** — interactive 3D wireframe shield
-- **[GSAP](https://gsap.com/) + ScrollTrigger** — scroll choreography and the animated pipeline diagram
-- **[Framer Motion 13](https://www.framer.com/motion/)** — result card, signal chip, and segment animations
+- **[SVG Shield](https://developer.mozilla.org/en-US/docs/Web/SVG)** — responsive shield visualization (replaced Three.js for better performance and mobile compatibility)
+- **[Framer Motion 13](https://www.framer.com/motion/)** — scroll animations, result card, signal chip, and segment animations
 - **[lucide-react](https://lucide.dev/)** — iconography
 - Fonts: **Space Grotesk** (headings), **Inter** (body), **Noto Nastaliq Urdu** (Urdu script, RTL) — via `next/font`
 
@@ -393,13 +393,14 @@ Muhafiz-AI/
     │       ├── app/                  # Pages: /, /analyze, /how-it-works, /examples, /roadmap
     │       ├── components/
     │       │   ├── analyzer/         # Text + audio analyzers, result cards, signals
-    │       │   ├── shield/           # 3D shield scene + mobile SVG fallback
+    │       │   ├── shield/           # SVG shield visualization
     │       │   ├── sections/         # Hero, How It Works, Examples, Roadmap
-    │       │   └── ui/               # Header, footer, layout
-    │       └── lib/                  # API client, TypeScript types, shield pulse context
+    │       │   └── ui/               # Header, footer, scroll-to-top, language switcher/banner
+    │       └── lib/
+    │           ├── i18n/             # English/Urdu translations + language context
+    │           └── ...               # API client, TypeScript types, shield pulse context
     ├── requirements.txt
-    ├── app.py                        # Legacy Streamlit prototype (superseded by web/)
-    └── README.md                     # Detailed ML documentation
+    └── app.py                        # Legacy Streamlit prototype (superseded by web/)
 ```
 
 ---
@@ -503,7 +504,9 @@ We document these honestly — they are deliberate engineering trade-offs, not h
 | Binary Scam/Safe text classification | ✅ Shipped (V4) |
 | Audio call analysis (STT → segment classification) | ✅ Shipped |
 | Multilingual support (EN / Urdu / Roman Urdu / Mixed) | ✅ Shipped |
-| Web app with 3D experience + public API | ✅ Shipped |
+| Responsive web app + public API on Vercel/Render | ✅ Shipped |
+| Bilingual UI (English/Urdu with RTL layout) | ✅ Shipped |
+| Scroll-to-top button + social media footer | ✅ Shipped |
 | **Scam-category classifier** (bank, job, BISP, lottery...) | 🚧 Next — needs a dedicated category-labeled dataset |
 | **Live SMS / browser-extension interception** | 🚧 Planned |
 | **Continuous learning pipeline** (user reports → periodic retraining) | 🚧 Planned |
@@ -525,8 +528,8 @@ Built for the **Alibaba AI Hackathon — Karachi Regional Round**.
 ## Contact
 
 - **GitHub:** [saifkhandev](https://github.com/saifkhandev)
-- **LinkedIn:** [Saifullah Khan](https://www.linkedin.com/in/saifkhandev)
-- **Instagram:** [@saifkhandev](https://www.instagram.com/saifkhandev)
+- **LinkedIn:** [saifstacks](https://www.linkedin.com/in/saifstacks)
+- **Instagram:** [@notthatpretty.saiff](https://www.instagram.com/notthatpretty.saiff)
 - **Email:** [saifkhan16.dev@gmail.com](mailto:saifkhan16.dev@gmail.com)
 
 ---
@@ -535,7 +538,7 @@ Built for the **Alibaba AI Hackathon — Karachi Regional Round**.
 
 - **Alibaba AI Hackathon — Karachi Regional Round** for the challenge and platform
 - **[SYSTRAN](https://github.com/SYSTRAN/faster-whisper)** for faster-whisper
-- The open-source community behind **scikit-learn, FastAPI, Next.js, React, Three.js, GSAP, Framer Motion, and Tailwind CSS**
+- The open-source community behind **scikit-learn, FastAPI, Next.js, React, Framer Motion, and Tailwind CSS**
 
 ---
 
