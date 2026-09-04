@@ -1,7 +1,7 @@
 ﻿"use client";
 
-import { useState, useRef, useCallback } from "react";
-import { analyzeAudio } from "@/lib/api";
+import { useState, useRef, useEffect } from "react";
+import { analyzeAudio, checkHealth } from "@/lib/api";
 import { AudioAnalysisResult } from "@/lib/types";
 import { useShield } from "@/lib/shield-context";
 import { useLanguage } from "@/lib/i18n/context";
@@ -19,7 +19,7 @@ type AnalysisStage =
 
 const STAGE_MESSAGES: Record<Exclude<AnalysisStage, "idle" | "done" | "error">, string> = {
   uploading: "Uploading audio...",
-  transcribing: "Transcribing speech (this takes about 20-30 seconds)...",
+  transcribing: "Transcribing speech (this may take 20-60 seconds)...",
   analyzing: "Analyzing transcript segments...",
   calculating: "Calculating call risk...",
 };
@@ -36,11 +36,22 @@ export function AudioAnalyzer() {
   const [progress, setProgress] = useState(0);
   const [isRecording, setIsRecording] = useState(false);
   const [recordTime, setRecordTime] = useState(0);
+  const [isWarmingUp, setIsWarmingUp] = useState(false);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const recordIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const { triggerPulse } = useShield();
   const { t } = useLanguage();
+
+  // Warm up the backend as soon as the audio tab opens. Render free-tier
+  // backends sleep after inactivity; this ping wakes it before the user
+  // hits Analyze so the first request does not pay the cold-start penalty.
+  useEffect(() => {
+    setIsWarmingUp(true);
+    checkHealth()
+      .catch(() => {/* ignore; user will see real errors at analysis time */})
+      .finally(() => setIsWarmingUp(false));
+  }, []);
 
   const validateFile = (selected: File): string | null => {
     const ext = selected.name.slice(selected.name.lastIndexOf(".")).toLowerCase();
@@ -64,13 +75,6 @@ export function AudioAnalyzer() {
     setError(null);
   };
 
-  const advanceStage = useCallback((targetStage: Exclude<AnalysisStage, "idle" | "done" | "error">) => {
-    setStage(targetStage);
-    const stages = ["uploading", "transcribing", "analyzing", "calculating"];
-    const idx = stages.indexOf(targetStage);
-    setProgress(((idx + 1) / stages.length) * 100);
-  }, []);
-
   const handleAnalyze = async () => {
     if (!file) {
       setError("Please upload or record an audio file first.");
@@ -80,17 +84,12 @@ export function AudioAnalyzer() {
     setResult(null);
 
     try {
-      advanceStage("uploading");
-      await new Promise((r) => setTimeout(r, 300));
-
-      advanceStage("transcribing");
+      // The server performs upload + transcription + classification + aggregation
+      // in one call. Show "transcribing" because Whisper CPU inference is the
+      // dominant part of the wait.
+      setStage("transcribing");
+      setProgress(30);
       const res = await analyzeAudio(file);
-
-      advanceStage("analyzing");
-      await new Promise((r) => setTimeout(r, 200));
-
-      advanceStage("calculating");
-      await new Promise((r) => setTimeout(r, 200));
 
       setResult(res);
       setStage("done");
@@ -105,7 +104,12 @@ export function AudioAnalyzer() {
   const startRecording = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mediaRecorder = new MediaRecorder(stream);
+      // Lower bitrate keeps recorded calls small and fast to upload/process
+      // while remaining perfectly intelligible for Whisper transcription.
+      const mediaRecorder = new MediaRecorder(stream, {
+        mimeType: MediaRecorder.isTypeSupported("audio/webm") ? "audio/webm" : "audio/mp4",
+        audioBitsPerSecond: 24000,
+      });
       mediaRecorderRef.current = mediaRecorder;
       chunksRef.current = [];
 
@@ -183,6 +187,13 @@ export function AudioAnalyzer() {
             )}
           </div>
         </div>
+
+        {isWarmingUp && (
+          <div className="mt-4 flex items-center gap-2 text-xs text-text-secondary">
+            <Loader2 className="h-3 w-3 animate-spin" />
+            Warming up server...
+          </div>
+        )}
 
         {error && (
           <div className="mt-4 rounded-lg border border-danger/30 bg-danger/10 px-4 py-2 text-sm text-danger">
