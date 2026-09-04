@@ -95,6 +95,32 @@ INDIRECT_PAYMENT_PATTERNS = [
     r"emergency.*financial\s+help",
 ]
 
+# Utility / fake bill scams — passive bill notices are safe, threats are scams
+UTILITY_BILL_KEYWORDS = [
+    "electricity", "electric", "bill", "bijli", "gas bill", "sui gas",
+    "sngpl", "ssgc", "water bill", "utility bill", "k-electric", "leco",
+    "wapda", "gas", "paani", "bijli ka bill",
+]
+UTILITY_THREAT_KEYWORDS = [
+    "disconnected", "disconnect", "cut off", "cutoff", "suspended", "blocked",
+    "legal action", "fine", "penalty", "immediately", "within 24 hours",
+    "band ho jaye", "kaat diya jaye", "kat", "saza", "case",
+]
+
+# Romance / family-emergency emotional manipulation + money request
+ROMANCE_EMOTIONAL_MARKERS = [
+    "i love you", "love you so much", "miss you", "my love", "my heart",
+    "i need you", "please help me", "meri madad karo", "main tumhari",
+    "sick mother", "sick father", "hospital", "operation", "medicine",
+    "mother is sick", "father is sick", "family emergency", "emergency",
+]
+FAMILY_MONEY_REQUEST_PATTERNS = [
+    r"(?:send|bhej|transfer)\s+(?:me|mujhe|mere)\s+(?:rs\.?|rupees|money|paise|paisa)",
+    r"(?:rs\.?|rupees)\s*[\d,]+",
+    r"(?:send|bhej)\s+(?:money|paise|paisa|rupay)",
+    r"(?:mujhe|mere)\s+(?:rs\.?|rupees|paise)",
+]
+
 # Safe-signal patterns for messages describing reporting/blocking threats
 REPORTING_SAFE_PATTERNS = [
     r"reported\s+(?:the\s+)?(?:threatening|blackmail|suspicious)",
@@ -198,6 +224,20 @@ def apply_guardrails(
     # Pattern E: indirect financial request scams
     if _contains_regex_any(message, INDIRECT_PAYMENT_PATTERNS):
         return 0.93, "Scam", "indirect_payment_scam_override"
+
+    # Pattern H: fake utility-bill threat scams
+    # Passive bill reminders are safe; threats of disconnection + payment demand are scams.
+    has_utility_context = _contains_any(message, UTILITY_BILL_KEYWORDS)
+    has_utility_threat = _contains_any(message, UTILITY_THREAT_KEYWORDS)
+    if has_utility_context and has_utility_threat and has_payment_request:
+        return 0.94, "Scam", "utility_bill_threat_scam_override"
+
+    # Pattern I: romance / family-emergency money scams
+    # Requires emotional manipulation marker plus an explicit money request.
+    has_emotional_marker = _contains_any(message, ROMANCE_EMOTIONAL_MARKERS)
+    has_family_money_request = _contains_regex_any(message, FAMILY_MONEY_REQUEST_PATTERNS)
+    if has_emotional_marker and has_family_money_request:
+        return 0.94, "Scam", "romance_emergency_scam_override"
 
     # Pattern F: messages describing reporting/blocking a threat are safe
     if _contains_regex_any(message, REPORTING_SAFE_PATTERNS):

@@ -140,9 +140,13 @@ def transcribe_audio(wav_path: str, model=None, backend: str = None):
         model, backend = load_stt_model()
 
     if backend == "faster-whisper":
+        # beam_size=1 (greedy) is ~2-3x faster than beam_size=5 with minimal
+        # quality loss for short scam-call transcripts. condition_on_previous_text
+        # is disabled to reduce cross-segment hallucination.
         segments_iter, info = model.transcribe(
             wav_path,
-            beam_size=5,
+            beam_size=1,
+            condition_on_previous_text=False,
             vad_filter=True,
             vad_parameters=dict(min_silence_duration_ms=500),
         )
