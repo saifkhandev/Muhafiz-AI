@@ -510,7 +510,6 @@ We document these honestly — they are deliberate engineering trade-offs, not h
 | **Scam-category classifier** (bank, job, BISP, lottery...) | 🚧 Next — needs a dedicated category-labeled dataset |
 | **Live SMS / browser-extension interception** | 🚧 Planned |
 | **Continuous learning pipeline** (user reports → periodic retraining) | 🚧 Planned |
-| **Transformer comparison** (mBERT / XLM-R vs. TF-IDF + SVM) | 🚧 Planned |
 | **Real-time in-call analysis** | 🔭 Exploring |
 | **Mobile app** (Android/iOS) | 🔭 Exploring |
 
@@ -520,15 +519,18 @@ We document these honestly — they are deliberate engineering trade-offs, not h
 
 Built for the **Alibaba AI Hackathon — Karachi Regional Round**.
 
-- **Amaan** — Machine learning: dataset curation, model training, adversarial evaluation, V4 optimization
+- **Amaan Lodhi** — Machine learning: dataset curation, model training, adversarial evaluation, V4 optimization
 - **Saifullah Khan** — Web application: Next.js frontend, FastAPI backend, cloud deployment
+- **Sagar Kumar** — Presentation & Pitch: Live Demo, Presentation, Final Review
 
 ---
 
 ## Contact
 
 - **GitHub:** [saifkhandev](https://github.com/saifkhandev)
+              [Amaan-Khan-Lodhi](https://github.com/Amaan-khan-lodhi)
 - **LinkedIn:** [saifstacks](https://www.linkedin.com/in/saifstacks)
+                [Amaan-Khan-Lodhi](https://www.linkedin.com/in/amaan-khan-lodhi-a8182141b/)
 - **Instagram:** [@notthatpretty.saiff](https://www.instagram.com/notthatpretty.saiff)
 - **Email:** [saifkhan16.dev@gmail.com](mailto:saifkhan16.dev@gmail.com)
 
