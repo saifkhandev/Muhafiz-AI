@@ -76,9 +76,22 @@ REQUEST_VERBS = [
 # Reference-number patterns often used by impersonation scams
 REFERENCE_PATTERN = re.compile(r"\b(?:[A-Z]{2,5}-\d{3,9}|SR-\d{6}|AR-\d{5}|FN-\d{6}|TX-\d{5}|CON-\d{6}|WLT-\d{6}|PKL-\d{5}|PK-?\d{6})\b")
 
+# Account / security review phishing context
+ACCOUNT_SECURITY_CONTEXT = [
+    "account", "profile", "security review", "security check", "routine check",
+    "account verification", "verify your account", "service", "services",
+]
+
+# Urgency / service-termination threats used in phishing
+URGENCY_THREAT_PHRASES = [
+    "keep active", "keep your services", "avoid suspension", "will be suspended",
+    "will be disabled", "will be deactivated", "prevent", "immediate action",
+    "within 24 hours", "within 48 hours", "expires", "expiration",
+]
+
 # Soft verification/demand language used by scams without explicit threats
 VERIFICATION_DEMAND_PATTERNS = [
-    r"confirm\s+(?:your\s+)?(?:information|details)",
+    r"confirm\s+(?:your\s+(?:registered\s+)?)?(?:information|details)",
     r"verify\s+(?:submitted\s+)?(?:information|details|documents)",
     r"document\s+verif",
     r"review\s+(?:the\s+)?(?:record|details|information)",
@@ -220,6 +233,13 @@ def apply_guardrails(
     has_link = any(k in msg_lower for k in ["http", "link", "portal", ".com", ".pk", ".net"])
     if has_reference and has_verification_demand and has_link and not has_payment_request:
         return 0.92, "Scam", "reference_verification_scam_override"
+
+    # Pattern J: account security review / service-termination phishing
+    # Requires account/service context + verification demand + urgency/threat.
+    has_account_security = _contains_any(message, ACCOUNT_SECURITY_CONTEXT)
+    has_urgency_threat = _contains_any(message, URGENCY_THREAT_PHRASES)
+    if has_account_security and has_verification_demand and has_urgency_threat:
+        return 0.93, "Scam", "account_security_review_scam_override"
 
     # Pattern E: indirect financial request scams
     if _contains_regex_any(message, INDIRECT_PAYMENT_PATTERNS):
