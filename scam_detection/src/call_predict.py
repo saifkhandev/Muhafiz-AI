@@ -8,6 +8,7 @@ Usage:
     print(result["overall_risk"])  # "High" | "Medium" | "Low"
 """
 import os
+import re
 import sys
 import numpy as np
 
@@ -16,13 +17,73 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.config import (
     CALL_RISK_HIGH, CALL_RISK_MEDIUM,
     CALL_WEIGHT_MAX_PROB, CALL_WEIGHT_WEIGHTED_MEAN, CALL_WEIGHT_SCAM_RATIO,
+    CALL_FORCE_HIGH_MAX_PROB, CALL_FORCE_MEDIUM_MAX_PROB,
 )
 from src.audio import load_audio, export_wav, cleanup_temp_files
 from src.transcribe import load_stt_model, transcribe_audio, process_segments
 from src.predict import predict_message, load_model
 
 
-def _aggregate_predictions(segment_results: list, model_threshold: float) -> dict:
+# ── Call-level scam-pattern detection ────────────────────────────────────────
+# The per-segment classifier sees only a short window. These patterns look at
+# the full call transcript and boost the risk when multiple scam indicators
+# appear together across segments.
+
+_CALL_SCAM_PATTERNS = [
+    # Credit-/debit-card phishing: card brand + confirm/verify + security code
+    {
+        "name": "card_verification_scam",
+        "keywords": ["visa", "mastercard", "credit card", "debit card", "card"],
+        "demands": ["confirm", "verify", "security code", "cvv", "expiration", "expiry"],
+    },
+    # Fake bank/fraud-department impersonation
+    {
+        "name": "fraud_department_impersonation",
+        "keywords": ["fraud", "fraud watch", "fraud division", "security department", "bank"],
+        "demands": ["confirm", "verify", "details", "information", "card", "account"],
+    },
+    # OTP / code request (spoken, not SMS)
+    {
+        "name": "spoken_otp_request",
+        "keywords": ["otp", "code", "verification code", "security code", "pin"],
+        "demands": ["tell me", "share", "provide", "give me", "bata", "bataein", "batao"],
+    },
+    # Remote access / screen sharing
+    {
+        "name": "remote_access_scam",
+        "keywords": ["anydesk", "teamviewer", "remote", "screen share", "install", "download"],
+        "demands": ["install", "download", "open", "run", "click", "give access"],
+    },
+    # Prize/lottery + fee/payment request (spoken)
+    {
+        "name": "spoken_prize_scam",
+        "keywords": ["won", "prize", "lottery", "lucky draw", "winner", "inaam", "jeet"],
+        "demands": ["fee", "pay", "send", "bhej", "charges", "tax"],
+    },
+]
+
+
+def _detect_call_scam_patterns(full_text: str) -> list:
+    """
+    Return names of call-level scam patterns matched in the full transcript.
+    A pattern matches only if it finds at least one keyword AND at least one
+    demand/action in the same call.
+    """
+    text_lower = full_text.lower()
+    matched = []
+    for pat in _CALL_SCAM_PATTERNS:
+        has_keyword = any(kw.lower() in text_lower for kw in pat["keywords"])
+        has_demand = any(d.lower() in text_lower for d in pat["demands"])
+        if has_keyword and has_demand:
+            matched.append(pat["name"])
+    return matched
+
+
+def _aggregate_predictions(
+    segment_results: list,
+    model_threshold: float,
+    call_patterns: list = None,
+) -> dict:
     """
     Aggregate per-segment predictions into a call-level risk score.
 
@@ -30,6 +91,7 @@ def _aggregate_predictions(segment_results: list, model_threshold: float) -> dic
         1. max_prob — strongest single scam segment
         2. weighted_mean — temporal weighting (first/last 25% get 1.5x weight)
         3. scam_ratio — fraction of segments above model threshold
+        4. call_patterns — cross-segment scam indicators (e.g. card + verify)
 
     Returns:
         {
@@ -40,6 +102,8 @@ def _aggregate_predictions(segment_results: list, model_threshold: float) -> dic
             "total_segments": int,
         }
     """
+    call_patterns = call_patterns or []
+
     # Only count non-skipped segments
     active = [s for s in segment_results if not s["was_skipped"]]
     if not active:
@@ -93,6 +157,22 @@ def _aggregate_predictions(segment_results: list, model_threshold: float) -> dic
         + CALL_WEIGHT_WEIGHTED_MEAN * weighted_mean
         + CALL_WEIGHT_SCAM_RATIO * scam_ratio
     )
+
+    # Boost for cross-segment scam patterns (full-call context)
+    if call_patterns:
+        # Each matched pattern adds a small additive boost; cap to avoid
+        # pushing arbitrary calls to High.
+        risk_score += min(0.15, 0.05 * len(call_patterns))
+
+    # Force floor based on the strongest single segment: a long call with a
+    # few very scammy segments should not be drowned out by neutral segments.
+    if max_prob >= CALL_FORCE_HIGH_MAX_PROB:
+        risk_score = max(risk_score, CALL_RISK_HIGH + 0.10)
+    elif max_prob >= CALL_FORCE_MEDIUM_MAX_PROB:
+        risk_score = max(risk_score, CALL_RISK_MEDIUM + 0.10)
+
+    # Cap at 1.0
+    risk_score = min(risk_score, 1.0)
 
     # Determine verdict
     if risk_score >= CALL_RISK_HIGH:
@@ -223,7 +303,13 @@ def predict_call(
         seg["confidence"] = result["confidence"]
 
     # Aggregate
-    agg = _aggregate_predictions(processed, threshold)
+    # Build full transcript from active segments to detect cross-segment patterns
+    full_transcript = " ".join(
+        seg["cleaned_text"] if seg["cleaned_text"] else seg["text"]
+        for seg in processed if not seg["was_skipped"]
+    )
+    call_patterns = _detect_call_scam_patterns(full_transcript)
+    agg = _aggregate_predictions(processed, threshold, call_patterns)
 
     return {
         "overall_risk": agg["overall_risk"],
