@@ -1,12 +1,27 @@
 """
 Speech-to-text transcription for scam-call detection.
-Primary: faster-whisper (CTranslate2 INT8). Fallback: openai-whisper.
+
+Backends (selected with the STT_BACKEND env var):
+  local (default) — faster-whisper (CTranslate2 INT8), falls back to openai-whisper
+  groq            — Groq-hosted Whisper over HTTP, no local model weights
 """
 import re
 import os
+import time
 import warnings
 
-from src.config import WHISPER_MODEL_SIZE, WHISPER_COMPUTE_TYPE
+from src.config import (
+    WHISPER_MODEL_SIZE,
+    WHISPER_COMPUTE_TYPE,
+    STT_BACKEND,
+    GROQ_API_KEY,
+    GROQ_STT_MODEL,
+    GROQ_API_BASE,
+    GROQ_TIMEOUT_SECONDS,
+    GROQ_MAX_UPLOAD_BYTES,
+    GROQ_LANGUAGE,
+    GROQ_RETRY_HINDI_AS_URDU,
+)
 
 # ── Filler patterns to skip ──────────────────────────────────────────────────
 FILLER_PATTERNS = {
@@ -98,14 +113,59 @@ def _load_openai_whisper(model_size: str):
     return _model_cache[cache_key]
 
 
-def load_stt_model(model_size: str = None, compute_type: str = None):
+class GroqSTTClient:
+    """Connection settings for Groq's hosted Whisper endpoint.
+
+    Holds no model weights — transcription happens on Groq's servers, so this
+    "model" is only a handle carried through predict_call() like a local one.
     """
-    Load the speech-to-text model.
-    Tries faster-whisper first, falls back to openai-whisper.
+
+    def __init__(self, api_key: str, model: str, api_base: str, timeout: float):
+        self.api_key = api_key
+        self.model = model
+        self.api_base = api_base
+        self.timeout = timeout
+
+    def __repr__(self):
+        return f"GroqSTTClient(model={self.model!r})"
+
+
+def _load_groq_stt():
+    """Build a Groq STT client. Raises if the API key is missing."""
+    if not GROQ_API_KEY:
+        raise RuntimeError(
+            "STT_BACKEND=groq but GROQ_API_KEY is not set. "
+            "Set it in the environment, or use STT_BACKEND=local."
+        )
+    print(f"  [STT] Using Groq hosted Whisper: {GROQ_STT_MODEL}")
+    return GroqSTTClient(
+        api_key=GROQ_API_KEY,
+        model=GROQ_STT_MODEL,
+        api_base=GROQ_API_BASE,
+        timeout=GROQ_TIMEOUT_SECONDS,
+    )
+
+
+def load_stt_model(model_size: str = None, compute_type: str = None, backend: str = None):
+    """
+    Load the speech-to-text model for the configured backend.
+
+    Args:
+        model_size: Whisper size for local backends (default: WHISPER_MODEL_SIZE)
+        compute_type: CTranslate2 compute type for faster-whisper
+        backend: "local" or "groq" (default: STT_BACKEND env var)
 
     Returns:
-        (model, backend) tuple where backend is "faster-whisper" or "openai-whisper"
+        (model, backend) tuple where backend is "faster-whisper",
+        "openai-whisper", or "groq"
     """
+    backend = (backend or STT_BACKEND).strip().lower()
+
+    if backend == "groq":
+        return _load_groq_stt(), "groq"
+    if backend not in ("local", "", "faster-whisper", "openai-whisper"):
+        raise ValueError(f"Unknown STT_BACKEND: {backend!r} (expected 'local' or 'groq')")
+
     model_size = model_size or WHISPER_MODEL_SIZE
     compute_type = compute_type or WHISPER_COMPUTE_TYPE
 
@@ -123,6 +183,112 @@ def load_stt_model(model_size: str = None, compute_type: str = None):
 
 # ── Transcription ────────────────────────────────────────────────────────────
 
+# Groq returns full language names ("urdu"); faster-whisper returns ISO codes
+# ("ur"). Normalize so the API contract stays identical across backends.
+_GROQ_LANG_CODES = {
+    "english": "en", "urdu": "ur", "hindi": "hi", "punjabi": "pa",
+    "sindhi": "sd", "pashto": "ps", "arabic": "ar", "persian": "fa",
+}
+
+_GROQ_RETRY_STATUSES = {408, 409, 429, 500, 502, 503, 504}
+
+
+def _groq_request(wav_path: str, client, language: str = None):
+    """POST one transcription request to Groq and return the parsed payload.
+
+    Retries on rate limits and transient server errors. Raises RuntimeError
+    with a readable message on permanent failure, so the caller can surface an
+    honest error instead of a silent empty transcript.
+    """
+    import httpx
+
+    url = f"{client.api_base}/audio/transcriptions"
+    headers = {"Authorization": f"Bearer {client.api_key}"}
+    data = {
+        "model": client.model,
+        "response_format": "verbose_json",
+        "timestamp_granularities[]": "segment",
+    }
+    if language:
+        data["language"] = language
+
+    payload = None
+    last_error = None
+    for attempt in range(3):
+        try:
+            with open(wav_path, "rb") as fh:
+                files = {"file": (os.path.basename(wav_path), fh, "audio/wav")}
+                resp = httpx.post(
+                    url, headers=headers, data=data, files=files, timeout=client.timeout
+                )
+            if resp.status_code in _GROQ_RETRY_STATUSES:
+                last_error = f"HTTP {resp.status_code}: {resp.text[:200]}"
+                time.sleep(2 ** attempt)
+                continue
+            if resp.status_code >= 400:
+                raise RuntimeError(f"Groq STT rejected the request "
+                                   f"(HTTP {resp.status_code}): {resp.text[:200]}")
+            payload = resp.json()
+            break
+        except httpx.RequestError as e:
+            last_error = f"{type(e).__name__}: {e}"
+            time.sleep(2 ** attempt)
+
+    if payload is None:
+        raise RuntimeError(f"Groq STT unreachable after 3 attempts. Last error: {last_error}")
+
+    return payload
+
+
+def _transcribe_groq(wav_path: str, client):
+    """Transcribe a WAV file with Groq's hosted Whisper endpoint."""
+    size = os.path.getsize(wav_path)
+    if size > GROQ_MAX_UPLOAD_BYTES:
+        raise RuntimeError(
+            f"Audio is {size / 1048576:.1f}MB, above Groq's "
+            f"{GROQ_MAX_UPLOAD_BYTES / 1048576:.0f}MB upload limit."
+        )
+
+    payload = _groq_request(wav_path, client, GROQ_LANGUAGE or None)
+
+    # Urdu speech is frequently detected as Hindi and returned in Devanagari,
+    # which the classifier was never trained on. Re-ask for Urdu explicitly.
+    if (
+        not GROQ_LANGUAGE
+        and GROQ_RETRY_HINDI_AS_URDU
+        and (payload.get("language") or "").strip().lower() in ("hindi", "hi")
+    ):
+        print("  [STT] Detected Hindi - re-transcribing as Urdu (script mismatch)")
+        payload = _groq_request(wav_path, client, "ur")
+
+    raw_lang = (payload.get("language") or "unknown").strip().lower()
+    detected_lang = _GROQ_LANG_CODES.get(raw_lang, raw_lang)
+
+    segments = []
+    for seg in payload.get("segments") or []:
+        text = (seg.get("text") or "").strip()
+        if not text:
+            continue
+        segments.append({
+            "start": float(seg.get("start") or 0.0),
+            "end": float(seg.get("end") or 0.0),
+            "text": text,
+        })
+
+    # Some responses omit per-segment timings; fall back to one whole-call segment
+    # so the classifier still sees the transcript.
+    if not segments:
+        full_text = (payload.get("text") or "").strip()
+        if full_text:
+            segments = [{
+                "start": 0.0,
+                "end": float(payload.get("duration") or 0.0),
+                "text": full_text,
+            }]
+
+    return segments, detected_lang
+
+
 def transcribe_audio(wav_path: str, model=None, backend: str = None):
     """
     Transcribe a 16 kHz mono WAV file into timestamped segments.
@@ -130,7 +296,8 @@ def transcribe_audio(wav_path: str, model=None, backend: str = None):
     Args:
         wav_path: Path to WAV file (use src.audio.export_wav first)
         model: Pre-loaded STT model (or None to load default)
-        backend: "faster-whisper" or "openai-whisper" (or None to auto-detect)
+        backend: "faster-whisper", "openai-whisper", or "groq"
+                 (or None to load the configured default)
 
     Returns:
         list of dicts: [{"start": float, "end": float, "text": str}, ...]
@@ -139,7 +306,10 @@ def transcribe_audio(wav_path: str, model=None, backend: str = None):
     if model is None:
         model, backend = load_stt_model()
 
-    if backend == "faster-whisper":
+    if backend == "groq":
+        segments, detected_lang = _transcribe_groq(wav_path, model)
+
+    elif backend == "faster-whisper":
         # beam_size=1 (greedy) is ~2-3x faster than beam_size=5 with minimal
         # quality loss for short scam-call transcripts. condition_on_previous_text
         # is disabled to reduce cross-segment hallucination.

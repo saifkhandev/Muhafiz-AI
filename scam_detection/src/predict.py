@@ -15,7 +15,6 @@ import joblib
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.config import MODEL_DIR, LABEL_SCAM, FULL_PIPELINE_FILENAME, LABEL_ENCODER_FILENAME, THRESHOLD_FILENAME, METADATA_FILENAME
-from src.train import MODEL_CONFIGS
 from src.guardrails import apply_guardrails
 
 

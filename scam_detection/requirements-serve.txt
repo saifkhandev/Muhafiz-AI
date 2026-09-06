@@ -1,0 +1,28 @@
+# Production serving dependencies for the FastAPI backend (api/main.py).
+#
+# Use this instead of requirements.txt when deploying: it drops the training
+# and reporting stack (pandas, matplotlib, seaborn, openpyxl) and the local
+# Whisper weights (faster-whisper), which are only needed to retrain the model
+# or to run STT_BACKEND=local.
+#
+#   pip install -r requirements-serve.txt   →  STT_BACKEND=groq (~224MB RSS)
+#   pip install -r requirements.txt         →  STT_BACKEND=local (~2.7GB RSS)
+
+# ── Model inference (loads models/full_pipeline.joblib) ──────────────────────
+numpy>=1.24.0
+scikit-learn>=1.3.0
+scipy>=1.10.0
+joblib>=1.3.0
+
+# ── Web API ─────────────────────────────────────────────────────────────────
+fastapi>=0.110.0
+uvicorn>=0.29.0
+python-multipart>=0.0.9
+python-dotenv>=1.0.0
+
+# ── Audio handling (format conversion + duration check) ──────────────────────
+pydub>=0.25.1
+audioop-lts; python_version >= "3.13"
+
+# ── Hosted speech-to-text (STT_BACKEND=groq) ────────────────────────────────
+httpx>=0.27.0

@@ -25,7 +25,7 @@ from pydantic import BaseModel
 from src.predict import predict_message, load_model
 from src.call_predict import predict_call
 from src.transcribe import load_stt_model
-from src.config import MAX_AUDIO_DURATION_SECONDS
+from src.config import MAX_AUDIO_DURATION_SECONDS, STT_BACKEND
 from src.preprocessing import (
     URGENCY_KEYWORDS,
     FINANCIAL_KEYWORDS,
@@ -170,7 +170,7 @@ async def lifespan(app: FastAPI):
         _app_state["stt_backend"] = None
         print("[BACKEND] STT skipped (ENABLE_AUDIO=false) - audio endpoint disabled, text analysis active")
     else:
-        print("[BACKEND] Loading STT model (medium Whisper)...")
+        print(f"[BACKEND] Loading STT (STT_BACKEND={STT_BACKEND})...")
         try:
             stt_model, stt_backend = load_stt_model()
             _app_state["stt_model"] = stt_model
@@ -315,6 +315,7 @@ async def analyze_audio(audio: UploadFile = File(...)):
             stt_backend=_app_state["stt_backend"],
         )
     except Exception as e:
+        print(f"[BACKEND] Audio analysis failed: {type(e).__name__}: {e}")
         raise HTTPException(status_code=500, detail="Audio analysis failed. Please try again with a different file.")
     finally:
         shutil.rmtree(temp_dir, ignore_errors=True)

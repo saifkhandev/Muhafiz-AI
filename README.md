@@ -412,44 +412,160 @@ Muhafiz-AI/
 - **Python 3.12+** — [python.org](https://python.org)
 - **Git** — [git-scm.com](https://git-scm.com)
 - *(Optional)* **FFmpeg** — only needed for exotic audio formats; common formats (mp3, wav, m4a, aac, webm) work without it
-- For audio analysis: ~2 GB free RAM and the Whisper medium model (see `scam_detection/models/README.md`)
+- For audio analysis, either a **Groq API key** (free, nothing to download) or **~2.7 GB free RAM** plus the local Whisper model — see [Choosing an STT backend](#step-3--choose-a-speech-to-text-backend)
 
-### Installation
+---
+
+### Step 1 — Install
 
 ```bash
-# 1. Clone the repository
+# Clone the repository
 git clone https://github.com/saifkhandev/Muhafiz-AI.git
 cd Muhafiz-AI/scam_detection
 
-# 2. Backend — create a virtual environment and install dependencies
+# Create a virtual environment
 python -m venv venv
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-pip install -r requirements.txt
-
-# 3. (Optional, for audio analysis) download the Whisper medium model
-#    → see scam_detection/models/README.md
-
-# 4. Start the backend (loads the V4 model + Whisper once at startup, ~60 s)
-python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
-
-# 5. Frontend — in a new terminal
-cd web
-npm install
-npm run dev
-# → open http://localhost:3000
+source venv/bin/activate        # macOS/Linux
+venv\Scripts\activate           # Windows
 ```
 
-**Windows shortcut:** double-click `START-WEBSITE.bat` in the repo root — it starts both servers and opens the browser automatically.
+Then pick **one** dependency profile:
+
+| Profile | Command | Installs | Use when |
+|---|---|---|---|
+| **Serving** | `pip install -r requirements-serve.txt` | 30 packages, 297 MB | Running the web app with `STT_BACKEND=groq`. This is what you deploy. |
+| **Full** | `pip install -r requirements.txt` | 57 packages, 824 MB | You need `STT_BACKEND=local`, or you want to retrain / re-evaluate the model |
+
+The serving profile omits the training stack (`pandas`, `matplotlib`, `seaborn`, `openpyxl`) and local Whisper (`faster-whisper` and its CUDA/ONNX dependencies).
+
+---
+
+### Step 2 — Configure `.env`
+
+Backend settings are read from environment variables. For local development, put them in `scam_detection/.env`:
+
+```bash
+cp .env.example .env
+```
+
+Then edit `.env`:
+
+```ini
+# Speech-to-text backend: "groq" (hosted) or "local" (on this machine)
+STT_BACKEND=groq
+
+# Required when STT_BACKEND=groq — get a free key at https://console.groq.com
+GROQ_API_KEY=gsk_your_key_here
+
+# Optional — whisper-large-v3 is the most accurate on Urdu
+GROQ_STT_MODEL=whisper-large-v3
+```
+
+`.env` is **gitignored and must never be committed** — it holds a live API key. `.env.example` is the committed template with no secrets in it. Real environment variables always take priority over `.env`, so hosted deploys (Render, Vercel) keep using their own dashboard settings.
+
+> **Text analysis needs no configuration at all.** Skip this step entirely and the app still classifies messages — only the audio endpoint is affected.
+
+---
+
+### Step 3 — Choose a speech-to-text backend
+
+`STT_BACKEND` selects how call recordings are transcribed. Both produce identical API responses.
+
+| | `groq` | `local` |
+|---|---|---|
+| Setup | an API key | 1.5 GB model download |
+| Backend RAM | **176 MB** | **2.68 GB** |
+| Speed (21.7 s call) | **~1.9 s** | far slower on CPU |
+| Privacy | audio is uploaded to Groq | audio never leaves your server |
+| Works offline | no | yes |
+| Free-tier hosting | fits 512 MB tiers | needs a 2 GB+ host |
+
+*(RAM figures measured on this codebase, not estimates.)*
+
+**Recommended:** `groq` for deployment and everyday use, `local` when you need privacy or offline operation.
+
+For `local`, download the Whisper model once — see [`scam_detection/models/README.md`](scam_detection/models/README.md) — and install the **full** dependency profile.
+
+---
+
+### Step 4 — Run
+
+Two terminals, from `scam_detection/`:
+
+```bash
+# Terminal 1 — backend
+source venv/bin/activate
+python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
+
+# Terminal 2 — frontend
+cd web
+npm install        # first run only
+npm run dev
+```
+
+Open **http://localhost:3000**.
+
+Startup takes a few seconds with `STT_BACKEND=groq`, or ~60 s with `local` (it loads Whisper into memory once). Confirm the backend is healthy and using the backend you expect:
+
+```bash
+curl http://localhost:8000/api/health
+# {"status":"ok","model":"V4_adversarial_505","threshold":0.63,"stt":"groq","audioEnabled":true}
+```
+
+**Windows shortcut:** double-click `START-WEBSITE.bat` in the repo root — it starts both servers and opens the browser.
+
+---
+
+### Step 5 — Use it
+
+**In the browser** (http://localhost:3000):
+- **Text tab** — paste an SMS or WhatsApp message, or click a built-in example, and read the verdict, risk score, detected language, and the scam signals that were matched
+- **Call tab** — upload a recording (mp3, wav, m4a, webm, aac, ogg, flac, max 5 minutes) or record live with your microphone, then read the call-level verdict and the segment-by-segment timeline
+- **Language button** in the navbar switches the whole interface between English and Urdu (RTL)
+
+**From the command line:**
+
+```bash
+# Analyze a message
+curl -X POST http://localhost:8000/api/analyze-text \
+  -H 'Content-Type: application/json' \
+  -d '{"text":"Mubarak ho! Aap ne 10 lakh ka inaam jeeta hai. Apna CNIC bhejein."}'
+
+# Analyze a call recording
+curl -X POST http://localhost:8000/api/analyze-audio \
+  -F "audio=@call.mp3;type=audio/mpeg"
+```
+
+---
 
 ### Environment Variables
 
 | Variable | Where | Purpose |
 |---|---|---|
-| `ENABLE_AUDIO` | Backend | `false` skips loading Whisper (small servers; the audio endpoint returns an honest 503, text analysis stays fully active). Default: `true` |
+| `ENABLE_AUDIO` | Backend | `false` skips loading STT entirely (the audio endpoint returns an honest 503, text analysis stays fully active). Default: `true` |
+| `STT_BACKEND` | Backend | `local` runs faster-whisper on the server — fully private, needs the 1.5 GB model and ~2.7 GB RAM. `groq` calls Groq's hosted Whisper over HTTP — no local model, ~176 MB RAM, but audio is uploaded to Groq. Default: `local` |
+| `GROQ_API_KEY` | Backend | Required when `STT_BACKEND=groq`. Get one free at [console.groq.com](https://console.groq.com) |
+| `GROQ_STT_MODEL` | Backend | Groq model id. Default: `whisper-large-v3` (more accurate on Urdu than `whisper-large-v3-turbo`, which is faster but weaker on non-English audio; `distil-whisper-large-v3-en` is English-only and unusable here) |
+| `GROQ_LANGUAGE` | Backend | Force a transcription language (`ur`, `en`, …). Default: empty = auto-detect |
+| `GROQ_RETRY_HINDI_AS_URDU` | Backend | Whisper frequently labels Pakistani Urdu as Hindi and transcribes it in **Devanagari**, a script the classifier was never trained on — this caused measured false negatives (a "send your CNIC and ATM PIN" segment scored 5.8% Safe). `true` re-transcribes those calls with `language=ur`, restoring Urdu script (the same segment then scored 75.2% Scam). Costs one extra API call. Default: `true` |
+| `GROQ_TIMEOUT_SECONDS` | Backend | Per-request timeout for Groq calls. Default: `120` |
+| `CORS_ORIGINS` | Backend | Comma-separated allowed origins. Default includes the Vercel domains and `localhost:3000` |
 | `NEXT_PUBLIC_API_URL` | Frontend | Base URL of the backend, e.g. `https://your-api.onrender.com` (no trailing slash). Default: `http://localhost:8000` |
+
+---
+
+### Troubleshooting
+
+| Symptom | Cause and fix |
+|---|---|
+| `STT_BACKEND=groq but GROQ_API_KEY is not set` | No key in `.env` or the environment. Add `GROQ_API_KEY`, or set `STT_BACKEND=local` |
+| Audio endpoint returns **503** | STT never loaded — either `ENABLE_AUDIO=false`, or the model failed to load. Check the backend startup log |
+| `ModuleNotFoundError: No module named 'faster_whisper'` | You installed `requirements-serve.txt` but set `STT_BACKEND=local`. Install `requirements.txt`, or switch to `groq` |
+| Backend gets OOM-killed on a small host | Local Whisper needs ~2.7 GB. Use `STT_BACKEND=groq` (~176 MB) |
+| `Groq STT unreachable after 3 attempts` | Network failure or rate limit. The retry already backs off; check your quota at console.groq.com |
+| Frontend shows a network error | Backend not running, or `NEXT_PUBLIC_API_URL` points somewhere else. Check `curl localhost:8000/api/health` |
+
+---
 
 ### Build for Production
 
@@ -474,11 +590,11 @@ The project deploys as two services:
 | Layer | Platform | Root Directory | Key Settings |
 |---|---|---|---|
 | Frontend | **Vercel** | `scam_detection/web` | Framework: **Next.js** · env `NEXT_PUBLIC_API_URL` = backend URL |
-| Backend | **Render** | `scam_detection` | Build: `pip install -r requirements.txt` · Start: `python -m uvicorn api.main:app --host 0.0.0.0 --port $PORT` · env `ENABLE_AUDIO=false` (free tier) |
+| Backend | **Render** | `scam_detection` | Build: `pip install -r requirements-serve.txt` · Start: `python -m uvicorn api.main:app --host 0.0.0.0 --port $PORT` · env `STT_BACKEND=groq` + `GROQ_API_KEY` (free tier) |
 
 Every `git push` to `main` auto-redeploys both services.
 
-**Free-tier notes:** Render's free instances sleep after 15 min of inactivity (the first request afterwards takes ~1 min — ping `/api/health` before demos). Audio analysis is disabled on the free tier because Whisper needs ~1.5 GB RAM; the UI shows an honest "unavailable on this server" message, and full audio analysis runs locally via `START-WEBSITE.bat`.
+**Free-tier notes:** Render's free instances sleep after 15 min of inactivity (the first request afterwards takes ~1 min — ping `/api/health` before demos). Audio analysis needs ~2.7 GB RAM with local Whisper, which no 512 MB free tier can host — set `STT_BACKEND=groq` to run it in 224 MB instead. With `ENABLE_AUDIO=false` the UI still shows an honest "unavailable on this server" message.
 
 ---
 

@@ -1,5 +1,8 @@
-# Scam Detection ML Pipeline - Requirements
+# Scam Detection ML Pipeline - Requirements (full: training + serving)
 # Python 3.10+
+#
+# For deployment, use requirements-serve.txt instead - it omits the training
+# stack and local Whisper weights.
 numpy>=1.24.0
 pandas>=2.0.0
 scikit-learn>=1.3.0
@@ -10,11 +13,13 @@ matplotlib>=3.7.0
 seaborn>=0.12.0
 
 # ── Web API (FastAPI backend: api/main.py) ────────────────────────────────
+python-dotenv>=1.0.0
 fastapi>=0.110.0
 uvicorn>=0.29.0
 python-multipart>=0.0.9
 
 # ── Scam-Call Detection (Audio pipeline) ─────────────────────────────────
-faster-whisper>=1.0.0
+faster-whisper>=1.0.0          # only needed for STT_BACKEND=local
+httpx>=0.27.0                 # Groq STT calls (STT_BACKEND=groq)
 pydub>=0.25.1
 audioop-lts; python_version >= "3.13"
