@@ -1,24 +1,18 @@
 {
   "test": "V4_holdout_100",
   "total": 100,
-  "accuracy": 94.0,
-  "precision": 97.83,
+  "accuracy": 95.0,
+  "precision": 100.0,
   "recall": 90.0,
-  "specificity": 98.0,
-  "fpr": 2.0,
+  "specificity": 100.0,
+  "fpr": 0.0,
   "tp": 45,
-  "fp": 1,
-  "tn": 49,
+  "fp": 0,
+  "tn": 50,
   "fn": 5,
   "threshold": 0.63,
   "model_version": "V4_adversarial_505",
-  "fp_messages": [
-    [
-      "R38",
-      "Meezan Gold Fund: Aap ki investment Rs. 200,000 ab Rs. 235,000 ki ho gayi hai. NAV: Rs. 117.50/unit.",
-      0.636
-    ]
-  ],
+  "fp_messages": [],
   "fn_messages": [
     [
       "S25",

@@ -84,7 +84,7 @@ ACCOUNT_SECURITY_CONTEXT = [
 
 # Urgency / service-termination threats used in phishing
 URGENCY_THREAT_PHRASES = [
-    "keep active", "keep your services", "avoid suspension", "will be suspended",
+    "keep active", "keep your services", "keep services active", "avoid suspension", "will be suspended",
     "will be disabled", "will be deactivated", "prevent", "immediate action",
     "within 24 hours", "within 48 hours", "expires", "expiration",
 ]

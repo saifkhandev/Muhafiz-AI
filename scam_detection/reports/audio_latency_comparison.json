@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "purpose": "CPU latency comparison for the available local audio samples; transcription quality requires labeled ground truth before a production model-size decision.",
+  "environment": {
+    "backend": "faster-whisper",
+    "compute_type": "int8",
+    "device": "cpu"
+  },
+  "samples": [
+    {
+      "id": "audio_001",
+      "duration_seconds": 6.6,
+      "medium_processing_seconds": 24.3,
+      "small_processing_seconds": 6.0,
+      "transcript_stability": "equivalent English transcription"
+    },
+    {
+      "id": "audio_002",
+      "duration_seconds": 11.6,
+      "medium_processing_seconds": 25.2,
+      "small_processing_seconds": 7.0,
+      "transcript_stability": "material Urdu transcription and risk-score difference; no ground-truth transcript available"
+    },
+    {
+      "id": "audio_003",
+      "duration_seconds": 5.2,
+      "medium_processing_seconds": 24.5,
+      "small_processing_seconds": 5.9,
+      "transcript_stability": "material Hindi/Urdu transcription difference; no ground-truth transcript available"
+    }
+  ],
+  "summary": {
+    "medium_mean_processing_seconds": 24.7,
+    "small_mean_processing_seconds": 6.3,
+    "small_speedup_ratio": 3.9,
+    "small_first_load_seconds": 519.8,
+    "recommendation": "Keep medium as the accuracy baseline. Use small only for a latency-constrained deployment after comparison against verified audio/transcript labels."
+  }
+}

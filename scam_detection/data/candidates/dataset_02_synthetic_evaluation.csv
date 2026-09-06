@@ -1,0 +1,106 @@
+"text","label","type","language","category","difficulty","generation_type"
+"Congratulations! Your number has WON PKR 2,500,000 in the Alibaba Cloud Lucky Draw. Send your CNIC and bank details to claim within 24 hours or forfeit the prize.","scam","sms","english","lottery_prize","easy","synthetic"
+"Your parcel from China is held at customs. Pay a clearance fee of PKR 1,800 via the link below within 6 hours to release it: bit.ly/pk-customs182","scam","sms","english","courier_customs_fee","easy","synthetic"
+"Microsoft Security Center: We detected 3 viruses on your Windows PC. Call our certified technician now at the number below before your files are deleted.","scam","sms","english","tech_support_scam","borderline","synthetic"
+"Hi, this is Adeel from HR. We appreciate your recent application. Before we proceed, could you kindly share a small processing fee for your onboarding kit? It's fully refundable with your first salary.","scam","sms","english","advance_fee_scam","hard","synthetic"
+"Dear Customer, a debit of PKR 15,000 was made on your TrustLink Bank card ending 4417 at 10:42 AM. If this wasn't you, call our 24/7 helpline immediately.","safe","sms","english","legit_bank_alert","easy","synthetic"
+"Your QuickCart order #QC88213 has been dispatched and will arrive tomorrow between 2-5 PM. Track it here: quickcart-track.pk/88213","safe","sms","english","legit_delivery","easy","synthetic"
+"Reminder: your dentist appointment with Dr. Hina Baig is tomorrow at 4:30 PM at Clifton Dental Clinic. Reply CONFIRM or CANCEL.","safe","sms","english","legit_appointment","easy","synthetic"
+"Hey! Are we still on for chai at Cafe Zouq around 6? Let me know if you want me to grab a table early.","safe","sms","english","personal_casual","easy","synthetic"
+"Dear Customer, as per SBP's mandatory KYC policy, please update your CNIC expiry details by visiting any TrustLink Bank branch before Sep 30 to avoid account restriction. Ignore if already updated.","safe","sms","english","legit_customer_service","borderline","synthetic"
+"بینظیر انکم سپورٹ پروگرام کی جانب سے آپ کے اکاؤنٹ میں 25000 روپے کی رقم منظور ہوئی ہے۔ رقم وصول کرنے کے لیے اپنا موبائل نمبر اور بائیومیٹرک کوڈ اس نمبر پر بھیجیں۔","scam","sms","urdu_script","bisp_ehsaas_fraud","hard","synthetic"
+"احساس پروگرام: آپ کی درخواست کی تصدیق کے لیے قریبی این ایس ای آر رجسٹریشن سینٹر تشریف لائیں۔ کسی کو او ٹی پی یا کوڈ شیئر نہ کریں۔","safe","sms","urdu_script","legit_bisp","borderline","synthetic"
+"پیغام: آپ کا بجلی کا بل واجب الادا ہے۔ آج رات 12 بجے سے پہلے ادائیگی نہ کی تو کنکشن منقطع کر دیا جائے گا۔ ابھی اس لنک پر ادائیگی کریں: bit.ly/bill-pay92","scam","sms","urdu_script","utility_bill_scam","easy","synthetic"
+"مبارک ہو! آپ کے نمبر پر 1000 روپے کا بیلنس جیتا ہے۔ کلیم کرنے کے لیے *123*4567# ڈائل کریں۔","scam","sms","urdu_script","sim_balance_scam","easy","synthetic"
+"عید کے موقع پر خصوصی رعایت! منسلک QR کوڈ اسکین کر کے صرف 10 روپے میں 5000 روپے کا کیش بیک حاصل کریں، آفر صرف آج کے لیے ہے۔","scam","sms","urdu_script","qr_phishing","borderline","synthetic"
+"محترم صارف، آپ کے اکاؤنٹ سے 5000 روپے کی ادائیگی جاری کی گئی ہے۔ اگر یہ آپ نے نہیں کی تو فوراً ہماری ہیلپ لائن پر رابطہ کریں۔","safe","sms","urdu_script","legit_bank_alert","easy","synthetic"
+"السلام علیکم، کل والی میٹنگ کا وقت تبدیل ہو گیا ہے، اب دوپہر ایک بجے ہوگی، وقت پر پہنچ جائیے گا۔","safe","sms","urdu_script","personal_casual","easy","synthetic"
+"یہ پیغام ایف آئی اے سائبر کرائم ونگ کی جانب سے ہے۔ آپ کے نمبر کے خلاف ایک شکایت درج ہوئی ہے۔ 24 گھنٹوں میں جواب نہ دینے کی صورت میں وارنٹ جاری کر دیا جائے گا، رابطہ کریں۔","scam","sms","urdu_script","fia_impersonation","hard","synthetic"
+"آپ کا آرڈر روانہ کر دیا گیا ہے اور کل دوپہر تک پہنچ جائے گا۔ ٹریکنگ نمبر: TRK55219۔","safe","sms","urdu_script","legit_delivery","easy","synthetic"
+"URGENT: ap ka account suspend hone wala hai. Apna OTP abhi is number pe bhejein warna 24 ghante mein band ho jaega.","scam","sms","roman_urdu","bank_otp_fraud","easy","synthetic"
+"Bhai gari ka ad dekha, advance 5000 bhej dein booking k liye, baki cash on delivery de dena, itna trust to banta hai na","scam","sms","roman_urdu","olx_marketplace","borderline","synthetic"
+"Ap ka parcel out for delivery hai, rider 30 min mein pahunch jaega, plz phone on rakhein.","safe","sms","roman_urdu","legit_delivery","easy","synthetic"
+"ap k bill ki last date aj h, abi pay krdein is link p wrna line kat degi company: paylink.pk/8821","scam","sms","roman_urdu","utility_bill_scam","hard","synthetic"
+"Yar kal wali assignment submit krdi? Mujhe b bhej dena reference k lye","safe","sms","roman_urdu","personal_casual","easy","synthetic"
+"Congrats! Ap ne 500 rupay ka balance jeeta hai, claim krne k lye *555# dial karein","scam","sms","roman_urdu","sim_balance_scam","easy","synthetic"
+"Ap ka appointment doctor k sath kal 5 baje hai, time p ajaiyega.","safe","sms","roman_urdu","legit_appointment","easy","synthetic"
+"GoRide rider bol raha hun, ap k order ka advance payment nahi hui, cancel hone se pehle is number p easypaisa krdein","scam","sms","roman_urdu","bykea_delivery_scam","borderline","synthetic"
+"Ehsaas registration k lye apna CNIC lekar nazdeeki center jaein, koi b humein call pe OTP nahi manga jata.","safe","sms","roman_urdu","legit_bisp","borderline","synthetic"
+"Ye official WhatsApp Business support hai, apka account verify hone wala hai, neeche diye gaye link p apna number confirm krdein warna account delete hojaega","scam","sms","roman_urdu","whatsapp_business_impersonation","hard","synthetic"
+"Hi, we reviewed your LinkedIn profile — aap ka experience hamare remote data-entry role k liye perfect hai. Salary PKR 80,000/month, bas ek chota registration fee submit karna hoga onboarding k liye.","scam","sms","mixed","linkedin_job_scam","borderline","synthetic"
+"Hi Amaan, thanks for applying to the Junior Developer role. Aapka interview Monday 11 AM par scheduled hai, office address email mein bhej diya hai.","safe","sms","mixed","legit_job_offer","easy","synthetic"
+"Alert: aapke device mein malware detect hua hai (error code 0x8007). Turant is number par call karein warna aapka data 1 hour mein permanently corrupt ho jayega.","scam","sms","mixed","tech_support_scam","hard","synthetic"
+"Your international parcel PK449 is on hold — customs duty PKR 2,450 pay karna hoga, warna 48 hours mein return kar diya jayega. Pay here: track-pk.co/449","scam","sms","mixed","courier_customs_fee","borderline","synthetic"
+"[Caller]: Assalam o alaikum, main TrustLink Bank se bol raha hoon.
+[Recipient]: Ji boliye.
+[Caller]: Aap ka account mein kuch suspicious activity dekhi gayi hai, hum ne isay temporarily block kar diya hai.
+[Recipient]: Achha, ab kya karna hoga?
+[Caller]: Aap ko ek OTP aayega, wo humein confirm karwana hoga taake account unblock ho sake.
+[Recipient]: Theek hai, ek second... haan aa gaya, 7734.
+[Caller]: Shukriya, bas kuch minute mein account active ho jaega.","scam","call_transcript","roman_urdu","bank_otp_fraud","easy","synthetic"
+"[Caller]: Hello hello, ap sunn rahe hain? Ye FIA cyber crime se call hai.
+[Recipient]: Ji, kya masla hai?
+[Caller]: Ap k ambar pe ek complaint file hui hai online fraud ki.
+[Recipient]: Mujhe kuch pata nahi is bare mein.
+[Caller]: Hum samajhte hain, lekin ye serious matter hai, agar ap statement record nahi karwate 2 ghanton mein to warrant issue ho jaega, is lye apna CNIC number confirm karwa dein.
+[Recipient]: Umm... theek hai, ye raha...","scam","call_transcript","roman_urdu","fia_impersonation","hard","synthetic"
+"[Caller]: Mubarak ho, apka number lucky draw mein select hua hai, 2000 rupay ka balance mila hai.
+[Recipient]: Achha ye kaise milega?
+[Caller]: Bas *555# dial kar k apna PIN confirm kar dein.
+[Recipient]: Theek hai, dial kar leta hun.","scam","call_transcript","roman_urdu","sim_balance_scam","easy","synthetic"
+"[Caller]: Assalam o alaikum, main ConnectPK customer support se bol raha hun, apka complaint number 4521 tha.
+[Recipient]: Ji ji, wo internet wala masla tha.
+[Caller]: Ji, wo resolve ho gaya hai hamari taraf se, agar phir b masla ho to hamein 111 pe call kar lein.
+[Recipient]: Shukriya bhai.","safe","call_transcript","roman_urdu","legit_customer_service","easy","synthetic"
+"[Caller]: Assalam o alaikum, ye Dr. Fahad k clinic se call hai, apka appointment kal 4 baje confirm karna tha.
+[Recipient]: Ji haan main aa jaunga.
+[Caller]: Theek hai, waqt pe pohanch jaiyega.","safe","call_transcript","roman_urdu","legit_appointment","easy","synthetic"
+"[Caller]: Bhai wo bike wala ad dekha tha maine, abhi available hai?
+[Recipient]: Ji available hai.
+[Caller]: Theek hai main advance bhejta hun bhaina booking pakki karne k liye, ap mujhe apna easypaisa number de dein.
+[Recipient]: Haan bhej dein, ye number hai...
+[Caller]: Ok bhej diya, ap check karein — actually receive hone mein thora time lagega, ap advance mujhe wapis bhej dein reversal k liye taake dono transaction cancel ho jaye.","scam","call_transcript","roman_urdu","olx_marketplace","borderline","synthetic"
+"[Caller]: Oye kya haal hai, kal wali class attend ki thi?
+[Recipient]: Nahi yar so gaya tha, notes bhej dena.
+[Caller]: Theek hai bhej deta hun raat tak.","safe","call_transcript","roman_urdu","personal_casual","easy","synthetic"
+"[Caller]: Ye electricity company se call h, apka bill overdue hai, connection cut hone wala hai aj raat ko.
+[Recipient]: Kitna bill hai?
+[Caller]: 3400 rupay, abhi is easypaisa number pe bhej dein warna disconnect ho jaega turant.
+[Recipient]: Theek hai bhejta hun.","scam","call_transcript","roman_urdu","utility_bill_scam","hard","synthetic"
+"[Caller]: Hello sir, this is calling from Windows Support Center. Aap k computer mein critical error the tected hua hai.
+[Recipient]: Achha, konsa error?
+[Caller]: Sir agar hum abhi remote access nahi lete to aap ka data corrupt ho jaega, please open this website aur ye code type karein.
+[Recipient]: Umm theek hai, ek second...","scam","call_transcript","mixed","tech_support_scam","hard","synthetic"
+"[Caller]: Hi, this is calling from Bright Solutions HR, hum ne aapka resume shortlist kiya hai.
+[Recipient]: Oh nice, thank you.
+[Caller]: Aapka interview Thursday 11 AM hai, office address email pe bhej dete hain.
+[Recipient]: Perfect, thank you so much.","safe","call_transcript","mixed","legit_job_offer","easy","synthetic"
+"[Caller]: Hi, we saw your profile on LinkedIn, aap k experience k hisab se hum aapko ek remote part-time role offer kar rahe hain.
+[Recipient]: Sounds interesting, salary kitni hogi?
+[Caller]: 70,000 monthly, bas ek chota sa registration fee submit karna hoga onboarding kit k liye, refundable hai first salary k sath.
+[Recipient]: Achha, kitna fee hai?","scam","call_transcript","mixed","linkedin_job_scam","borderline","synthetic"
+"[Caller]: Hi, this is your rider, main aapke building k bahar hun, order deliver karna hai.
+[Recipient]: Ok main abhi aata hun neeche.
+[Caller]: Thank you, waiting hun.","safe","call_transcript","mixed","legit_delivery","easy","synthetic"
+"[Caller]: Sir your parcel from Dubai is currently held at customs, thora sa duty fee pay karna hoga release k liye.
+[Recipient]: Kitna hai fee?
+[Caller]: Sirf 1500 rupay, main aapko payment link bhej deta hun abhi.
+[Recipient]: Theek hai bhej dein.","scam","call_transcript","mixed","courier_customs_fee","borderline","synthetic"
+"[Caller]: Hello, this is calling from TrustLink Bank, hum sirf confirm karna chahte hain ke aapne apni cheque book collect kar li hai ya nahi.
+[Recipient]: Ji nahi, abhi tak nahi ki.
+[Caller]: Theek hai, aap kabhi bhi apni nearest branch se collect kar sakte hain, koi urgency nahi hai.","safe","call_transcript","mixed","legit_bank_alert","easy","synthetic"
+"[Caller]: Good afternoon, this is calling from Microsoft Technical Support. We've detected a serious virus on your computer.
+[Recipient]: Oh no, what should I do?
+[Caller]: Don't worry sir, just give me remote access to your PC and I'll clean it for you right now, free of cost.","scam","call_transcript","english","tech_support_scam","easy","synthetic"
+"[Caller]: Hi, this is a reminder call from City Dental Clinic for your appointment tomorrow at 3 PM.
+[Recipient]: Yes, I'll be there.
+[Caller]: Great, see you then. Please arrive 10 minutes early for paperwork.","safe","call_transcript","english","legit_appointment","easy","synthetic"
+"[Caller]: السلام علیکم، میں نیو کراچی ہاؤسنگ اسکیم سے بات کر رہا ہوں۔
+[Recipient]: جی فرمائیے۔
+[Caller]: ہمارے پاس ایک محدود آفر ہے، صرف پانچ ہزار روپے میں پلاٹ بک ہو سکتا ہے، قیمتیں اگلے ہفتے بڑھ جائیں گی۔
+[Recipient]: اچھا، مجھے سوچنے دیں۔
+[Caller]: جی مگر آفر آج رات ختم ہو رہی ہے، ابھی بکنگ کروا لیں۔","scam","call_transcript","urdu_script","real_estate_scam","borderline","synthetic"
+"[Caller]: السلام علیکم، یہ احساس پروگرام کے رجسٹریشن سینٹر سے کال ہے۔
+[Recipient]: جی بولیں۔
+[Caller]: آپ کی درخواست موصول ہو گئی ہے، براہ کرم اپنے نزدیکی سینٹر تشریف لا کر بائیومیٹرک تصدیق کروا لیں، ہم فون پر کوئی کوڈ نہیں مانگتے۔
+[Recipient]: جی ٹھیک ہے، شکریہ۔","safe","call_transcript","urdu_script","legit_bisp","easy","synthetic"

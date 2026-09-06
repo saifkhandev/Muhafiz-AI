@@ -28,103 +28,145 @@ def load_model():
     return artifacts, le, threshold, metadata
 
 
-def predict_message(message: str, artifacts=None, le=None, threshold=None, metadata=None):
-    """
-    Classify a single message.
+def _base_predictions(messages, artifacts, le, threshold, metadata):
+    """Return unmodified model predictions for a batch of messages."""
+    if not messages:
+        return []
 
-    Returns:
-        dict with:
-            label: "Scam" or "Safe"
-            scam_probability: float 0-1
-            confidence: float 0-1
-            threshold_used: float
-            model_name: str
-    """
-    if artifacts is None:
-        artifacts, le, threshold, metadata = load_model()
-
-    model_name = metadata["best_model_name"]
     model_type = metadata["model_type"]
-
     from scipy.sparse import issparse
 
     if model_type == "simple_pipeline":
-        # sklearn Pipeline or CalibratedClassifierCV
-        if hasattr(artifacts, "predict_proba"):
-            # CalibratedClassifierCV or Pipeline with predict_proba
-            proba = artifacts.predict_proba([message])[:, 1][0]
-        elif hasattr(artifacts[-1], "predict_proba"):
-            proba = artifacts.predict_proba([message])[:, 1][0]
-        elif hasattr(artifacts[-1], "decision_function"):
-            df = artifacts.decision_function([message])[0]
-            proba = 1 / (1 + np.exp(-df))
-        elif hasattr(artifacts, "decision_function"):
-            df = artifacts.decision_function([message])[0]
-            proba = 1 / (1 + np.exp(-df))
+        predictor = artifacts
+        if hasattr(predictor, "predict_proba"):
+            probabilities = predictor.predict_proba(messages)[:, 1]
+        elif hasattr(predictor, "decision_function"):
+            decisions = predictor.decision_function(messages)
+            probabilities = 1 / (1 + np.exp(-decisions))
         else:
-            proba = None
-        pred_label_idx = int(proba >= threshold) if proba is not None else int(artifacts.predict([message])[0])
+            probabilities = None
+        predicted_indices = (
+            (probabilities >= threshold).astype(int)
+            if probabilities is not None
+            else np.asarray(predictor.predict(messages), dtype=int)
+        )
 
     elif model_type == "combined":
-        norm = artifacts["normalizer"]
-        vec = artifacts["vectorizer"]
-        clf = artifacts["clf"]
-        X_norm = norm.transform([message])
-        X_vec = vec.transform(X_norm)
-        if hasattr(clf, "predict_proba"):
-            proba = clf.predict_proba(X_vec)[:, 1][0]
-        elif hasattr(clf, "decision_function"):
-            df = clf.decision_function(X_vec)[0]
-            proba = 1 / (1 + np.exp(-df))
+        normalizer = artifacts["normalizer"]
+        vectorizer = artifacts["vectorizer"]
+        classifier = artifacts["clf"]
+        normalized = normalizer.transform(messages)
+        features = vectorizer.transform(normalized)
+        if hasattr(classifier, "predict_proba"):
+            probabilities = classifier.predict_proba(features)[:, 1]
+        elif hasattr(classifier, "decision_function"):
+            decisions = classifier.decision_function(features)
+            probabilities = 1 / (1 + np.exp(-decisions))
         else:
-            proba = None
-        pred_label_idx = int(proba >= threshold) if proba is not None else int(clf.predict(X_vec)[0])
+            probabilities = None
+        predicted_indices = (
+            (probabilities >= threshold).astype(int)
+            if probabilities is not None
+            else np.asarray(classifier.predict(features), dtype=int)
+        )
 
     elif model_type == "engineered":
-        norm = artifacts["normalizer"]
+        normalizer = artifacts["normalizer"]
         tfidf = artifacts["tfidf"]
-        feat_ext = artifacts["feature_extractor"]
-        clf = artifacts["clf"]
-
-        X_norm = norm.transform([message])
-        X_tfidf = tfidf.transform(X_norm)
-        X_eng = feat_ext.transform([message])
-
-        X_tfidf_d = X_tfidf.toarray() if issparse(X_tfidf) else X_tfidf
-        X_combined = np.hstack([X_tfidf_d, X_eng])
-
-        if hasattr(clf, "predict_proba"):
-            proba = clf.predict_proba(X_combined)[:, 1][0]
-        elif hasattr(clf, "decision_function"):
-            df = clf.decision_function(X_combined)[0]
-            proba = 1 / (1 + np.exp(-df))
+        feature_extractor = artifacts["feature_extractor"]
+        classifier = artifacts["clf"]
+        normalized = normalizer.transform(messages)
+        tfidf_features = tfidf.transform(normalized)
+        engineered_features = feature_extractor.transform(messages)
+        dense_tfidf = tfidf_features.toarray() if issparse(tfidf_features) else tfidf_features
+        features = np.hstack([dense_tfidf, engineered_features])
+        if hasattr(classifier, "predict_proba"):
+            probabilities = classifier.predict_proba(features)[:, 1]
+        elif hasattr(classifier, "decision_function"):
+            decisions = classifier.decision_function(features)
+            probabilities = 1 / (1 + np.exp(-decisions))
         else:
-            proba = None
-        pred_label_idx = int(proba >= threshold) if proba is not None else int(clf.predict(X_combined)[0])
+            probabilities = None
+        predicted_indices = (
+            (probabilities >= threshold).astype(int)
+            if probabilities is not None
+            else np.asarray(classifier.predict(features), dtype=int)
+        )
 
-    label = le.inverse_transform([pred_label_idx])[0]
-    scam_prob = float(proba) if proba is not None else None
-    confidence = max(proba, 1 - proba) if proba is not None else None
+    else:
+        raise ValueError(f"Unsupported model type: {model_type}")
 
-    # Apply targeted post-processing guardrails for known failure modes
-    guardrail_proba, guardrail_label, guardrail_rule = apply_guardrails(
-        message, scam_prob, label
-    )
-    if guardrail_rule is not None:
-        scam_prob = guardrail_proba
-        label = guardrail_label
-        pred_label_idx = le.transform([label])[0]
-        confidence = max(scam_prob, 1 - scam_prob) if scam_prob is not None else None
+    labels = le.inverse_transform(predicted_indices)
+    return [
+        {
+            "base_label": str(label),
+            "base_scam_probability": float(probabilities[index]) if probabilities is not None else None,
+        }
+        for index, label in enumerate(labels)
+    ]
 
-    return {
-        "label": label,
-        "scam_probability": round(scam_prob, 4) if scam_prob is not None else None,
-        "confidence": round(confidence, 4) if confidence is not None else None,
-        "threshold_used": threshold,
-        "model_name": model_name,
-        "model_description": metadata.get("model_description", ""),
-        "guardrail": guardrail_rule,
-    }
+
+def predict_messages(messages, artifacts=None, le=None, threshold=None, metadata=None):
+    """
+    Classify a batch of messages with one vectorization/model pass.
+
+    Guardrails remain per-message because they depend on contextual language.
+    Each result exposes the base-model result so benchmark reports can identify
+    whether a guardrail changed the final verdict.
+    """
+    if artifacts is None:
+        artifacts, le, threshold, metadata = load_model()
+    if not messages:
+        return []
+
+    base_predictions = _base_predictions(messages, artifacts, le, threshold, metadata)
+    model_name = metadata["best_model_name"]
+    results = []
+
+    for message, base in zip(messages, base_predictions):
+        base_probability = base["base_scam_probability"]
+        label = base["base_label"]
+        scam_probability = base_probability
+        guardrail_probability, guardrail_label, guardrail_rule = apply_guardrails(
+            message, scam_probability, label
+        )
+        if guardrail_rule is not None:
+            scam_probability = guardrail_probability
+            label = guardrail_label
+
+        confidence = (
+            max(scam_probability, 1 - scam_probability)
+            if scam_probability is not None
+            else None
+        )
+        results.append({
+            "label": label,
+            "scam_probability": round(scam_probability, 4) if scam_probability is not None else None,
+            "confidence": round(confidence, 4) if confidence is not None else None,
+            "threshold_used": threshold,
+            "model_name": model_name,
+            "model_description": metadata.get("model_description", ""),
+            "guardrail": guardrail_rule,
+            "base_label": base["base_label"],
+            "base_scam_probability": (
+                round(base_probability, 4) if base_probability is not None else None
+            ),
+            "guardrail_changed_prediction": bool(
+                guardrail_rule is not None and label != base["base_label"]
+            ),
+        })
+    return results
+
+
+def predict_message(message: str, artifacts=None, le=None, threshold=None, metadata=None):
+    """Classify one message; use :func:`predict_messages` for batches."""
+    return predict_messages(
+        [message],
+        artifacts=artifacts,
+        le=le,
+        threshold=threshold,
+        metadata=metadata,
+    )[0]
 
 
 # ──────────────────────────────────────────────────────────────────────────────

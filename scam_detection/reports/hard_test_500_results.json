@@ -2,21 +2,36 @@
   "total": 505,
   "n_scam": 255,
   "n_safe": 250,
-  "accuracy": 99.6,
-  "precision": 99.61,
+  "accuracy": 99.01,
+  "precision": 98.45,
   "recall": 99.61,
-  "specificity": 99.6,
-  "f1": 99.6078,
-  "f2": 99.6078,
-  "fpr": 0.4,
+  "specificity": 98.4,
+  "f1": 99.0253,
+  "f2": 98.6791,
+  "fpr": 1.6,
   "fnr": 0.39,
   "tp": 254,
-  "fp": 1,
-  "tn": 249,
+  "fp": 4,
+  "tn": 246,
   "fn": 1,
   "threshold": 0.6300000000000004,
   "model_version": "V4_adversarial_505",
   "fp_messages": [
+    [
+      "Healthcare",
+      "Hospital bill: Rs. 15,000 for consultation and lab tests. Receipt attached.",
+      0.94
+    ],
+    [
+      "Healthcare",
+      "Medical store: Medicine order of Rs. 3,500 delivered.",
+      0.94
+    ],
+    [
+      "Healthcare",
+      "Hospital: Health card activated. Coverage: Rs. 500,000/year.",
+      0.94
+    ],
     [
       "Tricky Safe",
       "Loan approved: Rs. 500,000 personal loan. EMI Rs. 12,500/month for 5 years.",

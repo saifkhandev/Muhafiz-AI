@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "purpose": "Verified transcript regression cases. Keep source recordings and new evaluation data separate from model training.",
+  "records": [
+    {
+      "id": "call_card_phishing_001",
+      "label": "Scam",
+      "category": "card_phishing",
+      "transcript": "Yeah, this is Louis. This is Sammy Daniel calling you from off-coast fraud watch division. It's regarding the security of your Visa and MasterCard accounts. Due to the increase in computer related frauds, we've made some very important changes to our policies. And I just want to brief you on those changes, Mr. Fahey. Alright, hold on one second here man. It's time to proceed with the procedure that we're telling all the customers that now that because of computer related frauds, the card holders are held responsible to the MasterCard and Visa. So right now what we're doing is providing protection so right now we underwrite everything that's any extra fraud charge on your credit card, we underwrite it right away. You'll also receive in a package in about 7 to 10 days from now via UPS. And in this package you'll find stickers and also a registration form. On this registration form you'll write down all your account numbers, telephone cards, department store cards, any other cards that you have in your household, so that we can protect all of them. Now today I will be giving you a new security code, okay? In order for me to give you a security code, I just need to ensure that you are the right authorized card holder, so if you can just confirm your card with me. Which card are you going to be using, your Visa or your Mastercard?"
+    }
+  ]
+}

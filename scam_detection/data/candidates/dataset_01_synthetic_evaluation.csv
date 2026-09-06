@@ -1,0 +1,51 @@
+text,label,type,language,category,difficulty,generation_type
+"Your account verification is pending. Confirm through the attached secure form within 2 hours to prevent suspension.",scam,sms,english,bank_otp_fraud,easy,synthetic
+"محترم صارف، آپ کے امدادی وظیفے کی رقم منظور ہو گئی ہے۔ وصولی کے لیے تصدیقی فیس جمع کروائیں۔",scam,sms,urdu_script,bisp_ehsaas_fraud,easy,synthetic
+"Apka parcel customs me rok diya gaya hai, choti si fee pay kr k delivery release krwaen.",scam,sms,roman_urdu,courier_customs_fee,easy,synthetic
+"Congratulations! Your mobile number has won a cash reward. Pay the processing charge to claim it.",scam,sms,english,lottery_prize,easy,synthetic
+"آپ کے بجلی کے بل کی ادائیگی ناکام ہے، کنکشن منقطع ہونے سے پہلے لنک کھول کر دوبارہ ادائیگی کریں۔",scam,sms,urdu_script,utility_bill_scam,borderline,synthetic
+"Sir apka wallet security check k liye temporarily hold hai, agent ko verification amount bhej dein phir balance unlock ho jayega.",scam,call_transcript,roman_urdu,sim_balance_scam,borderline,synthetic
+"[Caller]: Hello, main technical support se bol raha hoon. [Recipient]: Ji? [Caller]: Aap ke phone par security issue detect hua hai. Remote app install kar dein, main system clean kar deta hoon.",scam,call_transcript,english,tech_support_scam,easy,synthetic
+"[Caller]: Assalam o Alaikum, main agency office se bol raha hoon. [Recipient]: Kis silsilay mein? [Caller]: Aap ke khilaf complaint hai. Agar abhi settlement fee transfer na ki to case aage bhej diya jayega.",scam,call_transcript,mixed,fia_impersonation,borderline,synthetic
+"Ap ne online job k liye apply kiya tha na? Selection ho gai hai, bas registration charges jama krwa dein phir offer letter WhatsApp pe aa jayega.",scam,sms,roman_urdu,advance_fee_scam,easy,synthetic
+"Your property investment application has been approved. Send a refundable reservation amount today to secure the plot.",scam,sms,english,real_estate_scam,borderline,synthetic
+"[Caller]: Jee bas ek QR code scan karna hai. [Recipient]: Payment ke liye? [Caller]: Nahi nahi, sirf verification hai. [Recipient]: Is mein amount kyun aa raha hai? [Caller]: System aise hi confirm karta hai.",scam,call_transcript,mixed,qr_phishing,hard,synthetic
+"Apki marketplace sale ka payment pending hy. Buyer ne transfer kr diya hai, refund verification k liye QR scan kr dein.",scam,sms,roman_urdu,olx_marketplace,hard,synthetic
+"[Caller]: Main delivery rider hoon, aapka parcel gate par hai. [Recipient]: Maine kuch order nahi kiya. [Caller]: Ji system mein naam aa raha hai, cancellation ke liye choti payment karni hogi.",scam,call_transcript,roman_urdu,bykea_delivery_scam,borderline,synthetic
+"Dear candidate, your LinkedIn application has moved to final review. Purchase the required onboarding certificate before interview scheduling.",scam,sms,english,linkedin_job_scam,hard,synthetic
+"آپ کے اکاؤنٹ سے مشکوک لاگ اِن ہوا ہے۔ تصدیق کے لیے اپنا OTP نمائندے کو بتائیں، ورنہ اکاؤنٹ بند ہو جائے گا۔",scam,sms,urdu_script,bank_otp_fraud,borderline,synthetic
+"Apka SIM balance update nhi ho rha, customer care wale ne kaha 50 rupay ka test recharge kro phir service restore hogi.",scam,call_transcript,roman_urdu,sim_balance_scam,hard,synthetic
+"[Caller]: Aap ko tax department ki taraf se notice hai. [Recipient]: Notice kahan hai? [Caller]: Email baad mein milegi, pehle verification fine online jama karna hoga warna account freeze hoga.",scam,call_transcript,mixed,fia_impersonation,hard,synthetic
+"Sir aapka courier return hone wala hai, address confirm krne k liye link open karein aur card verification complete kar dein.",scam,sms,roman_urdu,courier_customs_fee,hard,synthetic
+"Work from home data entry position available. No experience needed; deposit a security amount before your first assignment.",scam,sms,english,linkedin_job_scam,borderline,synthetic
+"آپ کا قرض منظور ہو گیا ہے۔ رقم جاری کرنے سے پہلے فائل ایکٹیویشن چارجز جمع کرنا ضروری ہیں۔",scam,sms,urdu_script,advance_fee_scam,borderline,synthetic
+"[Caller]: Sir prize claim karne ka waqt kam hai. [Recipient]: Maine koi contest enter nahi kiya. [Caller]: Aapka number randomly select hua tha, bas tax voucher lena hoga.",scam,call_transcript,mixed,lottery_prize,hard,synthetic
+"Buyer keh raha hai payment ho chuki hai, aap seller confirmation ke liye ye QR code scan krdo... haan camera se bas scan.",scam,call_transcript,roman_urdu,qr_phishing,hard,synthetic
+"Your electricity account shows an overdue balance. Avoid disconnection by paying the reactivation fee through the supplied page.",scam,sms,english,utility_bill_scam,borderline,synthetic
+"Apki property file verify krny k liye agent ko advance token bhejna hoga. Receipt baad mein mil jayegi.",scam,sms,roman_urdu,real_estate_scam,hard,synthetic
+"[Caller]: Hello, main support desk se... um... bol raha hoon. Aapke account mein unusual activity hai. [Recipient]: Main official number par call karun? [Caller]: Nahi, woh busy hai, isi call par verification kar dein.",scam,call_transcript,mixed,tech_support_scam,hard,synthetic
+"Your monthly statement is ready. Please review the transactions in your banking application.",safe,sms,english,legit_bank_alert,easy,synthetic
+"آپ کی ترسیل روانہ کر دی گئی ہے۔ متوقع ڈیلیوری کل دوپہر تک ہے۔",safe,sms,urdu_script,legit_delivery,easy,synthetic
+"Apka appointment kal 11 baje confirm hai. Agar timing change krni ho to clinic ko call karen.",safe,sms,roman_urdu,legit_appointment,easy,synthetic
+"[Caller]: Assalam o Alaikum, main customer service se bol rahi hoon. [Recipient]: Ji. [Caller]: Aapki complaint register ho gayi hai. Reference number message mein bhej diya jayega.",safe,call_transcript,mixed,legit_customer_service,easy,synthetic
+"Reminder: your electricity bill is due on 10 September. Please use your usual payment method.",safe,sms,english,utility_bill_alert,easy,synthetic
+"آپ کی درخواست کامیابی سے جمع ہو گئی ہے۔ مزید کارروائی کے لیے متعلقہ دفتر سے رابطہ کیا جائے گا۔",safe,sms,urdu_script,legit_customer_service,borderline,synthetic
+"Apki delivery aj shaam tak expected hai, rider location par pohanchne se pehle call karega.",safe,sms,roman_urdu,legit_delivery,easy,synthetic
+"[Caller]: Sir aapne job portal par application submit ki thi. [Recipient]: Ji. [Caller]: Interview Monday ko online schedule hua hai. Link aapko official recruitment email par mil jayega.",safe,call_transcript,english,legit_job_offer,borderline,synthetic
+"آپ کے اکاؤنٹ میں رقم موصول ہوئی ہے۔ رقم اور بیلنس موبائل ایپ میں چیک کریں، کسی کو OTP فراہم نہ کریں۔",safe,sms,urdu_script,legit_bank_alert,borderline,synthetic
+"Kal 4 baje dentist appointment hai, agar aap confirm karna chahein to clinic reception ko call kr dein.",safe,sms,roman_urdu,legit_appointment,easy,synthetic
+"[Caller]: Hello, main delivery office se bol raha hoon. [Recipient]: Ji boliye. [Caller]: Aapka parcel kal deliver hoga. Address mein koi tabdeeli hai? [Recipient]: Nahi.",safe,call_transcript,mixed,legit_delivery,easy,synthetic
+"Your interview has been scheduled for Monday at 10:30 AM. Please bring a copy of your CV.",safe,sms,english,legit_job_offer,easy,synthetic
+"آپ کی امدادی درخواست موصول ہو چکی ہے۔ تصدیق مکمل ہونے کے بعد نتیجہ سرکاری پورٹل پر دستیاب ہوگا۔",safe,sms,urdu_script,legit_bisp,borderline,synthetic
+"Apko payment receive hui hai. Agar transaction aapki nahi thi to app ke help section se report karen; OTP share na karen.",safe,sms,roman_urdu,legit_bank_alert,hard,synthetic
+"[Caller]: Ji aapki service complaint ka follow-up hai. [Recipient]: Kya mujhe koi fee deni hai? [Caller]: Nahi, complaint review free hai. Hum sirf issue ki details confirm kar rahe hain.",safe,call_transcript,mixed,legit_customer_service,borderline,synthetic
+"Your property viewing is confirmed for Saturday at 3 PM. The agent will meet you at the listed office.",safe,sms,english,real_estate_scam,borderline,synthetic
+"Apki application review mein hai, abhi koi payment required nahi. Result portal par update hoga.",safe,sms,roman_urdu,legit_job_offer,hard,synthetic
+"[Caller]: Aapki appointment Tuesday ko hai. [Recipient]: Kya main online reschedule kar sakta hoon? [Caller]: Ji, confirmation message mein diya gaya official link use kar sakte hain.",safe,call_transcript,english,legit_appointment,borderline,synthetic
+"محترم صارف، آپ کی ادائیگی کامیاب رہی۔ رسید موبائل ایپ کے ٹرانزیکشن سیکشن میں محفوظ ہے۔",safe,sms,urdu_script,legit_bank_alert,easy,synthetic
+"[Caller]: Hello hello, aap sunn rahe hain? Main courier desk se hoon. [Recipient]: Ji. [Caller]: Parcel kal attempt hua tha, ab dobara delivery Friday ko hogi. [Recipient]: Theek hai.",safe,call_transcript,roman_urdu,legit_delivery,hard,synthetic
+"Apki complaint number 4721 receive ho gai hai. Team 2 working days mein update degi, koi extra charges nahi hain.",safe,sms,roman_urdu,legit_customer_service,hard,synthetic
+"[Caller]: Sir aapki job application shortlist hui hai. [Recipient]: Koi fee required hai? [Caller]: Nahi, interview free hai aur schedule email se confirm hoga.",safe,call_transcript,mixed,legit_job_offer,borderline,synthetic
+"آپ کی بجلی کی ادائیگی کی رسید تیار ہے۔ اگر رقم آپ کے ریکارڈ سے مختلف ہو تو بل کی تفصیل چیک کریں۔",safe,sms,urdu_script,utility_bill_alert,hard,synthetic
+"[Caller]: Ji aapke account mein unusual login alert aya tha. [Recipient]: Maine khud login kiya tha. [Caller]: Theek hai, phir kisi verification ki zarurat nahi. Agar phir issue ho to official app se support contact karein.",safe,call_transcript,mixed,legit_customer_service,hard,synthetic
+"Apka parcel dispatch ho gaya hai, tracking update app mein dekh sakte hain. Rider delivery se pehle call karega.",safe,sms,roman_urdu,legit_delivery,easy,synthetic

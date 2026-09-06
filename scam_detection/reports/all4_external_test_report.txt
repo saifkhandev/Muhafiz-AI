@@ -1,28 +1,28 @@
 ALL-4-LANGUAGE BLIND VALIDATION REPORT
 ======================================================================
-Date: 2026-08-28 00:05:16
+Date: 2026-09-05 14:22:12
 Test Set: 318 fresh messages (not from training or benchmarks)
 Model: B_combined_C5 (full_pipeline.joblib)
-Threshold: 0.49
+Threshold: 0.6300000000000004
 Model was NOT modified for this evaluation.
 
 OVERALL PERFORMANCE
 ----------------------------------------
-Accuracy:        0.9748 (97.48%)
-Precision:       0.9949 (99.49%)
-Scam Recall:     0.9652 (96.52%)
-F1-Score:        0.9798
-ROC-AUC:         0.9968
-True Positives:  194
-True Negatives:  116
-False Positives: 1
-False Negatives: 7
+Accuracy:        0.9560 (95.60%)
+Precision:       1.0000 (100.00%)
+Scam Recall:     0.9303 (93.03%)
+F1-Score:        0.9639
+ROC-AUC:         0.9982
+True Positives:  187
+True Negatives:  117
+False Positives: 0
+False Negatives: 14
 
 CONFUSION MATRIX
 ----------------------------------------
                      Pred Safe  Pred Scam
-Actual Safe                 116           1
-Actual Scam                   7         194
+Actual Safe                 117           0
+Actual Scam                  14         187
 
 PER-LANGUAGE PERFORMANCE
 ----------------------------------------
@@ -32,67 +32,77 @@ PER-LANGUAGE PERFORMANCE
   Precision: 1.0000
   Recall:    0.9828
   F1:        0.9913
-  AUC:       0.9982
+  AUC:       0.9997
   FP=0  FN=1
 
 [Urdu] n=66 (Scam=47, Safe=19)
-  Accuracy:  0.9697 (96.97%)
+  Accuracy:  0.9394 (93.94%)
   Precision: 1.0000
-  Recall:    0.9574
-  F1:        0.9783
-  AUC:       0.9966
-  FP=0  FN=2
-
-[Roman Urdu] n=67 (Scam=48, Safe=19)
-  Accuracy:  0.9403 (94.03%)
-  Precision: 1.0000
-  Recall:    0.9167
-  F1:        0.9565
-  AUC:       0.9989
+  Recall:    0.9149
+  F1:        0.9556
+  AUC:       0.9899
   FP=0  FN=4
 
-[Mixed] n=68 (Scam=48, Safe=20)
-  Accuracy:  0.9853 (98.53%)
-  Precision: 0.9796
-  Recall:    1.0000
-  F1:        0.9897
+[Roman Urdu] n=67 (Scam=48, Safe=19)
+  Accuracy:  0.8657 (86.57%)
+  Precision: 1.0000
+  Recall:    0.8125
+  F1:        0.8966
   AUC:       1.0000
-  FP=1  FN=0
+  FP=0  FN=9
+
+[Mixed] n=68 (Scam=48, Safe=20)
+  Accuracy:  1.0000 (100.00%)
+  Precision: 1.0000
+  Recall:    1.0000
+  F1:        1.0000
+  AUC:       1.0000
+  FP=0  FN=0
 
 ERROR ANALYSIS
 ----------------------------------------
-Total errors: 8
-False Negatives (missed scams): 7
-False Positives (safe flagged): 1
+Total errors: 14
+False Negatives (missed scams): 14
+False Positives (safe flagged): 0
 
 False Negatives (detail):
-  ID=22 Lang=English P=0.4343
-    "Ehsaas Programme: Your family has been approved for Rs. 14000 monthly stipend. Complete registration by paying Rs. 800 f"
-  ID=160 Lang=Roman Urdu P=0.4825
-    "Zaroori ittila: Aap k HBL account se 50000 Rs ki unauthorized transaction hui ha. Abhi tasdeeq kren."
-  ID=181 Lang=Roman Urdu P=0.4190
+  ID=112 Lang=Urdu P=0.5716
+    "اکاؤنٹ کی تصدیق کے لیے آپ کو اپنا چار ہندسوں کا پن کوڈ دوبارہ درج کرنا ہوگا۔"
+  ID=144 Lang=Urdu P=0.6293
+    "ڈیئر سر، یہ ایچ بی ایل برانچ مینیجر ہے۔ آپ کا قرض منظور ہوا لیکن 8000 روپے پروسیسنگ فیس درکار ہے۔"
+  ID=175 Lang=Roman Urdu P=0.5263
+    "Govt Relief: 10000 Rs food subsidy manzoor. Abhi 8171 pe message bhejen."
+  ID=181 Lang=Roman Urdu P=0.4151
     "Sarkari naukri: Aap ki application shortlist ho gayi ha. 5000 Rs interview fee jama karwaen."
-  ID=184 Lang=Roman Urdu P=0.4702
+  ID=184 Lang=Roman Urdu P=0.4931
     "Forex Academy: Ghar bethe rozana 500 dollar kmaen. Dakhla fees sirf 5000 Rs."
-  ID=192 Lang=Roman Urdu P=0.4698
-    "Telenor: Aap ka number iPhone 15 ka winner ha. 5000 Rs recharge kr k inaam hasil kren."
-  ID=283 Lang=Urdu P=0.4529
+  ID=189 Lang=Roman Urdu P=0.4928
+    "TCS: Aap k naam ek package aaya ha. 1800 Rs shipping charges ada kren."
+  ID=191 Lang=Roman Urdu P=0.4848
+    "Jazz: Aap ka SIM biometric verification na hone ki wajah se 24 ghante mein block ho jaye ga."
+  ID=193 Lang=Roman Urdu P=0.6113
+    "Zong: Aap ka package 999 Rs mein auto-renew hua. Cancel krne k liye PIN code btayen."
+  ID=195 Lang=Roman Urdu P=0.5841
+    "Assalam o Alaikum, yeh aap ka boss Ahmed bol raha ha. Meeting mein phansa hun, foran 50000 Rs is account mein transfer k"
+  ID=202 Lang=Roman Urdu P=0.6185
+    "Inaami scheme: Har mah 5000 Rs kmaen. Sirf 1000 Rs mein register hon."
+  ID=283 Lang=Urdu P=0.2110
     "آپ کا پے پال اکاؤنٹ محدود ہو گیا ہے۔ بینک کارڈ کی تفصیلات سے دوبارہ بحال کریں۔"
-  ID=311 Lang=Urdu P=0.3655
+  ID=295 Lang=Roman Urdu P=0.5357
+    "Toyota Corolla jeetne ka moqa! Annual customer survey mein hissa len. Call 0800-TOYOTA."
+  ID=310 Lang=English P=0.3873
+    "Dear customer, your account statement is available. Please click here to download your PDF statement securely."
+  ID=311 Lang=Urdu P=0.0862
     "آپ کی آن لائن شاپنگ کی ادائیگی ناکام ہو گئی۔ دوبارہ کوشش کے لیے اپنے کارڈ کی تفصیلات درج کریں۔"
-
-False Positives (detail):
-  ID=268 Lang=Mixed P=0.5428
-    "Your Netflix subscription 1-Sep-2026 ko renew hoga. Amount: Rs. 1500. Payment method: Visa card."
 
 KEY QUESTIONS
 ----------------------------------------
-1. Overall performance: 97.48% accuracy, 0.9798 F1, 96.52% recall
+1. Overall performance: 95.60% accuracy, 0.9639 F1, 93.03% recall
 2. English: 99.15% accuracy, 0.9913 F1, FP=0, FN=1
-3. Urdu: 96.97% accuracy, 0.9783 F1, FP=0, FN=2
-4. Roman Urdu: 94.03% accuracy, 0.9565 F1, FP=0, FN=4
-5. Mixed: 98.53% accuracy, 0.9897 F1, FP=1, FN=0
-6. Weakest language: Roman Urdu (94.03%)
-7. Scams missed (FN): 7
-8. Safe falsely flagged (FP): 1
+3. Urdu: 93.94% accuracy, 0.9556 F1, FP=0, FN=4
+4. Roman Urdu: 86.57% accuracy, 0.8966 F1, FP=0, FN=9
+5. Mixed: 100.00% accuracy, 1.0000 F1, FP=0, FN=0
+6. Weakest language: Roman Urdu (86.57%)
+7. Scams missed (FN): 14
+8. Safe falsely flagged (FP): 0
 9. Ready for AI integration: NEEDS REVIEW

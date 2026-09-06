@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "purpose": "Independent, held-out text regression data. Do not add these records to training or use them to design rules before they have been evaluated.",
+  "records": []
+}

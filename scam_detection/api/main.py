@@ -4,16 +4,19 @@ Endpoints:
   POST /api/analyze-text
   POST /api/analyze-audio
 """
-import os
-import sys
 import json
+import logging
+import os
 import shutil
+import sys
 import tempfile
 import warnings
 from contextlib import asynccontextmanager
-from typing import List, Dict, Any
+from time import perf_counter
+from typing import Any, Dict, List
 
 warnings.filterwarnings("ignore")
+logger = logging.getLogger("uvicorn.error")
 
 # Add project root to path
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +28,7 @@ from pydantic import BaseModel
 from src.predict import predict_message, load_model
 from src.call_predict import predict_call
 from src.transcribe import load_stt_model
-from src.config import MAX_AUDIO_DURATION_SECONDS
+from src.config import MAX_AUDIO_DURATION_SECONDS, WHISPER_MODEL_SIZE
 from src.preprocessing import (
     URGENCY_KEYWORDS,
     FINANCIAL_KEYWORDS,
@@ -170,7 +173,7 @@ async def lifespan(app: FastAPI):
         _app_state["stt_backend"] = None
         print("[BACKEND] STT skipped (ENABLE_AUDIO=false) - audio endpoint disabled, text analysis active")
     else:
-        print("[BACKEND] Loading STT model (medium Whisper)...")
+        print(f"[BACKEND] Loading STT model ({WHISPER_MODEL_SIZE} Whisper)...")
         try:
             stt_model, stt_backend = load_stt_model()
             _app_state["stt_model"] = stt_model
@@ -269,6 +272,7 @@ async def analyze_text(req: TextRequest):
 
 @app.post("/api/analyze-audio", response_model=AudioResponse)
 async def analyze_audio(audio: UploadFile = File(...)):
+    request_started = perf_counter()
     if _app_state["stt_model"] is None:
         raise HTTPException(
             status_code=503,
@@ -286,10 +290,13 @@ async def analyze_audio(audio: UploadFile = File(...)):
     temp_path = os.path.join(temp_dir, f"upload{ext}")
 
     try:
+        write_started = perf_counter()
         with open(temp_path, "wb") as f:
             shutil.copyfileobj(audio.file, f)
+        logger.info("audio_timing stage=upload_write seconds=%.3f", perf_counter() - write_started)
 
-        # Enforce max duration server-side
+        # Enforce max duration server-side and record its cost separately.
+        inspection_started = perf_counter()
         try:
             from pydub import AudioSegment
             audio_segment = AudioSegment.from_file(temp_path)
@@ -301,10 +308,16 @@ async def analyze_audio(audio: UploadFile = File(...)):
                 )
         except HTTPException:
             raise
-        except Exception as import_err:
-            # If pydub fails to inspect, continue rather than block the request
-            print(f"[BACKEND] Could not inspect audio duration: {import_err}")
+        except Exception:
+            # Do not block a valid upload just because metadata inspection fails.
+            logger.warning("audio_timing stage=duration_inspection status=unavailable")
+        finally:
+            logger.info(
+                "audio_timing stage=duration_inspection seconds=%.3f",
+                perf_counter() - inspection_started,
+            )
 
+        prediction_started = perf_counter()
         result = predict_call(
             temp_path,
             artifacts=_app_state["artifacts"],
@@ -314,10 +327,14 @@ async def analyze_audio(audio: UploadFile = File(...)):
             stt_model=_app_state["stt_model"],
             stt_backend=_app_state["stt_backend"],
         )
-    except Exception as e:
+        logger.info("audio_timing stage=call_pipeline seconds=%.3f", perf_counter() - prediction_started)
+    except HTTPException:
+        raise
+    except Exception:
         raise HTTPException(status_code=500, detail="Audio analysis failed. Please try again with a different file.")
     finally:
         shutil.rmtree(temp_dir, ignore_errors=True)
+        logger.info("audio_timing stage=audio_request_total seconds=%.3f", perf_counter() - request_started)
 
     segments = [
         SegmentResponse(

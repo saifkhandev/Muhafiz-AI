@@ -49,12 +49,16 @@ TEMP_AUDIO_DIR = os.path.join(BASE_DIR, "temp_audio")
 # ── Call-level risk aggregation ──────────────────────────────────────────────
 CALL_RISK_HIGH = 0.55       # risk_score >= this → High risk
 CALL_RISK_MEDIUM = 0.30     # risk_score >= this → Medium risk
+# Classify complete spoken thoughts rather than 2–4 second Whisper fragments.
+CALL_WINDOW_SECONDS = 12.0
+CALL_WINDOW_OVERLAP_SECONDS = 2.0
+CALL_WINDOW_GAP_SECONDS = 5.0
 # Aggregation weights (must sum to 1.0)
-# Max-prob gets higher weight: one very strong scam segment in a long call
-# should not be drowned out by many neutral segments.
 CALL_WEIGHT_MAX_PROB = 0.45
 CALL_WEIGHT_WEIGHTED_MEAN = 0.30
 CALL_WEIGHT_SCAM_RATIO = 0.25
-# If any single segment crosses these probabilities, force a minimum call risk.
-CALL_FORCE_HIGH_MAX_PROB = 0.90
+# A high-probability window can only force High risk when a separate,
+# full-call contextual scam pattern is also present. A strong window alone can
+# still force Medium so it remains visible for review.
+CALL_FORCE_HIGH_MAX_PROB = 0.85
 CALL_FORCE_MEDIUM_MAX_PROB = 0.70

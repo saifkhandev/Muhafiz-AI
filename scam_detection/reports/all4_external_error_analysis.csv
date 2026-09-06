@@ -1,9 +1,15 @@
 ID,message,language,true_label,predicted_label,probability,error_type
-22,Ehsaas Programme: Your family has been approved for Rs. 14000 monthly stipend. Complete registration by paying Rs. 800 fee.,English,Scam,Safe,0.43427424960320576,FN-missed-scam
-160,Zaroori ittila: Aap k HBL account se 50000 Rs ki unauthorized transaction hui ha. Abhi tasdeeq kren.,Roman Urdu,Scam,Safe,0.4825027943518913,FN-missed-scam
-181,Sarkari naukri: Aap ki application shortlist ho gayi ha. 5000 Rs interview fee jama karwaen.,Roman Urdu,Scam,Safe,0.41899399046668107,FN-missed-scam
-184,Forex Academy: Ghar bethe rozana 500 dollar kmaen. Dakhla fees sirf 5000 Rs.,Roman Urdu,Scam,Safe,0.4701881839347079,FN-missed-scam
-192,Telenor: Aap ka number iPhone 15 ka winner ha. 5000 Rs recharge kr k inaam hasil kren.,Roman Urdu,Scam,Safe,0.4697853875979541,FN-missed-scam
-268,Your Netflix subscription 1-Sep-2026 ko renew hoga. Amount: Rs. 1500. Payment method: Visa card.,Mixed,Safe,Scam,0.5427747721644783,FP-safe-flagged
-283,آپ کا پے پال اکاؤنٹ محدود ہو گیا ہے۔ بینک کارڈ کی تفصیلات سے دوبارہ بحال کریں۔,Urdu,Scam,Safe,0.4529021957743524,FN-missed-scam
-311,آپ کی آن لائن شاپنگ کی ادائیگی ناکام ہو گئی۔ دوبارہ کوشش کے لیے اپنے کارڈ کی تفصیلات درج کریں۔,Urdu,Scam,Safe,0.36547784498996466,FN-missed-scam
+112,اکاؤنٹ کی تصدیق کے لیے آپ کو اپنا چار ہندسوں کا پن کوڈ دوبارہ درج کرنا ہوگا۔,Urdu,Scam,Safe,0.5715951738182748,FN-missed-scam
+144,ڈیئر سر، یہ ایچ بی ایل برانچ مینیجر ہے۔ آپ کا قرض منظور ہوا لیکن 8000 روپے پروسیسنگ فیس درکار ہے۔,Urdu,Scam,Safe,0.6292844949214637,FN-missed-scam
+175,Govt Relief: 10000 Rs food subsidy manzoor. Abhi 8171 pe message bhejen.,Roman Urdu,Scam,Safe,0.5262892748588387,FN-missed-scam
+181,Sarkari naukri: Aap ki application shortlist ho gayi ha. 5000 Rs interview fee jama karwaen.,Roman Urdu,Scam,Safe,0.41506243157408834,FN-missed-scam
+184,Forex Academy: Ghar bethe rozana 500 dollar kmaen. Dakhla fees sirf 5000 Rs.,Roman Urdu,Scam,Safe,0.49305400761090806,FN-missed-scam
+189,TCS: Aap k naam ek package aaya ha. 1800 Rs shipping charges ada kren.,Roman Urdu,Scam,Safe,0.492769176062488,FN-missed-scam
+191,Jazz: Aap ka SIM biometric verification na hone ki wajah se 24 ghante mein block ho jaye ga.,Roman Urdu,Scam,Safe,0.48476191344034625,FN-missed-scam
+193,Zong: Aap ka package 999 Rs mein auto-renew hua. Cancel krne k liye PIN code btayen.,Roman Urdu,Scam,Safe,0.611346694169939,FN-missed-scam
+195,"Assalam o Alaikum, yeh aap ka boss Ahmed bol raha ha. Meeting mein phansa hun, foran 50000 Rs is account mein transfer kren.",Roman Urdu,Scam,Safe,0.584074695967292,FN-missed-scam
+202,Inaami scheme: Har mah 5000 Rs kmaen. Sirf 1000 Rs mein register hon.,Roman Urdu,Scam,Safe,0.6184999895140014,FN-missed-scam
+283,آپ کا پے پال اکاؤنٹ محدود ہو گیا ہے۔ بینک کارڈ کی تفصیلات سے دوبارہ بحال کریں۔,Urdu,Scam,Safe,0.2109776769048022,FN-missed-scam
+295,Toyota Corolla jeetne ka moqa! Annual customer survey mein hissa len. Call 0800-TOYOTA.,Roman Urdu,Scam,Safe,0.5356881782346868,FN-missed-scam
+310,"Dear customer, your account statement is available. Please click here to download your PDF statement securely.",English,Scam,Safe,0.3872823607439477,FN-missed-scam
+311,آپ کی آن لائن شاپنگ کی ادائیگی ناکام ہو گئی۔ دوبارہ کوشش کے لیے اپنے کارڈ کی تفصیلات درج کریں۔,Urdu,Scam,Safe,0.08619391751192035,FN-missed-scam

@@ -2,11 +2,15 @@
 Speech-to-text transcription for scam-call detection.
 Primary: faster-whisper (CTranslate2 INT8). Fallback: openai-whisper.
 """
-import re
+import logging
 import os
+import re
 import warnings
+from time import perf_counter
 
 from src.config import WHISPER_MODEL_SIZE, WHISPER_COMPUTE_TYPE
+
+logger = logging.getLogger("uvicorn.error")
 
 # ── Filler patterns to skip ──────────────────────────────────────────────────
 FILLER_PATTERNS = {
@@ -73,8 +77,11 @@ def _load_faster_whisper(model_size: str, compute_type: str):
     cache_key = ("faster", model_size, compute_type)
     if cache_key not in _model_cache:
         # Check for local model directory first
-        local_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                                   "models", "whisper-medium")
+        local_path = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            "models",
+            f"whisper-{model_size}",
+        )
         if os.path.isdir(local_path) and os.path.exists(os.path.join(local_path, "model.bin")):
             print(f"  [STT] Loading faster-whisper from local: {local_path} ({compute_type})...")
             _model_cache[cache_key] = WhisperModel(
@@ -139,6 +146,7 @@ def transcribe_audio(wav_path: str, model=None, backend: str = None):
     if model is None:
         model, backend = load_stt_model()
 
+    started = perf_counter()
     if backend == "faster-whisper":
         # beam_size=1 (greedy) is ~2-3x faster than beam_size=5 with minimal
         # quality loss for short scam-call transcripts. condition_on_previous_text
@@ -172,6 +180,12 @@ def transcribe_audio(wav_path: str, model=None, backend: str = None):
     else:
         raise ValueError(f"Unknown STT backend: {backend}")
 
+    logger.info(
+        "audio_timing stage=whisper_transcription seconds=%.3f backend=%s segments=%d",
+        perf_counter() - started,
+        backend,
+        len(segments),
+    )
     return segments, detected_lang
 
 
@@ -260,3 +274,97 @@ def process_segments(raw_segments: list, min_words: int = 4, gap_seconds: float 
         i = j  # skip past concatenated segments
 
     return results
+
+
+def build_time_windows(
+    raw_segments: list,
+    window_seconds: float = 12.0,
+    overlap_seconds: float = 2.0,
+    gap_seconds: float = 5.0,
+) -> tuple[list, int]:
+    """Build overlapping time-based classification windows from Whisper output.
+
+    Whisper emits fragments according to pauses, not complete scam statements.
+    This groups adjacent speech into 10–15 second windows and repeats a short
+    overlap so requests that cross a boundary retain their context. Pure filler
+    fragments are omitted and counted without becoming model inputs.
+    """
+    if window_seconds <= 0:
+        raise ValueError("window_seconds must be positive")
+    if not 0 <= overlap_seconds < window_seconds:
+        raise ValueError("overlap_seconds must be >= 0 and smaller than window_seconds")
+
+    speech = []
+    skipped_count = 0
+    for segment in raw_segments:
+        text = segment.get("text", "").strip()
+        if not text or is_filler_segment(text):
+            skipped_count += 1
+            continue
+        cleaned_text = clean_spoken_text(text)
+        if not cleaned_text:
+            skipped_count += 1
+            continue
+        speech.append({
+            "start": float(segment["start"]),
+            "end": float(segment["end"]),
+            "text": text,
+            "cleaned_text": cleaned_text,
+        })
+
+    if not speech:
+        return [], skipped_count
+
+    windows = []
+    step_seconds = window_seconds - overlap_seconds
+    window_start = speech[0]["start"]
+    window_index = 0
+
+    while True:
+        window_end = window_start + window_seconds
+        included = []
+        previous_end = None
+        for segment in speech:
+            if segment["end"] <= window_start:
+                continue
+            if segment["start"] >= window_end:
+                break
+            if previous_end is not None and segment["start"] - previous_end > gap_seconds:
+                break
+            included.append(segment)
+            previous_end = max(previous_end or segment["end"], segment["end"])
+
+        if not included:
+            break
+
+        actual_end = min(window_end, max(segment["end"] for segment in included))
+        windows.append({
+            "segment_index": window_index,
+            "start_time": round(window_start, 3),
+            "end_time": round(actual_end, 3),
+            "text": " ".join(segment["text"] for segment in included),
+            "cleaned_text": clean_spoken_text(
+                " ".join(segment["cleaned_text"] for segment in included)
+            ),
+            "was_concatenated": len(included) > 1,
+            "was_skipped": False,
+            "source_segment_count": len(included),
+        })
+        window_index += 1
+
+        nominal_next_start = window_start + step_seconds
+        # Start another window only when there is new speech after the overlap
+        # boundary. This avoids rendering a near-duplicate final window that
+        # contains only text already classified in the previous one.
+        next_segment = next(
+            (segment for segment in speech if segment["start"] >= nominal_next_start),
+            None,
+        )
+        if next_segment is None:
+            break
+        if next_segment["start"] - max(segment["end"] for segment in included) > gap_seconds:
+            window_start = next_segment["start"]
+        else:
+            window_start = nominal_next_start
+
+    return windows, skipped_count

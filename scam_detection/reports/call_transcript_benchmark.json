@@ -1,0 +1,58 @@
+{
+  "fixture": "tests\\fixtures\\verified_call_transcripts.json",
+  "status": "complete",
+  "record_count": 1,
+  "model": "V4_adversarial_505",
+  "threshold": 0.6300000000000004,
+  "metrics": {
+    "total": 1,
+    "accuracy": 1.0,
+    "scam_precision": 1.0,
+    "scam_recall": 1.0,
+    "f1": 1.0,
+    "confusion_matrix": {
+      "tp": 1,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0
+    }
+  },
+  "by_category": {
+    "card_phishing": {
+      "total": 1,
+      "accuracy": 1.0,
+      "scam_precision": 1.0,
+      "scam_recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": {
+        "tp": 1,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    }
+  },
+  "high_risk_misses": [],
+  "false_negatives": [],
+  "false_positives": [],
+  "rows": [
+    {
+      "id": "call_card_phishing_001",
+      "label": "Scam",
+      "category": "card_phishing",
+      "risk_prediction": "High",
+      "binary_prediction": "Scam",
+      "risk_score": 1.0,
+      "max_segment_probability": 0.8912,
+      "call_patterns": [
+        "card_verification_scam",
+        "fraud_department_impersonation"
+      ],
+      "timings": {
+        "classification": 0.0353,
+        "aggregation": 0.0001,
+        "total": 0.0354
+      }
+    }
+  ]
+}
