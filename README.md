@@ -1,6 +1,6 @@
-# 🛡️ Muhafiz AI — Scam Detection Shield for Pakistan
+# 🛡️ Muhafiz AI - Scam Detection Shield for Pakistan
 
-**Pakistan's AI shield against scam calls & messages.** AI-powered scam detection for text messages and call recordings — in **English, Urdu, Roman Urdu, and Mixed** languages.
+**Pakistan's AI shield against scam calls & messages.** AI-powered scam detection for text messages and call recordings - in **English, Urdu, Roman Urdu, and Mixed** languages.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white&labelColor=20232a)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white&labelColor=20232a)
@@ -29,7 +29,6 @@
 
 - [About](#about)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [How It Works](#how-it-works)
 - [Model Performance](#model-performance)
 - [Built With](#built-with)
@@ -50,20 +49,20 @@
 
 ### Why it was built
 
-Every day, ordinary Pakistanis lose their savings to scams delivered straight to their phones — fake **BISP/Ehsaas payment notices**, prize-lottery messages demanding a "processing fee", fraudulent overseas **job offers**, bank **phishing links**, fake **SIM-block** threats from "PTA", and callers socially engineering **OTPs** out of their victims.
+Every day, ordinary Pakistanis lose their savings to scams delivered straight to their phones - fake **BISP/Ehsaas payment notices**, prize-lottery messages demanding a "processing fee", fraudulent overseas **job offers**, bank **phishing links**, fake **SIM-block** threats from "PTA", and callers socially engineering **OTPs** out of their victims.
 
-Pakistan loses billions of rupees annually to phone and message-based fraud. These scams disproportionately target the most vulnerable — the elderly, rural communities, and people with limited digital literacy. Worse, most of these messages are written in **Roman Urdu or Urdu script**, which mainstream international anti-spam tools simply do not understand.
+Pakistan loses billions of rupees annually to phone and message-based fraud. These scams disproportionately target the most vulnerable - the elderly, rural communities, and people with limited digital literacy. Worse, most of these messages are written in **Roman Urdu or Urdu script**, which mainstream international anti-spam tools simply do not understand.
 
 **Muhafiz AI** (Muhafiz = *guardian / protector* in Urdu) was built to close that gap: a **Pakistan-first**, multilingual, accessible first line of defense that anyone can use **before** acting on a suspicious message or call.
 
 ### What it is
 
-Muhafiz AI is a full-stack, decision-support web application built for the **Alibaba AI Hackathon — Karachi Regional Round**. It combines a genuinely trained machine-learning model with a modern web experience:
+Muhafiz AI is a full-stack, decision-support web application built for the **Alibaba AI Hackathon - Karachi Regional Round**. It combines a genuinely trained machine-learning model with a modern web experience:
 
 - Paste an **SMS / WhatsApp / chat message** → get an honest Scam/Safe verdict with a calibrated risk score, detected language, transparent scam signals, and a recommended action.
 - Upload (or record) a **call recording** → it is transcribed with a local speech-to-text model, every segment is classified individually, and you get a call-level High/Medium/Low risk verdict with a segment-by-segment breakdown showing *exactly which part of the call raised the flag*.
 
-The system runs on a real, trained model (**V4_adversarial_505**) — there is **no mock data and no hardcoded results** anywhere in this project. Every verdict shown in the web app is produced by the real model in real time.
+The system runs on a real, trained model (**V4_adversarial_505**) - there is **no mock data and no hardcoded results** anywhere in this project. Every verdict shown in the web app is produced by the real model in real time.
 
 ### Who it's for
 
@@ -81,11 +80,11 @@ The system runs on a real, trained model (**V4_adversarial_505**) — there is *
 ### Text Analysis
 - Binary **Scam / Safe** classification with a **calibrated probability** (Platt-scaled via `CalibratedClassifierCV`)
 - Risk score (0–100) and Low / Medium / High risk label
-- Automatic **language detection** — English, Urdu script, Roman Urdu, Mixed
-- **Transparent signal detection** — six rule-based keyword categories (urgency, financial requests, credential/OTP requests, prize/lottery, threats, OTP-specific) clearly labeled as *separate from* the model's own decision
+- Automatic **language detection** - English, Urdu script, Roman Urdu, Mixed
+- **Transparent signal detection** - six rule-based keyword categories (urgency, financial requests, credential/OTP requests, prize/lottery, threats, OTP-specific) clearly labeled as *separate from* the model's own decision
 - Context-aware **recommended actions** (e.g. "Do not respond, click links, or share any personal information. Report or block the sender.")
 - One-click **example messages** (prize scam, bank phishing, job scam, legitimate bank alert, ordinary personal message)
-- Under **10 ms** per message on CPU — no GPU required
+- Under **10 ms** per message on CPU - no GPU required
 
 ### Call Audio Analysis
 - Upload common formats (mp3, wav, m4a, webm, aac, ogg, flac) **or record live in the browser** via `MediaRecorder`
@@ -95,30 +94,14 @@ The system runs on a real, trained model (**V4_adversarial_505**) — there is *
 - Server-side maximum duration enforcement (5 minutes)
 
 ### Web Experience
-- **Bilingual UI (English/Urdu)** — full i18n system with RTL layout; users switch via a language button in the navbar or a first-visit banner; preference saved in localStorage
+- **Bilingual UI (English/Urdu)** - full i18n system with RTL layout; users switch via a language button in the navbar or a first-visit banner; preference saved in localStorage
 - Responsive **SVG shield** visualization that adapts to all screen sizes
-- **Framer Motion** animations — scroll-driven reveals, scale-in verdict cards, staggered signal chips, sequential segment reveals, and smooth transitions
-- **Scroll-to-top button** — appears after scrolling with a smooth scroll animation
-- **Social media footer** — GitHub, LinkedIn, and Instagram links
+- **Framer Motion** animations - scroll-driven reveals, scale-in verdict cards, staggered signal chips, sequential segment reveals, and smooth transitions
+- **Scroll-to-top button** - appears after scrolling with a smooth scroll animation
+- **Social media footer** - GitHub and LinkedIn links
 - Dedicated pages: **Home**, **Analyze**, **How It Works**, **Examples**, **Roadmap**
 - Fully **responsive** design (mobile-first) and honors `prefers-reduced-motion`
-- Honest error states — if the backend is unreachable, you see a retryable error, never a fake verdict
-
----
-
-## Screenshots
-
-| Landing page — interactive 3D shield | Analyze — scam verdict |
-|---|---|
-| ![Landing page hero with the 3D wireframe shield](screenshots/hero.png) | ![Bank phishing message flagged as Likely Scam with 99.3% risk score](screenshots/analyze-scam-result.png) |
-
-| Analyze — job scam example | How It Works — the text pipeline |
-|---|---|
-| ![Analyze page with a Dubai job scam example loaded](screenshots/analyze-job-scam.png) | ![How It Works section showing the four pipeline steps](screenshots/how-it-works.png) |
-
-| Key stats | Mobile view |
-|---|---|
-| ![Stats section: 1,637 training messages, 99.6% adversarial accuracy, under 10ms per message](screenshots/stats.png) | ![Mobile homepage with the SVG shield fallback](screenshots/mobile-home.png) |
+- Honest error states - if the backend is unreachable, you see a retryable error, never a fake verdict
 
 ---
 
@@ -127,7 +110,7 @@ The system runs on a real, trained model (**V4_adversarial_505**) — there is *
 ### Architecture
 
 ```
-                Browser (Next.js frontend — Vercel)
+                Browser (Next.js frontend - Vercel)
                               │
         ┌─────────────────────┴──────────────────────┐
         │  POST /api/analyze-text    POST /api/analyze-audio
@@ -184,7 +167,7 @@ Audio input (.aac, .wav, .mp3, .ogg, ...)
 
 ### Why these technology choices
 
-- **TF-IDF + LinearSVC instead of a transformer:** chosen deliberately for speed (<10 ms per message on CPU), tiny deployment footprint (~3 MB model), and interpretability — the whole system runs on a laptop or a free-tier cloud instance without a GPU.
+- **TF-IDF + LinearSVC instead of a transformer:** chosen deliberately for speed (<10 ms per message on CPU), tiny deployment footprint (~3 MB model), and interpretability - the whole system runs on a laptop or a free-tier cloud instance without a GPU.
 - **Calibrated probabilities:** `CalibratedClassifierCV` (Platt scaling) turns raw SVM decision values into a meaningful 0–1 confidence score used for the risk meter.
 - **Local Whisper instead of a cloud STT API:** audio never leaves the server, there are no per-call API costs, and it works offline.
 - **Honest evaluation:** test sets were kept untouched; contamination was audited; results below lead with verified scores, not inflated ones.
@@ -193,7 +176,7 @@ Audio input (.aac, .wav, .mp3, .ogg, ...)
 
 ## Model Performance
 
-**Model:** `V4_adversarial_505` — Combined word(1,2)-gram + char(3,5)-gram TF-IDF with LinearSVC (C=5.0), wrapped in `CalibratedClassifierCV` (Platt scaling) · **Decision threshold:** 0.63 (optimized for a balanced F1 + F2 + Specificity composite) · **Training data:** 1,637 messages (879 scam, 758 safe) in English, Roman Urdu, Urdu, and Mixed.
+**Model:** `V4_adversarial_505` - Combined word(1,2)-gram + char(3,5)-gram TF-IDF with LinearSVC (C=5.0), wrapped in `CalibratedClassifierCV` (Platt scaling) · **Decision threshold:** 0.63 (optimized for a balanced F1 + F2 + Specificity composite) · **Training data:** 1,637 messages (879 scam, 758 safe) in English, Roman Urdu, Urdu, and Mixed.
 
 ### Primary results (untouched test sets)
 
@@ -235,7 +218,7 @@ The training corpus was built and expanded iteratively across model versions:
 
 It covers **10+ scam categories** common in Pakistan: job scams, lottery/prize draws, bank phishing, OTP extraction, fake SIM-block threats, investment/Ponzi schemes, fake charities, impersonation, advance-fee loans, government-program fraud (BISP, Ehsaas, NADRA, FBR), and fake tech support.
 
-The V4 adversarial expansion specifically targeted false positives — cutting them **48 → 4** on the adversarial test set (a 12× improvement) — by adding 250 safe messages that mirror common false-positive triggers (legit bank deductions, genuine security notices, service OTPs).
+The V4 adversarial expansion specifically targeted false positives - cutting them **48 → 4** on the adversarial test set (a 12× improvement) - by adding 250 safe messages that mirror common false-positive triggers (legit bank deductions, genuine security notices, service OTPs).
 
 ### Overfitting check
 
@@ -247,49 +230,49 @@ The V4 adversarial expansion specifically targeted false positives — cutting t
 ## Built With
 
 ### Languages
-- **TypeScript** — frontend application code
-- **Python 3.12+** — backend, ML training, and inference code
-- **CSS** — Tailwind-based styling with a custom design system
+- **TypeScript** - frontend application code
+- **Python 3.12+** - backend, ML training, and inference code
+- **CSS** - Tailwind-based styling with a custom design system
 
 ### Frontend (`scam_detection/web`)
-- **[Next.js 16](https://nextjs.org/)** (App Router, Turbopack) — framework
-- **[React 19](https://react.dev/)** — UI library
-- **[TypeScript 5](https://www.typescriptlang.org/)** — type safety
-- **[Tailwind CSS 4](https://tailwindcss.com/)** — design system (dark theme, exact brand palette)
-- **[SVG Shield](https://developer.mozilla.org/en-US/docs/Web/SVG)** — responsive shield visualization (replaced Three.js for better performance and mobile compatibility)
-- **[Framer Motion 13](https://www.framer.com/motion/)** — scroll animations, result card, signal chip, and segment animations
-- **[lucide-react](https://lucide.dev/)** — iconography
-- Fonts: **Space Grotesk** (headings), **Inter** (body), **Noto Nastaliq Urdu** (Urdu script, RTL) — via `next/font`
+- **[Next.js 16](https://nextjs.org/)** (App Router, Turbopack) - framework
+- **[React 19](https://react.dev/)** - UI library
+- **[TypeScript 5](https://www.typescriptlang.org/)** - type safety
+- **[Tailwind CSS 4](https://tailwindcss.com/)** - design system (dark theme, exact brand palette)
+- **[SVG Shield](https://developer.mozilla.org/en-US/docs/Web/SVG)** - responsive shield visualization (replaced Three.js for better performance and mobile compatibility)
+- **[Framer Motion 13](https://www.framer.com/motion/)** - scroll animations, result card, signal chip, and segment animations
+- **[lucide-react](https://lucide.dev/)** - iconography
+- Fonts: **Space Grotesk** (headings), **Inter** (body), **Noto Nastaliq Urdu** (Urdu script, RTL) - via `next/font`
 
 ### Backend (`scam_detection/api`)
-- **[FastAPI](https://fastapi.tiangolo.com/)** + **Uvicorn** — REST API server
-- **pydantic** — request/response validation
-- **python-multipart** — file uploads
-- **pydub** — audio decoding/export
+- **[FastAPI](https://fastapi.tiangolo.com/)** + **Uvicorn** - REST API server
+- **pydantic** - request/response validation
+- **python-multipart** - file uploads
+- **pydub** - audio decoding/export
 
 ### Machine Learning (`scam_detection/src`)
-- **[scikit-learn](https://scikit-learn.org/)** — TF-IDF vectorizers, LinearSVC, CalibratedClassifierCV, evaluation
-- **joblib** — model artifact persistence
-- **[faster-whisper](https://github.com/SYSTRAN/faster-whisper)** — Whisper medium speech-to-text (CTranslate2, INT8, CPU)
-- **pandas / NumPy / openpyxl** — dataset preparation
-- **matplotlib / seaborn** — analysis charts during development
+- **[scikit-learn](https://scikit-learn.org/)** - TF-IDF vectorizers, LinearSVC, CalibratedClassifierCV, evaluation
+- **joblib** - model artifact persistence
+- **[faster-whisper](https://github.com/SYSTRAN/faster-whisper)** - Whisper medium speech-to-text (CTranslate2, INT8, CPU)
+- **pandas / NumPy / openpyxl** - dataset preparation
+- **matplotlib / seaborn** - analysis charts during development
 
 ### APIs
-- A self-built **REST API** (FastAPI): `GET /api/health`, `POST /api/analyze-text`, `POST /api/analyze-audio` — full reference [below](#api-reference)
-- **No external paid APIs** — the STT model and the classifier both run locally; the web app only talks to its own backend
+- A self-built **REST API** (FastAPI): `GET /api/health`, `POST /api/analyze-text`, `POST /api/analyze-audio` - full reference [below](#api-reference)
+- **No external paid APIs** - the STT model and the classifier both run locally; the web app only talks to its own backend
 
 ### Tooling & Hosting
-- **Git + GitHub** — version control and auto-deploys on push
-- **[Vercel](https://vercel.com/)** — frontend hosting
-- **[Render](https://render.com/)** — backend hosting (Python web service)
-- **npm / pip + venv** — package management
-- *(Optional)* **FFmpeg** — only for exotic audio formats; common formats work without it
+- **Git + GitHub** - version control and auto-deploys on push
+- **[Vercel](https://vercel.com/)** - frontend hosting
+- **[Render](https://render.com/)** - backend hosting (Python web service)
+- **npm / pip + venv** - package management
+- *(Optional)* **FFmpeg** - only for exotic audio formats; common formats work without it
 
 ---
 
 ## API Reference
 
-Base URL: the deployed Render service (see [Deployment](#deployment)) — locally `http://localhost:8000`.
+Base URL: the deployed Render service (see [Deployment](#deployment)) - locally `http://localhost:8000`.
 
 ### `GET /api/health`
 ```json
@@ -359,11 +342,10 @@ print(result["scam_probability"])  # 0.82
 Muhafiz-AI/
 ├── LICENSE
 ├── README.md
-├── screenshots/                      # Screenshots used in this README
 ├── START-WEBSITE.bat                 # One-double-click local launcher (backend + frontend)
 └── scam_detection/
     ├── api/
-    │   └── main.py                   # FastAPI backend — real model endpoints
+    │   └── main.py                   # FastAPI backend - real model endpoints
     ├── src/
     │   ├── config.py                 # Configuration constants
     │   ├── preprocessing.py          # Scam-aware text normalizer + keyword lexicons
@@ -381,7 +363,7 @@ Muhafiz-AI/
     │   ├── threshold.joblib          # 0.63
     │   ├── model_metadata.joblib
     │   ├── README.md                 # How to fetch the (git-ignored) Whisper model
-    │   └── whisper-medium/           # STT model — 1.4 GB, downloaded separately
+    │   └── whisper-medium/           # STT model - 1.4 GB, downloaded separately
     ├── data/
     │   ├── scam_messages_dataset.xlsx        # 868-message Pakistan dataset
     │   ├── hard_test_500_for_retrain.json    # V4 adversarial expansion
@@ -408,10 +390,10 @@ Muhafiz-AI/
 ## Getting Started
 
 ### Prerequisites
-- **Node.js 20+** and npm — [nodejs.org](https://nodejs.org)
-- **Python 3.12+** — [python.org](https://python.org)
-- **Git** — [git-scm.com](https://git-scm.com)
-- *(Optional)* **FFmpeg** — only needed for exotic audio formats; common formats (mp3, wav, m4a, aac, webm) work without it
+- **Node.js 20+** and npm - [nodejs.org](https://nodejs.org)
+- **Python 3.12+** - [python.org](https://python.org)
+- **Git** - [git-scm.com](https://git-scm.com)
+- *(Optional)* **FFmpeg** - only needed for exotic audio formats; common formats (mp3, wav, m4a, aac, webm) work without it
 - For audio analysis: ~2 GB free RAM and the Whisper medium model (see `scam_detection/models/README.md`)
 
 ### Installation
@@ -421,7 +403,7 @@ Muhafiz-AI/
 git clone https://github.com/saifkhandev/Muhafiz-AI.git
 cd Muhafiz-AI/scam_detection
 
-# 2. Backend — create a virtual environment and install dependencies
+# 2. Backend - create a virtual environment and install dependencies
 python -m venv venv
 # Windows:
 venv\Scripts\activate
@@ -435,14 +417,14 @@ pip install -r requirements.txt
 # 4. Start the backend (loads the V4 model + Whisper once at startup, ~60 s)
 python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
 
-# 5. Frontend — in a new terminal
+# 5. Frontend - in a new terminal
 cd web
 npm install
 npm run dev
 # → open http://localhost:3000
 ```
 
-**Windows shortcut:** double-click `START-WEBSITE.bat` in the repo root — it starts both servers and opens the browser automatically.
+**Windows shortcut:** double-click `START-WEBSITE.bat` in the repo root - it starts both servers and opens the browser automatically.
 
 ### Environment Variables
 
@@ -463,7 +445,7 @@ npm start          # serves the production build
 python -m uvicorn api.main:app --host 0.0.0.0 --port 8000 --workers 1
 ```
 
-> Note: run a **single backend worker** — the model and Whisper are loaded into memory per process (~2 GB with audio enabled).
+> Note: run a **single backend worker** - the model and Whisper are loaded into memory per process (~2 GB with audio enabled).
 
 ---
 
@@ -478,22 +460,22 @@ The project deploys as two services:
 
 Every `git push` to `main` auto-redeploys both services.
 
-**Free-tier notes:** Render's free instances sleep after 15 min of inactivity (the first request afterwards takes ~1 min — ping `/api/health` before demos). Audio analysis is disabled on the free tier because Whisper needs ~1.5 GB RAM; the UI shows an honest "unavailable on this server" message, and full audio analysis runs locally via `START-WEBSITE.bat`.
+**Free-tier notes:** Render's free instances sleep after 15 min of inactivity (the first request afterwards takes ~1 min - ping `/api/health` before demos). Audio analysis is disabled on the free tier because Whisper needs ~1.5 GB RAM; the UI shows an honest "unavailable on this server" message, and full audio analysis runs locally via `START-WEBSITE.bat`.
 
 ---
 
 ## Limitations
 
-We document these honestly — they are deliberate engineering trade-offs, not hidden bugs:
+We document these honestly - they are deliberate engineering trade-offs, not hidden bugs:
 
-1. **Binary classification only** — the model outputs Scam/Safe. It does *not* tag the scam category (bank, job, BISP, lottery...). Category classification is on the roadmap.
-2. **1,637 training messages** — strong for the hackathon scope, small for production scale. Performance may degrade on entirely novel scam templates that don't resemble training data.
-3. **Roman Urdu is the hardest case** — despite 15+ spelling-normalization rules, the extreme informality of Roman Urdu ("kya krna ha" vs "kia kerna hy") means edge cases persist; scores are honest but confidence is lower than for English.
-4. **Static patterns** — scammers evolve rapidly; the model needs periodic retraining with new scam patterns to stay current.
-5. **No transformer benchmark yet** — TF-IDF + SVM was chosen for speed and interpretability; a comparison against mBERT/XLM-R is planned.
-6. **The 5 fresh-holdout false negatives** were scam messages deliberately disguised as ordinary legitimate notifications (fake store closure, subscription renewal, real-estate installment reminder, charity confirmation, card-security alert) sitting near the 0.63 decision boundary — a genuinely hard, ambiguous category.
-7. **Audio transcription takes 23–35 s on CPU** — honest progress feedback is shown rather than a fake spinner.
-8. **Decision support, not a guarantee** — every result screen carries the disclaimer: *"Muhafiz AI is a decision-support tool, not a guarantee. When in doubt, verify directly with the official organization."*
+1. **Binary classification only** - the model outputs Scam/Safe. It does *not* tag the scam category (bank, job, BISP, lottery...). Category classification is on the roadmap.
+2. **1,637 training messages** - strong for the hackathon scope, small for production scale. Performance may degrade on entirely novel scam templates that don't resemble training data.
+3. **Roman Urdu is the hardest case** - despite 15+ spelling-normalization rules, the extreme informality of Roman Urdu ("kya krna ha" vs "kia kerna hy") means edge cases persist; scores are honest but confidence is lower than for English.
+4. **Static patterns** - scammers evolve rapidly; the model needs periodic retraining with new scam patterns to stay current.
+5. **No transformer benchmark yet** - TF-IDF + SVM was chosen for speed and interpretability; a comparison against mBERT/XLM-R is planned.
+6. **The 5 fresh-holdout false negatives** were scam messages deliberately disguised as ordinary legitimate notifications (fake store closure, subscription renewal, real-estate installment reminder, charity confirmation, card-security alert) sitting near the 0.63 decision boundary - a genuinely hard, ambiguous category.
+7. **Audio transcription takes 23–35 s on CPU** - honest progress feedback is shown rather than a fake spinner.
+8. **Decision support, not a guarantee** - every result screen carries the disclaimer: *"Muhafiz AI is a decision-support tool, not a guarantee. When in doubt, verify directly with the official organization."*
 
 ---
 
@@ -507,7 +489,7 @@ We document these honestly — they are deliberate engineering trade-offs, not h
 | Responsive web app + public API on Vercel/Render | ✅ Shipped |
 | Bilingual UI (English/Urdu with RTL layout) | ✅ Shipped |
 | Scroll-to-top button + social media footer | ✅ Shipped |
-| **Scam-category classifier** (bank, job, BISP, lottery...) | 🚧 Next — needs a dedicated category-labeled dataset |
+| **Scam-category classifier** (bank, job, BISP, lottery...) | 🚧 Next - needs a dedicated category-labeled dataset |
 | **Live SMS / browser-extension interception** | 🚧 Planned |
 | **Continuous learning pipeline** (user reports → periodic retraining) | 🚧 Planned |
 | **Real-time in-call analysis** | 🔭 Exploring |
@@ -517,11 +499,11 @@ We document these honestly — they are deliberate engineering trade-offs, not h
 
 ## Team
 
-Built for the **Alibaba AI Hackathon — Karachi Regional Round**.
+Built for the **Alibaba AI Hackathon - Karachi Regional Round**.
 
-- **Amaan Lodhi** — Machine learning: dataset curation, model training, adversarial evaluation, V4 optimization
-- **Saifullah Khan** — Web application: Next.js frontend, FastAPI backend, cloud deployment
-- **Sagar Kumar** — Presentation & Pitch: Live Demo, Presentation, Final Review
+- **Amaan Lodhi** - Machine learning: dataset curation, model training, adversarial evaluation, V4 optimization
+- **Saifullah Khan** - Web application: Next.js frontend, FastAPI backend, cloud deployment
+- **Sagar Kumar** - Presentation & Pitch: Live Demo, Presentation, Final Review
 
 ---
 
@@ -531,14 +513,13 @@ Built for the **Alibaba AI Hackathon — Karachi Regional Round**.
               [Amaan-Khan-Lodhi](https://github.com/Amaan-khan-lodhi)
 - **LinkedIn:** [saifstacks](https://www.linkedin.com/in/saifstacks)
                 [Amaan-Khan-Lodhi](https://www.linkedin.com/in/amaan-khan-lodhi-a8182141b/)
-- **Instagram:** [@notthatpretty.saiff](https://www.instagram.com/notthatpretty.saiff)
 - **Email:** [saifkhan16.dev@gmail.com](mailto:saifkhan16.dev@gmail.com)
 
 ---
 
 ## Acknowledgments
 
-- **Alibaba AI Hackathon — Karachi Regional Round** for the challenge and platform
+- **Alibaba AI Hackathon - Karachi Regional Round** for the challenge and platform
 - **[SYSTRAN](https://github.com/SYSTRAN/faster-whisper)** for faster-whisper
 - The open-source community behind **scikit-learn, FastAPI, Next.js, React, Framer Motion, and Tailwind CSS**
 
@@ -546,4 +527,4 @@ Built for the **Alibaba AI Hackathon — Karachi Regional Round**.
 
 ## License
 
-Released under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
+Released under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
