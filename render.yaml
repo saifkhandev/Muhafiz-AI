@@ -1,0 +1,48 @@
+# Render Blueprint for the Muhafiz AI backend.
+# Create with: Render Dashboard → New → Blueprint → select this repo.
+#
+# The Docker runtime is used because the native Python runtime has no ffmpeg,
+# and pydub needs it for every audio format except wav — including the webm the
+# browser recorder produces. Without it, live recording and mp3 uploads 500.
+#
+# The frontend is deployed separately on Vercel and is not managed here.
+
+services:
+  - type: web
+    name: muhafiz-ai-api
+    runtime: docker
+    plan: free
+    # Singapore is the closest Render region to Pakistan.
+    region: singapore
+    branch: STT-update
+    dockerfilePath: ./scam_detection/Dockerfile
+    dockerContext: ./scam_detection
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      # Hosted STT keeps the service at ~176MB RSS, inside the 512MB free tier.
+      # STT_BACKEND=local would need ~2.7GB and gets OOM-killed here.
+      - key: STT_BACKEND
+        value: groq
+
+      # sync: false means Render prompts for this and stores it encrypted —
+      # the key is never written to the repository.
+      - key: GROQ_API_KEY
+        sync: false
+
+      - key: ENABLE_AUDIO
+        value: "true"
+
+      # whisper-large-v3 is the most accurate on Urdu. Override to
+      # whisper-large-v3-turbo if demo latency matters more than accuracy.
+      - key: GROQ_STT_MODEL
+        value: whisper-large-v3
+
+      # Whisper often labels Pakistani Urdu as Hindi and returns Devanagari,
+      # which the classifier was not trained on; this re-asks for Urdu script.
+      - key: GROQ_RETRY_HINDI_AS_URDU
+        value: "true"
+
+      # Must list every frontend origin that calls this API.
+      - key: CORS_ORIGINS
+        value: https://muhafiz-ai-six.vercel.app,https://muhafiz-ai.vercel.app

@@ -587,14 +587,34 @@ python -m uvicorn api.main:app --host 0.0.0.0 --port 8000 --workers 1
 
 The project deploys as two services:
 
-| Layer | Platform | Root Directory | Key Settings |
+| Layer | Platform | Config | Key Settings |
 |---|---|---|---|
-| Frontend | **Vercel** | `scam_detection/web` | Framework: **Next.js** · env `NEXT_PUBLIC_API_URL` = backend URL |
-| Backend | **Render** | `scam_detection` | Build: `pip install -r requirements-serve.txt` · Start: `python -m uvicorn api.main:app --host 0.0.0.0 --port $PORT` · env `STT_BACKEND=groq` + `GROQ_API_KEY` (free tier) |
+| Frontend | **Vercel** | Root dir `scam_detection/web` | Framework: **Next.js** · env `NEXT_PUBLIC_API_URL` = backend URL |
+| Backend | **Render** | [`render.yaml`](render.yaml) + [`scam_detection/Dockerfile`](scam_detection/Dockerfile) | Docker runtime · free plan · env `GROQ_API_KEY` |
 
-Every `git push` to `main` auto-redeploys both services.
+### Backend on Render
 
-**Free-tier notes:** Render's free instances sleep after 15 min of inactivity (the first request afterwards takes ~1 min — ping `/api/health` before demos). Audio analysis needs ~2.7 GB RAM with local Whisper, which no 512 MB free tier can host — set `STT_BACKEND=groq` to run it in 224 MB instead. With `ENABLE_AUDIO=false` the UI still shows an honest "unavailable on this server" message.
+The repo ships a Blueprint, so the settings live in version control instead of the dashboard:
+
+1. **Render Dashboard → New → Blueprint**, select this repository
+2. Render reads `render.yaml` and creates the `muhafiz-ai-api` service
+3. It prompts for **`GROQ_API_KEY`** — the only value not stored in the repo (`sync: false`)
+4. After the first deploy, set `NEXT_PUBLIC_API_URL` on Vercel to `https://<service>.onrender.com` and redeploy the frontend
+
+Verify:
+
+```bash
+curl https://<service>.onrender.com/api/health
+# {"status":"ok","model":"V4_adversarial_505","threshold":0.63,"stt":"groq","audioEnabled":true}
+```
+
+**Why Docker and not Render's native Python runtime:** pydub shells out to `ffmpeg`/`ffprobe` for every audio format except `.wav`, and the browser recorder uploads `webm`. Render's Python runtime has no ffmpeg, so live recording and mp3 uploads would fail with a 500 — the Dockerfile installs it. The native runtime is only viable for text-only deployments.
+
+**Branch:** `render.yaml` tracks the branch named in its `branch:` field. Change it to deploy from somewhere else; every push to that branch auto-redeploys.
+
+**Free-tier notes:** Render's free instances have 512 MB RAM and sleep after 15 min of inactivity (the first request afterwards takes ~1 min — ping `/api/health` before demos). The service runs at ~176 MB with `STT_BACKEND=groq`. Local Whisper needs ~2.7 GB and will be OOM-killed on the free plan, so `groq` is not optional there. With `ENABLE_AUDIO=false` the UI still shows an honest "unavailable on this server" message.
+
+> **Never commit `.env`.** Secrets belong in Render's Environment tab (or the Blueprint prompt) and Vercel's project settings.
 
 ---
 

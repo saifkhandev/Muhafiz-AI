@@ -1,0 +1,27 @@
+# The build context is scam_detection/, which holds ~2.3GB of local-only files.
+# Without these exclusions every deploy would upload the venv and Whisper weights.
+venv/
+.venv/
+env/
+models/whisper-medium/
+models/backup_v31/
+web/node_modules/
+web/.next/
+
+# Secrets — env vars come from the Render dashboard, never from the image
+.env
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+temp_audio/
+*.log
+
+# Training assets not used at serving time.
+# reports/ is deliberately kept: api/main.py reads
+# reports/hard_test_500_results.json for the API version string.
+data/
+tests/
+screenshots/
+*.pdf
+*.xlsx
