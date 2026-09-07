@@ -43,6 +43,8 @@ services:
       - key: GROQ_RETRY_HINDI_AS_URDU
         value: "true"
 
-      # Must list every frontend origin that calls this API.
+      # Must list every frontend origin that calls this API. localhost is
+      # included so a dev frontend can be pointed at the deployed backend;
+      # drop it if you want the API callable only from the Vercel domains.
       - key: CORS_ORIGINS
-        value: https://muhafiz-ai-six.vercel.app,https://muhafiz-ai.vercel.app
+        value: https://muhafiz-ai-six.vercel.app,https://muhafiz-ai.vercel.app,http://localhost:3000,http://localhost:3001,https://muhafiz-ai-six.vercel.app
