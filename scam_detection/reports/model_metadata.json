@@ -1,12 +1,12 @@
 {
-  "best_model_name": "C_tfidf_char_lr",
-  "model_description": "TF-IDF char (3-6)-grams + Logistic Regression",
-  "model_type": "simple_pipeline",
-  "version": "V4",
+  "best_model_name": "B_combined_C5",
+  "model_description": "TF-IDF word(1,2)+char(3,5)-gram + LinearSVC (C=5.0) + CalibratedClassifierCV (Platt scaling)",
+  "model_type": "combined_pipeline",
+  "version": "V4_adversarial_505",
   "random_seed": 42,
   "n_folds": 5,
-  "threshold": 0.55,
-  "training_size": 605,
+  "threshold": 0.63,
+  "training_size": 1637,
   "label_mapping": {
     "0": "Safe",
     "1": "Scam"
@@ -35,7 +35,7 @@
     "roc_auc": 0.997979797979798
   },
   "overfitting_check": {
-    "best_model": "C_tfidf_char_lr",
+    "best_model": "B_combined_C5",
     "cv_accuracy_mean": 0.9355371900826446,
     "cv_f1_mean": 0.9364410525110219,
     "train_accuracy_mean": 0.9913223140495868,

@@ -8,7 +8,7 @@
     "tryItNow": "Try It Now"
   },
   "hero": {
-    "badge": "V4 model · 99.6% adversarial accuracy",
+    "badge": "V4 model · 99.0% adversarial accuracy",
     "title1": "Pakistan's AI shield against",
     "title2": "scam calls & messages",
     "description": "Muhafiz AI detects scams in text messages and call recordings across English, Urdu, Roman Urdu, and Mixed languages - no GPU required.",
@@ -157,9 +157,9 @@
       "training": "Training data",
       "trainingValue": "1,637 messages",
       "adversarial": "Adversarial test",
-      "adversarialValue": "99.60% accuracy, 0.4% FPR",
+      "adversarialValue": "99.01% accuracy, 1.6% FPR",
       "holdout": "Fresh holdout",
-      "holdoutValue": "94.0% accuracy, 98.0% specificity"
+      "holdoutValue": "95.0% accuracy, 100.0% specificity"
     },
     "limitationsTitle": "Honest limitations",
     "limitations": [
@@ -172,7 +172,7 @@
     "faqTitle": "FAQ",
     "faq": {
       "q1": "Why TF-IDF + SVM instead of BERT or a transformer?",
-      "a1": "The V4 model hits 99.60% accuracy on 505 adversarial messages, runs in under 10ms per text message, and requires no GPU. TF-IDF + LinearSVC is fully explainable, fast to deploy, and sufficient for this dataset size. Transformers were deprioritized in favor of adversarial testing, FP reduction, and audio pipeline integration.",
+      "a1": "The V4 model hits 99.01% accuracy on 505 adversarial messages, runs in under 10ms per text message, and requires no GPU. TF-IDF + LinearSVC is fully explainable, fast to deploy, and sufficient for this dataset size. Transformers were deprioritized in favor of adversarial testing, FP reduction, and audio pipeline integration.",
       "q2": "What about real deployment?",
       "a2": "The system is built as a REST API architecture (FastAPI backend + Next.js frontend) and is cloud-deployable as-is. The backend can be containerized and scaled independently of the frontend.",
       "q3": "What are the current limitations?",

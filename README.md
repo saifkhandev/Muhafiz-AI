@@ -178,8 +178,8 @@ Audio input (.aac, .wav, .mp3, .ogg, ...)
   → Transcript segments (with timestamps)
   → Filler filtering & segment merging
   → predict_message() for each segment
-  → Weighted aggregation (max_prob=0.35, weighted_mean=0.35, scam_ratio=0.30)
-  → Call-level risk score (High ≥0.60 / Medium ≥0.35 / Low <0.35)
+  → Weighted aggregation (max_prob=0.45, weighted_mean=0.30, scam_ratio=0.25)
+  → Call-level risk score (High ≥0.55 / Medium ≥0.30 / Low <0.30)
 ```
 
 ### Why these technology choices
@@ -199,12 +199,12 @@ Audio input (.aac, .wav, .mp3, .ogg, ...)
 
 | Test Suite | Messages | Accuracy | Recall | Precision | FPR | FP | FN |
 |---|---|---|---|---|---|---|---|
-| Adversarial (V4 integration set) | 505 | **99.60%** | 99.61% | 99.61% | 0.40% | 1 | 1 |
-| Fresh holdout (never seen) | 100 | **94.00%** | 90.00% | 97.80% | 2.00% | 1 | 5 |
+| Adversarial (V4 integration set) | 505 | **99.01%** | 99.61% | 98.45% | 1.6% | 4 | 1 |
+| Fresh holdout (never seen) | 100 | **95.00%** | 90.00% | 100% | 0.00% | 0 | 5 |
 | Blind test | 50 | **98.00%** | 96.00% | 100% | 0.00% | 0 | 1 |
 | Hard test V4 | 56 | **98.21%** | 100% | 96.55% | 3.57% | 1 | 0 |
 | BISP diagnostic | 10 | **100.0%** | 100% | 100% | 0.00% | 0 | 0 |
-| All-4 external (multilingual) | 318 | **97.48%** | 96.52% | 98.23% | 0.63% | 1 | 7 |
+| All-4 external (multilingual) | 318 | **95.60%** | 93.03% | 100% | 0.00% | 0 | 14 |
 | Real-world samples | 43 | **93.02%** | 87.50% | 100% | 0.00% | 0 | 3 |
 
 ### Language-specific results (505-message adversarial test)
@@ -235,7 +235,7 @@ The training corpus was built and expanded iteratively across model versions:
 
 It covers **10+ scam categories** common in Pakistan: job scams, lottery/prize draws, bank phishing, OTP extraction, fake SIM-block threats, investment/Ponzi schemes, fake charities, impersonation, advance-fee loans, government-program fraud (BISP, Ehsaas, NADRA, FBR), and fake tech support.
 
-The V4 adversarial expansion specifically targeted false positives — cutting them **48 → 1** on the adversarial test set (a 48× improvement) — by adding 250 safe messages that mirror common false-positive triggers (legit bank deductions, genuine security notices, service OTPs).
+The V4 adversarial expansion specifically targeted false positives — cutting them **48 → 4** on the adversarial test set (a 12× improvement) — by adding 250 safe messages that mirror common false-positive triggers (legit bank deductions, genuine security notices, service OTPs).
 
 ### Overfitting check
 
