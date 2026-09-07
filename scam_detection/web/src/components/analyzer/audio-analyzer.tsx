@@ -263,7 +263,7 @@ export function AudioAnalyzer() {
                     result.overallRisk === "High"
                       ? "bg-danger/20 text-danger"
                       : result.overallRisk === "Medium"
-                      ? "bg-warning/20 text-warning"
+                      ? "bg-[#F59E0B] text-white"
                       : "bg-safe/20 text-safe"
                   }`}
                 >

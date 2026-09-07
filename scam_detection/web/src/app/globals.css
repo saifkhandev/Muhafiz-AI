@@ -9,7 +9,9 @@
   --accent: #818CF8;
   --danger: #E5484D;
   --safe: #3DD68C;
-  --warning: #E8A93D;
+  --warning: #FBBF24;
+  --warning-bg: #F59E0B;
+  --warning-border: #D97706;
   --text-primary: #EDEFF2;
   --text-secondary: #8A94A3;
   --foreground: #EDEFF2;
@@ -25,6 +27,8 @@
   --color-danger: var(--danger);
   --color-safe: var(--safe);
   --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-warning-border: var(--warning-border);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-foreground: var(--foreground);

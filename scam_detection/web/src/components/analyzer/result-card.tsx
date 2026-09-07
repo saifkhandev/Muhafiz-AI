@@ -27,34 +27,55 @@ export function ResultCard({ result, isLoading }: ResultCardProps) {
 
   return (
     <AnimatePresence mode="wait">
-      {result && (
+      {result && (() => {
+        // Map risk level to color classes
+        const getRiskColorClasses = () => {
+          if (result.riskLabel === "High") {
+            return {
+              border: "border-danger/40 bg-danger/5",
+              wash: "bg-danger",
+              icon: "bg-danger/20 text-danger",
+              progress: "bg-gradient-to-r from-danger to-danger/70",
+            };
+          }
+          if (result.riskLabel === "Medium") {
+            return {
+              border: "border-[#D97706]/40 bg-[#F59E0B]/5",
+              wash: "bg-[#F59E0B]",
+              icon: "bg-[#F59E0B]/20 text-[#FBBF24]",
+              progress: "bg-gradient-to-r from-[#F59E0B] to-[#F59E0B]/70",
+            };
+          }
+          return {
+            border: "border-safe/40 bg-safe/5",
+            wash: "bg-safe",
+            icon: "bg-safe/20 text-safe",
+            progress: "bg-gradient-to-r from-safe to-safe/70",
+          };
+        };
+
+        const riskColors = getRiskColorClasses();
+
+        return (
         <motion.div
           key={result.verdict}
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.95, opacity: 0 }}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          className={`relative overflow-hidden rounded-2xl border p-6 ${
-            result.verdict === "Scam"
-              ? "border-danger/40 bg-danger/5"
-              : "border-safe/40 bg-safe/5"
-          }`}
+          className={`relative overflow-hidden rounded-2xl border p-6 ${riskColors.border}`}
         >
           {/* Color wash */}
           <motion.div
             initial={{ x: "-100%", opacity: 0.3 }}
             animate={{ x: "100%", opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className={`absolute inset-0 ${
-              result.verdict === "Scam" ? "bg-danger" : "bg-safe"
-            }`}
+            className={`absolute inset-0 ${riskColors.wash}`}
           />
 
           <div className="relative flex items-start gap-4">
             <div
-              className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${
-                result.verdict === "Scam" ? "bg-danger/20 text-danger" : "bg-safe/20 text-safe"
-              }`}
+              className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${riskColors.icon}`}
             >
               {result.verdict === "Scam" ? (
                 <AlertTriangle className="h-6 w-6" />
@@ -72,7 +93,7 @@ export function ResultCard({ result, isLoading }: ResultCardProps) {
                     result.riskLabel === "High"
                       ? "bg-danger/20 text-danger"
                       : result.riskLabel === "Medium"
-                      ? "bg-warning/20 text-warning"
+                      ? "bg-warning-bg text-white"
                       : "bg-safe/20 text-safe"
                   }`}
                 >
@@ -91,11 +112,7 @@ export function ResultCard({ result, isLoading }: ResultCardProps) {
                       initial={{ width: 0 }}
                       animate={{ width: `${result.riskScore}%` }}
                       transition={{ duration: 0.6, ease: "easeOut" }}
-                      className={`h-full rounded-full ${
-                        result.verdict === "Scam"
-                          ? "bg-gradient-to-r from-danger to-danger/70"
-                          : "bg-gradient-to-r from-safe to-safe/70"
-                      }`}
+                      className={`h-full rounded-full ${riskColors.progress}`}
                     />
                   </div>
                 </div>
@@ -127,7 +144,8 @@ export function ResultCard({ result, isLoading }: ResultCardProps) {
             </div>
           </div>
         </motion.div>
-      )}
+        );
+      })()}
     </AnimatePresence>
   );
 }
