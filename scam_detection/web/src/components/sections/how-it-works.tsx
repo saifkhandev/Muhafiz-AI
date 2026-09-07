@@ -63,11 +63,12 @@ function Pipeline({ steps, title }: { steps: Array<{ icon: any; label: string; d
       <div className="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
         <svg
           className="absolute top-8 left-0 hidden h-4 w-full sm:block"
+          viewBox="0 0 100 16"
           preserveAspectRatio="none"
         >
           <path
             className="pipeline-line"
-            d="M0 8 H100%"
+            d="M0 8 H100"
             stroke="#818CF8"
             strokeWidth="2"
             fill="none"

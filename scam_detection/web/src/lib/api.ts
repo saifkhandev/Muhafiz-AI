@@ -1,6 +1,11 @@
 import { TextAnalysisResult, AudioAnalysisResult } from "./types";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+// Vercel env often includes a trailing slash. `${base}/api/...` then becomes
+// `https://host//api/...`, which Render/FastAPI reject with 405 Method Not Allowed.
+const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000").replace(
+  /\/+$/,
+  ""
+);
 
 export class ApiError extends Error {
   constructor(
