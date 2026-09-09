@@ -10,6 +10,7 @@ import os
 import shutil
 import sys
 import tempfile
+import traceback
 import warnings
 from contextlib import asynccontextmanager
 from time import perf_counter
@@ -20,6 +21,11 @@ logger = logging.getLogger("uvicorn.error")
 
 # Add project root to path
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Redirect temp files to project-local dir (avoids issues when system temp is full)
+_local_temp = os.path.join(PROJECT_ROOT, ".tmp")
+os.makedirs(_local_temp, exist_ok=True)
+tempfile.tempdir = _local_temp
 sys.path.insert(0, PROJECT_ROOT)
 
 from fastapi import FastAPI, File, UploadFile, HTTPException
@@ -28,6 +34,7 @@ from pydantic import BaseModel
 from src.predict import predict_message, load_model
 from src.call_predict import predict_call
 from src.transcribe import load_stt_model
+from src.audio import load_audio  # ensures ffmpeg is configured for pydub
 from src.config import MAX_AUDIO_DURATION_SECONDS, WHISPER_MODEL_SIZE
 from src.preprocessing import (
     URGENCY_KEYWORDS,
@@ -298,8 +305,7 @@ async def analyze_audio(audio: UploadFile = File(...)):
         # Enforce max duration server-side and record its cost separately.
         inspection_started = perf_counter()
         try:
-            from pydub import AudioSegment
-            audio_segment = AudioSegment.from_file(temp_path)
+            audio_segment = load_audio(temp_path)
             duration = len(audio_segment) / 1000.0
             if duration > MAX_AUDIO_DURATION_SECONDS:
                 raise HTTPException(
@@ -330,8 +336,9 @@ async def analyze_audio(audio: UploadFile = File(...)):
         logger.info("audio_timing stage=call_pipeline seconds=%.3f", perf_counter() - prediction_started)
     except HTTPException:
         raise
-    except Exception:
-        raise HTTPException(status_code=500, detail="Audio analysis failed. Please try again with a different file.")
+    except Exception as e:
+        logger.error("audio_analysis_error error=%s", e, exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Audio analysis failed: {e}")
     finally:
         shutil.rmtree(temp_dir, ignore_errors=True)
         logger.info("audio_timing stage=audio_request_total seconds=%.3f", perf_counter() - request_started)

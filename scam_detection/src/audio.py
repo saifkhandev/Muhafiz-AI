@@ -3,10 +3,42 @@ Audio loading and format normalization for scam-call detection.
 Uses pydub + ffmpeg to convert any audio format to 16 kHz mono WAV.
 """
 import os
-import tempfile
 import shutil
+import subprocess
+import tempfile
 
 from src.config import TEMP_AUDIO_DIR, MAX_AUDIO_DURATION_SECONDS
+
+
+def _find_ffmpeg() -> str | None:
+    """Locate ffmpeg binary: system PATH first, then imageio-ffmpeg bundle."""
+    # 1. Check system PATH
+    system_ffmpeg = shutil.which("ffmpeg")
+    if system_ffmpeg:
+        return system_ffmpeg
+    # 2. Check imageio-ffmpeg bundled binary
+    try:
+        import imageio_ffmpeg
+        bundled = imageio_ffmpeg.get_ffmpeg_exe()
+        if bundled and os.path.isfile(bundled):
+            return bundled
+    except ImportError:
+        pass
+    return None
+
+
+def _configure_pydub():
+    """Point pydub at the discovered ffmpeg binary."""
+    ffmpeg_path = _find_ffmpeg()
+    if ffmpeg_path:
+        from pydub import AudioSegment
+        AudioSegment.converter = ffmpeg_path
+        AudioSegment.ffprobe = ffmpeg_path
+    return ffmpeg_path
+
+
+# Auto-configure on import
+_ffmpeg_path = _configure_pydub()
 
 
 def _ensure_temp_dir():
@@ -42,14 +74,29 @@ def load_audio(audio_path: str):
             f"Python: {sys.executable}"
         )
 
+    if _ffmpeg_path is None:
+        raise RuntimeError(
+            "ffmpeg is not installed or not in PATH.\n"
+            "Install with: pip install imageio-ffmpeg\n"
+            "Or: winget install Gyan.FFmpeg\n"
+            "Then restart your terminal."
+        )
+
     try:
         audio = AudioSegment.from_file(audio_path)
     except Exception as e:
-        if "ffmpeg" in str(e).lower() or "ffprobe" in str(e).lower():
+        err_msg = str(e).lower()
+        if (
+            "ffmpeg" in err_msg
+            or "ffprobe" in err_msg
+            or "winerror 2" in err_msg
+            or "no such file or directory" in err_msg
+        ):
             raise RuntimeError(
-                "ffmpeg is not installed or not in PATH.\n"
-                "Install with: winget install Gyan.FFmpeg\n"
-                "Or download from: https://ffmpeg.org/download.html\n"
+                f"ffmpeg failed or not found.\n"
+                f"Detected ffmpeg: {_ffmpeg_path}\n"
+                f"Original error: {e}\n"
+                "Try: pip install imageio-ffmpeg\n"
                 "Then restart your terminal."
             )
         raise

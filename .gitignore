@@ -21,7 +21,10 @@ scam_detection/models/backup_v31/
 
 # ── Scratch / temp dirs ─────────────────────────────────────────────────────
 temp_audio/
+.tmp/
 .scannerwork/
+.qoder/
+scam_detection/pip_cache/
 
 # ── Test screenshots at repo root (build artifacts, not source) ─────────────
 /*.png
