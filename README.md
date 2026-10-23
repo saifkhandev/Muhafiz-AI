@@ -12,7 +12,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white&labelColor=20232a)
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white&labelColor=20232a)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white&labelColor=20232a)
-![Whisper](https://img.shields.io/badge/Whisper-STT-412991?logo=openai&logoColor=white&labelColor=20232a)
+![Groq](https://img.shields.io/badge/Groq-STT-412991?logo=openai&logoColor=white&labelColor=20232a)
 ![Vercel](https://img.shields.io/badge/Vercel-Frontend-000000?logo=vercel&logoColor=white&labelColor=20232a)
 ![Render](https://img.shields.io/badge/Render-Backend-46E3B7?logo=render&logoColor=white&labelColor=20232a)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen?labelColor=20232a)
